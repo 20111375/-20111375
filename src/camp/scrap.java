@@ -1,0 +1,40 @@
+package camp;
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: andrewheyworth
+ * Date: 30/10/2013
+ * Time: 06:08
+ * To change this template use File | Settings | File Templates.
+ */
+/*
+Produce an on screen summary of a booking.
+The ability to extend a booking for extra nights
+Book a tent or caravan pitch for a number of nights
+Set a price for each pitch- this is a variable based on season which are off,low and high
+Store the details of the details of the person who books the pitch
+Produce a booking confirmation which has can be emailed to the customer or printed for the customer
+Search for a free pitch for a tent or a caravan
+Cancel  or amend a booking
+View a list of available pitches for given day
+View a list of booked pitches per day
+A list of customers who have not yet paid.
+A sorted list by car registration to allow the staff to check who is on the site
+ */
+public class scrap {
+
+}
+
+/*
+for(Datapoint d : dataPointList){
+        if(d.getName() != null && d.getName().contains(search))
+           //something here
+    }
+
+for(DataPoint myPoint : myList) {
+    if(myPoint.getName() != null && myPoint.getName().equals("Michael Hoffmann")) {
+        //Process data do whatever you want
+        System.out.println("Found it!");
+     }
+}
+ */
