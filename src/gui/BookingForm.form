@@ -1,46 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="gui.BookingForm">
-  <grid id="27dc6" binding="Panel" layout-manager="GridLayoutManager" row-count="2" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
-    <margin top="0" left="0" bottom="0" right="0"/>
+  <grid id="27dc6" binding="Panel" layout-manager="GridLayoutManager" row-count="4" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="2" left="2" bottom="2" right="2"/>
     <constraints>
-      <xy x="20" y="20" width="500" height="400"/>
+      <xy x="20" y="20" width="564" height="352"/>
     </constraints>
     <properties/>
-    <border type="none"/>
+    <border type="line" title="Camper App"/>
     <children>
       <component id="c2bce" class="javax.swing.JButton" binding="pitchListButton" default-binding="true">
         <constraints>
-          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="100" height="30"/>
+          </grid>
         </constraints>
         <properties>
           <text value="Pitch list"/>
         </properties>
       </component>
-      <hspacer id="189b3">
+      <scrollpane id="bd699">
         <constraints>
-          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-        </constraints>
-      </hspacer>
-      <scrollpane id="f0e3e">
-        <constraints>
-          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="250" height="229"/>
+          </grid>
         </constraints>
         <properties/>
-        <border type="line"/>
+        <border type="none" title="Pitch Name"/>
         <children>
-          <component id="c1524" class="javax.swing.JList" binding="list1" default-binding="true">
+          <component id="296b0" class="javax.swing.JTextArea" binding="textArea1" default-binding="true">
             <constraints/>
-            <properties/>
+            <properties>
+              <editable value="false"/>
+            </properties>
           </component>
         </children>
       </scrollpane>
-      <hspacer id="6cd67">
+      <scrollpane id="d8c1f">
         <constraints>
-          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
-            <preferred-size width="70" height="11"/>
+          <grid row="1" column="1" row-span="1" col-span="2" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="300" height="229"/>
           </grid>
         </constraints>
-      </hspacer>
+        <properties/>
+        <border type="none" title="Client Names"/>
+        <children>
+          <component id="57103" class="javax.swing.JTextArea" binding="textArea2" default-binding="true">
+            <constraints/>
+            <properties>
+              <editable value="false"/>
+            </properties>
+          </component>
+        </children>
+      </scrollpane>
+      <scrollpane id="cf607">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="3" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="-1" height="100"/>
+          </grid>
+        </constraints>
+        <properties/>
+        <border type="none" title="Booking"/>
+        <children>
+          <component id="7090e" class="javax.swing.JTextArea" binding="textArea3" default-binding="true">
+            <constraints/>
+            <properties>
+              <editable value="false"/>
+            </properties>
+          </component>
+        </children>
+      </scrollpane>
+      <grid id="2ebf5" binding="CalendarPane" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="line" title="Calendar"/>
+        <children>
+          <component id="7c08d" class="com.jcalendar.pane.calendar.CalendarPane" binding="Cal">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                <minimum-size width="240" height="140"/>
+                <preferred-size width="250" height="150"/>
+                <maximum-size width="260" height="160"/>
+              </grid>
+            </constraints>
+            <properties>
+              <enabled value="true"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <scrollpane id="c5b9c">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="line" title="Client List"/>
+        <children>
+          <component id="34508" class="javax.swing.JList" binding="list1" default-binding="true">
+            <constraints/>
+            <properties>
+              <model>
+                <item value="test"/>
+              </model>
+              <name value="listTest"/>
+            </properties>
+          </component>
+        </children>
+      </scrollpane>
     </children>
   </grid>
 </form>

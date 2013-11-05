@@ -1,7 +1,7 @@
 ----------------------------------------------------------------
-Sat Nov 02 11:14:41 GMT 2013:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.1.1 - (1458268): instance a816c00e-0142-1885-a63a-000003e70078 
-on database directory /Users/andrewheyworth/Desktop/camp/database with class loader sun.misc.Launcher$AppClassLoader@bdbb12b 
+Mon Nov 04 21:40:16 GMT 2013:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.1.1 - (1458268): instance a816c00e-0142-250f-1aa8-000003e8b180 
+on database directory /Users/andrewheyworth/Desktop/camp/database with class loader sun.misc.Launcher$AppClassLoader@44c8422 
 Loaded from file:/Users/andrewheyworth/Desktop/camp/Lib/derby.jar
 java.vendor=Oracle Corporation
 java.runtime.version=1.7.0_40-b43

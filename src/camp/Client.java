@@ -87,5 +87,9 @@ public class Client extends Items{
     public void setTelephoneNumber(Integer telephoneNumber) {
         this.telephoneNumber = telephoneNumber;
     }
+    @Override
+    public String toString(){
 
+        return this.getFirstName();
+    }
 }

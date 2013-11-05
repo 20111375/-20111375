@@ -41,4 +41,9 @@ public class Pitch extends Items{
     public void setPitchName(String pitchName) {
         this.pitchName = pitchName;
     }
+    @Override
+    public String toString(){
+
+        return this.getPitchName();
+    }
 }

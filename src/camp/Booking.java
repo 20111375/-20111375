@@ -1,9 +1,9 @@
 /**
  * Created with IntelliJ IDEA.
- * User: andrewheyworth
+ * User: andrew heyworth
  * Date: 27/10/2013
  * Time: 21:02
- * To change this template use File | Settings | File Templates.
+ * Booking class extends the generic Items class
  */
 package camp;
 import java.util.Date;
@@ -17,6 +17,9 @@ public class Booking extends Items{
     private Double price;
     private Boolean paid;
 
+    /**
+     * Class Con
+     */
     public Booking() {
 
     }
@@ -30,6 +33,10 @@ public class Booking extends Items{
         this.paid = paid;
     }
 
+    /**
+     *
+     * @return
+     */
     public Integer getClientID() {
         return clientID;
     }
@@ -76,5 +83,10 @@ public class Booking extends Items{
 
     public void setPaid(Boolean paid) {
         this.paid = paid;
+    }
+    @Override
+    public String toString(){
+
+        return this.getClientID().toString();
     }
 }
