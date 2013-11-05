@@ -10,7 +10,7 @@ Produce an on screen summary of a booking.
 The ability to extend a booking for extra nights
 Book a tent or caravan pitch for a number of nights
 Set a price for each pitch- this is a variable based on season which are off,low and high
-Store the details of the details of the person who books the pitch
+Store the details of the person who books the pitch
 Produce a booking confirmation which has can be emailed to the customer or printed for the customer
 Search for a free pitch for a tent or a caravan
 Cancel  or amend a booking

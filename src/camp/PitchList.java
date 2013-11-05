@@ -16,7 +16,7 @@ public class PitchList  extends GenericList<Pitch>{
 		if(items == null){
 			items = new ArrayList<Pitch>();
 			try {
-				String SQL = "SELECT * FROM Pitch";
+				String SQL = "SELECT * FROM PITCH, PITCHTYPE";
 				ResultSet resultset = new connection().connect(SQL);
 				while(resultset.next()){
 					items.add(new Pitch(resultset.getString("PITCHNAME"),resultset.getInt("PITCHTYPEID")));

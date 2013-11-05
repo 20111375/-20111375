@@ -10,10 +10,6 @@ import java.util.List;
 import gui.*;
 
 
-/**
- * @author Andrew
- */
-
 public class camper{
 	public static void main(String[] args) throws Exception {
 		try {

@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="4274468796">
+  <component name="DataSourceManagerImpl" format="xml" hash="1389709619">
     <data-source source="LOCAL" name="Data Source" product="Apache Derby" version="10.10.1.1 - (1458268)" jdbc-version="4.1" driver-name="Apache Derby Embedded JDBC Driver" driver-version="10.10.1.1 - (1458268)" uuid="f9b6cfa8-09c1-4d3d-a28c-cfc288b48a0b">
       <identifier-quote-string>&quot;</identifier-quote-string>
       <synchronize>true</synchronize>
       <jdbc-driver>org.apache.derby.jdbc.AutoloadedDriver</jdbc-driver>
       <jdbc-url>jdbc:derby:$PROJECT_DIR$/database</jdbc-url>
+      <schema-pattern>*.APP</schema-pattern>
+      <default-schemas>*.APP</default-schemas>
+      <default-dialect>Derby</default-dialect>
       <libraries>
         <library>
           <url>jar://$PROJECT_DIR$/Lib/derby.jar!/</url>
