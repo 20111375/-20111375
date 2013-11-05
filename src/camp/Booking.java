@@ -1,9 +1,8 @@
 /**
  * Created with IntelliJ IDEA.
- * User: andrew heyworth
- * Date: 27/10/2013
- * Time: 21:02
- * Booking class extends the generic Items class
+ * User: 20111375
+ * Date: 05/11/2013
+ * Time: 12:31
  */
 package camp;
 import java.util.Date;

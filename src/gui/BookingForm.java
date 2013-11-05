@@ -1,3 +1,9 @@
+/**
+ * Created with IntelliJ IDEA.
+ * User: 20111375
+ * Date: 05/11/2013
+ * Time: 12:31
+ */
 package gui;
 import camp.*;
 import com.jcalendar.event.CalendarEvent;
@@ -9,14 +15,6 @@ import java.awt.event.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Vector;
-
-/**
- * Created with IntelliJ IDEA.
- * User: andrewheyworth
- * Date: 02/11/2013
- * Time: 11:01
- * To change this template use File | Settings | File Templates.
- */
 public class BookingForm {
     private JPanel Panel;
     private JButton pitchListButton;

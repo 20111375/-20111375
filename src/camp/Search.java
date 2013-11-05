@@ -1,3 +1,9 @@
+/**
+ * Created with IntelliJ IDEA.
+ * User: 20111375
+ * Date: 05/11/2013
+ * Time: 12:31
+ */
 package camp;
 import db.connection;
 
@@ -6,14 +12,6 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-
-/**
- * Created with IntelliJ IDEA.
- * User: Andrew
- * Date: 31/10/13
- * Time: 09:00
- * To change this template use File | Settings | File Templates.
- */
 
 /*
 This query returns only the pitches with are booked on a given date:

@@ -1,12 +1,10 @@
-package camp;
-
 /**
  * Created with IntelliJ IDEA.
- * User: andrewheyworth
- * Date: 30/10/2013
- * Time: 06:08
- * To change this template use File | Settings | File Templates.
+ * User: 20111375
+ * Date: 05/11/2013
+ * Time: 12:31
  */
+package camp;
 /*
 Produce an on screen summary of a booking.
 The ability to extend a booking for extra nights
