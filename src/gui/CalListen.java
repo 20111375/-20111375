@@ -6,7 +6,7 @@
  */
 package gui;
 import com.jcalendar.event.CalendarEvent;
-        import com.jcalendar.pane.calendar.CalendarSelectionListener;
+import com.jcalendar.pane.calendar.CalendarSelectionListener;
 
 public class CalListen implements CalendarSelectionListener{
     @Override
