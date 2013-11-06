@@ -11,6 +11,7 @@ public class Pitch extends Items{
 
     private String pitchName;
     private Integer pitchType;
+    private String[] TypeID = {"CARAVAN", "TENT", "MOTORHOME"};
 
     public Pitch() {
 

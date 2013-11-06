@@ -13,6 +13,7 @@ public class Client extends Items{
     private Integer clientID;
     private String carRegistration;
     private String address;
+    private String county;
     private String postcode;
     private Integer telephoneNumber;
 
@@ -20,12 +21,13 @@ public class Client extends Items{
 
     }
 
-    public Client(String firstName, String secondName, Integer clientID, String carRegistration, String address, String postcode, Integer telephoneNumber) {
+    public Client(String firstName, String secondName, Integer clientID, String carRegistration, String address, String county, String postcode, Integer telephoneNumber) {
         this.firstName = firstName;
         this.secondName = secondName;
         this.clientID = clientID;
         this.carRegistration = carRegistration;
         this.address = address;
+        this.county = county;
         this.postcode = postcode;
         this.telephoneNumber = telephoneNumber;
     }
@@ -69,6 +71,14 @@ public class Client extends Items{
 
     public void setAddress(String address) {
         this.address = address;
+    }
+
+    public String getCounty() {
+        return county;
+    }
+
+    public void setCounty(String county) {
+        this.county = county;
     }
 
     public String getPostcode() {

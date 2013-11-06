@@ -19,7 +19,7 @@ public class ClientList  extends GenericList<Client>{
 				String SQL = "SELECT * FROM Customer";
 				ResultSet resultset = new connection().connect(SQL);
 				while(resultset.next()){
-					items.add(new Client(resultset.getString("FIRSTNAME"),resultset.getString("SECONDNAME"), resultset.getInt(1), resultset.getString("CARREGISTRATION"), resultset.getString("ADDRESS"), resultset.getString("POSTCODE"), null));
+					items.add(new Client(resultset.getString("FIRSTNAME"),resultset.getString("SECONDNAME"), resultset.getInt(1), resultset.getString("CARREGISTRATION"), resultset.getString("ADDRESS"), resultset.getString("POSTCODE"), null,null));
 				}
 			} catch (Exception e) {
 				e.printStackTrace();

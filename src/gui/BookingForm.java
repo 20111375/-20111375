@@ -65,11 +65,11 @@ public class BookingForm {
                         textArea2.append(E.getFirstName() + "\n");
                     }
                     for (Booking F : tac) {
-                        myList.add(F.getFrom().toString());
+                        myList.add(F.getFromDate().toString());
                         if (textArea3.getLineCount() > tac.size()) {
                             textArea3.setText(null);
                         }
-                        textArea3.append(F.getFrom().toString() + "\n");
+                        textArea3.append(F.getFromDate().toString() + "\n");
                     }
                     list1.setListData(cac.toArray());
                 } catch (Exception e) {

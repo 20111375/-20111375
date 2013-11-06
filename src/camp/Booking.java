@@ -11,9 +11,9 @@ public class Booking extends Items{
 
     private Integer clientID;
     private Integer pitchID;
-    private Date from;
-    private Date to;
-    private Double price;
+    private Date fromDate;
+    private Date toDate;
+    private Double total;
     private Boolean paid;
 
     /**
@@ -23,12 +23,12 @@ public class Booking extends Items{
 
     }
 
-    public Booking(Integer clientID, Integer pitchID, Date from, Date to, Double price, Boolean paid) {
+    public Booking(Integer clientID, Integer pitchID, Date fromDate, Date toDate, Double total, Boolean paid) {
         this.clientID = clientID;
         this.pitchID = pitchID;
-        this.from = from;
-        this.to = to;
-        this.price = price;
+        this.fromDate = fromDate;
+        this.toDate = toDate;
+        this.total = total;
         this.paid = paid;
     }
 
@@ -52,28 +52,28 @@ public class Booking extends Items{
         this.pitchID = pitchID;
     }
 
-    public Date getFrom() {
-        return from;
+    public Date getFromDate() {
+        return fromDate;
     }
 
-    public void setFrom(Date from) {
-        this.from = from;
+    public void setFromDate(Date fromDate) {
+        this.fromDate = fromDate;
     }
 
-    public Date getTo() {
-        return to;
+    public Date getToDate() {
+        return toDate;
     }
 
-    public void setTo(Date to) {
-        this.to = to;
+    public void setToDate(Date toDate) {
+        this.toDate = toDate;
     }
 
-    public Double getPrice() {
-        return price;
+    public Double getTotal() {
+        return total;
     }
 
-    public void setPrice(Double price) {
-        this.price = price;
+    public void setTotal(Double total) {
+        this.total = total;
     }
 
     public Boolean getPaid() {
