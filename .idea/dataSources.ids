@@ -30,9 +30,7 @@
       <column name="SECONDNAME" sqlType="VARCHAR" length="24" precision="0" nullable="false" jdbcType="12"/>
       <column name="CARREGISTRATION" sqlType="VARCHAR" length="10" precision="0" nullable="false" jdbcType="12"/>
       <column name="ADDRESS" sqlType="VARCHAR" length="200" precision="0" nullable="true" jdbcType="12"/>
-      <column name="COUNTY" sqlType="VARCHAR" length="25" precision="0" nullable="true" jdbcType="12"/>
       <column name="POSTCODE" sqlType="VARCHAR" length="10" precision="0" nullable="true" jdbcType="12"/>
-      <column name="DELETE" sqlType="BOOLEAN" length="1" precision="0" nullable="true" jdbcType="16"/>
       <primary-key name="SQL131022160130420" columns="CUSTOMERID"/>
       <exported-key name="BOOKING_FK1" table="BOOKING" schema="APP" catalog="" columns="CUSTOMERID"/>
       <exported-key name="SQL131101115530920" table="PAYMENT" schema="APP" catalog="" columns="CUSTOMERID"/>

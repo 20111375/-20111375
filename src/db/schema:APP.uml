@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>f9b6cfa8-09c1-4d3d-a28c-cfc288b48a0b.schema:APP</OriginalElement>
+  <nodes>
+    <node x="336.5" y="447.5">f9b6cfa8-09c1-4d3d-a28c-cfc288b48a0b.table:APP.PAYMENT</node>
+    <node x="45.5" y="426.0">f9b6cfa8-09c1-4d3d-a28c-cfc288b48a0b.table:APP.BOOKING</node>
+    <node x="596.5" y="0.0">f9b6cfa8-09c1-4d3d-a28c-cfc288b48a0b.table:APP.SEASON</node>
+    <node x="0.0" y="0.0">f9b6cfa8-09c1-4d3d-a28c-cfc288b48a0b.table:APP.PITCHTYPE</node>
+    <node x="601.3098591549297" y="135.0732394366196">f9b6cfa8-09c1-4d3d-a28c-cfc288b48a0b.table:APP.PRICES</node>
+    <node x="216.0" y="169.0">f9b6cfa8-09c1-4d3d-a28c-cfc288b48a0b.table:APP.CUSTOMER</node>
+    <node x="27.0" y="224.0">f9b6cfa8-09c1-4d3d-a28c-cfc288b48a0b.table:APP.PITCH</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="f9b6cfa8-09c1-4d3d-a28c-cfc288b48a0b.table:APP.BOOKING" target="f9b6cfa8-09c1-4d3d-a28c-cfc288b48a0b.table:APP.CUSTOMER">
+      <point x="66.0" y="-81.0" />
+      <point x="243.5" y="401.0" />
+      <point x="292.0" y="401.0" />
+      <point x="-76.0" y="103.5" />
+    </edge>
+    <edge source="f9b6cfa8-09c1-4d3d-a28c-cfc288b48a0b.table:APP.BOOKING" target="f9b6cfa8-09c1-4d3d-a28c-cfc288b48a0b.table:APP.PITCH">
+      <point x="-66.0" y="-81.0" />
+      <point x="0.0" y="48.5" />
+    </edge>
+    <edge source="f9b6cfa8-09c1-4d3d-a28c-cfc288b48a0b.table:APP.PAYMENT" target="f9b6cfa8-09c1-4d3d-a28c-cfc288b48a0b.table:APP.CUSTOMER">
+      <point x="0.0" y="-59.5" />
+      <point x="76.0" y="103.5" />
+    </edge>
+    <edge source="f9b6cfa8-09c1-4d3d-a28c-cfc288b48a0b.table:APP.PITCH" target="f9b6cfa8-09c1-4d3d-a28c-cfc288b48a0b.table:APP.PITCHTYPE">
+      <point x="0.0" y="-48.5" />
+      <point x="0.0" y="59.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.5838815789473685" x="411.5" y="294.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Key columns</Category>
+    <Category>Columns</Category>
+  </Categories>
+</Diagram>
+
