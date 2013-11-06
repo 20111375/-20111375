@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="gui.CustomerForm">
-  <grid id="27dc6" binding="MainWindow" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
-    <margin top="2" left="2" bottom="2" right="2"/>
+  <grid id="27dc6" binding="MainWindow" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="20" y="20" width="640" height="480"/>
+      <xy x="20" y="20" width="800" height="600"/>
     </constraints>
     <properties>
-      <minimumSize width="640" height="480"/>
+      <maximumSize width="800" height="600"/>
+      <minimumSize width="800" height="600"/>
+      <preferredSize width="800" height="600"/>
     </properties>
     <border type="none" title="Customer Table"/>
     <children>
@@ -14,7 +16,7 @@
         <margin top="2" left="2" bottom="2" right="2"/>
         <constraints>
           <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
-            <preferred-size width="100" height="200"/>
+            <preferred-size width="200" height="388"/>
           </grid>
         </constraints>
         <properties/>
@@ -23,7 +25,8 @@
           <component id="8b72f" class="javax.swing.JList" binding="list1" default-binding="true">
             <constraints>
               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
-                <preferred-size width="150" height="50"/>
+                <minimum-size width="100" height="200"/>
+                <preferred-size width="150" height="215"/>
               </grid>
             </constraints>
             <properties/>
@@ -34,13 +37,23 @@
         <rowspec value="center:d:noGrow"/>
         <rowspec value="top:3dlu:noGrow"/>
         <rowspec value="center:max(d;4px):noGrow"/>
+        <rowspec value="top:4dlu:noGrow"/>
+        <rowspec value="center:max(d;4px):noGrow"/>
+        <rowspec value="top:4dlu:noGrow"/>
+        <rowspec value="center:max(d;4px):noGrow"/>
+        <rowspec value="top:4dlu:noGrow"/>
+        <rowspec value="center:max(d;4px):noGrow"/>
+        <rowspec value="top:4dlu:noGrow"/>
+        <rowspec value="center:max(d;4px):noGrow"/>
+        <rowspec value="top:4dlu:noGrow"/>
+        <rowspec value="center:max(d;4px):noGrow"/>
         <colspec value="fill:d:noGrow"/>
         <colspec value="left:4dlu:noGrow"/>
         <colspec value="fill:d:grow"/>
         <constraints>
           <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
             <minimum-size width="100" height="200"/>
-            <preferred-size width="100" height="200"/>
+            <preferred-size width="100" height="288"/>
           </grid>
         </constraints>
         <properties/>
@@ -52,11 +65,12 @@
               <forms/>
             </constraints>
             <properties>
+              <horizontalAlignment value="4"/>
               <horizontalTextPosition value="4"/>
               <text value="First Name"/>
             </properties>
           </component>
-          <component id="6530a" class="javax.swing.JTextField" binding="textField1" default-binding="true">
+          <component id="6530a" class="javax.swing.JTextField" binding="FirstNameField">
             <constraints>
               <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="150" height="-1"/>
@@ -71,11 +85,12 @@
               <forms/>
             </constraints>
             <properties>
+              <horizontalAlignment value="4"/>
               <horizontalTextPosition value="4"/>
-              <text value="Second Name"/>
+              <text value=" Surname"/>
             </properties>
           </component>
-          <component id="e7cde" class="javax.swing.JTextField" binding="textField2" default-binding="true">
+          <component id="e7cde" class="javax.swing.JTextField" binding="SurnameField">
             <constraints>
               <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="150" height="-1"/>
@@ -83,6 +98,127 @@
               <forms defaultalign-horz="false"/>
             </constraints>
             <properties/>
+          </component>
+          <hspacer id="3882c">
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="3" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <forms defaultalign-horz="false"/>
+            </constraints>
+          </hspacer>
+          <component id="daf1a" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <forms/>
+            </constraints>
+            <properties>
+              <horizontalAlignment value="4"/>
+              <horizontalTextPosition value="4"/>
+              <text value="Address"/>
+            </properties>
+          </component>
+          <component id="d57c1" class="javax.swing.JTextField" binding="textField1" default-binding="true">
+            <constraints>
+              <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+              <forms defaultalign-horz="false"/>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="c5e55" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <forms/>
+            </constraints>
+            <properties>
+              <horizontalAlignment value="4"/>
+              <horizontalTextPosition value="4"/>
+              <text value="County"/>
+            </properties>
+          </component>
+          <component id="24acf" class="javax.swing.JTextField" binding="textField2" default-binding="true">
+            <constraints>
+              <grid row="8" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+              <forms defaultalign-horz="false"/>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="5c68c" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <forms/>
+            </constraints>
+            <properties>
+              <horizontalAlignment value="4"/>
+              <horizontalTextPosition value="4"/>
+              <text value="Postcode"/>
+            </properties>
+          </component>
+          <component id="1a854" class="javax.swing.JTextField" binding="textField3" default-binding="true">
+            <constraints>
+              <grid row="10" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+              <forms defaultalign-horz="false"/>
+            </constraints>
+            <properties>
+              <autoscrolls value="false"/>
+              <maximumSize width="100" height="20"/>
+              <minimumSize width="100" height="20"/>
+              <preferredSize width="100" height="20"/>
+            </properties>
+          </component>
+          <grid id="d6d0e" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="12" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <forms/>
+            </constraints>
+            <properties>
+              <maximumSize width="60" height="30"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="abd7e" class="javax.swing.JButton" binding="submitButton" default-binding="true">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="60" height="30"/>
+                    <maximum-size width="200" height="30"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Submit"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <grid id="97195" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="line" title="Booking Summary"/>
+        <children>
+          <component id="8a988" class="javax.swing.JList" binding="list2" default-binding="true">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <preferred-size width="281" height="50"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="3d9d5" class="javax.swing.JButton" binding="button1" default-binding="true">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="6" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Button"/>
+            </properties>
           </component>
         </children>
       </grid>
