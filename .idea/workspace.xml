@@ -7,10 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51f6022f-23b8-4194-a60c-864ebe07b5ce" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/gui/ReportBookingSummary.form" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/gui/ReportBookingSummary.java" />
-      <change type="MOVED" beforePath="C:\Users\Andrew\Documents\20111375\src\gui\test.form" afterPath="$PROJECT_DIR$/src/gui/FormBooking.form" />
-      <change type="MOVED" beforePath="C:\Users\Andrew\Documents\20111375\src\gui\test.java" afterPath="$PROJECT_DIR$/src/gui/FormBooking.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c10.dat" afterPath="$PROJECT_DIR$/database/seg0/c10.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c101.dat" afterPath="$PROJECT_DIR$/database/seg0/c101.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c111.dat" afterPath="$PROJECT_DIR$/database/seg0/c111.dat" />
@@ -104,6 +100,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/README_DO_NOT_TOUCH_FILES.txt" afterPath="$PROJECT_DIR$/database/README_DO_NOT_TOUCH_FILES.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/log/README_DO_NOT_TOUCH_FILES.txt" afterPath="$PROJECT_DIR$/database/log/README_DO_NOT_TOUCH_FILES.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/README_DO_NOT_TOUCH_FILES.txt" afterPath="$PROJECT_DIR$/database/seg0/README_DO_NOT_TOUCH_FILES.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/ReportBookingSummary.form" afterPath="$PROJECT_DIR$/src/gui/ReportBookingSummary.form" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/ReportBookingSummary.java" afterPath="$PROJECT_DIR$/src/gui/ReportBookingSummary.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/dbex.lck" afterPath="$PROJECT_DIR$/database/dbex.lck" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/service.properties" afterPath="$PROJECT_DIR$/database/service.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -291,6 +289,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -310,41 +309,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="camp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="20111375" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="camp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="20111375" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -691,7 +657,9 @@
       <workItem from="1383822862242" duration="673000" />
       <workItem from="1383824091409" duration="718000" />
       <workItem from="1383825398479" duration="7573000" />
-      <workItem from="1383834214578" duration="25000" />
+      <workItem from="1383834214578" duration="995000" />
+      <workItem from="1383836061623" duration="938000" />
+      <workItem from="1383839451137" duration="23000" />
     </task>
     <task id="LOCAL-00001" summary="amended header">
       <created>1383654964784</created>
@@ -721,11 +689,15 @@
       <created>1383833363462</created>
       <updated>1383833363462</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="UI changes (bug found in jGoodies).&#10;">
+      <created>1383834251590</created>
+      <updated>1383834251590</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11161000" />
+    <option name="totallyTimeSpent" value="13092000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -748,9 +720,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
     <editor active="false" />
     <layout>
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28175026" sideWeight="0.77196884" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32814237" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -770,8 +743,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901135" sideWeight="0.76567656" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22785486" sideWeight="0.77196884" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22803114" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28175026" sideWeight="0.77196884" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22752497" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Sequence" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32925472" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
@@ -816,6 +788,21 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/gui/ReportBookingSummary.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/FormBooking.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/ReportBookingSummary.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/CustomerForm.form">
       <provider selected="true" editor-type-id="ui-designer">
         <state />
@@ -922,12 +909,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/FormBooking.form">
+    <entry file="file://$PROJECT_DIR$/src/gui/ReportBookingSummary.form">
       <provider selected="true" editor-type-id="ui-designer">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/ReportBookingSummary.form">
+    <entry file="file://$PROJECT_DIR$/src/gui/FormBooking.form">
       <provider selected="true" editor-type-id="ui-designer">
         <state />
       </provider>
