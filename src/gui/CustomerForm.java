@@ -19,4 +19,12 @@ public class CustomerForm {
     private JButton submitButton;
     private JList list2;
     private JButton button1;
+
+    public void make() {
+        JFrame frame = new JFrame("CustomerForm");
+        frame.setContentPane(new CustomerForm().MainWindow);
+        frame.pack();
+        frame.setVisible(true);
+    }
 }
+

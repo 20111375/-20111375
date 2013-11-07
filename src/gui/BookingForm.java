@@ -24,9 +24,10 @@ public class BookingForm {
     private CalendarPane Cal;
     private JList list1;
     private JPanel CalendarPane;
+    private JButton button1;
 
     public BookingForm() {
-        Cal.addCalendarSelectionListener(new CalListen(){
+        Cal.addCalendarSelectionListener(new CalListen() {
             public void selectionChanged(CalendarEvent arg0) {
                 try {
                     System.out.println(arg0.getDate());
@@ -77,6 +78,19 @@ public class BookingForm {
                 }
             }
         });
+        button1.addActionListener(new ActionListener() {
+            /**
+             * Invoked when an action occurs.
+             */
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    new CustomerForm().make();
+                } catch (Exception e1) {
+                    e1.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+                }
+            }
+        });
     }
 
     public void run() {
@@ -85,9 +99,5 @@ public class BookingForm {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
-    }
-
-    private void createUIComponents() {
-        // TODO: place custom component creation code here
     }
 }

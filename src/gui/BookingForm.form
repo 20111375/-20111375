@@ -3,7 +3,7 @@
   <grid id="27dc6" binding="Panel" layout-manager="GridLayoutManager" row-count="4" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="2" left="2" bottom="2" right="2"/>
     <constraints>
-      <xy x="20" y="20" width="564" height="352"/>
+      <xy x="20" y="20" width="564" height="381"/>
     </constraints>
     <properties/>
     <border type="line" title="Camper App"/>
@@ -109,6 +109,14 @@
           </component>
         </children>
       </scrollpane>
+      <component id="bc5e6" class="javax.swing.JButton" binding="button1" default-binding="true">
+        <constraints>
+          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Button"/>
+        </properties>
+      </component>
     </children>
   </grid>
 </form>
