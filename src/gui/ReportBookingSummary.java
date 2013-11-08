@@ -14,4 +14,13 @@ public class ReportBookingSummary {
     private JTextPane textPane5;
     private JTextPane textPane6;
     private JTextPane textPane7;
+    private JTextPane textPane8;
+    private JTextPane textPane9;
+    private JTextPane textPane10;
+    private JTextPane textPane11;
+    private JTextPane textPane12;
+    private JButton button1;
+    private JTextPane textPane13;
+    private JButton button2;
+    private JButton button3;
 }
