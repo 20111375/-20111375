@@ -1,6 +1,7 @@
 package gui;
 
 import javax.swing.*;
+import java.awt.*;
 
 /**
  * Created by Andrew on 08/11/13.
@@ -14,4 +15,5 @@ public class FormSearch {
     private JTextField textField1;
     private JTextField textField2;
     private JTextField textField3;
+
 }

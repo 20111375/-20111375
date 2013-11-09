@@ -1,6 +1,8 @@
 package gui;
 
 import javax.swing.*;
+import javax.swing.border.TitledBorder;
+import java.awt.*;
 
 /**
  * Created with IntelliJ IDEA.
@@ -26,5 +28,6 @@ public class CustomerForm {
         frame.pack();
         frame.setVisible(true);
     }
+
 }
 

@@ -1,6 +1,7 @@
 package gui;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.*;
 
 public class DialogBookingSummary extends JDialog {
@@ -51,10 +52,15 @@ public class DialogBookingSummary extends JDialog {
         dispose();
     }
 
-    public static void main(String[] args) {
+    public void textReturned(){
+         System.out.println("you did it");
+    }
+
+    public void make() {
         DialogBookingSummary dialog = new DialogBookingSummary();
         dialog.pack();
         dialog.setVisible(true);
-        System.exit(0);
+        //System.exit(0);
     }
+
 }

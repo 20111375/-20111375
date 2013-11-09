@@ -11,10 +11,12 @@ import com.jcalendar.pane.calendar.CalendarPane;
 import javax.swing.*;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
+import java.awt.*;
 import java.awt.event.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Vector;
+
 public class BookingForm {
     private JPanel Panel;
     private JButton pitchListButton;
@@ -73,6 +75,9 @@ public class BookingForm {
                         textArea3.append(F.getFromDate().toString() + "\n");
                     }
                     list1.setListData(cac.toArray());
+                    DialogSearch tester = new DialogSearch();
+                    tester.setList(cac);
+                    tester.make();
                 } catch (Exception e) {
                     e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
                 }
@@ -100,4 +105,5 @@ public class BookingForm {
         frame.pack();
         frame.setVisible(true);
     }
+
 }

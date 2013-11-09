@@ -1,6 +1,7 @@
 package gui;
 
 import javax.swing.*;
+import java.awt.*;
 
 /**
  * Created by Andrew on 07/11/13.
@@ -23,4 +24,5 @@ public class ReportBookingSummary {
     private JTextPane textPane13;
     private JButton button2;
     private JButton button3;
+
 }

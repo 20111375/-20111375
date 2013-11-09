@@ -1,7 +1,10 @@
 package gui;
 
+import camp.Client;
+import camp.ClientList;
 import javax.swing.*;
 import java.awt.event.*;
+import java.util.List;
 
 public class DialogSearch extends JDialog {
     private JPanel contentPane;
@@ -15,6 +18,8 @@ public class DialogSearch extends JDialog {
     private JTextField textField2;
     private JTextField textField3;
     private JButton button1;
+
+    private List<Client> DialogClientList;
 
     public DialogSearch() {
         setContentPane(contentPane);
@@ -47,8 +52,17 @@ public class DialogSearch extends JDialog {
                 onCancel();
             }
         }, KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
+
+        try {
+            DialogClientList = new ClientList().Items();
+        } catch (Exception e) {
+            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+        }
     }
 
+    public void setList(List<Client> D){
+        this.DialogClientList = D;
+    }
     private void onOK() {
 // add your code here
         dispose();
@@ -59,10 +73,11 @@ public class DialogSearch extends JDialog {
         dispose();
     }
 
-    public static void main(String[] args) {
+    public void make() {
         DialogSearch dialog = new DialogSearch();
         dialog.pack();
         dialog.setVisible(true);
-        System.exit(0);
+        //System.exit(0);
     }
+
 }

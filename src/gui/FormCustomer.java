@@ -1,6 +1,7 @@
 package gui;
 
 import javax.swing.*;
+import java.awt.*;
 
 /**
  * Created by Andrew on 08/11/13.
@@ -17,4 +18,5 @@ public class FormCustomer {
     private JTextField textField6;
     private JTextPane textPane1;
     private JButton button3;
+
 }
