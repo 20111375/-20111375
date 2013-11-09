@@ -19,13 +19,11 @@ public class DialogSearch extends JDialog {
     private JTextField textField3;
     private JButton button1;
 
-    private List<Client> DialogClientList;
-
-    public DialogSearch() {
+    public DialogSearch(List<Client> D) {
         setContentPane(contentPane);
         setModal(true);
         getRootPane().setDefaultButton(buttonOK);
-
+        list1.setListData(D.toArray());
         buttonOK.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 onOK();
@@ -52,17 +50,8 @@ public class DialogSearch extends JDialog {
                 onCancel();
             }
         }, KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
-
-        try {
-            DialogClientList = new ClientList().Items();
-        } catch (Exception e) {
-            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
-        }
     }
 
-    public void setList(List<Client> D){
-        this.DialogClientList = D;
-    }
     private void onOK() {
 // add your code here
         dispose();
@@ -73,8 +62,9 @@ public class DialogSearch extends JDialog {
         dispose();
     }
 
-    public void make() {
-        DialogSearch dialog = new DialogSearch();
+    public void make(List<Client> D) {
+        DialogSearch dialog;
+        dialog = new DialogSearch(D);
         dialog.pack();
         dialog.setVisible(true);
         //System.exit(0);

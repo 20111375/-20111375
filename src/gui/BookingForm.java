@@ -75,9 +75,9 @@ public class BookingForm {
                         textArea3.append(F.getFromDate().toString() + "\n");
                     }
                     list1.setListData(cac.toArray());
-                    DialogSearch tester = new DialogSearch();
-                    tester.setList(cac);
-                    tester.make();
+                    DialogSearch tester = new DialogSearch(cac);
+                    //tester.setList(cac);
+                    tester.make(cac);
                 } catch (Exception e) {
                     e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
                 }
