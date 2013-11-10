@@ -1,7 +1,7 @@
 package gui;
 
 import camp.Client;
-import camp.ClientList;
+
 import javax.swing.*;
 import java.awt.event.*;
 import java.util.List;
@@ -10,20 +10,20 @@ public class DialogSearch extends JDialog {
     private JPanel contentPane;
     private JButton buttonOK;
     private JButton buttonCancel;
-    private JList list1;
+    private JList SearchResultList;
     private JRadioButton customerIDRadioButton;
     private JRadioButton postCodeRadioButton;
     private JRadioButton carRegRadioButton;
-    private JTextField textField1;
-    private JTextField textField2;
-    private JTextField textField3;
+    private JTextField CusomerID;
+    private JTextField PostCode;
+    private JTextField CarReg;
     private JButton searchButton;
 
     public DialogSearch(List<Client> D) {
         setContentPane(contentPane);
         setModal(true);
         getRootPane().setDefaultButton(buttonOK);
-        list1.setListData(D.toArray());
+        SearchResultList.setListData(D.toArray());
         buttonOK.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 onOK();
@@ -50,6 +50,42 @@ public class DialogSearch extends JDialog {
                 onCancel();
             }
         }, KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
+        searchButton.addActionListener(new ActionListener() {
+            /**
+             * Invoked when an action occurs.
+             */
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                //To change body of implemented methods use File | Settings | File Templates.
+            }
+        });
+        carRegRadioButton.addActionListener(new ActionListener() {
+            /**
+             * Invoked when an action occurs.
+             */
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                //To change body of implemented methods use File | Settings | File Templates.
+            }
+        });
+        postCodeRadioButton.addActionListener(new ActionListener() {
+            /**
+             * Invoked when an action occurs.
+             */
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                //To change body of implemented methods use File | Settings | File Templates.
+            }
+        });
+        customerIDRadioButton.addActionListener(new ActionListener() {
+            /**
+             * Invoked when an action occurs.
+             */
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                //To change body of implemented methods use File | Settings | File Templates.
+            }
+        });
     }
 
     private void onOK() {

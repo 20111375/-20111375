@@ -104,7 +104,7 @@
                       <text value="Car reg"/>
                     </properties>
                   </component>
-                  <component id="8256b" class="javax.swing.JTextField" binding="textField1" default-binding="true">
+                  <component id="8256b" class="javax.swing.JTextField" binding="CusomerID">
                     <constraints>
                       <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                         <preferred-size width="150" height="-1"/>
@@ -112,7 +112,7 @@
                     </constraints>
                     <properties/>
                   </component>
-                  <component id="3091" class="javax.swing.JTextField" binding="textField2" default-binding="true">
+                  <component id="3091" class="javax.swing.JTextField" binding="PostCode">
                     <constraints>
                       <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                         <preferred-size width="150" height="-1"/>
@@ -120,7 +120,7 @@
                     </constraints>
                     <properties/>
                   </component>
-                  <component id="58258" class="javax.swing.JTextField" binding="textField3" default-binding="true">
+                  <component id="58258" class="javax.swing.JTextField" binding="CarReg">
                     <constraints>
                       <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                         <preferred-size width="150" height="-1"/>
@@ -142,7 +142,7 @@
             <properties/>
             <border type="line" title="Search results"/>
             <children>
-              <component id="8fd7e" class="javax.swing.JList" binding="list1" default-binding="true">
+              <component id="8fd7e" class="javax.swing.JList" binding="SearchResultList">
                 <constraints>
                   <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
                     <preferred-size width="150" height="50"/>

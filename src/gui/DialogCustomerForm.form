@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="gui.DialogCustomerForm">
+  <grid id="cbd77" binding="contentPane" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="10" left="0" bottom="10" right="10"/>
+    <constraints>
+      <xy x="48" y="54" width="816" height="600"/>
+    </constraints>
+    <properties>
+      <minimumSize width="-1" height="-1"/>
+      <preferredSize width="800" height="600"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="94766" binding="DialogButtons" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="10"/>
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="5" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="50" height="25"/>
+          </grid>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <hspacer id="98af6">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="0" height="0"/>
+              </grid>
+            </constraints>
+          </hspacer>
+          <grid id="9538f" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="25"/>
+              </grid>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="e7465" class="javax.swing.JButton" binding="buttonOK">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="5" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="OK"/>
+                </properties>
+              </component>
+              <component id="5723f" class="javax.swing.JButton" binding="buttonCancel">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="5" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="42" height="29"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Cancel"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <grid id="e3588" binding="CustomerInfoPane" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="9" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="790" height="490"/>
+          </grid>
+        </constraints>
+        <properties/>
+        <border type="line" title="Customer information">
+          <color color="-16777216"/>
+        </border>
+        <children>
+          <grid id="3e716" binding="ListCustomersPane" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="770" height="200"/>
+              </grid>
+            </constraints>
+            <properties/>
+            <border type="line" title="Customer list">
+              <color color="-16777216"/>
+            </border>
+            <children>
+              <grid id="43e24" binding="ListPane" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="780" height="200"/>
+                  </grid>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="3f296" class="javax.swing.JList" binding="CustomerList">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="50"/>
+                      </grid>
+                    </constraints>
+                    <properties/>
+                  </component>
+                </children>
+              </grid>
+              <grid id="9f656" binding="CustomerButtons" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="50" height="25"/>
+                  </grid>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="1d84d" class="javax.swing.JButton" binding="EditButton">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="25" height="25"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <label value="Edit Customer"/>
+                      <text value="Edit Customer"/>
+                    </properties>
+                  </component>
+                  <component id="44f28" class="javax.swing.JButton" binding="DeleteButton">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="25" height="25"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <label value="Delete Customer"/>
+                      <text value="Delete Customer"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+          <grid id="be854" binding="DetailsPane" layout-manager="GridLayoutManager" row-count="7" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="790" height="100"/>
+              </grid>
+            </constraints>
+            <properties/>
+            <border type="line" title="Customer details">
+              <color color="-16777216"/>
+            </border>
+            <children>
+              <component id="6b5ee" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="80" height="16"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Forename"/>
+                </properties>
+              </component>
+              <component id="7251c" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="80" height="16"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Surname"/>
+                  <toolTipText value=""/>
+                </properties>
+              </component>
+              <component id="35f1d" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="80" height="16"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Customer ID"/>
+                </properties>
+              </component>
+              <component id="a5895" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="80" height="16"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Car reg"/>
+                </properties>
+              </component>
+              <component id="d8e05" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="80" height="16"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Address"/>
+                </properties>
+              </component>
+              <component id="6446d" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="80" height="16"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="County"/>
+                </properties>
+              </component>
+              <component id="a5204" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="80" height="16"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Post code"/>
+                </properties>
+              </component>
+              <component id="267e3" class="javax.swing.JTextArea" binding="Forename">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="665" height="25"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <minimumSize width="200" height="20"/>
+                  <preferredSize width="400" height="20"/>
+                </properties>
+              </component>
+              <component id="da175" class="javax.swing.JTextArea" binding="Surname">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="665" height="20"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <preferredSize width="400" height="20"/>
+                </properties>
+              </component>
+              <component id="d9653" class="javax.swing.JTextArea" binding="CustomerID">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="665" height="20"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <preferredSize width="400" height="20"/>
+                </properties>
+              </component>
+              <component id="d3b00" class="javax.swing.JTextArea" binding="CarReg">
+                <constraints>
+                  <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="665" height="20"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <preferredSize width="400" height="20"/>
+                </properties>
+              </component>
+              <component id="24367" class="javax.swing.JTextArea" binding="Address">
+                <constraints>
+                  <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="665" height="20"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <preferredSize width="400" height="20"/>
+                </properties>
+              </component>
+              <component id="149b3" class="javax.swing.JTextArea" binding="County">
+                <constraints>
+                  <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="665" height="20"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <preferredSize width="400" height="20"/>
+                </properties>
+              </component>
+              <component id="f0a9e" class="javax.swing.JTextArea" binding="PostCode">
+                <constraints>
+                  <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="665" height="20"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <preferredSize width="400" height="20"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>

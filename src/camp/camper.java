@@ -26,7 +26,7 @@ public class camper{
         EventQueue.invokeLater(new Runnable() {
             public void run() {
                 try {
-                    new BookingForm().run();
+                    new TestForm().run();
                 } catch (Exception e) {
                     e.printStackTrace();
                 }

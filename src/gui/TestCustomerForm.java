@@ -1,8 +1,6 @@
 package gui;
 
 import javax.swing.*;
-import javax.swing.border.TitledBorder;
-import java.awt.*;
 
 /**
  * Created with IntelliJ IDEA.
@@ -10,7 +8,7 @@ import java.awt.*;
  * Date: 05/11/2013
  * Time: 16:16
  */
-public class CustomerForm {
+public class TestCustomerForm {
     private JPanel MainWindow;
     private JList list1;
     private JTextField FirstNameField;
@@ -23,8 +21,8 @@ public class CustomerForm {
     private JButton button1;
 
     public void make() {
-        JFrame frame = new JFrame("CustomerForm");
-        frame.setContentPane(new CustomerForm().MainWindow);
+        JFrame frame = new JFrame("TestCustomerForm");
+        frame.setContentPane(new TestCustomerForm().MainWindow);
         frame.pack();
         frame.setVisible(true);
     }

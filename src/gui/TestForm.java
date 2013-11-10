@@ -11,13 +11,11 @@ import com.jcalendar.pane.calendar.CalendarPane;
 import javax.swing.*;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
-import java.awt.*;
 import java.awt.event.*;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Vector;
 
-public class BookingForm {
+public class TestForm {
     private JPanel Panel;
     private JButton pitchListButton;
     private JTextArea textArea1;
@@ -28,7 +26,7 @@ public class BookingForm {
     private JPanel CalendarPane;
     private JButton button1;
 
-    public BookingForm() {
+    public TestForm() {
         Cal.addCalendarSelectionListener(new CalListen() {
             public void selectionChanged(CalendarEvent arg0) {
                 try {
@@ -90,7 +88,7 @@ public class BookingForm {
             @Override
             public void actionPerformed(ActionEvent e) {
                 try {
-                    new CustomerForm().make();
+                    new TestCustomerForm().make();
                 } catch (Exception e1) {
                     e1.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
                 }
@@ -99,8 +97,8 @@ public class BookingForm {
     }
 
     public void run() {
-        JFrame frame = new JFrame("BookingForm");
-        frame.setContentPane(new BookingForm().Panel);
+        JFrame frame = new JFrame("TestForm");
+        frame.setContentPane(new TestForm().Panel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
