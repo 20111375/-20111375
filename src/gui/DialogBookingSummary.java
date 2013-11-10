@@ -1,16 +1,32 @@
 package gui;
 
 import javax.swing.*;
-import java.awt.*;
 import java.awt.event.*;
 
 public class DialogBookingSummary extends JDialog {
-    private JPanel contentPane;
+    private JPanel BookingSummary;
     private JButton buttonOK;
     private JButton buttonCancel;
+    private JPanel Buttons;
+    private JPanel ButtonPanel;
+    private JPanel Details;
+    private JTextArea textArea1;
+    private JTextArea textArea2;
+    private JTextArea textArea3;
+    private JTextArea textArea4;
+    private JTextArea textArea5;
+    private JTextArea textArea6;
+    private JTextArea textArea7;
+    private JTextArea textArea8;
+    private JTextArea textArea9;
+    private JTextArea textArea10;
+    private JTextArea textArea11;
+    private JTextArea textArea12;
+    private JCheckBox email;
+    private JPanel Checkboxes;
 
     public DialogBookingSummary() {
-        setContentPane(contentPane);
+        setContentPane(BookingSummary);
         setModal(true);
         getRootPane().setDefaultButton(buttonOK);
 
@@ -35,7 +51,7 @@ public class DialogBookingSummary extends JDialog {
         });
 
 // call onCancel() on ESCAPE
-        contentPane.registerKeyboardAction(new ActionListener() {
+        BookingSummary.registerKeyboardAction(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 onCancel();
             }

@@ -11,13 +11,13 @@ public class DialogSearch extends JDialog {
     private JButton buttonOK;
     private JButton buttonCancel;
     private JList list1;
-    private JRadioButton radioButton1;
-    private JRadioButton radioButton2;
-    private JRadioButton radioButton3;
+    private JRadioButton customerIDRadioButton;
+    private JRadioButton postCodeRadioButton;
+    private JRadioButton carRegRadioButton;
     private JTextField textField1;
     private JTextField textField2;
     private JTextField textField3;
-    private JButton button1;
+    private JButton searchButton;
 
     public DialogSearch(List<Client> D) {
         setContentPane(contentPane);

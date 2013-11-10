@@ -7,7 +7,7 @@ import java.awt.*;
  * Created by Andrew on 08/11/13.
  */
 public class ReportDailyPitchList {
-    private JList list1;
-    private JButton button1;
+    private JButton printButton;
+    private JList PitchSearch;
 
 }
