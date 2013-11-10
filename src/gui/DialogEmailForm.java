@@ -7,7 +7,16 @@ public class DialogEmailForm extends JDialog {
     private JPanel contentPane;
     private JButton buttonOK;
     private JButton buttonCancel;
-    private JTextArea emaiAddress;
+
+    public JTextArea getEmailAddress() {
+        return emailAddress;
+    }
+
+    public void setEmailAddress(JTextArea emailAddress) {
+        this.emailAddress = emailAddress;
+    }
+
+    private JTextArea emailAddress;
     private JCheckBox copyToOfficeCheckBox;
 
     public DialogEmailForm() {

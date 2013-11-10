@@ -52,9 +52,15 @@ where exists(
 )
 ORDER BY APP.CUSTOMER.CARREGISTRATION  DESC;
 
-
-
 This tests date range (StartDate1 <= EndDate2) and (StartDate2 <= EndDate1)
+
+This insert into the customer table:
+insert into app.CUSTOMER (FIRSTNAME, SECONDNAME, CARREGISTRATION, ADDRESS, COUNTY, POSTCODE, "DELETE")
+values ();
+
+This inserts into the booking table:
+insert into app.booking (PITCHID, FROMDATE, TODATE, PAID, TOTAL)
+values ();
  */
 public class Search<E> extends GenericList{
     protected List<E> results;

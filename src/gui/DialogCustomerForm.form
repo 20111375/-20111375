@@ -154,7 +154,7 @@
             <children>
               <component id="6b5ee" class="javax.swing.JLabel">
                 <constraints>
-                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
                     <preferred-size width="80" height="16"/>
                   </grid>
                 </constraints>
@@ -164,23 +164,13 @@
               </component>
               <component id="7251c" class="javax.swing.JLabel">
                 <constraints>
-                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
                     <preferred-size width="80" height="16"/>
                   </grid>
                 </constraints>
                 <properties>
                   <text value="Surname"/>
                   <toolTipText value=""/>
-                </properties>
-              </component>
-              <component id="35f1d" class="javax.swing.JLabel">
-                <constraints>
-                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
-                    <preferred-size width="80" height="16"/>
-                  </grid>
-                </constraints>
-                <properties>
-                  <text value="Customer ID"/>
                 </properties>
               </component>
               <component id="a5895" class="javax.swing.JLabel">
@@ -225,8 +215,8 @@
               </component>
               <component id="267e3" class="javax.swing.JTextArea" binding="Forename">
                 <constraints>
-                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
-                    <preferred-size width="665" height="25"/>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="665" height="20"/>
                   </grid>
                 </constraints>
                 <properties>
@@ -235,16 +225,6 @@
                 </properties>
               </component>
               <component id="da175" class="javax.swing.JTextArea" binding="Surname">
-                <constraints>
-                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
-                    <preferred-size width="665" height="20"/>
-                  </grid>
-                </constraints>
-                <properties>
-                  <preferredSize width="400" height="20"/>
-                </properties>
-              </component>
-              <component id="d9653" class="javax.swing.JTextArea" binding="CustomerID">
                 <constraints>
                   <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
                     <preferred-size width="665" height="20"/>
@@ -291,6 +271,27 @@
                   </grid>
                 </constraints>
                 <properties>
+                  <preferredSize width="400" height="20"/>
+                </properties>
+              </component>
+              <component id="35f1d" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="80" height="16"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Customer ID"/>
+                </properties>
+              </component>
+              <component id="d9653" class="javax.swing.JTextArea" binding="CustomerID">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="80" height="20"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <editable value="false"/>
                   <preferredSize width="400" height="20"/>
                 </properties>
               </component>

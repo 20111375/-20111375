@@ -20,6 +20,23 @@ public class FormBooking {
     private JButton FindCustomerButton;
     private JButton NewCustomerButton;
     private JTextPane CustomerDetails;
+
+    public JTextPane getPitchDetails() {
+        return PitchDetails;
+    }
+
+    public void setPitchDetails(JTextPane pitchDetails) {
+        PitchDetails = pitchDetails;
+    }
+
+    public JTextPane getCustomerDetails() {
+        return CustomerDetails;
+    }
+
+    public void setCustomerDetails(JTextPane customerDetails) {
+        CustomerDetails = customerDetails;
+    }
+
     private JTextPane PitchDetails;
     private JButton ConfirmButton;
     private JComboBox EndDate;

@@ -14,8 +14,33 @@ public class DialogSearch extends JDialog {
     private JRadioButton customerIDRadioButton;
     private JRadioButton postCodeRadioButton;
     private JRadioButton carRegRadioButton;
-    private JTextField CusomerID;
+    private JTextField CustomerID;
     private JTextField PostCode;
+
+    public JTextField getCarReg() {
+        return CarReg;
+    }
+
+    public void setCarReg(JTextField carReg) {
+        CarReg = carReg;
+    }
+
+    public JTextField getCustomerID() {
+        return CustomerID;
+    }
+
+    public void setCustomerID(JTextField customerID) {
+        CustomerID = customerID;
+    }
+
+    public JTextField getPostCode() {
+        return PostCode;
+    }
+
+    public void setPostCode(JTextField postCode) {
+        PostCode = postCode;
+    }
+
     private JTextField CarReg;
     private JButton searchButton;
 

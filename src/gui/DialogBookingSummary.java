@@ -12,6 +12,103 @@ public class DialogBookingSummary extends JDialog {
     private JPanel Details;
     private JTextArea BookingForeName;
     private JTextArea BookingSurname;
+
+    public JTextArea getBookingForeName() {
+        return BookingForeName;
+    }
+
+    public void setBookingForeName(JTextArea bookingForeName) {
+        BookingForeName = bookingForeName;
+    }
+
+    public JTextArea getBookingSurname() {
+        return BookingSurname;
+    }
+
+    public void setBookingSurname(JTextArea bookingSurname) {
+        BookingSurname = bookingSurname;
+    }
+
+    public JTextArea getBookingCustomerID() {
+        return BookingCustomerID;
+    }
+
+    public void setBookingCustomerID(JTextArea bookingCustomerID) {
+        BookingCustomerID = bookingCustomerID;
+    }
+
+    public JTextArea getBookingCarReg() {
+        return BookingCarReg;
+    }
+
+    public void setBookingCarReg(JTextArea bookingCarReg) {
+        BookingCarReg = bookingCarReg;
+    }
+
+    public JTextArea getBookingCounty() {
+        return BookingCounty;
+    }
+
+    public void setBookingCounty(JTextArea bookingCounty) {
+        BookingCounty = bookingCounty;
+    }
+
+    public JTextArea getBookingPostCode() {
+        return BookingPostCode;
+    }
+
+    public void setBookingPostCode(JTextArea bookingPostCode) {
+        BookingPostCode = bookingPostCode;
+    }
+
+    public JTextArea getBookingPitchName() {
+        return BookingPitchName;
+    }
+
+    public void setBookingPitchName(JTextArea bookingPitchName) {
+        BookingPitchName = bookingPitchName;
+    }
+
+    public JTextArea getBookingPitchType() {
+        return BookingPitchType;
+    }
+
+    public void setBookingPitchType(JTextArea bookingPitchType) {
+        BookingPitchType = bookingPitchType;
+    }
+
+    public JTextArea getBookingStartDate() {
+        return BookingStartDate;
+    }
+
+    public void setBookingStartDate(JTextArea bookingStartDate) {
+        BookingStartDate = bookingStartDate;
+    }
+
+    public JTextArea getBookingEndDate() {
+        return BookingEndDate;
+    }
+
+    public void setBookingEndDate(JTextArea bookingEndDate) {
+        BookingEndDate = bookingEndDate;
+    }
+
+    public JTextArea getBookingCostTotal() {
+        return BookingCostTotal;
+    }
+
+    public void setBookingCostTotal(JTextArea bookingCostTotal) {
+        BookingCostTotal = bookingCostTotal;
+    }
+
+    public JTextArea getBookingAddress() {
+        return BookingAddress;
+    }
+
+    public void setBookingAddress(JTextArea bookingAddress) {
+        BookingAddress = bookingAddress;
+    }
+
     private JTextArea BookingCustomerID;
     private JTextArea BookingCarReg;
     private JTextArea BookingCounty;
@@ -21,6 +118,7 @@ public class DialogBookingSummary extends JDialog {
     private JTextArea BookingStartDate;
     private JTextArea BookingEndDate;
     private JTextArea BookingCostTotal;
+    private JTextArea BookingAddress;
     private JCheckBox email;
     private JPanel Checkboxes;
     private JCheckBox PrintIt;
@@ -35,7 +133,6 @@ public class DialogBookingSummary extends JDialog {
     private JLabel PitchID;
     private JLabel StartDate;
     private JLabel Cost;
-    private JTextArea BookingAddress;
 
     public DialogBookingSummary() {
         setContentPane(BookingSummary);

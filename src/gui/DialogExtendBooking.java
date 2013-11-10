@@ -8,9 +8,34 @@ public class DialogExtendBooking extends JDialog {
     private JButton buttonOK;
     private JButton buttonCancel;
     private JRadioButton customerIDRadioButton;
-    private JTextArea ID;
     private JRadioButton postCodeRadioButton;
     private JRadioButton carRegRadioButton;
+    private JTextArea ID;
+
+    public JTextArea getCarReg() {
+        return CarReg;
+    }
+
+    public void setCarReg(JTextArea carReg) {
+        CarReg = carReg;
+    }
+
+    public JTextArea getID() {
+        return ID;
+    }
+
+    public void setID(JTextArea ID) {
+        this.ID = ID;
+    }
+
+    public JTextArea getPostCode() {
+        return PostCode;
+    }
+
+    public void setPostCode(JTextArea postCode) {
+        PostCode = postCode;
+    }
+
     private JTextArea PostCode;
     private JTextArea CarReg;
 

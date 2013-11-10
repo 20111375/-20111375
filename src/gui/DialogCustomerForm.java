@@ -1,6 +1,8 @@
 package gui;
 
 import javax.swing.*;
+import javax.swing.event.ListSelectionEvent;
+import javax.swing.event.ListSelectionListener;
 import java.awt.event.*;
 
 public class DialogCustomerForm extends JDialog {
@@ -11,6 +13,63 @@ public class DialogCustomerForm extends JDialog {
     private JButton DeleteButton;
     private JTextArea Forename;
     private JTextArea Surname;
+
+    public JTextArea getPostCode() {
+        return PostCode;
+    }
+
+    public void setPostCode(JTextArea postCode) {
+        PostCode = postCode;
+    }
+
+    public JTextArea getForename() {
+        return Forename;
+    }
+
+    public void setForename(JTextArea forename) {
+        Forename = forename;
+    }
+
+    public JTextArea getSurname() {
+        return Surname;
+    }
+
+    public void setSurname(JTextArea surname) {
+        Surname = surname;
+    }
+
+    public JTextArea getCustomerID() {
+        return CustomerID;
+    }
+
+    public void setCustomerID(JTextArea customerID) {
+        CustomerID = customerID;
+    }
+
+    public JTextArea getCarReg() {
+        return CarReg;
+    }
+
+    public void setCarReg(JTextArea carReg) {
+        CarReg = carReg;
+    }
+
+    public JTextArea getAddress() {
+        return Address;
+    }
+
+    public void setAddress(JTextArea address) {
+        Address = address;
+    }
+
+    public JTextArea getCounty() {
+        return County;
+    }
+
+    public void setCounty(JTextArea county) {
+        County = county;
+    }
+
     private JTextArea CustomerID;
     private JTextArea CarReg;
     private JTextArea Address;
@@ -64,6 +123,17 @@ public class DialogCustomerForm extends JDialog {
         EditButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                //To change body of implemented methods use File | Settings | File Templates.
+            }
+        });
+        CustomerList.addListSelectionListener(new ListSelectionListener() {
+            /**
+             * Called whenever the value of the selection changes.
+             *
+             * @param e the event that characterizes the change.
+             */
+            @Override
+            public void valueChanged(ListSelectionEvent e) {
                 //To change body of implemented methods use File | Settings | File Templates.
             }
         });
