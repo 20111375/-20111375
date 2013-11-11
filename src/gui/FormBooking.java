@@ -3,6 +3,8 @@ package gui;
 import com.jcalendar.event.CalendarEvent;
 import com.jcalendar.pane.calendar.CalendarPane;
 import javax.swing.*;
+import javax.swing.event.ListSelectionEvent;
+import javax.swing.event.ListSelectionListener;
 import java.awt.event.*;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -137,15 +139,11 @@ public class FormBooking {
                     System.out.println("This is the start date: " + getStartDate());
                     System.out.println("This is the end date: " + tempTime.toString());
 
-                    ArrayList<String[]> myList = new ArrayList<String[]>();
                     List<Pitch> mac = null;
                     try {
                         mac = new PitchList().Items(getStartDate(),tempTime.toString(),getTypeName());
                     } catch (Exception e1) {
                         e1.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
-                    }
-                    for (Pitch D : mac) {
-                        myList.add(D.getTypeName());
                     }
                     SearchResultList.setListData(mac.toArray());
 
@@ -188,6 +186,18 @@ public class FormBooking {
             }
         });
 
+        SearchResultList.addListSelectionListener(new ListSelectionListener() {
+            /**
+             * Called whenever the value of the selection changes.
+             *
+             * @param e the event that characterizes the change.
+             */
+            @Override
+            public void valueChanged(ListSelectionEvent e) {
+                //To change body of implemented methods use File | Settings | File Templates.
+
+            }
+        });
     }
 
     public void run() {
