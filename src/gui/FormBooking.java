@@ -6,8 +6,12 @@ import javax.swing.*;
 import java.awt.event.*;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Calendar;
-import java.util.Date;
+import java.util.List;
+
+import camp.*;
 
 /**
  * Created by Andrew on 07/11/13.
@@ -132,6 +136,19 @@ public class FormBooking {
                     System.out.println("This is the type: " + getTypeName());
                     System.out.println("This is the start date: " + getStartDate());
                     System.out.println("This is the end date: " + tempTime.toString());
+
+                    ArrayList<String[]> myList = new ArrayList<String[]>();
+                    List<Pitch> mac = null;
+                    try {
+                        mac = new PitchList().Items(getStartDate(),tempTime.toString(),getTypeName());
+                    } catch (Exception e1) {
+                        e1.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+                    }
+                    for (Pitch D : mac) {
+                        myList.add(D.getTypeName());
+                    }
+                    SearchResultList.setListData(mac.toArray());
+
                 }
                 //To change body of implemented methods use File | Settings | File Templates.
                 // query db with start date, end date and pitch type

@@ -34,15 +34,15 @@ public class PitchList  extends GenericList<Pitch>{
             items = new ArrayList<Pitch>();
             try {
                 String SQL = "select app.PITCH.PITCHID, app.PITCH.PITCHNAME from app.PITCH join PITCHTYPE on app.pitch.pitchtypeid  = app.PITCHTYPE.pitchtypeid\n" +
-                        "and ("+"Name"+" = TRUE)\n" +
+                        "and ("+Name+" = TRUE)\n" +
                         "where not exists(\n" +
                         "    select * from app.BOOKING\n" +
                         "    where app.BOOKING.PITCHID = app.PITCH.PITCHID\n" +
-                        "          and '"+"Start"+"' <= App.booking.FROMDATE and 'End' <= APP.booking.TODATE\n" +
-                        ");";
+                        "          and '"+Start+"' <= App.booking.FROMDATE and '"+End+"' <= APP.booking.TODATE\n" +
+                        ")";
                 ResultSet resultset = new connection().connect(SQL);
                 while(resultset.next()){
-                    int[] type = {resultset.getInt("CARAVAN"),resultset.getInt("MOTORHOME"),resultset.getInt("TENT")};
+                    int[] type = {1,2,3};
                     items.add(new Pitch(resultset.getString("PITCHNAME"),resultset.getInt("PITCHTYPEID"), type));
                 }
             } catch (Exception e) {
