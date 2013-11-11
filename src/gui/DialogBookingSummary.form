@@ -97,7 +97,9 @@
                     <preferred-size width="300" height="20"/>
                   </grid>
                 </constraints>
-                <properties/>
+                <properties>
+                  <editable value="false"/>
+                </properties>
               </component>
               <component id="a9da" class="javax.swing.JLabel" binding="SurName">
                 <constraints>
@@ -115,7 +117,9 @@
                     <preferred-size width="300" height="20"/>
                   </grid>
                 </constraints>
-                <properties/>
+                <properties>
+                  <editable value="false"/>
+                </properties>
               </component>
               <component id="5f479" class="javax.swing.JLabel" binding="CustomerID">
                 <constraints>
@@ -174,7 +178,9 @@
                     <preferred-size width="300" height="20"/>
                   </grid>
                 </constraints>
-                <properties/>
+                <properties>
+                  <editable value="false"/>
+                </properties>
               </component>
               <component id="c2b35" class="javax.swing.JTextArea" binding="BookingCarReg">
                 <constraints>
@@ -182,7 +188,9 @@
                     <preferred-size width="300" height="20"/>
                   </grid>
                 </constraints>
-                <properties/>
+                <properties>
+                  <editable value="false"/>
+                </properties>
               </component>
               <component id="f14" class="javax.swing.JTextArea" binding="BookingAddress">
                 <constraints>
@@ -190,7 +198,9 @@
                     <preferred-size width="300" height="20"/>
                   </grid>
                 </constraints>
-                <properties/>
+                <properties>
+                  <editable value="false"/>
+                </properties>
               </component>
               <component id="bd394" class="javax.swing.JTextArea" binding="BookingCounty">
                 <constraints>
@@ -198,7 +208,9 @@
                     <preferred-size width="300" height="20"/>
                   </grid>
                 </constraints>
-                <properties/>
+                <properties>
+                  <editable value="false"/>
+                </properties>
               </component>
               <component id="af903" class="javax.swing.JTextArea" binding="BookingPostCode">
                 <constraints>
@@ -206,7 +218,9 @@
                     <preferred-size width="300" height="20"/>
                   </grid>
                 </constraints>
-                <properties/>
+                <properties>
+                  <editable value="false"/>
+                </properties>
               </component>
             </children>
           </grid>
@@ -276,7 +290,9 @@
                     <preferred-size width="300" height="20"/>
                   </grid>
                 </constraints>
-                <properties/>
+                <properties>
+                  <editable value="false"/>
+                </properties>
               </component>
               <component id="fa3b0" class="javax.swing.JTextArea" binding="BookingStartDate">
                 <constraints>
@@ -284,7 +300,9 @@
                     <preferred-size width="300" height="20"/>
                   </grid>
                 </constraints>
-                <properties/>
+                <properties>
+                  <editable value="false"/>
+                </properties>
               </component>
               <component id="7ec54" class="javax.swing.JTextArea" binding="BookingEndDate">
                 <constraints>
@@ -292,7 +310,9 @@
                     <preferred-size width="300" height="20"/>
                   </grid>
                 </constraints>
-                <properties/>
+                <properties>
+                  <editable value="false"/>
+                </properties>
               </component>
               <component id="64d6" class="javax.swing.JTextArea" binding="BookingCostTotal">
                 <constraints>
@@ -300,7 +320,9 @@
                     <preferred-size width="300" height="20"/>
                   </grid>
                 </constraints>
-                <properties/>
+                <properties>
+                  <editable value="false"/>
+                </properties>
               </component>
               <component id="9b1e" class="javax.swing.JTextArea" binding="BookingPitchName">
                 <constraints>
@@ -308,7 +330,9 @@
                     <preferred-size width="300" height="20"/>
                   </grid>
                 </constraints>
-                <properties/>
+                <properties>
+                  <editable value="false"/>
+                </properties>
               </component>
             </children>
           </grid>

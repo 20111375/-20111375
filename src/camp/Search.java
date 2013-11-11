@@ -30,6 +30,15 @@ select app.PITCH.PITCHID from app.PITCH
    and '2013-01-01' BETWEEN App.booking.FROMDATE and APP.booking.TODATE
   );
 
+This query returns free pitches of a certain type:
+select app.PITCH.PITCHID, app.PITCH.PITCHNAME from app.PITCH join PITCHTYPE on app.pitch.pitchtypeid  = app.PITCHTYPE.pitchtypeid
+and (CARAVAN = TRUE) and (MOTORHOME = TRUE) and (TENT = FALSE)
+where not exists(
+    select * from app.BOOKING
+    where app.BOOKING.PITCHID = app.PITCH.PITCHID
+          and '2013-01-16' <= App.booking.FROMDATE and '2013-01-17' <= APP.booking.TODATE
+);
+
 This query returns available pitches of a specific type:
 select app.PITCH.PITCHID from app.PITCH
 where not exists(

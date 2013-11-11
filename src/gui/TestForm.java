@@ -12,7 +12,9 @@ import javax.swing.*;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import java.awt.event.*;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class TestForm {
@@ -25,7 +27,7 @@ public class TestForm {
     private JList list1;
     private JPanel CalendarPane;
     private JButton button1;
-
+    private SimpleDateFormat dF = new SimpleDateFormat("yyyy-MM-dd");
     public TestForm() {
         Cal.addCalendarSelectionListener(new CalListen() {
             public void selectionChanged(CalendarEvent arg0) {
@@ -36,27 +38,22 @@ public class TestForm {
                 }
             }
         });
-        list1.addListSelectionListener(new ListSelectionListener() {
-            @Override
-            public void valueChanged(ListSelectionEvent e) {
-                System.out.println("selected");
-                //To change body of implemented methods use File | Settings | File Templates.
-            }
-        });
+
         pitchListButton.addMouseListener(new MouseAdapter() {
             public void mousePressed(MouseEvent arg0) {
                 try {
                     ArrayList<String> myList = new ArrayList<String>();
+                    ArrayList<String[]> myListToo = new ArrayList<String[]>();
                     List<Pitch> mac = new PitchList().Items();
                     List<Client> cac = new ClientList().Items();
                     List<Booking> tac = new BookingList().Items();
 
                     for (Pitch D : mac) {
-                        myList.add(D.getPitchName());
+                        myListToo.add(D.getTypeName());
                         if (textArea1.getLineCount() > mac.size()) {
                             textArea1.setText(null);
                         }
-                        textArea1.append(D.getPitchName() + "\n");
+                        textArea1.append(Arrays.toString(D.getTypeName()) + "\n");
                     }
                     for (Client E : cac) {
                         myList.add(E.getFirstName());
@@ -70,7 +67,7 @@ public class TestForm {
                         if (textArea3.getLineCount() > tac.size()) {
                             textArea3.setText(null);
                         }
-                        textArea3.append(F.getFromDate().toString() + "\n");
+                        textArea3.append(dF.format(F.getFromDate()) + "\n");
                     }
                     list1.setListData(cac.toArray());
                     DialogSearch tester = new DialogSearch(cac);

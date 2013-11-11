@@ -7,23 +7,25 @@
 
 package camp;
 
-public class Pitch extends Items{
+public class Pitch extends Items {
 
     private String pitchName;
     private Integer pitchType;
-    private String[] TypeID = {"CARAVAN", "TENT", "MOTORHOME"};
+    private int[] TypeID;
+    private String TypeName[] = {"CARAVAN", "MOTORHOME", "TENT"};
 
     public Pitch() {
 
     }
-    
+
     public Pitch(String pitchName) {
         this.pitchName = pitchName;
     }
 
-    public Pitch(String pitchName, int pitchType) {
+    public Pitch(String pitchName, int pitchType, int[] typeID) {
         this.pitchName = pitchName;
         this.pitchType = pitchType;
+        this.TypeID = typeID;
     }
 
     public Integer getPitchType() {
@@ -41,9 +43,24 @@ public class Pitch extends Items{
     public void setPitchName(String pitchName) {
         this.pitchName = pitchName;
     }
+
+    public int[] getTypeID() {
+        return TypeID;
+    }
+
+    public String[] getTypeName() {
+        for(int i = 0; i < this.TypeID.length; i++){
+            if(this.TypeID[i] != 1){
+                this.TypeName[i] = " ";
+            }
+        }
+      return TypeName;
+    }
+
     @Override
-    public String toString(){
+    public String toString() {
 
         return this.getPitchName();
     }
+
 }

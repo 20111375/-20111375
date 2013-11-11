@@ -17,7 +17,7 @@ public class connection {
 	public ResultSet connect(String SQLString) {
 		try {
 			Class.forName("org.apache.derby.jdbc.EmbeddedDriver").newInstance();
-			Connection connect = DriverManager.getConnection("jdbc:derby:../~20111375/database");
+			Connection connect = DriverManager.getConnection("jdbc:derby:../20111375/database");
             //Connection connect = DriverManager.getConnection("jdbc:derby:../20111375/database");
 			PreparedStatement statement = connect.prepareStatement(SQLString);
 			resultset = statement.executeQuery();

@@ -7,11 +7,8 @@
 package camp;
 
 import db.*;
-
 import java.sql.ResultSet;
 import java.util.ArrayList;
-import java.util.Date;
-import java.text.SimpleDateFormat;
 import java.util.List;
 
 public class BookingList extends GenericList<Booking> {
