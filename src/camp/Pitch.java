@@ -51,7 +51,7 @@ public class Pitch extends Items {
     public String[] getTypeName() {
         for (int i = 0; i < this.TypeID.length; i++) {
             if (this.TypeID[i] != 1) {
-                this.TypeName[i] = " ";
+                this.TypeName[i] = null;
             }
         }
         return TypeName;

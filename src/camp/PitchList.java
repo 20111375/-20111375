@@ -58,7 +58,7 @@ public class PitchList  extends GenericList<Pitch>{
         if(items == null){
             items = new ArrayList<Pitch>();
             try {
-                String SQL = "SELECT * FROM PITCH WHERE PITCHNAME = '"+Name+"'";
+                String SQL = "SELECT * FROM PITCH,PITCHTYPE WHERE PITCHNAME = '"+Name+"'";
                 ResultSet resultset = new connection().connect(SQL);
                 while(resultset.next()){
                     int[] type = {resultset.getInt("CARAVAN"),resultset.getInt("MOTORHOME"),resultset.getInt("TENT")};

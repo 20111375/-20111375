@@ -8,7 +8,6 @@ import javax.swing.event.ListSelectionListener;
 import java.awt.event.*;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Arrays;
 import java.util.Calendar;
 import java.util.List;
 
@@ -37,7 +36,7 @@ public class FormBooking {
     private String StartDate = null;
     private int FinishDate;
     private String PitchSelected;
-
+    private List<Pitch> mac = null;
     public String getPitchSelected() {
         return PitchSelected;
     }
@@ -79,23 +78,6 @@ public class FormBooking {
 
     public void setTypeName(String typeName) {
         TypeName = typeName;
-    }
-
-
-    public JTextArea getPitchDetails() {
-        return PitchDetails;
-    }
-
-    public void setPitchDetails(JTextArea pitchDetails) {
-        PitchDetails = pitchDetails;
-    }
-
-    public JTextArea getCustomerDetails() {
-        return CustomerDetails;
-    }
-
-    public void setCustomerDetails(JTextArea customerDetails) {
-        CustomerDetails = customerDetails;
     }
 
     public FormBooking() {
@@ -143,11 +125,13 @@ public class FormBooking {
             public void actionPerformed(ActionEvent e) {
                 if(StartDate != null && FinishDate != 0 && TypeName != null){
                     String tempTime = makeFinishDate(getFinishDate(), getStartDate());
+
+                    /*
                     System.out.println("This is the type: " + getTypeName());
                     System.out.println("This is the start date: " + getStartDate());
                     System.out.println("This is the end date: " + tempTime.toString());
+                    */
 
-                    List<Pitch> mac = null;
                     try {
                         mac = new PitchList().Items(getStartDate(),tempTime.toString(),getTypeName());
                     } catch (Exception e1) {
@@ -205,6 +189,14 @@ public class FormBooking {
                 //To change body of implemented methods use File | Settings | File Templates.
                 if (e.getValueIsAdjusting() == true) {
                     setPitchSelected(SearchResultList.getSelectedValue().toString());
+                    PitchDetails.append(String.valueOf(SearchResultList.getSelectedIndex()));
+                    System.out.println("You picked: " + mac.get(SearchResultList.getSelectedIndex()).getPitchName());
+                    String[] array = mac.get(SearchResultList.getSelectedIndex()).getTypeName();
+                    for(String E : array)  {
+                        if (E != null) {
+                            System.out.println(E + "\n");
+                        }
+                    }
                 }
             }
         });
