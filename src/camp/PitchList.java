@@ -12,6 +12,7 @@ import java.util.List;
 
 public class PitchList  extends GenericList<Pitch>{
 	protected List<Pitch> items;
+
 	public List<Pitch> Items() throws Exception {
 		if(items == null){
 			items = new ArrayList<Pitch>();
@@ -52,4 +53,22 @@ public class PitchList  extends GenericList<Pitch>{
         }
         return items;
     }
+
+    public List<Pitch> Items(String Name) throws Exception {
+        if(items == null){
+            items = new ArrayList<Pitch>();
+            try {
+                String SQL = "SELECT * FROM PITCH WHERE PITCHNAME = '"+Name+"'";
+                ResultSet resultset = new connection().connect(SQL);
+                while(resultset.next()){
+                    int[] type = {resultset.getInt("CARAVAN"),resultset.getInt("MOTORHOME"),resultset.getInt("TENT")};
+                    items.add(new Pitch(resultset.getString("PITCHNAME"),resultset.getInt("PITCHTYPEID"), type));
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return items;
+    }
 }
+

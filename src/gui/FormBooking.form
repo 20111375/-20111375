@@ -157,7 +157,9 @@
                         <children>
                           <component id="1eb5f" class="javax.swing.JList" binding="SearchResultList">
                             <constraints/>
-                            <properties/>
+                            <properties>
+                              <selectionMode value="1"/>
+                            </properties>
                           </component>
                         </children>
                       </scrollpane>
@@ -235,7 +237,7 @@
                 <properties/>
                 <border type="line" title="Customer details"/>
                 <children>
-                  <component id="64f85" class="javax.swing.JTextPane" binding="CustomerDetails">
+                  <component id="a08d9" class="javax.swing.JTextArea" binding="CustomerDetails">
                     <constraints>
                       <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
                         <preferred-size width="250" height="20"/>
@@ -264,7 +266,7 @@
                 <properties/>
                 <border type="line" title="Pitch details"/>
                 <children>
-                  <component id="9370c" class="javax.swing.JTextPane" binding="PitchDetails">
+                  <component id="229b1" class="javax.swing.JTextArea" binding="PitchDetails">
                     <constraints>
                       <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
                         <preferred-size width="150" height="50"/>

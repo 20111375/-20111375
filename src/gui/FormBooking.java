@@ -8,7 +8,6 @@ import javax.swing.event.ListSelectionListener;
 import java.awt.event.*;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Calendar;
 import java.util.List;
@@ -26,8 +25,8 @@ public class FormBooking {
     private JButton NewCustomerButton;
     private JButton ConfirmButton;
     private JButton extendABookingButton;
-    private JTextPane CustomerDetails;
-    private JTextPane PitchDetails;
+    private JTextArea CustomerDetails;
+    private JTextArea PitchDetails;
     private JComboBox EndDate;
     private CalendarPane FromDate;
     private JPanel ReservationPane;
@@ -37,6 +36,15 @@ public class FormBooking {
     private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
     private String StartDate = null;
     private int FinishDate;
+    private String PitchSelected;
+
+    public String getPitchSelected() {
+        return PitchSelected;
+    }
+
+    public void setPitchSelected(String pitchSelected) {
+        PitchSelected = pitchSelected;
+    }
 
     public String makeFinishDate(int day, String Start){
         Calendar calendar = Calendar.getInstance();
@@ -74,19 +82,19 @@ public class FormBooking {
     }
 
 
-    public JTextPane getPitchDetails() {
+    public JTextArea getPitchDetails() {
         return PitchDetails;
     }
 
-    public void setPitchDetails(JTextPane pitchDetails) {
+    public void setPitchDetails(JTextArea pitchDetails) {
         PitchDetails = pitchDetails;
     }
 
-    public JTextPane getCustomerDetails() {
+    public JTextArea getCustomerDetails() {
         return CustomerDetails;
     }
 
-    public void setCustomerDetails(JTextPane customerDetails) {
+    public void setCustomerDetails(JTextArea customerDetails) {
         CustomerDetails = customerDetails;
     }
 
@@ -195,7 +203,9 @@ public class FormBooking {
             @Override
             public void valueChanged(ListSelectionEvent e) {
                 //To change body of implemented methods use File | Settings | File Templates.
-
+                if (e.getValueIsAdjusting() == true) {
+                    setPitchSelected(SearchResultList.getSelectedValue().toString());
+                }
             }
         });
     }

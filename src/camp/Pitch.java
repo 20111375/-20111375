@@ -49,12 +49,12 @@ public class Pitch extends Items {
     }
 
     public String[] getTypeName() {
-        for(int i = 0; i < this.TypeID.length; i++){
-            if(this.TypeID[i] != 1){
+        for (int i = 0; i < this.TypeID.length; i++) {
+            if (this.TypeID[i] != 1) {
                 this.TypeName[i] = " ";
             }
         }
-      return TypeName;
+        return TypeName;
     }
 
     @Override
@@ -62,5 +62,4 @@ public class Pitch extends Items {
 
         return this.getPitchName();
     }
-
 }
