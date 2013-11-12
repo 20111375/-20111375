@@ -7,21 +7,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51f6022f-23b8-4194-a60c-864ebe07b5ce" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/diagram.uml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/log/log.ctrl" afterPath="$PROJECT_DIR$/database/log/log.ctrl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/log/log1.dat" afterPath="$PROJECT_DIR$/database/log/log1.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/log/logmirror.ctrl" afterPath="$PROJECT_DIR$/database/log/logmirror.ctrl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/FormBooking.form" afterPath="$PROJECT_DIR$/src/gui/FormBooking.form" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/FormBooking.java" afterPath="$PROJECT_DIR$/src/gui/FormBooking.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/camp/Pitch.java" afterPath="$PROJECT_DIR$/src/camp/Pitch.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/camp/PitchList.java" afterPath="$PROJECT_DIR$/src/camp/PitchList.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/db.lck" afterPath="$PROJECT_DIR$/database/db.lck" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="camp.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="51f6022f-23b8-4194-a60c-864ebe07b5ce" time="1384268026912" ignored="false" />
-    <file path="/FormBooking.java" changelist="51f6022f-23b8-4194-a60c-864ebe07b5ce" time="1384286095649" ignored="false" />
+    <file path="/Dummy.txt" changelist="51f6022f-23b8-4194-a60c-864ebe07b5ce" time="1384286208061" ignored="false" />
+    <file path="/FormBooking.java" changelist="51f6022f-23b8-4194-a60c-864ebe07b5ce" time="1384288076966" ignored="false" />
     <file path="/PitchList.java" changelist="51f6022f-23b8-4194-a60c-864ebe07b5ce" time="1384263554575" ignored="false" />
     <file path="/Data Source" changelist="51f6022f-23b8-4194-a60c-864ebe07b5ce" time="1384259336945" ignored="false" />
     <file path="/Pitch.java" changelist="51f6022f-23b8-4194-a60c-864ebe07b5ce" time="1384286046208" ignored="false" />
@@ -127,8 +124,8 @@
         <option value="$PROJECT_DIR$/src/db/connection.java" />
         <option value="db-console:/ec21802b/f9b6cfa8-09c1-4d3d-a28c-cfc288b48a0b/" />
         <option value="$PROJECT_DIR$/src/camp/PitchList.java" />
-        <option value="$PROJECT_DIR$/src/gui/FormBooking.form" />
         <option value="$PROJECT_DIR$/src/camp/Pitch.java" />
+        <option value="$PROJECT_DIR$/src/gui/FormBooking.form" />
         <option value="$PROJECT_DIR$/src/gui/FormBooking.java" />
       </list>
     </option>
@@ -256,6 +253,28 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="gui" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="camp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="~20111375" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FormBooking" />
+              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -686,7 +705,11 @@
       <created>1384268038644</created>
       <updated>1384268038644</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Working on booking form to add functionality">
+      <created>1384286217472</created>
+      <updated>1384286217472</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -718,7 +741,7 @@
     <layout>
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32013202" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17990276" sideWeight="0.7442244" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17463848" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17326732" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.7975528" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.09157212" sideWeight="0.7442244" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32741398" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -796,7 +819,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="UI and diagram changes&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working on booking form to add functionality" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -816,6 +839,7 @@
     <MESSAGE value="UI changes (bug found in jGoodies).&#10;" />
     <MESSAGE value="SQL changes and UI methods&#10;" />
     <MESSAGE value="UI and diagram changes&#10;" />
+    <MESSAGE value="Working on booking form to add functionality" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -885,39 +909,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/UML.uml">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement />
-          <nodes>
-            <node x="" y="">camp.Items</node>
-            <node x="" y="">camp.GenericList</node>
-            <node x="" y="">camp.scrap</node>
-            <node x="" y="">camp.Pitch</node>
-            <node x="" y="">camp.BookingList</node>
-            <node x="" y="">camp.Search</node>
-            <node x="" y="">camp.Booking</node>
-            <node x="" y="">camp.PitchList</node>
-            <node x="" y="">camp.ClientList</node>
-            <node x="" y="">camp.camper</node>
-            <node x="" y="">camp.Client</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.3513753327417924" x="937.0" y="553.5" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Constructors</Category>
-            <Category>Fields</Category>
-            <Category>Methods</Category>
-            <Category>Inner Classes</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/camp/BookingList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="32" selection-start="224" selection-end="231" vertical-scroll-proportion="0.18292683">
@@ -971,24 +962,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/UML.uml">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement />
+          <nodes>
+            <node x="" y="">gui.FormBooking</node>
+            <node x="" y="">camp.Items</node>
+            <node x="" y="">camp.GenericList</node>
+            <node x="" y="">camp.Pitch</node>
+            <node x="" y="">camp.BookingList</node>
+            <node x="" y="">camp.Booking</node>
+            <node x="" y="">camp.PitchList</node>
+            <node x="" y="">camp.camper</node>
+            <node x="" y="">camp.ClientList</node>
+            <node x="" y="">camp.Client</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.5180616740088105" x="1149.4999999999995" y="372.1938775510204" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+            <Category>Inner Classes</Category>
+            <Category>Fields</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/FormBooking.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="195" column="37" selection-start="7054" selection-end="7054" vertical-scroll-proportion="0.5744681">
+        <state line="203" column="115" selection-start="7465" selection-end="7465" vertical-scroll-proportion="0.56264776">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#getPitchSelected#0;class#FormBooking#0" expanded="false" />
-            <element signature="method#makeFinishDate#0;class#FormBooking#0" expanded="false" />
             <element signature="method#getFinishDate#0;class#FormBooking#0" expanded="false" />
             <element signature="method#setFinishDate#0;class#FormBooking#0" expanded="false" />
             <element signature="method#getStartDate#0;class#FormBooking#0" expanded="false" />
             <element signature="method#setStartDate#0;class#FormBooking#0" expanded="false" />
             <element signature="method#setTypeName#0;class#FormBooking#0" expanded="false" />
-            <element signature="e#3637#4868#0" expanded="true" />
-            <element signature="e#4857#4858#0" expanded="true" />
-            <element signature="e#4907#5216#0" expanded="true" />
-            <element signature="e#5205#5206#0" expanded="true" />
-            <element signature="e#6136#7205#0" expanded="true" />
-            <element signature="e#7194#7195#0" expanded="true" />
+            <element signature="e#5758#6111#0" expanded="true" />
+            <element signature="e#6100#6101#0" expanded="true" />
           </folding>
         </state>
       </provider>

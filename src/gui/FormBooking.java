@@ -31,6 +31,7 @@ public class FormBooking {
     private JPanel ReservationPane;
     private JPanel ExtendBooking;
     private JPanel FormBooking;
+    private JPanel BookForm;
     private String TypeName;
     private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
     private String StartDate = null;
@@ -189,14 +190,18 @@ public class FormBooking {
                 //To change body of implemented methods use File | Settings | File Templates.
                 if (e.getValueIsAdjusting() == true) {
                     setPitchSelected(SearchResultList.getSelectedValue().toString());
-                    PitchDetails.append(String.valueOf(SearchResultList.getSelectedIndex()));
-                    System.out.println("You picked: " + mac.get(SearchResultList.getSelectedIndex()).getPitchName());
+                    PitchDetails.append("Pitch name: " + mac.get(SearchResultList.getSelectedIndex()).getPitchName() + "\n");
+                    PitchDetails.append("Pitch type: ");
                     String[] array = mac.get(SearchResultList.getSelectedIndex()).getTypeName();
                     for(String E : array)  {
                         if (E != null) {
+                            PitchDetails.append(E + ", ");
                             System.out.println(E + "\n");
                         }
                     }
+                    PitchDetails.append("\n");
+                    PitchDetails.append("Start date: "+ getStartDate() + "\n");
+                    PitchDetails.append("Finish date: "+ makeFinishDate(getFinishDate(), getStartDate()).toString() + "\n");
                 }
             }
         });
@@ -204,6 +209,7 @@ public class FormBooking {
 
     public void run() {
         JFrame frame = new JFrame("FormBooking");
+        frame.setResizable(false);
         frame.setContentPane(new FormBooking().FormBooking);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
