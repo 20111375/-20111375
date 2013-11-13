@@ -69,10 +69,12 @@ public class TestForm {
                         }
                         textArea3.append(dF.format(F.getFromDate()) + "\n");
                     }
+                    /*
                     list1.setListData(cac.toArray());
                     DialogSearch tester = new DialogSearch(cac);
                     //tester.setList(cac);
                     tester.make(cac);
+                    */
                 } catch (Exception e) {
                     e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
                 }

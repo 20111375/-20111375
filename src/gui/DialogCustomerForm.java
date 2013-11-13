@@ -149,7 +149,7 @@ public class DialogCustomerForm extends JDialog {
         dispose();
     }
 
-    public static void main(String[] args) {
+    public static void make() {
         DialogCustomerForm dialog = new DialogCustomerForm();
         dialog.pack();
         dialog.setVisible(true);
