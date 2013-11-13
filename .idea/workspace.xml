@@ -10,109 +10,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51f6022f-23b8-4194-a60c-864ebe07b5ce" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c10.dat" afterPath="$PROJECT_DIR$/database/seg0/c10.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c101.dat" afterPath="$PROJECT_DIR$/database/seg0/c101.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c111.dat" afterPath="$PROJECT_DIR$/database/seg0/c111.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c121.dat" afterPath="$PROJECT_DIR$/database/seg0/c121.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c130.dat" afterPath="$PROJECT_DIR$/database/seg0/c130.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c141.dat" afterPath="$PROJECT_DIR$/database/seg0/c141.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c150.dat" afterPath="$PROJECT_DIR$/database/seg0/c150.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c161.dat" afterPath="$PROJECT_DIR$/database/seg0/c161.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c171.dat" afterPath="$PROJECT_DIR$/database/seg0/c171.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c180.dat" afterPath="$PROJECT_DIR$/database/seg0/c180.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c191.dat" afterPath="$PROJECT_DIR$/database/seg0/c191.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c1a1.dat" afterPath="$PROJECT_DIR$/database/seg0/c1a1.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c1b1.dat" afterPath="$PROJECT_DIR$/database/seg0/c1b1.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c1c0.dat" afterPath="$PROJECT_DIR$/database/seg0/c1c0.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c1d1.dat" afterPath="$PROJECT_DIR$/database/seg0/c1d1.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c1e0.dat" afterPath="$PROJECT_DIR$/database/seg0/c1e0.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c1f1.dat" afterPath="$PROJECT_DIR$/database/seg0/c1f1.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c20.dat" afterPath="$PROJECT_DIR$/database/seg0/c20.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c200.dat" afterPath="$PROJECT_DIR$/database/seg0/c200.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c211.dat" afterPath="$PROJECT_DIR$/database/seg0/c211.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c221.dat" afterPath="$PROJECT_DIR$/database/seg0/c221.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c230.dat" afterPath="$PROJECT_DIR$/database/seg0/c230.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c241.dat" afterPath="$PROJECT_DIR$/database/seg0/c241.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c251.dat" afterPath="$PROJECT_DIR$/database/seg0/c251.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c260.dat" afterPath="$PROJECT_DIR$/database/seg0/c260.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c271.dat" afterPath="$PROJECT_DIR$/database/seg0/c271.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c281.dat" afterPath="$PROJECT_DIR$/database/seg0/c281.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c290.dat" afterPath="$PROJECT_DIR$/database/seg0/c290.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c2a1.dat" afterPath="$PROJECT_DIR$/database/seg0/c2a1.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c2b1.dat" afterPath="$PROJECT_DIR$/database/seg0/c2b1.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c2c1.dat" afterPath="$PROJECT_DIR$/database/seg0/c2c1.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c2d0.dat" afterPath="$PROJECT_DIR$/database/seg0/c2d0.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c2e1.dat" afterPath="$PROJECT_DIR$/database/seg0/c2e1.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c2f0.dat" afterPath="$PROJECT_DIR$/database/seg0/c2f0.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c300.dat" afterPath="$PROJECT_DIR$/database/seg0/c300.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c31.dat" afterPath="$PROJECT_DIR$/database/seg0/c31.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c311.dat" afterPath="$PROJECT_DIR$/database/seg0/c311.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c321.dat" afterPath="$PROJECT_DIR$/database/seg0/c321.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c331.dat" afterPath="$PROJECT_DIR$/database/seg0/c331.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c340.dat" afterPath="$PROJECT_DIR$/database/seg0/c340.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c351.dat" afterPath="$PROJECT_DIR$/database/seg0/c351.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c361.dat" afterPath="$PROJECT_DIR$/database/seg0/c361.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c371.dat" afterPath="$PROJECT_DIR$/database/seg0/c371.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c380.dat" afterPath="$PROJECT_DIR$/database/seg0/c380.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c391.dat" afterPath="$PROJECT_DIR$/database/seg0/c391.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c3a1.dat" afterPath="$PROJECT_DIR$/database/seg0/c3a1.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c3b1.dat" afterPath="$PROJECT_DIR$/database/seg0/c3b1.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c3c0.dat" afterPath="$PROJECT_DIR$/database/seg0/c3c0.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c3d1.dat" afterPath="$PROJECT_DIR$/database/seg0/c3d1.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c3e1.dat" afterPath="$PROJECT_DIR$/database/seg0/c3e1.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c3f1.dat" afterPath="$PROJECT_DIR$/database/seg0/c3f1.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c400.dat" afterPath="$PROJECT_DIR$/database/seg0/c400.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c41.dat" afterPath="$PROJECT_DIR$/database/seg0/c41.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c411.dat" afterPath="$PROJECT_DIR$/database/seg0/c411.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c421.dat" afterPath="$PROJECT_DIR$/database/seg0/c421.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c430.dat" afterPath="$PROJECT_DIR$/database/seg0/c430.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c441.dat" afterPath="$PROJECT_DIR$/database/seg0/c441.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c451.dat" afterPath="$PROJECT_DIR$/database/seg0/c451.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c461.dat" afterPath="$PROJECT_DIR$/database/seg0/c461.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c470.dat" afterPath="$PROJECT_DIR$/database/seg0/c470.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c481.dat" afterPath="$PROJECT_DIR$/database/seg0/c481.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c4c0.dat" afterPath="$PROJECT_DIR$/database/seg0/c4c0.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c4d1.dat" afterPath="$PROJECT_DIR$/database/seg0/c4d1.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c51.dat" afterPath="$PROJECT_DIR$/database/seg0/c51.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c530.dat" afterPath="$PROJECT_DIR$/database/seg0/c530.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c541.dat" afterPath="$PROJECT_DIR$/database/seg0/c541.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c550.dat" afterPath="$PROJECT_DIR$/database/seg0/c550.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c561.dat" afterPath="$PROJECT_DIR$/database/seg0/c561.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c571.dat" afterPath="$PROJECT_DIR$/database/seg0/c571.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c5b0.dat" afterPath="$PROJECT_DIR$/database/seg0/c5b0.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c5c1.dat" afterPath="$PROJECT_DIR$/database/seg0/c5c1.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c5d1.dat" afterPath="$PROJECT_DIR$/database/seg0/c5d1.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c5e0.dat" afterPath="$PROJECT_DIR$/database/seg0/c5e0.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c5f0.dat" afterPath="$PROJECT_DIR$/database/seg0/c5f0.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c60.dat" afterPath="$PROJECT_DIR$/database/seg0/c60.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c6a0.dat" afterPath="$PROJECT_DIR$/database/seg0/c6a0.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c6b1.dat" afterPath="$PROJECT_DIR$/database/seg0/c6b1.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c6c1.dat" afterPath="$PROJECT_DIR$/database/seg0/c6c1.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c71.dat" afterPath="$PROJECT_DIR$/database/seg0/c71.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c81.dat" afterPath="$PROJECT_DIR$/database/seg0/c81.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c90.dat" afterPath="$PROJECT_DIR$/database/seg0/c90.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/ca1.dat" afterPath="$PROJECT_DIR$/database/seg0/ca1.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/cb1.dat" afterPath="$PROJECT_DIR$/database/seg0/cb1.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/cc0.dat" afterPath="$PROJECT_DIR$/database/seg0/cc0.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/cd1.dat" afterPath="$PROJECT_DIR$/database/seg0/cd1.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/ce1.dat" afterPath="$PROJECT_DIR$/database/seg0/ce1.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/cf0.dat" afterPath="$PROJECT_DIR$/database/seg0/cf0.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/log/log.ctrl" afterPath="$PROJECT_DIR$/database/log/log.ctrl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/log/log1.dat" afterPath="$PROJECT_DIR$/database/log/log1.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/log/logmirror.ctrl" afterPath="$PROJECT_DIR$/database/log/logmirror.ctrl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/DialogCustomerForm.java" afterPath="$PROJECT_DIR$/src/gui/DialogCustomerForm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/DialogSearch.form" afterPath="$PROJECT_DIR$/src/gui/DialogSearch.form" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/DialogSearch.java" afterPath="$PROJECT_DIR$/src/gui/DialogSearch.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/FormBooking.java" afterPath="$PROJECT_DIR$/src/gui/FormBooking.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/README_DO_NOT_TOUCH_FILES.txt" afterPath="$PROJECT_DIR$/database/README_DO_NOT_TOUCH_FILES.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/log/README_DO_NOT_TOUCH_FILES.txt" afterPath="$PROJECT_DIR$/database/log/README_DO_NOT_TOUCH_FILES.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/README_DO_NOT_TOUCH_FILES.txt" afterPath="$PROJECT_DIR$/database/seg0/README_DO_NOT_TOUCH_FILES.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/TestForm.java" afterPath="$PROJECT_DIR$/src/gui/TestForm.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/db/connection.java" afterPath="$PROJECT_DIR$/src/db/connection.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/db.lck" afterPath="$PROJECT_DIR$/database/db.lck" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/dbex.lck" afterPath="$PROJECT_DIR$/database/dbex.lck" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/service.properties" afterPath="$PROJECT_DIR$/database/service.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="camp.iws" />
@@ -212,11 +122,12 @@
         <option value="$PROJECT_DIR$/src/camp/PitchList.java" />
         <option value="$PROJECT_DIR$/src/camp/Pitch.java" />
         <option value="$PROJECT_DIR$/src/gui/FormBooking.form" />
-        <option value="$PROJECT_DIR$/src/db/connection.java" />
         <option value="$PROJECT_DIR$/src/gui/DialogCustomerForm.java" />
         <option value="$PROJECT_DIR$/src/gui/TestForm.java" />
         <option value="$PROJECT_DIR$/src/gui/FormBooking.java" />
         <option value="$PROJECT_DIR$/src/gui/DialogSearch.form" />
+        <option value="db-console:/a6616f22/f9b6cfa8-09c1-4d3d-a28c-cfc288b48a0b/" />
+        <option value="$PROJECT_DIR$/src/db/connection.java" />
         <option value="$PROJECT_DIR$/src/gui/DialogSearch.java" />
       </list>
     </option>
@@ -295,6 +206,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -309,7 +221,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="20111375" />
+              <option name="myItemId" value="~20111375" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -319,7 +231,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="20111375" />
+              <option name="myItemId" value="~20111375" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -327,10 +239,27 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="camp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="~20111375" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -606,12 +535,6 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
-      <option name="VM_PARAMETERS" value="" />
-      <option name="USER_CFG_CLASS" />
-      <option name="CONTEXT_PROVIDER" />
-      <method />
-    </configuration>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="ACTIVITY_CLASS" value="" />
@@ -629,6 +552,12 @@
       <option name="NETWORK_LATENCY" value="none" />
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
+      <option name="VM_PARAMETERS" value="" />
+      <option name="USER_CFG_CLASS" />
+      <option name="CONTEXT_PROVIDER" />
       <method />
     </configuration>
     <list size="1">
@@ -707,6 +636,7 @@
       <workItem from="1384346507412" duration="4322000" />
       <workItem from="1384351149412" duration="2525000" />
       <workItem from="1384354379678" duration="147000" />
+      <workItem from="1384356040024" duration="1080000" />
     </task>
     <task id="LOCAL-00001" summary="amended header">
       <created>1383654964784</created>
@@ -768,7 +698,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66763000" />
+    <option name="totallyTimeSpent" value="67843000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -794,36 +724,36 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17982924" sideWeight="0.7442244" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32035595" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17326732" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.09124867" sideWeight="0.7442244" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19311875" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20330843" sideWeight="0.7442244" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20330843" sideWeight="0.7442244" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959481" sideWeight="0.7953795" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39933258" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23411371" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23248054" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33468395" sideWeight="0.7442244" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22607261" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30769232" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959481" sideWeight="0.79202276" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901135" sideWeight="0.76567656" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17449306" sideWeight="0.7442244" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23359288" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17449306" sideWeight="0.7442244" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23248054" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17982924" sideWeight="0.7442244" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Sequence" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32925472" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32013202" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.7975528" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32741398" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30769232" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1018,11 +948,6 @@
         <state line="53" column="39" selection-start="1134" selection-end="1134" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/db/connection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="76" selection-start="510" selection-end="510" vertical-scroll-proportion="0.29037267" vertical-offset="0" max-vertical-offset="644" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/TestCustomerForm.form">
       <provider selected="true" editor-type-id="ui-designer">
         <state />
@@ -1055,13 +980,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/TestForm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="20" selection-start="1635" selection-end="1679" vertical-scroll-proportion="0.0" vertical-offset="313" max-vertical-offset="1649">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1461#1469#0" expanded="true" />
-            <element signature="e#1538#1548#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="47" column="20" selection-start="1635" selection-end="1679" vertical-scroll-proportion="0.0" vertical-offset="313" max-vertical-offset="1649" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/FormBooking.java">
@@ -1086,8 +1005,8 @@
             <node x="" y="">camp.Booking</node>
             <node x="" y="">camp.PitchList</node>
             <node x="" y="">db.connection</node>
-            <node x="" y="">camp.ClientList</node>
             <node x="" y="">camp.camper</node>
+            <node x="" y="">camp.ClientList</node>
             <node x="" y="">camp.Client</node>
           </nodes>
           <notes />
@@ -1102,9 +1021,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/DialogSearch.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/db/connection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="77" selection-start="511" selection-end="511" vertical-scroll-proportion="0.2820513" vertical-offset="0" max-vertical-offset="663">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/DialogSearch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="149" column="48" selection-start="4931" selection-end="4931" vertical-scroll-proportion="2.530827" vertical-offset="0" max-vertical-offset="1921">
+        <state line="154" column="56" selection-start="5125" selection-end="5125" vertical-scroll-proportion="0.7936747" vertical-offset="1241" max-vertical-offset="1921">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#onOK#0;class#DialogSearch#0" expanded="false" />
@@ -1114,14 +1045,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/DialogSearch.form">
-      <provider selected="true" editor-type-id="ui-designer">
+    <entry file="dbDummy://dbtable:/a6616f22/f9b6cfa8-09c1-4d3d-a28c-cfc288b48a0b/.APP.CUSTOMER">
+      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
         <state />
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/87d9758/f9b6cfa8-09c1-4d3d-a28c-cfc288b48a0b/.APP.CUSTOMER">
-      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
-        <state />
+    <entry file="dbDummy://db-console:/a6616f22/f9b6cfa8-09c1-4d3d-a28c-cfc288b48a0b/">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="6" selection-start="599" selection-end="762" vertical-scroll-proportion="0.37480316" vertical-offset="0" max-vertical-offset="635">
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>

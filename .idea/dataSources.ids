@@ -1,18 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component name="dataSourceStorage">
-  <data-source source="LOCAL" name="Data Source" product="Apache Derby" version="10.10.1.1 - (1458268)" jdbc-version="4.1" driver-name="Apache Derby Embedded JDBC Driver" driver-version="10.10.1.1 - (1458268)" uuid="f9b6cfa8-09c1-4d3d-a28c-cfc288b48a0b">
-    <identifier-quote-string>&quot;</identifier-quote-string>
-    <synchronize>true</synchronize>
-    <jdbc-driver>org.apache.derby.jdbc.AutoloadedDriver</jdbc-driver>
-    <jdbc-url>jdbc:derby:$PROJECT_DIR$/database</jdbc-url>
-    <schema-pattern>*.APP</schema-pattern>
-    <default-schemas>*.APP</default-schemas>
-    <default-dialect>Derby</default-dialect>
-    <libraries>
-      <library>
-        <url>jar://$PROJECT_DIR$/Lib/derby.jar!/</url>
-      </library>
-    </libraries>
+  <data-source source="LOCAL" name="Data Source" uuid="f9b6cfa8-09c1-4d3d-a28c-cfc288b48a0b">
+    <database-info product="Apache Derby" version="10.10.1.1 - (1458268)" jdbc-version="4.1" driver-name="Apache Derby Embedded JDBC Driver" driver-version="10.10.1.1 - (1458268)">
+      <identifier-quote-string>&quot;</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="upper" quoted-identifiers="exact"/>
     <schema name="APP" catalog=""/>
     <table name="BOOKING" schema="APP" catalog="" type="TABLE">
       <column name="CUSTOMERID" sqlType="INTEGER" length="10" precision="0" nullable="false" jdbcType="4"/>
@@ -25,7 +17,7 @@
       <foreign-key name="BOOKING_FK2" columns="PITCHID" ref-table="PITCH" ref-schema="APP" ref-catalog="" ref-columns="PITCHID" update-rule="3" delete-rule="3" deferrability="2"/>
     </table>
     <table name="CUSTOMER" schema="APP" catalog="" type="TABLE">
-      <column name="CUSTOMERID" sqlType="INTEGER" length="10" precision="0" nullable="false" jdbcType="4" def="QVVUT0lOQ1JFTUVOVDogc3RhcnQgMSBpbmNyZW1lbnQgMQ==" autoIncrement="true"/>
+      <column name="CUSTOMERID" sqlType="INTEGER" length="10" precision="0" nullable="false" jdbcType="4" def="QVVUT0lOQ1JFTUVOVDogc3RhcnQgMTAwMDAwMCBpbmNyZW1lbnQgMQ==" autoIncrement="true"/>
       <column name="FIRSTNAME" sqlType="VARCHAR" length="24" precision="0" nullable="false" jdbcType="12"/>
       <column name="SECONDNAME" sqlType="VARCHAR" length="24" precision="0" nullable="false" jdbcType="12"/>
       <column name="CARREGISTRATION" sqlType="VARCHAR" length="10" precision="0" nullable="false" jdbcType="12"/>
