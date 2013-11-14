@@ -12,18 +12,9 @@
     <list default="true" id="51f6022f-23b8-4194-a60c-864ebe07b5ce" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c4c0.dat" afterPath="$PROJECT_DIR$/database/seg0/c4c0.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c4d1.dat" afterPath="$PROJECT_DIR$/database/seg0/c4d1.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c90.dat" afterPath="$PROJECT_DIR$/database/seg0/c90.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/log/log.ctrl" afterPath="$PROJECT_DIR$/database/log/log.ctrl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/log/log1.dat" afterPath="$PROJECT_DIR$/database/log/log1.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/log/logmirror.ctrl" afterPath="$PROJECT_DIR$/database/log/logmirror.ctrl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/camp/Client.java" afterPath="$PROJECT_DIR$/src/camp/Client.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/camp/ClientList.java" afterPath="$PROJECT_DIR$/src/camp/ClientList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/DialogCustomerForm.form" afterPath="$PROJECT_DIR$/src/gui/DialogCustomerForm.form" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/DialogCustomerForm.java" afterPath="$PROJECT_DIR$/src/gui/DialogCustomerForm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/DialogSearch.java" afterPath="$PROJECT_DIR$/src/gui/DialogSearch.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/FormBooking.java" afterPath="$PROJECT_DIR$/src/gui/FormBooking.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/camp/camper.java" afterPath="$PROJECT_DIR$/src/camp/camper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/db/connection.java" afterPath="$PROJECT_DIR$/src/db/connection.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/db.lck" afterPath="$PROJECT_DIR$/database/db.lck" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -614,7 +605,7 @@
       <workItem from="1384424730659" duration="397000" />
       <workItem from="1384425437270" duration="1244000" />
       <workItem from="1384426778376" duration="10981000" />
-      <workItem from="1384438030571" duration="852000" />
+      <workItem from="1384438030571" duration="1103000" />
     </task>
     <task id="LOCAL-00001" summary="amended header">
       <created>1383654964784</created>
@@ -676,11 +667,15 @@
       <created>1384357145361</created>
       <updated>1384357145361</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="New customers can now be inserted&#10;">
+      <created>1384438924400</created>
+      <updated>1384438924400</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87992000" />
+    <option name="totallyTimeSpent" value="88243000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -761,7 +756,8 @@
     <MESSAGE value="UI and diagram changes&#10;" />
     <MESSAGE value="Working on booking form to add functionality" />
     <MESSAGE value="Amended db to start customer table at 1000000" />
-    <option name="LAST_COMMIT_MESSAGE" value="Amended db to start customer table at 1000000" />
+    <MESSAGE value="New customers can now be inserted&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="New customers can now be inserted&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1055,7 +1051,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/camp/camper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="10" selection-start="485" selection-end="485" vertical-scroll-proportion="0.45671642" vertical-offset="0" max-vertical-offset="670" />
+        <state line="25" column="10" selection-start="485" selection-end="485" vertical-scroll-proportion="0.45671642" vertical-offset="0" max-vertical-offset="670">
+          <folding>
+            <element signature="e#517#755#0" expanded="false" />
+            <element signature="e#744#745#0" expanded="false" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="dbDummy://db-console:/a6616f22/f9b6cfa8-09c1-4d3d-a28c-cfc288b48a0b/">
@@ -1079,7 +1080,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/db/connection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="38" selection-start="1063" selection-end="1063" vertical-scroll-proportion="0.6938776" vertical-offset="0" max-vertical-offset="884" />
+        <state line="33" column="38" selection-start="1063" selection-end="1063" vertical-scroll-proportion="0.6938776" vertical-offset="0" max-vertical-offset="884">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/camp/ClientList.java">
