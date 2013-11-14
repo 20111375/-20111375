@@ -13,15 +13,17 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c4c0.dat" afterPath="$PROJECT_DIR$/database/seg0/c4c0.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c4d1.dat" afterPath="$PROJECT_DIR$/database/seg0/c4d1.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c90.dat" afterPath="$PROJECT_DIR$/database/seg0/c90.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/ca1.dat" afterPath="$PROJECT_DIR$/database/seg0/ca1.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/cb1.dat" afterPath="$PROJECT_DIR$/database/seg0/cb1.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/log/log.ctrl" afterPath="$PROJECT_DIR$/database/log/log.ctrl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/log/log1.dat" afterPath="$PROJECT_DIR$/database/log/log1.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/log/logmirror.ctrl" afterPath="$PROJECT_DIR$/database/log/logmirror.ctrl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/camp/Client.java" afterPath="$PROJECT_DIR$/src/camp/Client.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/camp/ClientList.java" afterPath="$PROJECT_DIR$/src/camp/ClientList.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/DialogCustomerForm.form" afterPath="$PROJECT_DIR$/src/gui/DialogCustomerForm.form" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/DialogCustomerForm.java" afterPath="$PROJECT_DIR$/src/gui/DialogCustomerForm.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/DialogSearch.java" afterPath="$PROJECT_DIR$/src/gui/DialogSearch.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/FormBooking.java" afterPath="$PROJECT_DIR$/src/gui/FormBooking.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/camp/camper.java" afterPath="$PROJECT_DIR$/src/camp/camper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/db/connection.java" afterPath="$PROJECT_DIR$/src/db/connection.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/db.lck" afterPath="$PROJECT_DIR$/database/db.lck" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -115,20 +117,23 @@
         <option value="$PROJECT_DIR$/src/gui/DialogBookingSummary.form" />
         <option value="$PROJECT_DIR$/src/camp/Booking.java" />
         <option value="$PROJECT_DIR$/src/camp/BookingList.java" />
-        <option value="$PROJECT_DIR$/src/camp/camper.java" />
         <option value="db-console:/87d9758/f9b6cfa8-09c1-4d3d-a28c-cfc288b48a0b/" />
         <option value="$PROJECT_DIR$/src/camp/Search.java" />
         <option value="db-console:/ec21802b/f9b6cfa8-09c1-4d3d-a28c-cfc288b48a0b/" />
         <option value="$PROJECT_DIR$/src/camp/PitchList.java" />
         <option value="$PROJECT_DIR$/src/camp/Pitch.java" />
         <option value="$PROJECT_DIR$/src/gui/FormBooking.form" />
-        <option value="$PROJECT_DIR$/src/gui/DialogCustomerForm.java" />
         <option value="$PROJECT_DIR$/src/gui/TestForm.java" />
-        <option value="$PROJECT_DIR$/src/gui/FormBooking.java" />
         <option value="$PROJECT_DIR$/src/gui/DialogSearch.form" />
-        <option value="db-console:/a6616f22/f9b6cfa8-09c1-4d3d-a28c-cfc288b48a0b/" />
-        <option value="$PROJECT_DIR$/src/db/connection.java" />
+        <option value="$PROJECT_DIR$/src/gui/FormBooking.java" />
+        <option value="$PROJECT_DIR$/src/camp/camper.java" />
         <option value="$PROJECT_DIR$/src/gui/DialogSearch.java" />
+        <option value="db-console:/a6616f22/f9b6cfa8-09c1-4d3d-a28c-cfc288b48a0b/" />
+        <option value="$PROJECT_DIR$/src/camp/Client.java" />
+        <option value="$PROJECT_DIR$/src/db/connection.java" />
+        <option value="$PROJECT_DIR$/src/camp/ClientList.java" />
+        <option value="$PROJECT_DIR$/src/gui/DialogCustomerForm.form" />
+        <option value="$PROJECT_DIR$/src/gui/DialogCustomerForm.java" />
       </list>
     </option>
   </component>
@@ -136,8 +141,7 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="-7" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -206,6 +210,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -225,45 +230,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="camp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="~20111375" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="camp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="~20111375" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="107" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="OverrideImplement.combined" value="true" />
@@ -636,7 +608,13 @@
       <workItem from="1384346507412" duration="4322000" />
       <workItem from="1384351149412" duration="2525000" />
       <workItem from="1384354379678" duration="147000" />
-      <workItem from="1384356040024" duration="1080000" />
+      <workItem from="1384356040024" duration="1111000" />
+      <workItem from="1384417262609" duration="2343000" />
+      <workItem from="1384420250539" duration="4301000" />
+      <workItem from="1384424730659" duration="397000" />
+      <workItem from="1384425437270" duration="1244000" />
+      <workItem from="1384426778376" duration="10981000" />
+      <workItem from="1384438030571" duration="852000" />
     </task>
     <task id="LOCAL-00001" summary="amended header">
       <created>1383654964784</created>
@@ -694,11 +672,15 @@
       <created>1384286217472</created>
       <updated>1384286217472</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Amended db to start customer table at 1000000">
+      <created>1384357145361</created>
+      <updated>1384357145361</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67843000" />
+    <option name="totallyTimeSpent" value="87992000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -721,10 +703,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-7" y="0" width="1936" height="1056" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32035595" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17982924" sideWeight="0.7442244" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17326732" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -734,22 +716,22 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959481" sideWeight="0.7953795" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39933258" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23248054" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20022246" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33468395" sideWeight="0.7442244" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22607261" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30769232" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30100334" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959481" sideWeight="0.79202276" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901135" sideWeight="0.76567656" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17449306" sideWeight="0.7442244" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23248054" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17982924" sideWeight="0.7442244" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20022246" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Sequence" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32925472" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32035595" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.7975528" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -778,7 +760,8 @@
     <MESSAGE value="SQL changes and UI methods&#10;" />
     <MESSAGE value="UI and diagram changes&#10;" />
     <MESSAGE value="Working on booking form to add functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working on booking form to add functionality" />
+    <MESSAGE value="Amended db to start customer table at 1000000" />
+    <option name="LAST_COMMIT_MESSAGE" value="Amended db to start customer table at 1000000" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -794,13 +777,80 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/gui/DialogSearch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="149" column="48" selection-start="4931" selection-end="4931" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2567">
+        <state line="122" column="39" selection-start="4377" selection-end="4377" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2822">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/DialogCustomerForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="179" column="68" selection-start="5618" selection-end="5618" vertical-scroll-proportion="0.0" vertical-offset="3043" max-vertical-offset="3094">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#onOK#0;class#DialogSearch#0" expanded="false" />
-            <element signature="method#onCancel#0;class#DialogSearch#0" expanded="false" />
-            <element signature="method#make#0;class#DialogSearch#0" expanded="false" />
+            <element signature="e#4017#4094#0" expanded="false" />
+            <element signature="class#4533:4772" expanded="false" />
+            <element signature="method#onOK#0;class#DialogCustomerForm#0" expanded="false" />
+            <element signature="method#onCancel#0;class#DialogCustomerForm#0" expanded="false" />
+            <element signature="method#make#0;class#DialogCustomerForm#0" expanded="false" />
+            <element signature="method#createUIComponents#0;class#DialogCustomerForm#0" expanded="false" />
+            <element signature="method#ClearText#0;class#DialogCustomerForm#0" expanded="false" />
+            <element signature="method#customerList#0;class#DialogCustomerForm#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/DialogCustomerForm.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/DialogSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="90" column="41" selection-start="3067" selection-end="3067" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="2652">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/DialogSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="18" selection-start="2405" selection-end="2405" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="2669">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/DialogSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="107" selection-start="2675" selection-end="2675" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="2669">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/DialogCustomerForm.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/DialogCustomerForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="116" column="94" selection-start="2792" selection-end="2792" vertical-scroll-proportion="0.0" vertical-offset="1972" max-vertical-offset="2448">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4017#4094#0" expanded="false" />
+            <element signature="class#4533:4772" expanded="false" />
+            <element signature="method#onOK#0;class#DialogCustomerForm#0" expanded="false" />
+            <element signature="method#onCancel#0;class#DialogCustomerForm#0" expanded="false" />
+            <element signature="method#make#0;class#DialogCustomerForm#0" expanded="false" />
+            <element signature="method#createUIComponents#0;class#DialogCustomerForm#0" expanded="false" />
+            <element signature="method#ClearText#0;class#DialogCustomerForm#0" expanded="false" />
+            <element signature="method#customerList#0;class#DialogCustomerForm#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/DialogSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="149" column="48" selection-start="4931" selection-end="4931" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2567">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -812,12 +862,7 @@
     <entry file="file://$PROJECT_DIR$/src/gui/DialogSearch.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="35" column="56" selection-start="1066" selection-end="1066" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="2618">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#onOK#0;class#DialogSearch#0" expanded="false" />
-            <element signature="method#onCancel#0;class#DialogSearch#0" expanded="false" />
-            <element signature="method#make#0;class#DialogSearch#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -829,12 +874,7 @@
     <entry file="file://$PROJECT_DIR$/src/gui/DialogSearch.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="144" column="12" selection-start="4762" selection-end="4782" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2448">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#onOK#0;class#DialogSearch#0" expanded="false" />
-            <element signature="method#onCancel#0;class#DialogSearch#0" expanded="false" />
-            <element signature="method#make#0;class#DialogSearch#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -846,12 +886,7 @@
     <entry file="file://$PROJECT_DIR$/src/gui/DialogSearch.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="71" column="56" selection-start="2382" selection-end="2382" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2176">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#onOK#0;class#DialogSearch#0" expanded="false" />
-            <element signature="method#onCancel#0;class#DialogSearch#0" expanded="false" />
-            <element signature="method#make#0;class#DialogSearch#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -863,12 +898,7 @@
     <entry file="file://$PROJECT_DIR$/src/gui/DialogSearch.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="68" column="44" selection-start="2326" selection-end="2326" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2176">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#onOK#0;class#DialogSearch#0" expanded="false" />
-            <element signature="method#onCancel#0;class#DialogSearch#0" expanded="false" />
-            <element signature="method#make#0;class#DialogSearch#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -881,7 +911,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="218" column="0" selection-start="7877" selection-end="7911" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="3655">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#2982#3328#0" expanded="false" />
+            <element signature="e#3317#3318#0" expanded="false" />
+            <element signature="e#5850#6203#0" expanded="false" />
+            <element signature="e#6192#6193#0" expanded="false" />
+            <element signature="e#6257#7608#0" expanded="false" />
+            <element signature="e#7597#7598#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -889,12 +925,7 @@
     <entry file="file://$PROJECT_DIR$/src/gui/DialogSearch.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="132" column="41" selection-start="3902" selection-end="3902" vertical-scroll-proportion="0.0" vertical-offset="2244" max-vertical-offset="2516">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#onOK#0;class#DialogSearch#0" expanded="false" />
-            <element signature="method#onCancel#0;class#DialogSearch#0" expanded="false" />
-            <element signature="method#make#0;class#DialogSearch#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -963,33 +994,14 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/camp/camper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="86" selection-start="458" selection-end="458" vertical-scroll-proportion="0.44875777" vertical-offset="0" max-vertical-offset="644" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/TestCustomerForm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="13" selection-start="142" selection-end="142" vertical-scroll-proportion="0.26397514" vertical-offset="0" max-vertical-offset="644" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/DialogCustomerForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="151" column="28" selection-start="4106" selection-end="4106" vertical-scroll-proportion="0.6568323" vertical-offset="1141" max-vertical-offset="1785" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/TestForm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="47" column="20" selection-start="1635" selection-end="1679" vertical-scroll-proportion="0.0" vertical-offset="313" max-vertical-offset="1649" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/FormBooking.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="218" column="0" selection-start="7877" selection-end="7911" vertical-scroll-proportion="5.003082" vertical-offset="187" max-vertical-offset="3655">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="uml://JAVA/">
@@ -1026,35 +1038,92 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/FormBooking.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="109" column="47" selection-start="3303" selection-end="3303" vertical-scroll-proportion="0.23308271" vertical-offset="1222" max-vertical-offset="2958">
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#2982#3328#0" expanded="false" />
+            <element signature="e#3317#3318#0" expanded="false" />
+            <element signature="e#5850#6203#0" expanded="false" />
+            <element signature="e#6192#6193#0" expanded="false" />
+            <element signature="e#6257#7608#0" expanded="false" />
+            <element signature="e#7597#7598#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/camp/camper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="10" selection-start="485" selection-end="485" vertical-scroll-proportion="0.45671642" vertical-offset="0" max-vertical-offset="670" />
+      </provider>
+    </entry>
+    <entry file="dbDummy://db-console:/a6616f22/f9b6cfa8-09c1-4d3d-a28c-cfc288b48a0b/">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="599" selection-end="716" vertical-scroll-proportion="0.3655914" vertical-offset="0" max-vertical-offset="651" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/camp/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="13" selection-start="105" selection-end="105" vertical-scroll-proportion="0.025" vertical-offset="0" max-vertical-offset="1224">
+          <folding>
+            <element signature="method#Client#1;class#Client#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/a6616f22/f9b6cfa8-09c1-4d3d-a28c-cfc288b48a0b/.APP.BOOKING">
+      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/db/connection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="77" selection-start="511" selection-end="511" vertical-scroll-proportion="0.2820513" vertical-offset="0" max-vertical-offset="663">
-          <folding />
+        <state line="33" column="38" selection-start="1063" selection-end="1063" vertical-scroll-proportion="0.6938776" vertical-offset="0" max-vertical-offset="884" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/camp/ClientList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="5" selection-start="1688" selection-end="1688" vertical-scroll-proportion="0.8989599" vertical-offset="160" max-vertical-offset="901">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/DialogCustomerForm.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/DialogCustomerForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="181" column="63" selection-start="5619" selection-end="5619" vertical-scroll-proportion="1.95671" vertical-offset="429" max-vertical-offset="2346">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4017#4094#0" expanded="false" />
+            <element signature="class#4533:4772" expanded="false" />
+            <element signature="method#onOK#0;class#DialogCustomerForm#0" expanded="false" />
+            <element signature="method#onCancel#0;class#DialogCustomerForm#0" expanded="false" />
+            <element signature="method#make#0;class#DialogCustomerForm#0" expanded="false" />
+            <element signature="method#createUIComponents#0;class#DialogCustomerForm#0" expanded="false" />
+            <element signature="method#ClearText#0;class#DialogCustomerForm#0" expanded="false" />
+            <element signature="method#customerList#0;class#DialogCustomerForm#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/DialogSearch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="154" column="56" selection-start="5125" selection-end="5125" vertical-scroll-proportion="0.7936747" vertical-offset="1241" max-vertical-offset="1921">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#onOK#0;class#DialogSearch#0" expanded="false" />
-            <element signature="method#onCancel#0;class#DialogSearch#0" expanded="false" />
-            <element signature="method#make#0;class#DialogSearch#0" expanded="false" />
-          </folding>
+        <state line="122" column="39" selection-start="4377" selection-end="4377" vertical-scroll-proportion="-0.054834057" vertical-offset="1347" max-vertical-offset="2040">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/a6616f22/f9b6cfa8-09c1-4d3d-a28c-cfc288b48a0b/.APP.CUSTOMER">
       <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
         <state />
-      </provider>
-    </entry>
-    <entry file="dbDummy://db-console:/a6616f22/f9b6cfa8-09c1-4d3d-a28c-cfc288b48a0b/">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="6" selection-start="599" selection-end="762" vertical-scroll-proportion="0.37480316" vertical-offset="0" max-vertical-offset="635">
-          <folding />
-        </state>
       </provider>
     </entry>
   </component>
@@ -1066,8 +1135,8 @@
             <show-content>
               <type id="jpa-descriptors" />
               <type id="javaee-facet-resources" />
-              <type id="library" />
               <type id="artifact" />
+              <type id="library" />
             </show-content>
           </artifact-editor>
           <last-edited>camp:jar</last-edited>

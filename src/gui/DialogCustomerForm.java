@@ -1,9 +1,13 @@
 package gui;
 
+import camp.Client;
+import camp.ClientList;
+
 import javax.swing.*;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import java.awt.event.*;
+import java.util.List;
 
 public class DialogCustomerForm extends JDialog {
     private JPanel contentPane;
@@ -82,8 +86,13 @@ public class DialogCustomerForm extends JDialog {
     private JPanel ListPane;
     private JPanel DetailsPane;
     private JList CustomerList;
+    private JPanel SaveChangePane;
+    private JButton SaveButton;
+    private JButton AddNewButton;
+    public List<Client> customerList = null;
 
     public DialogCustomerForm() {
+
         setContentPane(contentPane);
         setModal(true);
         getRootPane().setDefaultButton(buttonOK);
@@ -135,6 +144,53 @@ public class DialogCustomerForm extends JDialog {
             @Override
             public void valueChanged(ListSelectionEvent e) {
                 //To change body of implemented methods use File | Settings | File Templates.
+                //String[] splitThis = CustomerList.getSelectedValue().toString().split(":");
+                //System.out.println(Integer.parseInt(splitThis[0]));
+                System.out.println(customerList().get(CustomerList.getSelectedIndex()).getFirstName());
+                System.out.println(customerList().get(CustomerList.getSelectedIndex()).getClientID());
+            }
+        });
+        SaveButton.addActionListener(new ActionListener() {
+            /**
+             * Invoked when an action occurs.
+             *
+             * @param e
+             */
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+        AddNewButton.addActionListener(new ActionListener() {
+            /**
+             * Invoked when an action occurs.
+             *
+             * @param e
+             */
+            @Override
+            //firstname,secondname,address,county,postcode,carregistration
+            public void actionPerformed(ActionEvent e) {
+                Client tmp = new Client();
+                tmp.setFirstName(Forename.getText());
+                tmp.setSecondName(Surname.getText());
+                tmp.setAddress(Address.getText());
+                tmp.setCounty(County.getText());
+                tmp.setPostcode(PostCode.getText());
+                tmp.setCarRegistration(CarReg.getText());
+                new ClientList().insertNewCustomer(tmp);
+                ClearText();
+                //Refresh Customer List JList with new customer
+                DefaultListModel CustModel = new DefaultListModel();
+                for (Client M : customerList()) {
+                    if (M.getDelete() == true) {
+                        CustModel.addElement(M.getClientID() + ": " + M.getFirstName() + " | " + M.getSecondName() + " | " + M.getCarRegistration() + " | " + M.getPostcode() + " DELETED " + M.getDelete());
+                    } else {
+                        CustModel.addElement(M.getClientID() + ": " + M.getFirstName() + " | " + M.getSecondName() + " | " + M.getCarRegistration() + " | " + M.getPostcode());
+                    }
+                }
+                CustomerList.setModel(CustModel);
+                CustomerList.repaint();
+                //endregion
             }
         });
     }
@@ -153,6 +209,37 @@ public class DialogCustomerForm extends JDialog {
         DialogCustomerForm dialog = new DialogCustomerForm();
         dialog.pack();
         dialog.setVisible(true);
-        System.exit(0);
+        //System.exit(0);
+    }
+
+    private void createUIComponents() {
+        DefaultListModel CustModel = new DefaultListModel();
+        for (Client M : customerList()) {
+            if (M.getDelete() == true) {
+                CustModel.addElement(M.getClientID() + ": " + M.getFirstName() + " | " + M.getSecondName() + " | " + M.getCarRegistration() + " | " + M.getPostcode() + " DELETED " + M.getDelete());
+            } else {
+                CustModel.addElement(M.getClientID() + ": " + M.getFirstName() + " | " + M.getSecondName() + " | " + M.getCarRegistration() + " | " + M.getPostcode());
+            }
+        }
+        CustomerList = new JList(CustModel);
+    }
+
+    private void ClearText() {
+        Forename.setText(null);
+        Surname.setText(null);
+        Address.setText(null);
+        County.setText(null);
+        PostCode.setText(null);
+        CarReg.setText(null);
+    }
+
+    private List<Client> customerList() {
+        List<Client> customerlist = null;
+        try {
+            customerlist = new ClientList().Items();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return customerlist;
     }
 }

@@ -15,13 +15,9 @@ public class Client extends Items{
     private String address;
     private String county;
     private String postcode;
-    private Integer telephoneNumber;
+    private Boolean Delete;
 
-    public Client() {
-
-    }
-
-    public Client(String firstName, String secondName, Integer clientID, String carRegistration, String address, String county, String postcode, Integer telephoneNumber) {
+    public Client(Integer clientID, String firstName, String secondName, String carRegistration, String address, String postcode, String county, Boolean Delete) {
         this.firstName = firstName;
         this.secondName = secondName;
         this.clientID = clientID;
@@ -29,7 +25,7 @@ public class Client extends Items{
         this.address = address;
         this.county = county;
         this.postcode = postcode;
-        this.telephoneNumber = telephoneNumber;
+        this.Delete = Delete;
     }
 
 
@@ -89,13 +85,18 @@ public class Client extends Items{
         this.postcode = postcode;
     }
 
-    public Integer getTelephoneNumber() {
-        return telephoneNumber;
+    public Boolean getDelete() {
+        return Delete;
     }
 
-    public void setTelephoneNumber(Integer telephoneNumber) {
-        this.telephoneNumber = telephoneNumber;
+    public void setDelete(Boolean delete) {
+        Delete = delete;
     }
+
+    public Client() {
+
+    }
+
     @Override
     public String toString(){
 

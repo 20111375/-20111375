@@ -107,6 +107,7 @@ public class FormBooking {
             @Override
             public void actionPerformed(ActionEvent e) {
                 //To change body of implemented methods use File | Settings | File Templates.
+                new DialogCustomerForm().make();
             }
         });
         FindCustomerButton.addActionListener(new ActionListener() {
@@ -116,12 +117,6 @@ public class FormBooking {
             @Override
             public void actionPerformed(ActionEvent e) {
                 //To change body of implemented methods use File | Settings | File Templates.
-                List<Client> customerList = null;
-                try {
-                    customerList = new ClientList().Items();
-                } catch (Exception e1) {
-                    e1.printStackTrace();
-                }
                 new DialogSearch().make();
             }
         });

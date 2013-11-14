@@ -71,12 +71,9 @@ public DialogSearch() {
              */
             @Override
             public void actionPerformed(ActionEvent e) {
-                //To change body of implemented methods use File | Settings | File Templates.
                 for(Client C : finalCustomerList){
-                    System.out.println(C.getClientID().toString());
-                    System.out.println("Wang: " + CustomerID.getText());
-                  if((customerIDRadioButton.isSelected() == true) && (C.getClientID().toString() == CustomerID.getText())){
-                      System.out.println("Beam me up!!!");
+                  if(customerIDRadioButton.isSelected() == true && C.getClientID() == Integer.parseInt(CustomerID.getText())){
+                     System.out.println("Beam me up!!!");
                   }
                 }
             }
@@ -90,6 +87,8 @@ public DialogSearch() {
             public void actionPerformed(ActionEvent e) {
                 //To change body of implemented methods use File | Settings | File Templates.
                 if(carRegRadioButton.isSelected())  {
+                    postCodeRadioButton.setSelected(false);
+                    customerIDRadioButton.setSelected(false);
                     CarReg.setEnabled(true);
             }else{
                     CarReg.setEnabled(false);
@@ -104,6 +103,8 @@ public DialogSearch() {
             public void actionPerformed(ActionEvent e) {
                 //To change body of implemented methods use File | Settings | File Templates.
                 if(postCodeRadioButton.isSelected())  {
+                    carRegRadioButton.setSelected(false);
+                    customerIDRadioButton.setSelected(false);
                     PostCode.setEnabled(true);
                 }else{
                     PostCode.setEnabled(false);
@@ -118,6 +119,8 @@ public DialogSearch() {
             public void actionPerformed(ActionEvent e) {
                 //To change body of implemented methods use File | Settings | File Templates.
                 if(customerIDRadioButton.isSelected())  {
+                    carRegRadioButton.setSelected(false);
+                    postCodeRadioButton.setSelected(false);
                     CustomerID.setEnabled(true);
                 }else{
                     CustomerID.setEnabled(false);
@@ -145,13 +148,13 @@ public DialogSearch() {
     }
 
     private void createUIComponents() {
-        MaskFormatter formatter = null;
+        MaskFormatter CustomerIDFormat = null;
         try {
-            formatter = new MaskFormatter("#######");
+            CustomerIDFormat = new MaskFormatter("#######");
         } catch (ParseException e) {
             e.printStackTrace();
         }
-        formatter.setValidCharacters("0123456789");
-        CustomerID = new JFormattedTextField(formatter);
+        CustomerIDFormat.setValidCharacters("0123456789");
+        CustomerID = new JFormattedTextField(CustomerIDFormat);
     }
 }
