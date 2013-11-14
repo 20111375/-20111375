@@ -1,17 +1,19 @@
 package gui;
 
+import camp.Pitch;
+import camp.PitchList;
 import com.jcalendar.event.CalendarEvent;
 import com.jcalendar.pane.calendar.CalendarPane;
+
 import javax.swing.*;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
-import java.awt.event.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.List;
-
-import camp.*;
 
 /**
  * Created by Andrew on 07/11/13.
@@ -38,6 +40,7 @@ public class FormBooking {
     private int FinishDate;
     private String PitchSelected;
     private List<Pitch> mac = null;
+
     public String getPitchSelected() {
         return PitchSelected;
     }
@@ -46,11 +49,11 @@ public class FormBooking {
         PitchSelected = pitchSelected;
     }
 
-    public String makeFinishDate(int day, String Start){
+    public String makeFinishDate(int day, String Start) {
         Calendar calendar = Calendar.getInstance();
         try {
             calendar.setTime(dateFormat.parse(Start));
-            calendar.add(Calendar.DATE,day);
+            calendar.add(Calendar.DATE, day);
         } catch (ParseException e) {
             e.printStackTrace();
         }
@@ -126,7 +129,7 @@ public class FormBooking {
              */
             @Override
             public void actionPerformed(ActionEvent e) {
-                if(StartDate != null && FinishDate != 0 && TypeName != null){
+                if (StartDate != null && FinishDate != 0 && TypeName != null) {
                     String tempTime = makeFinishDate(getFinishDate(), getStartDate());
 
                     /*
@@ -136,7 +139,7 @@ public class FormBooking {
                     */
 
                     try {
-                        mac = new PitchList().Items(getStartDate(),tempTime.toString(),getTypeName());
+                        mac = new PitchList().Items(getStartDate(), tempTime.toString(), getTypeName());
                     } catch (Exception e1) {
                         e1.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
                     }
@@ -176,8 +179,8 @@ public class FormBooking {
              */
             @Override
             public void actionPerformed(ActionEvent e) {
-              setFinishDate(EndDate.getSelectedIndex());
-               //System.out.println(getFinishDate());
+                setFinishDate(EndDate.getSelectedIndex());
+                //System.out.println(getFinishDate());
             }
         });
 
@@ -195,15 +198,15 @@ public class FormBooking {
                     PitchDetails.append("Pitch name: " + mac.get(SearchResultList.getSelectedIndex()).getPitchName() + "\n");
                     PitchDetails.append("Pitch type: ");
                     String[] array = mac.get(SearchResultList.getSelectedIndex()).getTypeName();
-                    for(String E : array)  {
+                    for (String E : array) {
                         if (E != null) {
                             PitchDetails.append(E + ", ");
                             System.out.println(E + "\n");
                         }
                     }
                     PitchDetails.append("\n");
-                    PitchDetails.append("Start date: "+ getStartDate() + "\n");
-                    PitchDetails.append("Finish date: "+ makeFinishDate(getFinishDate(), getStartDate()).toString() + "\n");
+                    PitchDetails.append("Start date: " + getStartDate() + "\n");
+                    PitchDetails.append("Finish date: " + makeFinishDate(getFinishDate(), getStartDate()).toString() + "\n");
                 }
             }
         });
@@ -213,7 +216,7 @@ public class FormBooking {
         JFrame frame = new JFrame("FormBooking");
         frame.setResizable(false);
         frame.setContentPane(new FormBooking().FormBooking);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
     }

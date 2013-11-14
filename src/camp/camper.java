@@ -5,13 +5,14 @@
  * Time: 12:31
  */
 package camp;
+
+import gui.MenuCampsite;
+
 import java.awt.*;
-import java.util.List;
-import gui.*;
 
 
-public class camper{
-	public static void main(String[] args) throws Exception {
+public class camper {
+    public static void main(String[] args) throws Exception {
         /*
         try {
 
@@ -27,12 +28,12 @@ public class camper{
         EventQueue.invokeLater(new Runnable() {
             public void run() {
                 try {
-                    new FormBooking().run();
+                    new MenuCampsite().run();
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
             }
         });
 
-	}
+    }
 }

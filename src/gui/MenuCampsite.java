@@ -1,6 +1,8 @@
 package gui;
 
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 /**
  * Created with IntelliJ IDEA.
@@ -9,8 +11,31 @@ import javax.swing.*;
  * Time: 18:08
  */
 public class MenuCampsite {
-    private JPanel panel1;
-    private JButton button1;
-    private JButton button2;
-    private JButton button3;
+    private JPanel MainPanel;
+    private JButton bookingsButton;
+    private JButton pitchesButton;
+    private JButton reportsButton;
+
+    public MenuCampsite() {
+        bookingsButton.addActionListener(new ActionListener() {
+            /**
+             * Invoked when an action occurs.
+             *
+             * @param e
+             */
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new FormBooking().run();
+            }
+        });
+    }
+
+    public void run() {
+        JFrame frame = new JFrame("MenuCampsite");
+        frame.setResizable(false);
+        frame.setContentPane(new MenuCampsite().MainPanel);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.pack();
+        frame.setVisible(true);
+    }
 }
