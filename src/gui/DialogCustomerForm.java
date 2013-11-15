@@ -7,7 +7,6 @@ import javax.swing.*;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import java.awt.event.*;
-import java.util.List;
 
 public class DialogCustomerForm extends JDialog {
     private JPanel contentPane;
@@ -90,7 +89,6 @@ public class DialogCustomerForm extends JDialog {
     private JButton SaveButton;
     private JButton AddNewButton;
     private JButton ResetButton;
-    public List<Client> customerList = null;
 
     public DialogCustomerForm() {
 
@@ -138,7 +136,7 @@ public class DialogCustomerForm extends JDialog {
                 String tmpStr = (String) (String) CustomerList.getSelectedValue();
                 String[] tmpArray = tmpStr.split(":");
                 System.out.println(tmpArray[0]);
-                for (Client F : customerList()) {
+                for (Client F : ClientList.customerList()) {
                     if (F.getClientID() == Integer.parseInt(tmpArray[0])) {
                         ClearText();
                         CustomerID.append(String.valueOf(F.getClientID()));
@@ -164,8 +162,8 @@ public class DialogCustomerForm extends JDialog {
                 //String[] splitThis = CustomerList.getSelectedValue().toString().split(":");
                 //System.out.println(Integer.parseInt(splitThis[0]));
                 DeleteButton.setEnabled(true);
-                System.out.println(customerList().get(CustomerList.getSelectedIndex()).getFirstName());
-                System.out.println(customerList().get(CustomerList.getSelectedIndex()).getClientID());
+                System.out.println(ClientList.customerList().get(CustomerList.getSelectedIndex()).getFirstName());
+                System.out.println(ClientList.customerList().get(CustomerList.getSelectedIndex()).getClientID());
             }
         });
         SaveButton.addActionListener(new ActionListener() {
@@ -200,7 +198,7 @@ public class DialogCustomerForm extends JDialog {
                 ClearText();
                 //Refresh Customer List JList with new customer
                 DefaultListModel CustModel = new DefaultListModel();
-                for (Client M : customerList()) {
+                for (Client M : ClientList.customerList()) {
                     if (M.getDelete() == true) {
                         CustModel.addElement(M.getClientID() + ": " + M.getFirstName() + " | " + M.getSecondName() + " | " + M.getCarRegistration() + " | " + M.getPostcode() + " DELETED " + M.getDelete());
                     } else {
@@ -245,7 +243,7 @@ public class DialogCustomerForm extends JDialog {
 
     private void createUIComponents() {
         DefaultListModel CustModel = new DefaultListModel();
-        for (Client M : customerList()) {
+        for (Client M : ClientList.customerList()) {
             if (M.getDelete() == true) {
                 CustModel.addElement(M.getClientID() + ": " + M.getFirstName() + " | " + M.getSecondName() + " | " + M.getCarRegistration() + " | " + M.getPostcode() + " DELETED " + M.getDelete());
             } else {
@@ -265,13 +263,4 @@ public class DialogCustomerForm extends JDialog {
         CarReg.setText(null);
     }
 
-    private List<Client> customerList() {
-        List<Client> customerlist = null;
-        try {
-            customerlist = new ClientList().Items();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return customerlist;
-    }
 }

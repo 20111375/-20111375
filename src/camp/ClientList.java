@@ -6,11 +6,11 @@
  */
 package camp;
 
+import db.connection;
+
 import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
-
-import db.connection;
 
 public class ClientList extends GenericList<Client> {
     protected List<Client> items;
@@ -43,5 +43,15 @@ public class ClientList extends GenericList<Client> {
         String SQL = "ALTER  APP.CUSTOMER (delte)\n" +
                 "values ('" + C.getDelete() + "')";
         new connection().ExecuteCustomerUpdate(SQL);
+    }
+
+    public static final List<Client> customerList() {
+        List<Client> customerlist = null;
+        try {
+            customerlist = new ClientList().Items();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return customerlist;
     }
 }

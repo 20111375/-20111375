@@ -41,6 +41,12 @@ public class FormBooking extends JDialog {
     private int FinishDate;
     private String PitchSelected;
     private List<Pitch> pitches = null;
+    private int bookingClient;
+    private DialogSearch search = new DialogSearch();
+
+    public DialogSearch getSearch() {
+        return search;
+    }
 
     public String getPitchSelected() {
         return PitchSelected;
@@ -83,6 +89,14 @@ public class FormBooking extends JDialog {
 
     public void setTypeName(String typeName) {
         TypeName = typeName;
+    }
+
+    public JTextArea getPitchDetails() {
+        return PitchDetails;
+    }
+
+    public void setPitchDetails(JTextArea pitchDetails) {
+        PitchDetails = pitchDetails;
     }
 
     public FormBooking() {
@@ -152,7 +166,7 @@ public class FormBooking extends JDialog {
             @Override
             public void actionPerformed(ActionEvent e) {
                 //To change body of implemented methods use File | Settings | File Templates.
-                new DialogSearch().make();
+                getSearch().make();
             }
         });
         SearchButton.addActionListener(new ActionListener() {
@@ -234,6 +248,7 @@ public class FormBooking extends JDialog {
                     PitchDetails.append("Start date: " + getStartDate() + "\n");
                     PitchDetails.append("Finish date: " + makeFinishDate(getFinishDate(), getStartDate()).toString() + "\n");
                 }
+
             }
         });
     }
