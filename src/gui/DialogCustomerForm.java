@@ -89,6 +89,7 @@ public class DialogCustomerForm extends JDialog {
     private JPanel SaveChangePane;
     private JButton SaveButton;
     private JButton AddNewButton;
+    private JButton ResetButton;
     public List<Client> customerList = null;
 
     public DialogCustomerForm() {
@@ -133,6 +134,22 @@ public class DialogCustomerForm extends JDialog {
             @Override
             public void actionPerformed(ActionEvent e) {
                 //To change body of implemented methods use File | Settings | File Templates.
+                AddNewButton.setEnabled(false);
+                String tmpStr = (String) (String) CustomerList.getSelectedValue();
+                String[] tmpArray = tmpStr.split(":");
+                System.out.println(tmpArray[0]);
+                for (Client F : customerList()) {
+                    if (F.getClientID() == Integer.parseInt(tmpArray[0])) {
+                        ClearText();
+                        CustomerID.append(String.valueOf(F.getClientID()));
+                        Forename.append(F.getFirstName());
+                        Surname.append(F.getSecondName());
+                        CarReg.append(F.getCarRegistration());
+                        Address.append(F.getAddress());
+                        County.append(F.getCounty());
+                        PostCode.append(F.getPostcode());
+                    }
+                }
             }
         });
         CustomerList.addListSelectionListener(new ListSelectionListener() {
@@ -146,6 +163,7 @@ public class DialogCustomerForm extends JDialog {
                 //To change body of implemented methods use File | Settings | File Templates.
                 //String[] splitThis = CustomerList.getSelectedValue().toString().split(":");
                 //System.out.println(Integer.parseInt(splitThis[0]));
+                DeleteButton.setEnabled(true);
                 System.out.println(customerList().get(CustomerList.getSelectedIndex()).getFirstName());
                 System.out.println(customerList().get(CustomerList.getSelectedIndex()).getClientID());
             }
@@ -161,6 +179,7 @@ public class DialogCustomerForm extends JDialog {
 
             }
         });
+
         AddNewButton.addActionListener(new ActionListener() {
             /**
              * Invoked when an action occurs.
@@ -191,6 +210,18 @@ public class DialogCustomerForm extends JDialog {
                 CustomerList.setModel(CustModel);
                 CustomerList.repaint();
                 //endregion
+            }
+        });
+        ResetButton.addActionListener(new ActionListener() {
+            /**
+             * Invoked when an action occurs.
+             *
+             * @param e
+             */
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                ClearText();
+                AddNewButton.setEnabled(true);
             }
         });
     }
@@ -225,6 +256,7 @@ public class DialogCustomerForm extends JDialog {
     }
 
     private void ClearText() {
+        CustomerID.setText(null);
         Forename.setText(null);
         Surname.setText(null);
         Address.setText(null);

@@ -8,8 +8,7 @@ import com.jcalendar.pane.calendar.CalendarPane;
 import javax.swing.*;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.event.*;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -18,7 +17,7 @@ import java.util.List;
 /**
  * Created by Andrew on 07/11/13.
  */
-public class FormBooking {
+public class FormBooking extends JDialog {
     private JComboBox PitchType;
     private JList SearchResultList;
     private JButton SearchButton;
@@ -34,12 +33,14 @@ public class FormBooking {
     private JPanel ExtendBooking;
     private JPanel FormBooking;
     private JPanel BookForm;
+    private JButton buttonCancel;
+    private JButton buttonOK;
     private String TypeName;
     private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
     private String StartDate = null;
     private int FinishDate;
     private String PitchSelected;
-    private List<Pitch> mac = null;
+    private List<Pitch> pitches = null;
 
     public String getPitchSelected() {
         return PitchSelected;
@@ -85,6 +86,37 @@ public class FormBooking {
     }
 
     public FormBooking() {
+        setContentPane(FormBooking);
+        setModal(true);
+        getRootPane().setDefaultButton(buttonOK);
+
+        buttonOK.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                onOK();
+            }
+        });
+
+        buttonCancel.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                onCancel();
+            }
+        });
+
+// call onCancel() when cross is clicked
+        setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
+        addWindowListener(new WindowAdapter() {
+            public void windowClosing(WindowEvent e) {
+                onCancel();
+            }
+        });
+
+// call onCancel() on ESCAPE
+        FormBooking.registerKeyboardAction(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                onCancel();
+            }
+        }, KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
+
         extendABookingButton.addActionListener(new ActionListener() {
             /**
              * Invoked when an action occurs.
@@ -131,22 +163,13 @@ public class FormBooking {
             public void actionPerformed(ActionEvent e) {
                 if (StartDate != null && FinishDate != 0 && TypeName != null) {
                     String tempTime = makeFinishDate(getFinishDate(), getStartDate());
-
-                    /*
-                    System.out.println("This is the type: " + getTypeName());
-                    System.out.println("This is the start date: " + getStartDate());
-                    System.out.println("This is the end date: " + tempTime.toString());
-                    */
-
                     try {
-                        mac = new PitchList().Items(getStartDate(), tempTime.toString(), getTypeName());
+                        pitches = new PitchList().Items(getStartDate(), tempTime.toString(), getTypeName());
                     } catch (Exception e1) {
                         e1.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
                     }
-                    SearchResultList.setListData(mac.toArray());
-
+                    SearchResultList.setListData(pitches.toArray());
                 }
-                //To change body of implemented methods use File | Settings | File Templates.
                 // query db with start date, end date and pitch type
             }
         });
@@ -194,10 +217,13 @@ public class FormBooking {
             public void valueChanged(ListSelectionEvent e) {
                 //To change body of implemented methods use File | Settings | File Templates.
                 if (e.getValueIsAdjusting() == true) {
+                    if (isEmpty()) {
+                        PitchDetails.setText(null);
+                    }
                     setPitchSelected(SearchResultList.getSelectedValue().toString());
-                    PitchDetails.append("Pitch name: " + mac.get(SearchResultList.getSelectedIndex()).getPitchName() + "\n");
+                    PitchDetails.append("Pitch name: " + pitches.get(SearchResultList.getSelectedIndex()).getPitchName() + "\n");
                     PitchDetails.append("Pitch type: ");
-                    String[] array = mac.get(SearchResultList.getSelectedIndex()).getTypeName();
+                    String[] array = pitches.get(SearchResultList.getSelectedIndex()).getTypeName();
                     for (String E : array) {
                         if (E != null) {
                             PitchDetails.append(E + ", ");
@@ -212,12 +238,30 @@ public class FormBooking {
         });
     }
 
-    public void run() {
-        JFrame frame = new JFrame("FormBooking");
-        frame.setResizable(false);
-        frame.setContentPane(new FormBooking().FormBooking);
-        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        frame.pack();
-        frame.setVisible(true);
+    private void onOK() {
+// add your code here
+        dispose();
     }
+
+    private void onCancel() {
+// add your code here if necessary
+        dispose();
+    }
+
+    private boolean isEmpty() {
+        String tmp = PitchDetails.getText().trim();
+        System.out.println("this is tmp: " + tmp);
+        if ((tmp != null) && (tmp.trim().length() > 0)) {
+            return true;
+        }
+        return false;
+    }
+
+    public static void run() {
+        FormBooking dialog = new FormBooking();
+        dialog.pack();
+        dialog.setVisible(true);
+        //System.exit(0);
+    }
+
 }
