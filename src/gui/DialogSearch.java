@@ -24,10 +24,25 @@ public class DialogSearch extends JDialog {
     private JFormattedTextField PostCode;
     private JFormattedTextField CarReg;
     private JButton searchButton;
-    private String pickCustomer;
 
     public String getPickCustomer() {
-        return SearchResultList.getSelectedValue().toString();
+        if (!SearchResultList.isSelectionEmpty()) {
+            return SearchResultList.getSelectedValue().toString();
+        }
+        return null;
+    }
+
+    public Client getPickedClient() {
+        if (!SearchResultList.isSelectionEmpty()) {
+            String[] tmp = SearchResultList.getSelectedValue().toString().split(":");
+            for (Client M : ClientList.customerList()) {
+                if (tmp[0].equals(M.getClientID().toString())) {
+                    return M;
+                }
+            }
+
+        }
+        return null;
     }
 
     public DialogSearch(Window windowAncestor) {

@@ -1,5 +1,6 @@
 package gui;
 
+import camp.Client;
 import camp.Pitch;
 import camp.PitchList;
 import com.jcalendar.event.CalendarEvent;
@@ -41,7 +42,6 @@ public class FormBooking extends JDialog {
     private int FinishDate;
     private String PitchSelected;
     private List<Pitch> pitches = null;
-    private int bookingClient;
     private DialogSearch search = new DialogSearch(SwingUtilities.getWindowAncestor(this));
 
     public DialogSearch getSearch() {
@@ -167,7 +167,13 @@ public class FormBooking extends JDialog {
             public void actionPerformed(ActionEvent e) {
                 //To change body of implemented methods use File | Settings | File Templates.
                 getSearch().make(search);
-                CustomerDetails.setText(search.getPickCustomer());
+                Client tmp = search.getPickedClient();
+                if (tmp != null) {
+                    CustomerDetails.append("Customer ID: " + tmp.getClientID() + "\n");
+                    CustomerDetails.append("Customer name: " + tmp.getFirstName() + " " + tmp.getSecondName() + "\n");
+                    CustomerDetails.append("Customer car Reg: " + tmp.getCarRegistration() + "\n");
+                }
+
             }
         });
         SearchButton.addActionListener(new ActionListener() {
