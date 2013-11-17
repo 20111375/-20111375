@@ -9,7 +9,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="joda-time-2.3" level="project" />
     <orderEntry type="library" exported="" name="jcalendar_0.0.4_beta" level="project" />
-    <orderEntry type="library" exported="" name="jgoodies-forms-1.7.1" level="project" />
     <orderEntry type="library" exported="" name="derby" level="project" />
   </component>
 </module>

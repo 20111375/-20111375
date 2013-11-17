@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component name="dataSourceStorage">
-  <data-source source="LOCAL" name="Data Source" uuid="f9b6cfa8-09c1-4d3d-a28c-cfc288b48a0b">
-    <database-info product="Apache Derby" version="10.10.1.1 - (1458268)" jdbc-version="4.1" driver-name="Apache Derby Embedded JDBC Driver" driver-version="10.10.1.1 - (1458268)">
-      <identifier-quote-string>&quot;</identifier-quote-string>
-    </database-info>
-    <case-sensitivity plain-identifiers="upper" quoted-identifiers="exact"/>
+  <data-source source="LOCAL" name="Data Source" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="f9b6cfa8-09c1-4d3d-a28c-cfc288b48a0b">
+    <synchronize>true</synchronize>
+    <jdbc-driver>org.apache.derby.jdbc.AutoloadedDriver</jdbc-driver>
+    <jdbc-url>jdbc:derby:$PROJECT_DIR$/database</jdbc-url>
+    <schema-pattern>*.APP</schema-pattern>
+    <default-schemas>*.APP</default-schemas>
+    <default-dialect>Derby</default-dialect>
+    <libraries>
+      <library>
+        <url>jar://$PROJECT_DIR$/Lib/derby.jar!/</url>
+      </library>
+    </libraries>
     <schema name="APP" catalog=""/>
     <table name="BOOKING" schema="APP" catalog="" type="TABLE">
       <column name="CUSTOMERID" sqlType="INTEGER" length="10" precision="0" nullable="false" jdbcType="4"/>

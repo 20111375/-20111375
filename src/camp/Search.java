@@ -5,6 +5,7 @@
  * Time: 12:31
  */
 package camp;
+
 import db.connection;
 
 import java.sql.ResultSet;
@@ -70,13 +71,21 @@ values ();
 This inserts into the booking table:
 insert into app.booking (PITCHID, FROMDATE, TODATE, PAID, TOTAL)
 values ();
+
+This prices:
+select app.PRICES.TENT from app.prices;
+
+This finds discounts:
+select (app.season.SEASONNAME), (app.season.DISCOUNT) from app.season
+where '2013-01-01' BETWEEN App.season.STARTDATE and APP.season.ENDDATE;
  */
-public class Search<E> extends GenericList{
+public class Search<E> extends GenericList {
     protected List<E> results;
 
     public Search() {
 
     }
+
     public List<Booking> booked(String requestedDate) throws Exception {
         SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
         Date date = format.parse(requestedDate);

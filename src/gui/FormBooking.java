@@ -147,6 +147,7 @@ public class FormBooking extends JDialog {
             @Override
             public void actionPerformed(ActionEvent e) {
                 //To change body of implemented methods use File | Settings | File Templates.
+                new DialogBookingSummary().make();
             }
         });
         NewCustomerButton.addActionListener(new ActionListener() {
