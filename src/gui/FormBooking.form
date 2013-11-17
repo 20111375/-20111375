@@ -235,14 +235,19 @@
                 <properties/>
                 <border type="line" title="Customer details"/>
                 <children>
-                  <component id="61e3d" class="javax.swing.JTextArea" binding="CustomerDetails">
+                  <scrollpane id="7207d">
                     <constraints>
-                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
-                        <preferred-size width="250" height="20"/>
-                      </grid>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                     </constraints>
                     <properties/>
-                  </component>
+                    <border type="none"/>
+                    <children>
+                      <component id="61e3d" class="javax.swing.JTextArea" binding="CustomerDetails">
+                        <constraints/>
+                        <properties/>
+                      </component>
+                    </children>
+                  </scrollpane>
                 </children>
               </grid>
               <vspacer id="1e987">
@@ -262,14 +267,19 @@
                 <properties/>
                 <border type="line" title="Pitch details"/>
                 <children>
-                  <component id="3496d" class="javax.swing.JTextArea" binding="PitchDetails">
+                  <scrollpane id="271e5">
                     <constraints>
-                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
-                        <preferred-size width="150" height="50"/>
-                      </grid>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                     </constraints>
                     <properties/>
-                  </component>
+                    <border type="none"/>
+                    <children>
+                      <component id="3496d" class="javax.swing.JTextArea" binding="PitchDetails">
+                        <constraints/>
+                        <properties/>
+                      </component>
+                    </children>
+                  </scrollpane>
                 </children>
               </grid>
               <component id="f204e" class="javax.swing.JButton" binding="ConfirmButton">

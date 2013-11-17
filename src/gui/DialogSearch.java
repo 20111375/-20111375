@@ -7,6 +7,7 @@ import javax.swing.*;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import javax.swing.text.MaskFormatter;
+import java.awt.*;
 import java.awt.event.*;
 import java.text.ParseException;
 
@@ -23,17 +24,13 @@ public class DialogSearch extends JDialog {
     private JFormattedTextField PostCode;
     private JFormattedTextField CarReg;
     private JButton searchButton;
-    private int pickCustomer;
+    private String pickCustomer;
 
-    public int getPickCustomer() {
-        return pickCustomer;
+    public String getPickCustomer() {
+        return SearchResultList.getSelectedValue().toString();
     }
 
-    public void setPickCustomer(int pickCustomer) {
-        this.pickCustomer = pickCustomer;
-    }
-
-    public DialogSearch() {
+    public DialogSearch(Window windowAncestor) {
 
         setContentPane(dialogSearch);
         setModal(true);
@@ -148,15 +145,14 @@ public class DialogSearch extends JDialog {
              */
             @Override
             public void valueChanged(ListSelectionEvent e) {
-                setPickCustomer(ClientList.customerList().get(SearchResultList.getSelectedIndex()).getClientID());
-                System.out.println("picked: " + ClientList.customerList().get(SearchResultList.getSelectedIndex()).getClientID());
+
             }
         });
     }
 
     private void onOK() {
 // add your code here
-       dispose();
+        dispose();
     }
 
     private void onCancel() {
@@ -164,11 +160,9 @@ public class DialogSearch extends JDialog {
         dispose();
     }
 
-    public void make() {
-        DialogSearch dialog;
-        dialog = new DialogSearch();
-        dialog.pack();
-        dialog.setVisible(true);
+    public void make(DialogSearch D) {
+        D.pack();
+        D.setVisible(true);
         //System.exit(0);
     }
 

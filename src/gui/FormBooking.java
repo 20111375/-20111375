@@ -42,7 +42,7 @@ public class FormBooking extends JDialog {
     private String PitchSelected;
     private List<Pitch> pitches = null;
     private int bookingClient;
-    private DialogSearch search = new DialogSearch();
+    private DialogSearch search = new DialogSearch(SwingUtilities.getWindowAncestor(this));
 
     public DialogSearch getSearch() {
         return search;
@@ -166,7 +166,8 @@ public class FormBooking extends JDialog {
             @Override
             public void actionPerformed(ActionEvent e) {
                 //To change body of implemented methods use File | Settings | File Templates.
-                getSearch().make();
+                getSearch().make(search);
+                CustomerDetails.setText(search.getPickCustomer());
             }
         });
         SearchButton.addActionListener(new ActionListener() {
