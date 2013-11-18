@@ -1,7 +1,8 @@
 package gui;
 
+import camp.Booking;
+
 import javax.swing.*;
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -131,8 +132,9 @@ public class ReportBookingSummary {
     private JButton emailButton;
     private JButton printButton;
     private JPanel Summary;
+    private JCheckBox paidCheckBox;
 
-    public ReportBookingSummary() {
+    public ReportBookingSummary(Booking confirmBooked) {
         emailButton.addActionListener(new ActionListener() {
             /**
              * Invoked when an action occurs.

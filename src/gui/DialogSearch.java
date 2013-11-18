@@ -40,7 +40,6 @@ public class DialogSearch extends JDialog {
                     return M;
                 }
             }
-
         }
         return null;
     }
@@ -177,6 +176,7 @@ public class DialogSearch extends JDialog {
 
     public void make(DialogSearch D) {
         D.pack();
+        D.setResizable(false);
         D.setVisible(true);
         //System.exit(0);
     }

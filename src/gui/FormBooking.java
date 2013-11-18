@@ -3,6 +3,7 @@ package gui;
 import camp.Client;
 import camp.Pitch;
 import camp.PitchList;
+import camp.Pricing;
 import com.jcalendar.event.CalendarEvent;
 import com.jcalendar.pane.calendar.CalendarPane;
 
@@ -13,6 +14,7 @@ import java.awt.event.*;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -42,62 +44,10 @@ public class FormBooking extends JDialog {
     private int FinishDate;
     private String PitchSelected;
     private List<Pitch> pitches = null;
+    private Client BookingClient;
+    private Pitch BookingPitch;
     private DialogSearch search = new DialogSearch(SwingUtilities.getWindowAncestor(this));
 
-    public DialogSearch getSearch() {
-        return search;
-    }
-
-    public String getPitchSelected() {
-        return PitchSelected;
-    }
-
-    public void setPitchSelected(String pitchSelected) {
-        PitchSelected = pitchSelected;
-    }
-
-    public String makeFinishDate(int day, String Start) {
-        Calendar calendar = Calendar.getInstance();
-        try {
-            calendar.setTime(dateFormat.parse(Start));
-            calendar.add(Calendar.DATE, day);
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
-        return dateFormat.format(calendar.getTime());
-    }
-
-    public int getFinishDate() {
-        return FinishDate;
-    }
-
-    public void setFinishDate(int finishDate) {
-        FinishDate = finishDate;
-    }
-
-    public String getStartDate() {
-        return StartDate;
-    }
-
-    public void setStartDate(String startDate) {
-        StartDate = startDate;
-    }
-
-    public String getTypeName() {
-        return TypeName;
-    }
-
-    public void setTypeName(String typeName) {
-        TypeName = typeName;
-    }
-
-    public JTextArea getPitchDetails() {
-        return PitchDetails;
-    }
-
-    public void setPitchDetails(JTextArea pitchDetails) {
-        PitchDetails = pitchDetails;
-    }
 
     public FormBooking() {
         setContentPane(FormBooking);
@@ -137,7 +87,6 @@ public class FormBooking extends JDialog {
              */
             @Override
             public void actionPerformed(ActionEvent e) {
-                //To change body of implemented methods use File | Settings | File Templates.
             }
         });
         ConfirmButton.addActionListener(new ActionListener() {
@@ -146,17 +95,19 @@ public class FormBooking extends JDialog {
              */
             @Override
             public void actionPerformed(ActionEvent e) {
-                //To change body of implemented methods use File | Settings | File Templates.
-                new DialogBookingSummary().make();
+                DialogBookingSummary booked = new DialogBookingSummary();
+                booked.make(BookingClient, BookingPitch, getStartDate(), makeFinishDate(getFinishDate(), getStartDate()));
+                Pricing price = new Pricing();
+                System.out.println(price.Total(price.getFee(), price.Discount(getStartDate()), getFinishDate()));
             }
         });
+
         NewCustomerButton.addActionListener(new ActionListener() {
             /**
              * Invoked when an action occurs.
              */
             @Override
             public void actionPerformed(ActionEvent e) {
-                //To change body of implemented methods use File | Settings | File Templates.
                 new DialogCustomerForm().make();
             }
         });
@@ -166,15 +117,14 @@ public class FormBooking extends JDialog {
              */
             @Override
             public void actionPerformed(ActionEvent e) {
-                //To change body of implemented methods use File | Settings | File Templates.
                 getSearch().make(search);
-                Client tmp = search.getPickedClient();
-                if (tmp != null) {
-                    CustomerDetails.append("Customer ID: " + tmp.getClientID() + "\n");
-                    CustomerDetails.append("Customer name: " + tmp.getFirstName() + " " + tmp.getSecondName() + "\n");
-                    CustomerDetails.append("Customer car Reg: " + tmp.getCarRegistration() + "\n");
+                setBookingClient(search.getPickedClient());
+                if (BookingClient != null) {
+                    CustomerDetails.setText("");
+                    CustomerDetails.append("Customer ID: " + BookingClient.getClientID() + "\n");
+                    CustomerDetails.append("Customer name: " + BookingClient.getFirstName() + " " + BookingClient.getSecondName() + "\n");
+                    CustomerDetails.append("Customer car Reg: " + BookingClient.getCarRegistration() + "\n");
                 }
-
             }
         });
         SearchButton.addActionListener(new ActionListener() {
@@ -188,11 +138,10 @@ public class FormBooking extends JDialog {
                     try {
                         pitches = new PitchList().Items(getStartDate(), tempTime.toString(), getTypeName());
                     } catch (Exception e1) {
-                        e1.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+                        e1.printStackTrace();
                     }
                     SearchResultList.setListData(pitches.toArray());
                 }
-                // query db with start date, end date and pitch type
             }
         });
         PitchType.addActionListener(new ActionListener() {
@@ -210,9 +159,8 @@ public class FormBooking extends JDialog {
             public void selectionChanged(CalendarEvent arg0) {
                 try {
                     setStartDate(dateFormat.format(arg0.getDate()));
-                    //System.out.println(getStartDate());
                 } catch (Exception e) {
-                    e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+                    e.printStackTrace();
                 }
             }
         });
@@ -225,7 +173,6 @@ public class FormBooking extends JDialog {
             @Override
             public void actionPerformed(ActionEvent e) {
                 setFinishDate(EndDate.getSelectedIndex());
-                //System.out.println(getFinishDate());
             }
         });
 
@@ -237,7 +184,6 @@ public class FormBooking extends JDialog {
              */
             @Override
             public void valueChanged(ListSelectionEvent e) {
-                //To change body of implemented methods use File | Settings | File Templates.
                 if (e.getValueIsAdjusting() == true) {
                     if (isEmpty()) {
                         PitchDetails.setText(null);
@@ -246,10 +192,10 @@ public class FormBooking extends JDialog {
                     PitchDetails.append("Pitch name: " + pitches.get(SearchResultList.getSelectedIndex()).getPitchName() + "\n");
                     PitchDetails.append("Pitch type: ");
                     String[] array = pitches.get(SearchResultList.getSelectedIndex()).getTypeName();
+                    setBookingPitch(pitches.get(SearchResultList.getSelectedIndex()));
                     for (String E : array) {
                         if (E != null) {
                             PitchDetails.append(E + ", ");
-                            System.out.println(E + "\n");
                         }
                     }
                     PitchDetails.append("\n");
@@ -259,6 +205,95 @@ public class FormBooking extends JDialog {
 
             }
         });
+    }
+
+    public static void run() {
+        FormBooking dialog = new FormBooking();
+        dialog.pack();
+        dialog.setResizable(false);
+        dialog.setVisible(true);
+        //System.exit(0);
+    }
+
+    public Pitch getBookingPitch() {
+        return BookingPitch;
+    }
+
+    public void setBookingPitch(Pitch bookingPitch) {
+        BookingPitch = bookingPitch;
+    }
+
+    public Client getBookingClient() {
+        return BookingClient;
+    }
+
+    public void setBookingClient(Client bookingClient) {
+        BookingClient = bookingClient;
+    }
+
+    public DialogSearch getSearch() {
+        return search;
+    }
+
+    public String getPitchSelected() {
+        return PitchSelected;
+    }
+
+    public void setPitchSelected(String pitchSelected) {
+        PitchSelected = pitchSelected;
+    }
+
+    public String makeFinishDate(int day, String Start) {
+        Calendar calendar = Calendar.getInstance();
+        try {
+            calendar.setTime(dateFormat.parse(Start));
+            calendar.add(Calendar.DATE, day);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        return dateFormat.format(calendar.getTime());
+    }
+
+    public Date makeStartDate(String Start) {
+        Calendar calendar = Calendar.getInstance();
+        try {
+            calendar.setTime(dateFormat.parse(Start));
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        return calendar.getTime();
+    }
+
+    public int getFinishDate() {
+        return FinishDate;
+    }
+
+    public void setFinishDate(int finishDate) {
+        FinishDate = finishDate;
+    }
+
+    public String getStartDate() {
+        return StartDate;
+    }
+
+    public void setStartDate(String startDate) {
+        StartDate = startDate;
+    }
+
+    public String getTypeName() {
+        return TypeName;
+    }
+
+    public void setTypeName(String typeName) {
+        TypeName = typeName;
+    }
+
+    public JTextArea getPitchDetails() {
+        return PitchDetails;
+    }
+
+    public void setPitchDetails(JTextArea pitchDetails) {
+        PitchDetails = pitchDetails;
     }
 
     private void onOK() {
@@ -273,18 +308,11 @@ public class FormBooking extends JDialog {
 
     private boolean isEmpty() {
         String tmp = PitchDetails.getText().trim();
-        System.out.println("this is tmp: " + tmp);
+        // System.out.println("this is tmp: " + tmp);
         if ((tmp != null) && (tmp.trim().length() > 0)) {
             return true;
         }
         return false;
-    }
-
-    public static void run() {
-        FormBooking dialog = new FormBooking();
-        dialog.pack();
-        dialog.setVisible(true);
-        //System.exit(0);
     }
 
 }

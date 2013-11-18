@@ -25,6 +25,7 @@ public class camper {
 			e.printStackTrace();
 		}
         */
+
         EventQueue.invokeLater(new Runnable() {
             public void run() {
                 try {

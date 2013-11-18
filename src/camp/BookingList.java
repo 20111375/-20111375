@@ -6,7 +6,8 @@
  */
 package camp;
 
-import db.*;
+import db.connection;
+
 import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
@@ -28,5 +29,11 @@ public class BookingList extends GenericList<Booking> {
             }
         }
         return items;
+    }
+
+    public void insertNewBooking(Booking C) {
+        String SQL = "insert into app.booking (PITCHID, FROMDATE, TODATE, PAID, TOTAL)\n" +
+                "values ('" + C.getPitchID() + "','" + C.getFromDate() + "','" + C.getToDate() + "','" + C.getPaid() + "','" + C.getTotal() + "'";
+        new connection().ExecuteCustomerInsert(SQL);
     }
 }

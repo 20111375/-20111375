@@ -1,5 +1,8 @@
 package gui;
 
+import camp.Client;
+import camp.Pitch;
+
 import javax.swing.*;
 import java.awt.event.*;
 
@@ -10,87 +13,87 @@ public class DialogBookingSummary extends JDialog {
     private JPanel Buttons;
     private JPanel ButtonPanel;
     private JPanel Details;
-    private JTextArea BookingForeName;
+    public JTextArea BookingForeName;
     private JTextArea BookingSurname;
 
     public JTextArea getBookingForeName() {
         return BookingForeName;
     }
 
-    public void setBookingForeName(JTextArea bookingForeName) {
-        BookingForeName = bookingForeName;
+    public void setBookingForeName(String bookingForeName) {
+        BookingForeName.append(bookingForeName);
     }
 
     public JTextArea getBookingSurname() {
         return BookingSurname;
     }
 
-    public void setBookingSurname(JTextArea bookingSurname) {
-        BookingSurname = bookingSurname;
+    public void setBookingSurname(String bookingSurname) {
+        BookingSurname.setText(bookingSurname);
     }
 
     public JTextArea getBookingCustomerID() {
         return BookingCustomerID;
     }
 
-    public void setBookingCustomerID(JTextArea bookingCustomerID) {
-        BookingCustomerID = bookingCustomerID;
+    public void setBookingCustomerID(Integer bookingCustomerID) {
+        BookingCustomerID.setText(bookingCustomerID.toString());
     }
 
     public JTextArea getBookingCarReg() {
         return BookingCarReg;
     }
 
-    public void setBookingCarReg(JTextArea bookingCarReg) {
-        BookingCarReg = bookingCarReg;
+    public void setBookingCarReg(String bookingCarReg) {
+        BookingCarReg.setText(bookingCarReg);
     }
 
     public JTextArea getBookingCounty() {
         return BookingCounty;
     }
 
-    public void setBookingCounty(JTextArea bookingCounty) {
-        BookingCounty = bookingCounty;
+    public void setBookingCounty(String bookingCounty) {
+        BookingCounty.setText(bookingCounty);
     }
 
     public JTextArea getBookingPostCode() {
         return BookingPostCode;
     }
 
-    public void setBookingPostCode(JTextArea bookingPostCode) {
-        BookingPostCode = bookingPostCode;
+    public void setBookingPostCode(String bookingPostCode) {
+        BookingPostCode.setText(bookingPostCode);
     }
 
     public JTextArea getBookingPitchName() {
         return BookingPitchName;
     }
 
-    public void setBookingPitchName(JTextArea bookingPitchName) {
-        BookingPitchName = bookingPitchName;
+    public void setBookingPitchName(String bookingPitchName) {
+        BookingPitchName.setText(bookingPitchName);
     }
 
     public JTextArea getBookingPitchType() {
         return BookingPitchType;
     }
 
-    public void setBookingPitchType(JTextArea bookingPitchType) {
-        BookingPitchType = bookingPitchType;
+    public void setBookingPitchType(Integer bookingPitchType) {
+        BookingPitchType.setText(bookingPitchType.toString());
     }
 
     public JTextArea getBookingStartDate() {
         return BookingStartDate;
     }
 
-    public void setBookingStartDate(JTextArea bookingStartDate) {
-        BookingStartDate = bookingStartDate;
+    public void setBookingStartDate(String bookingStartDate) {
+        BookingStartDate.setText(bookingStartDate);
     }
 
     public JTextArea getBookingEndDate() {
         return BookingEndDate;
     }
 
-    public void setBookingEndDate(JTextArea bookingEndDate) {
-        BookingEndDate = bookingEndDate;
+    public void setBookingEndDate(String bookingEndDate) {
+        BookingEndDate.setText(bookingEndDate);
     }
 
     public JTextArea getBookingCostTotal() {
@@ -105,8 +108,8 @@ public class DialogBookingSummary extends JDialog {
         return BookingAddress;
     }
 
-    public void setBookingAddress(JTextArea bookingAddress) {
-        BookingAddress = bookingAddress;
+    public void setBookingAddress(String bookingAddress) {
+        BookingAddress.setText(bookingAddress);
     }
 
     private JTextArea BookingCustomerID;
@@ -133,12 +136,25 @@ public class DialogBookingSummary extends JDialog {
     private JLabel PitchID;
     private JLabel StartDate;
     private JLabel Cost;
+    private JCheckBox paidCheckBox;
+    private Client ClientSummary;
+    private Pitch PitchSummary;
+
+    public int getNum() {
+        return num;
+    }
+
+    public void setNum(int num) {
+        this.num = num;
+    }
+
+    private int num = 1;
 
     public DialogBookingSummary() {
         setContentPane(BookingSummary);
         setModal(true);
         getRootPane().setDefaultButton(buttonOK);
-
+        System.out.println(getNum());
         buttonOK.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 onOK();
@@ -168,12 +184,21 @@ public class DialogBookingSummary extends JDialog {
         PrintIt.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                //To change body of implemented methods use File | Settings | File Templates.
             }
         });
         email.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                //To change body of implemented methods use File | Settings | File Templates.
+            }
+        });
+        paidCheckBox.addActionListener(new ActionListener() {
+            /**
+             * Invoked when an action occurs.
+             *
+             * @param e
+             */
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
             }
         });
     }
@@ -188,15 +213,27 @@ public class DialogBookingSummary extends JDialog {
         dispose();
     }
 
-    public void textReturned(){
-         System.out.println("you did it");
-    }
+    public void make(Client A, Pitch B, String start, String end) {
+        ClientSummary = A;
+        PitchSummary = B;
+        DialogBookingSummary D = new DialogBookingSummary();
+        D.pack();
 
-    public void make() {
-        DialogBookingSummary dialog = new DialogBookingSummary();
-        dialog.pack();
-        dialog.setVisible(true);
+        D.setBookingForeName(ClientSummary.getFirstName());
+        D.setBookingSurname(ClientSummary.getSecondName());
+        D.setBookingCustomerID(ClientSummary.getClientID());
+        D.setBookingCarReg(ClientSummary.getCarRegistration());
+        D.setBookingAddress(ClientSummary.getAddress());
+        D.setBookingCounty(ClientSummary.getCounty());
+        D.setBookingPostCode(ClientSummary.getPostcode());
+
+        D.setBookingPitchName(PitchSummary.getPitchName());
+        D.setBookingPitchType(PitchSummary.getPitchType());
+        D.setBookingStartDate(start);
+        D.setBookingEndDate(end);
+
+        D.setResizable(false);
+        D.setVisible(true);
         //System.exit(0);
     }
-
 }
