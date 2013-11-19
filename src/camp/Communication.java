@@ -14,7 +14,7 @@ import java.util.Properties;
 public class Communication {
 
     public Communication() {
-        final String username = "username@gmail.com";
+        final String username = "campadoodledoo@gmail.com";
         final String password = "password";
 
         Properties props = new Properties();
@@ -31,22 +31,18 @@ public class Communication {
                 });
 
         try {
-
             Message message = new MimeMessage(session);
-            message.setFrom(new InternetAddress("from-email@gmail.com"));
+            message.setFrom(new InternetAddress("campadoodledoo@gmail.com"));
             message.setRecipients(Message.RecipientType.TO,
                     InternetAddress.parse("to-email@gmail.com"));
-            message.setSubject("Testing Subject");
-            message.setText("Dear Mail Crawler,"
-                    + "\n\n No spam to my email, please!");
+            message.setSubject("Confirmation");
+            message.setText("Dear xxx,"
+                    + "\n\n message here.");
 
             Transport.send(message);
-
-            System.out.println("Done");
-
         } catch (MessagingException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
         }
+
     }
-}
 }

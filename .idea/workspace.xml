@@ -10,22 +10,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51f6022f-23b8-4194-a60c-864ebe07b5ce" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/camp/Communication.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/joda_time_2_3.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/DialogCustomerForm.java" afterPath="$PROJECT_DIR$/src/gui/DialogCustomerForm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/FormBooking.java" afterPath="$PROJECT_DIR$/src/gui/FormBooking.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/MenuCampsite.java" afterPath="$PROJECT_DIR$/src/gui/MenuCampsite.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/camp/Search.java" afterPath="$PROJECT_DIR$/src/camp/Search.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lib/javax.mail.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/javax_mail.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Lib/joda-time-2.3.jar" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/camp/Communication.java" afterPath="$PROJECT_DIR$/src/camp/Communication.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/camp.iml" afterPath="$PROJECT_DIR$/camp.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/camp_jar.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/camp_jar.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/db.lck" afterPath="$PROJECT_DIR$/database/db.lck" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/camp/scrap.java" afterPath="$PROJECT_DIR$/src/camp/scrap.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="camp.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="51f6022f-23b8-4194-a60c-864ebe07b5ce" time="1384892326844" ignored="false" />
+    <file path="/Dummy.txt" changelist="51f6022f-23b8-4194-a60c-864ebe07b5ce" time="1384896864935" ignored="false" />
     <file path="/Pricing.java" changelist="51f6022f-23b8-4194-a60c-864ebe07b5ce" time="1384793855651" ignored="false" />
     <file path="/FormBooking.java" changelist="51f6022f-23b8-4194-a60c-864ebe07b5ce" time="1384894124486" ignored="false" />
     <file path="/DialogBookingSummary.java" changelist="51f6022f-23b8-4194-a60c-864ebe07b5ce" time="1384885207535" ignored="false" />
@@ -41,7 +36,7 @@
     <file path="/fragment.java" changelist="51f6022f-23b8-4194-a60c-864ebe07b5ce" time="1384867756776" ignored="false" />
     <file path="/DialogCustomerForm.java" changelist="51f6022f-23b8-4194-a60c-864ebe07b5ce" time="1384894287706" ignored="false" />
     <file path="/scrap.java" changelist="51f6022f-23b8-4194-a60c-864ebe07b5ce" time="1384892635616" ignored="false" />
-    <file path="/Communication.java" changelist="51f6022f-23b8-4194-a60c-864ebe07b5ce" time="1384896395359" ignored="false" />
+    <file path="/Communication.java" changelist="51f6022f-23b8-4194-a60c-864ebe07b5ce" time="1384898829318" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,19 +106,7 @@
     <favorites_list name="camp" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Communication.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/camp/Communication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="47" selection-start="1020" selection-end="1020" vertical-scroll-proportion="0.53271025">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -254,52 +237,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="camp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="~20111375" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="camp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="~20111375" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="camp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="camp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="~20111375" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -307,7 +244,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="107" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="105" />
     <property name="OverrideImplement.combined" value="true" />
@@ -351,10 +288,10 @@
       <recent name="gui" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Lib" />
       <recent name="C:\Users\Andrew\Documents\20111375" />
       <recent name="C:\Users\Andrew\Documents\20111375\Lib" />
       <recent name="C:\Users\Andrew\Documents\20111375\src" />
-      <recent name="$PROJECT_DIR$/Lib" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -780,7 +717,11 @@
       <created>1384892345973</created>
       <updated>1384892345973</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="email addition">
+      <created>1384896881418</created>
+      <updated>1384896881419</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -890,7 +831,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="More SQL fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="email addition" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -919,6 +860,7 @@
     <MESSAGE value="more customer each functionality implimented" />
     <MESSAGE value="fixed booking insert" />
     <MESSAGE value="More SQL fixes" />
+    <MESSAGE value="email addition" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1042,7 +984,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/camp/Communication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="47" selection-start="1020" selection-end="1020" vertical-scroll-proportion="0.53271025">
+        <state line="25" column="18" selection-start="670" selection-end="670" vertical-scroll-proportion="0.57009345">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1067,6 +1009,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -1133,7 +1076,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>jcalendar_0.0.4_beta</last-edited>
+          <last-edited>Java EE 6-Java EE 6</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
