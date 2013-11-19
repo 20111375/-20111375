@@ -22,8 +22,9 @@ public class Pricing {
 
     public double Total(Double fee, int discount, int days) {
         double result = 0.00;
-        result = fee * days / 100 / discount;
-        return result;
+        double lessDiscount = 0.00;
+        lessDiscount = (fee * days) / 100;
+        return result = (fee * days) - lessDiscount;
     }
 
     public int Discount(String StartDate) {
@@ -40,5 +41,4 @@ public class Pricing {
         }
         return discount;
     }
-
 }

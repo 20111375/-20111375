@@ -13,6 +13,16 @@ public class Pitch extends Items {
     private Integer pitchType;
     private int[] TypeID;
     private String TypeName[] = {"CARAVAN", "MOTORHOME", "TENT"};
+    private int PitchID;
+    private double total;
+
+    public int getPitchID() {
+        return PitchID;
+    }
+
+    public void setPitchID(int pitchID) {
+        PitchID = pitchID;
+    }
 
     public Pitch() {
 
@@ -22,10 +32,19 @@ public class Pitch extends Items {
         this.pitchName = pitchName;
     }
 
-    public Pitch(String pitchName, int pitchType, int[] typeID) {
+    public Pitch(String pitchName, int pitchType, int[] typeID, int pitchID) {
         this.pitchName = pitchName;
         this.pitchType = pitchType;
         this.TypeID = typeID;
+        this.PitchID = pitchID;
+    }
+
+    public double getTotal() {
+        return total;
+    }
+
+    public void setTotal(double total) {
+        this.total = total;
     }
 
     public Integer getPitchType() {

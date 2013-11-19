@@ -5,14 +5,15 @@
  * Time: 12:31
  */
 package camp;
-import java.util.Date;
 
-public class Booking extends Items{
+import db.connection;
 
-    private Integer clientID;
-    private Integer pitchID;
-    private Date fromDate;
-    private Date toDate;
+public class Booking extends Items {
+
+    private int clientID;
+    private int pitchID;
+    private String fromDate;
+    private String toDate;
     private Double total;
     private Boolean paid;
 
@@ -23,7 +24,7 @@ public class Booking extends Items{
 
     }
 
-    public Booking(Integer clientID, Integer pitchID, Date fromDate, Date toDate, Double total, Boolean paid) {
+    public Booking(Integer clientID, Integer pitchID, String fromDate, String toDate, Double total, Boolean paid) {
         this.clientID = clientID;
         this.pitchID = pitchID;
         this.fromDate = fromDate;
@@ -33,10 +34,9 @@ public class Booking extends Items{
     }
 
     /**
-     *
      * @return
      */
-    public Integer getClientID() {
+    public int getClientID() {
         return clientID;
     }
 
@@ -44,7 +44,7 @@ public class Booking extends Items{
         this.clientID = clientID;
     }
 
-    public Integer getPitchID() {
+    public int getPitchID() {
         return pitchID;
     }
 
@@ -52,19 +52,19 @@ public class Booking extends Items{
         this.pitchID = pitchID;
     }
 
-    public Date getFromDate() {
+    public String getFromDate() {
         return fromDate;
     }
 
-    public void setFromDate(Date fromDate) {
+    public void setFromDate(String fromDate) {
         this.fromDate = fromDate;
     }
 
-    public Date getToDate() {
+    public String getToDate() {
         return toDate;
     }
 
-    public void setToDate(Date toDate) {
+    public void setToDate(String toDate) {
         this.toDate = toDate;
     }
 
@@ -80,12 +80,20 @@ public class Booking extends Items{
         return paid;
     }
 
-    public void setPaid(Boolean paid) {
+    public void setPaid(boolean paid) {
         this.paid = paid;
     }
-    @Override
-    public String toString(){
 
-        return this.getClientID().toString();
+    @Override
+    public String toString() {
+
+        return String.valueOf(this.getClientID());
+    }
+
+    public void insertNewBooking() {
+        String SQL = "insert into app.booking (CUSTOMERID,PITCHID, FROMDATE, TODATE, PAID, TOTAL) values\n" +
+                "(" + this.getClientID() + "," + this.getPitchID() + ",'" + this.getFromDate() + "','" + this.getToDate() + "'," + this.getPaid() + "," + this.getTotal() + ")";
+        new connection().ExecuteCustomerInsert(SQL);
+
     }
 }

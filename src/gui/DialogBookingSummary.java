@@ -1,20 +1,110 @@
 package gui;
 
+import camp.Booking;
 import camp.Client;
 import camp.Pitch;
 
 import javax.swing.*;
 import java.awt.event.*;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 
 public class DialogBookingSummary extends JDialog {
+    public JTextArea BookingForeName;
     private JPanel BookingSummary;
     private JButton buttonOK;
     private JButton buttonCancel;
     private JPanel Buttons;
     private JPanel ButtonPanel;
     private JPanel Details;
-    public JTextArea BookingForeName;
     private JTextArea BookingSurname;
+    private JTextArea BookingCustomerID;
+    private JTextArea BookingCarReg;
+    private JTextArea BookingCounty;
+    private JTextArea BookingPostCode;
+    private JTextArea BookingPitchName;
+    private JTextArea BookingPitchType;
+    private JTextArea BookingStartDate;
+    private JTextArea BookingEndDate;
+    private JTextArea BookingCostTotal;
+    private JTextArea BookingAddress;
+    private JCheckBox email;
+    private JPanel Checkboxes;
+    private JCheckBox PrintIt;
+    private JLabel ForeName;
+    private JLabel SurName;
+    private JLabel CustomerID;
+    private JLabel CarReg;
+    private JLabel Address;
+    private JLabel County;
+    private JLabel PostCode;
+    private JLabel PitchName;
+    private JLabel PitchID;
+    private JLabel StartDate;
+    private JLabel Cost;
+    private JCheckBox paidCheckBox;
+    public Client ClientSummary = new Client();
+    public Pitch PitchSummary = new Pitch();
+    public Booking submit = new Booking();
+    public String Start;
+    public String End;
+    private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+
+    public DialogBookingSummary() {
+        setContentPane(BookingSummary);
+        setModal(true);
+        getRootPane().setDefaultButton(buttonOK);
+
+        buttonOK.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                onOK();
+            }
+        });
+
+        buttonCancel.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                onCancel();
+            }
+        });
+
+// call onCancel() when cross is clicked
+        setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
+        addWindowListener(new WindowAdapter() {
+            public void windowClosing(WindowEvent e) {
+                onCancel();
+            }
+        });
+
+// call onCancel() on ESCAPE
+        BookingSummary.registerKeyboardAction(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                onCancel();
+            }
+        }, KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
+        PrintIt.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+            }
+        });
+        email.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+            }
+        });
+        paidCheckBox.addActionListener(new ActionListener() {
+            /**
+             * Invoked when an action occurs.
+             */
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if (paidCheckBox.isSelected()) {
+                    submit.setPaid(true);
+                } else {
+                    submit.setPaid(false);
+                }
+            }
+        });
+    }
 
     public JTextArea getBookingForeName() {
         return BookingForeName;
@@ -46,6 +136,9 @@ public class DialogBookingSummary extends JDialog {
 
     public void setBookingCarReg(String bookingCarReg) {
         BookingCarReg.setText(bookingCarReg);
+    }
+
+    private void setBookingPitchID(int pitchID) {
     }
 
     public JTextArea getBookingCounty() {
@@ -100,8 +193,8 @@ public class DialogBookingSummary extends JDialog {
         return BookingCostTotal;
     }
 
-    public void setBookingCostTotal(JTextArea bookingCostTotal) {
-        BookingCostTotal = bookingCostTotal;
+    public void setBookingCostTotal(Double bookingCostTotal) {
+        BookingCostTotal.setText(bookingCostTotal.toString());
     }
 
     public JTextArea getBookingAddress() {
@@ -112,99 +205,25 @@ public class DialogBookingSummary extends JDialog {
         BookingAddress.setText(bookingAddress);
     }
 
-    private JTextArea BookingCustomerID;
-    private JTextArea BookingCarReg;
-    private JTextArea BookingCounty;
-    private JTextArea BookingPostCode;
-    private JTextArea BookingPitchName;
-    private JTextArea BookingPitchType;
-    private JTextArea BookingStartDate;
-    private JTextArea BookingEndDate;
-    private JTextArea BookingCostTotal;
-    private JTextArea BookingAddress;
-    private JCheckBox email;
-    private JPanel Checkboxes;
-    private JCheckBox PrintIt;
-    private JLabel ForeName;
-    private JLabel SurName;
-    private JLabel CustomerID;
-    private JLabel CarReg;
-    private JLabel Address;
-    private JLabel County;
-    private JLabel PostCode;
-    private JLabel PitchName;
-    private JLabel PitchID;
-    private JLabel StartDate;
-    private JLabel Cost;
-    private JCheckBox paidCheckBox;
-    private Client ClientSummary;
-    private Pitch PitchSummary;
-
-    public int getNum() {
-        return num;
-    }
-
-    public void setNum(int num) {
-        this.num = num;
-    }
-
-    private int num = 1;
-
-    public DialogBookingSummary() {
-        setContentPane(BookingSummary);
-        setModal(true);
-        getRootPane().setDefaultButton(buttonOK);
-        System.out.println(getNum());
-        buttonOK.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                onOK();
-            }
-        });
-
-        buttonCancel.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                onCancel();
-            }
-        });
-
-// call onCancel() when cross is clicked
-        setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
-        addWindowListener(new WindowAdapter() {
-            public void windowClosing(WindowEvent e) {
-                onCancel();
-            }
-        });
-
-// call onCancel() on ESCAPE
-        BookingSummary.registerKeyboardAction(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                onCancel();
-            }
-        }, KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
-        PrintIt.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-            }
-        });
-        email.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-            }
-        });
-        paidCheckBox.addActionListener(new ActionListener() {
-            /**
-             * Invoked when an action occurs.
-             *
-             * @param e
-             */
-            @Override
-            public void actionPerformed(ActionEvent e) {
-
-            }
-        });
+    public String makeDate(String Start) {
+        Calendar calendar = Calendar.getInstance();
+        try {
+            calendar.setTime(dateFormat.parse(Start));
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        return dateFormat.format(calendar.getTime());
     }
 
     private void onOK() {
 // add your code here
+
+        submit.setClientID(Integer.valueOf(getBookingCustomerID().getText()));
+        submit.setPitchID(Integer.valueOf(getBookingPitchType().getText()));
+        submit.setFromDate(getBookingStartDate().getText());
+        submit.setToDate(getBookingEndDate().getText());
+        submit.setTotal(Double.valueOf(getBookingCostTotal().getText()));
+        submit.insertNewBooking();
         dispose();
     }
 
@@ -216,6 +235,9 @@ public class DialogBookingSummary extends JDialog {
     public void make(Client A, Pitch B, String start, String end) {
         ClientSummary = A;
         PitchSummary = B;
+        Start = start;
+        End = end;
+
         DialogBookingSummary D = new DialogBookingSummary();
         D.pack();
 
@@ -229,11 +251,12 @@ public class DialogBookingSummary extends JDialog {
 
         D.setBookingPitchName(PitchSummary.getPitchName());
         D.setBookingPitchType(PitchSummary.getPitchType());
+        D.setBookingPitchID(PitchSummary.getPitchID());
         D.setBookingStartDate(start);
-        D.setBookingEndDate(end);
+        D.setBookingEndDate(start);
+        D.setBookingCostTotal(PitchSummary.getTotal());
 
         D.setResizable(false);
         D.setVisible(true);
-        //System.exit(0);
     }
 }

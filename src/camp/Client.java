@@ -6,7 +6,7 @@
  */
 package camp;
 
-public class Client extends Items{
+public class Client extends Items {
 
     private String firstName;
     private String secondName;
@@ -17,7 +17,7 @@ public class Client extends Items{
     private String postcode;
     private Boolean Delete;
 
-    public Client(Integer clientID, String firstName, String secondName, String carRegistration, String address, String postcode, String county, Boolean Delete) {
+    public Client(int clientID, String firstName, String secondName, String carRegistration, String address, String postcode, String county, Boolean Delete) {
         this.firstName = firstName;
         this.secondName = secondName;
         this.clientID = clientID;
@@ -98,7 +98,7 @@ public class Client extends Items{
     }
 
     @Override
-    public String toString(){
+    public String toString() {
 
         return this.getFirstName();
     }

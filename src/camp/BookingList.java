@@ -22,18 +22,12 @@ public class BookingList extends GenericList<Booking> {
                 String SQL = "SELECT * FROM Booking";
                 ResultSet resultset = new connection().connect(SQL);
                 while (resultset.next()) {
-                    items.add(new Booking(resultset.getInt(1), resultset.getInt(2), resultset.getDate("FROMDATE"), resultset.getDate("TODATE"), resultset.getDouble("TOTAL"), resultset.getBoolean("PAID")));
+                    items.add(new Booking(resultset.getInt(1), resultset.getInt(2), resultset.getString("FROMDATE"), resultset.getString("TODATE"), resultset.getDouble("TOTAL"), resultset.getBoolean("PAID")));
                 }
             } catch (Exception e) {
                 e.printStackTrace();
             }
         }
         return items;
-    }
-
-    public void insertNewBooking(Booking C) {
-        String SQL = "insert into app.booking (PITCHID, FROMDATE, TODATE, PAID, TOTAL)\n" +
-                "values ('" + C.getPitchID() + "','" + C.getFromDate() + "','" + C.getToDate() + "','" + C.getPaid() + "','" + C.getTotal() + "'";
-        new connection().ExecuteCustomerInsert(SQL);
     }
 }

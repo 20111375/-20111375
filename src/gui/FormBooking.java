@@ -19,6 +19,8 @@ import java.util.List;
 
 /**
  * Created by Andrew on 07/11/13.
+ *
+ * @author
  */
 public class FormBooking extends JDialog {
     private JComboBox PitchType;
@@ -47,7 +49,6 @@ public class FormBooking extends JDialog {
     private Client BookingClient;
     private Pitch BookingPitch;
     private DialogSearch search = new DialogSearch(SwingUtilities.getWindowAncestor(this));
-
 
     public FormBooking() {
         setContentPane(FormBooking);
@@ -89,6 +90,7 @@ public class FormBooking extends JDialog {
             public void actionPerformed(ActionEvent e) {
             }
         });
+
         ConfirmButton.addActionListener(new ActionListener() {
             /**
              * Invoked when an action occurs.
@@ -96,9 +98,10 @@ public class FormBooking extends JDialog {
             @Override
             public void actionPerformed(ActionEvent e) {
                 DialogBookingSummary booked = new DialogBookingSummary();
-                booked.make(BookingClient, BookingPitch, getStartDate(), makeFinishDate(getFinishDate(), getStartDate()));
                 Pricing price = new Pricing();
-                System.out.println(price.Total(price.getFee(), price.Discount(getStartDate()), getFinishDate()));
+                double tot = price.Total(price.getFee(), price.Discount(getStartDate()), getFinishDate());
+                BookingPitch.setTotal(tot);
+                booked.make(BookingClient, BookingPitch, getStartDate(), makeFinishDate(getFinishDate(), getStartDate()));
             }
         });
 
@@ -308,7 +311,6 @@ public class FormBooking extends JDialog {
 
     private boolean isEmpty() {
         String tmp = PitchDetails.getText().trim();
-        // System.out.println("this is tmp: " + tmp);
         if ((tmp != null) && (tmp.trim().length() > 0)) {
             return true;
         }
