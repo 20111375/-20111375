@@ -32,16 +32,26 @@ public class ClientList extends GenericList<Client> {
     }
 
     public void insertNewCustomer(Client C) {
-
         String SQL = "INSERT INTO  APP.CUSTOMER (firstname,secondname,address,county,postcode,carregistration)\n" +
                 "values ('" + C.getFirstName() + "','" + C.getSecondName() + "','" + C.getAddress() + "','" + C.getCounty() + "','" + C.getPostcode() + "', '" + C.getCarRegistration() + "')";
         new connection().ExecuteCustomerUpdate(SQL);
     }
 
     public void deleteCustomer(Client C) {
-
-        String SQL = "ALTER  APP.CUSTOMER (delte)\n" +
+        String SQL = "ALTER  APP.CUSTOMER (delete)\n" +
                 "values ('" + C.getDelete() + "')";
+        new connection().ExecuteCustomerUpdate(SQL);
+    }
+
+    public void editCustomer(Client C) {
+        String SQL = "update app.CUSTOMER SET\n" +
+                "FIRSTNAME='" + C.getFirstName() + "',\n" +
+                "SECONDNAME='" + C.getSecondName() + "',\n" +
+                "CARREGISTRATION='" + C.getCarRegistration() + "',\n" +
+                "ADDRESS='" + C.getAddress() + "',\n" +
+                "COUNTY='" + C.getCounty() + "',\n" +
+                "POSTCODE='" + C.getPostcode() + "'\n" +
+                "WHERE CUSTOMERID=" + C.getClientID() + "";
         new connection().ExecuteCustomerUpdate(SQL);
     }
 

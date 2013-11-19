@@ -23,7 +23,7 @@ public class Pricing {
     public double Total(Double fee, int discount, int days) {
         double result = 0.00;
         double lessDiscount = 0.00;
-        lessDiscount = (fee * days) / 100;
+        lessDiscount = (fee * days) / 100.00;
         return result = (fee * days) - lessDiscount;
     }
 

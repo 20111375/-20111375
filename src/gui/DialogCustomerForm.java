@@ -162,8 +162,8 @@ public class DialogCustomerForm extends JDialog {
                 //String[] splitThis = CustomerList.getSelectedValue().toString().split(":");
                 //System.out.println(Integer.parseInt(splitThis[0]));
                 DeleteButton.setEnabled(true);
-                System.out.println(ClientList.customerList().get(CustomerList.getSelectedIndex()).getFirstName());
-                System.out.println(ClientList.customerList().get(CustomerList.getSelectedIndex()).getClientID());
+                //System.out.println(ClientList.customerList().get(CustomerList.getSelectedIndex()).getFirstName());
+                //System.out.println(ClientList.customerList().get(CustomerList.getSelectedIndex()).getClientID());
             }
         });
         SaveButton.addActionListener(new ActionListener() {
@@ -174,7 +174,17 @@ public class DialogCustomerForm extends JDialog {
              */
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                Client tmp = new Client();
+                tmp.setFirstName(Forename.getText());
+                tmp.setSecondName(Surname.getText());
+                tmp.setAddress(Address.getText());
+                tmp.setCounty(County.getText());
+                tmp.setPostcode(PostCode.getText());
+                tmp.setCarRegistration(CarReg.getText());
+                tmp.setClientID(Integer.valueOf(CustomerID.getText()));
+                new ClientList().editCustomer(tmp);
+                ClearText();
+                textList();
             }
         });
 
@@ -197,16 +207,7 @@ public class DialogCustomerForm extends JDialog {
                 new ClientList().insertNewCustomer(tmp);
                 ClearText();
                 //Refresh Customer List JList with new customer
-                DefaultListModel CustModel = new DefaultListModel();
-                for (Client M : ClientList.customerList()) {
-                    if (M.getDelete() == true) {
-                        CustModel.addElement(M.getClientID() + ": " + M.getFirstName() + " | " + M.getSecondName() + " | " + M.getCarRegistration() + " | " + M.getPostcode() + " DELETED " + M.getDelete());
-                    } else {
-                        CustModel.addElement(M.getClientID() + ": " + M.getFirstName() + " | " + M.getSecondName() + " | " + M.getCarRegistration() + " | " + M.getPostcode());
-                    }
-                }
-                CustomerList.setModel(CustModel);
-                CustomerList.repaint();
+                textList();
                 //endregion
             }
         });
@@ -261,6 +262,19 @@ public class DialogCustomerForm extends JDialog {
         County.setText(null);
         PostCode.setText(null);
         CarReg.setText(null);
+    }
+
+    private void textList() {
+        DefaultListModel CustModel = new DefaultListModel();
+        for (Client M : ClientList.customerList()) {
+            if (M.getDelete() == true) {
+                CustModel.addElement(M.getClientID() + ": " + M.getFirstName() + " | " + M.getSecondName() + " | " + M.getCarRegistration() + " | " + M.getPostcode() + " DELETED " + M.getDelete());
+            } else {
+                CustModel.addElement(M.getClientID() + ": " + M.getFirstName() + " | " + M.getSecondName() + " | " + M.getCarRegistration() + " | " + M.getPostcode());
+            }
+        }
+        CustomerList.setModel(CustModel);
+        CustomerList.repaint();
     }
 
 }

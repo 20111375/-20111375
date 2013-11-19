@@ -99,7 +99,8 @@ public class DialogBookingSummary extends JDialog {
             public void actionPerformed(ActionEvent e) {
                 if (paidCheckBox.isSelected()) {
                     submit.setPaid(true);
-                } else {
+                }
+                if (!paidCheckBox.isSelected()) {
                     submit.setPaid(false);
                 }
             }
@@ -224,6 +225,7 @@ public class DialogBookingSummary extends JDialog {
         submit.setToDate(getBookingEndDate().getText());
         submit.setTotal(Double.valueOf(getBookingCostTotal().getText()));
         submit.insertNewBooking();
+        javax.swing.SwingUtilities.getWindowAncestor(DialogBookingSummary.this).dispose();
         dispose();
     }
 
