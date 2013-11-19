@@ -239,6 +239,7 @@ public class DialogCustomerForm extends JDialog {
         DialogCustomerForm dialog = new DialogCustomerForm();
         dialog.pack();
         dialog.setVisible(true);
+        dialog.setLocationRelativeTo(null);
         //System.exit(0);
     }
 

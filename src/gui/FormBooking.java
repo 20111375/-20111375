@@ -215,6 +215,7 @@ public class FormBooking extends JDialog {
         dialog.pack();
         dialog.setResizable(false);
         dialog.setVisible(true);
+        dialog.setLocationRelativeTo(null);
         //System.exit(0);
     }
 

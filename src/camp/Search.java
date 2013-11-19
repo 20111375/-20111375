@@ -71,7 +71,15 @@ This finds discounts:
 select (app.season.SEASONNAME), (app.season.DISCOUNT) from app.season
 where '2013-01-01' BETWEEN App.season.STARTDATE and APP.season.ENDDATE;
  */
-/*
+
+import db.connection;
+
+import java.sql.ResultSet;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
 public class Search<E> extends GenericList {
     protected List<E> results;
 
@@ -89,7 +97,7 @@ public class Search<E> extends GenericList {
                 ResultSet resultset = new connection().connect(SQL);
                 while (resultset.next()) {
                     if ((resultset.getDate("FROMDATE").before(date)) && (resultset.getDate("TODATE").after(date) || resultset.getDate("TODATE").equals(date))) {
-                        items.add(new Booking(resultset.getInt(1), resultset.getInt(2), resultset.getString("FROMDATE"), resultset.getString("TODATE"), resultset.getDouble("TOTAL"), resultset.getB("PAID")));
+                        items.add(new Booking(resultset.getInt(1), resultset.getInt(2), resultset.getString("FROMDATE"), resultset.getString("TODATE"), resultset.getDouble("TOTAL"), resultset.getBoolean("PAID")));
                     }
                 }
             } catch (Exception e) {
@@ -99,4 +107,3 @@ public class Search<E> extends GenericList {
         return items;
     }
 }
-*/
