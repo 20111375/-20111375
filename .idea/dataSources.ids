@@ -1,17 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component name="dataSourceStorage">
-  <data-source source="LOCAL" name="Data Source" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="f9b6cfa8-09c1-4d3d-a28c-cfc288b48a0b">
-    <synchronize>true</synchronize>
-    <jdbc-driver>org.apache.derby.jdbc.AutoloadedDriver</jdbc-driver>
-    <jdbc-url>jdbc:derby:$PROJECT_DIR$/database</jdbc-url>
-    <schema-pattern>*.APP</schema-pattern>
-    <default-schemas>*.APP</default-schemas>
-    <default-dialect>Derby</default-dialect>
-    <libraries>
-      <library>
-        <url>jar://$PROJECT_DIR$/Lib/derby.jar!/</url>
-      </library>
-    </libraries>
+  <data-source source="LOCAL" name="Data Source" uuid="f9b6cfa8-09c1-4d3d-a28c-cfc288b48a0b">
+    <database-info product="Apache Derby" version="10.10.1.1 - (1458268)" jdbc-version="4.1" driver-name="Apache Derby Embedded JDBC Driver" driver-version="10.10.1.1 - (1458268)">
+      <identifier-quote-string>&quot;</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="upper" quoted-identifiers="exact"/>
     <schema name="APP" catalog=""/>
     <table name="BOOKING" schema="APP" catalog="" type="TABLE">
       <column name="CUSTOMERID" sqlType="INTEGER" length="10" precision="0" nullable="false" jdbcType="4"/>
@@ -48,9 +41,19 @@
       <column name="PITCHID" sqlType="INTEGER" length="10" precision="0" nullable="false" jdbcType="4" def="QVVUT0lOQ1JFTUVOVDogc3RhcnQgMSBpbmNyZW1lbnQgMQ==" autoIncrement="true"/>
       <column name="PITCHNAME" sqlType="VARCHAR" length="24" precision="0" nullable="false" jdbcType="12"/>
       <column name="PITCHTYPEID" sqlType="INTEGER" length="10" precision="0" nullable="false" jdbcType="4"/>
+      <column name="PITCHCLASSID" sqlType="INTEGER" length="10" precision="0" nullable="true" jdbcType="4"/>
       <primary-key name="SQL131022160609080" columns="PITCHID"/>
+      <foreign-key name="SQL131120151028050" columns="PITCHCLASSID" ref-table="PITCHCLASS" ref-schema="APP" ref-catalog="" ref-columns="PITCHCLASSID" update-rule="3" delete-rule="3" deferrability="2"/>
       <foreign-key name="SQL131022160609081" columns="PITCHTYPEID" ref-table="PITCHTYPE" ref-schema="APP" ref-catalog="" ref-columns="PITCHTYPEID" update-rule="3" delete-rule="3" deferrability="2"/>
       <exported-key name="BOOKING_FK2" table="BOOKING" schema="APP" catalog="" columns="PITCHID"/>
+    </table>
+    <table name="PITCHCLASS" schema="APP" catalog="" type="TABLE">
+      <column name="PITCHCLASSID" sqlType="INTEGER" length="10" precision="0" nullable="false" jdbcType="4"/>
+      <column name="TENT" sqlType="BOOLEAN" length="1" precision="0" nullable="true" jdbcType="16"/>
+      <column name="ELECTRIC" sqlType="BOOLEAN" length="1" precision="0" nullable="true" jdbcType="16"/>
+      <column name="ALLWEATHER" sqlType="BOOLEAN" length="1" precision="0" nullable="true" jdbcType="16"/>
+      <primary-key name="SQL131120145700070" columns="PITCHCLASSID"/>
+      <exported-key name="SQL131120151028050" table="PITCH" schema="APP" catalog="" columns="PITCHCLASSID"/>
     </table>
     <table name="PITCHTYPE" schema="APP" catalog="" type="TABLE">
       <column name="PITCHTYPEID" sqlType="INTEGER" length="10" precision="0" nullable="false" jdbcType="4" def="QVVUT0lOQ1JFTUVOVDogc3RhcnQgMSBpbmNyZW1lbnQgMQ==" autoIncrement="true"/>
