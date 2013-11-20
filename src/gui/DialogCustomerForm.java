@@ -137,21 +137,23 @@ public class DialogCustomerForm extends JDialog {
         EditButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                //To change body of implemented methods use File | Settings | File Templates.
-                AddNewButton.setEnabled(false);
-                String tmpStr = (String) (String) CustomerList.getSelectedValue();
-                String[] tmpArray = tmpStr.split(":");
-                System.out.println(tmpArray[0]);
-                for (Client F : ClientList.customerList()) {
-                    if (F.getClientID() == Integer.parseInt(tmpArray[0])) {
-                        ClearText();
-                        CustomerID.append(String.valueOf(F.getClientID()));
-                        Forename.append(F.getFirstName());
-                        Surname.append(F.getSecondName());
-                        CarReg.append(F.getCarRegistration());
-                        Address.append(F.getAddress());
-                        County.append(F.getCounty());
-                        PostCode.append(F.getPostcode());
+                if (!CustomerList.isSelectionEmpty()) {
+                    AddNewButton.setEnabled(false);
+                    SaveButton.setEnabled(true);
+                    String tmpStr = (String) (String) CustomerList.getSelectedValue();
+                    String[] tmpArray = tmpStr.split(":");
+                    System.out.println(tmpArray[0]);
+                    for (Client F : ClientList.customerList()) {
+                        if (F.getClientID() == Integer.parseInt(tmpArray[0])) {
+                            ClearText();
+                            CustomerID.append(String.valueOf(F.getClientID()));
+                            Forename.append(F.getFirstName());
+                            Surname.append(F.getSecondName());
+                            CarReg.append(F.getCarRegistration());
+                            Address.append(F.getAddress());
+                            County.append(F.getCounty());
+                            PostCode.append(F.getPostcode());
+                        }
                     }
                 }
             }

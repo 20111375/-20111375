@@ -14,7 +14,7 @@ public class DialogExtendBooking extends JDialog {
     private JButton buttonOK;
     private JButton buttonCancel;
     private JRadioButton customerIDRadioButton;
-    private JRadioButton postCodeRadioButton;
+    private JRadioButton bookingIDRadioButton;
     private JRadioButton carRegRadioButton;
     private JTextArea ID;
 
@@ -43,6 +43,8 @@ public class DialogExtendBooking extends JDialog {
     }
 
     private JTextArea PostCode;
+    private JButton button1;
+    private JList list1;
     private JTextArea CarReg;
 
     public DialogExtendBooking() {
@@ -85,7 +87,7 @@ public class DialogExtendBooking extends JDialog {
                 //To change body of implemented methods use File | Settings | File Templates.
             }
         });
-        postCodeRadioButton.addActionListener(new ActionListener() {
+        bookingIDRadioButton.addActionListener(new ActionListener() {
             /**
              * Invoked when an action occurs.
              */
