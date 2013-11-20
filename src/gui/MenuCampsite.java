@@ -1,15 +1,15 @@
+/**
+ * Created with IntelliJ IDEA.
+ * User: 20111375
+ * Date: 05/11/2013
+ * Time: 12:31
+ */
 package gui;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-/**
- * Created with IntelliJ IDEA.
- * User: 20111375
- * Date: 10/11/2013
- * Time: 18:08
- */
 public class MenuCampsite {
     private JPanel MainPanel;
     private JButton bookingsButton;

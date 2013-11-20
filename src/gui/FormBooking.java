@@ -1,3 +1,9 @@
+/**
+ * Created with IntelliJ IDEA.
+ * User: 20111375
+ * Date: 05/11/2013
+ * Time: 12:31
+ */
 package gui;
 
 import camp.Client;
@@ -17,11 +23,6 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
-/**
- * Created by Andrew on 07/11/13.
- *
- * @author
- */
 public class FormBooking extends JDialog {
     private JComboBox PitchType;
     private JList SearchResultList;

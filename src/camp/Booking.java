@@ -18,12 +18,20 @@ public class Booking extends Items {
     private Boolean paid;
 
     /**
-     * Class Con
+     * @description class constructor
      */
     public Booking() {
 
     }
 
+    /**
+     * @param clientID
+     * @param pitchID
+     * @param fromDate
+     * @param toDate
+     * @param total
+     * @param paid
+     */
     public Booking(Integer clientID, Integer pitchID, String fromDate, String toDate, Double total, Boolean paid) {
         this.clientID = clientID;
         this.pitchID = pitchID;
@@ -34,62 +42,101 @@ public class Booking extends Items {
     }
 
     /**
-     * @return
+     * @return an int of the customer ID
      */
     public int getClientID() {
         return clientID;
     }
 
+    /**
+     * @param clientID
+     */
     public void setClientID(Integer clientID) {
         this.clientID = clientID;
     }
 
+    /**
+     * @return an int of the pitch ID
+     */
     public int getPitchID() {
         return pitchID;
     }
 
+    /**
+     * @param pitchID
+     */
     public void setPitchID(Integer pitchID) {
         this.pitchID = pitchID;
     }
 
+    /**
+     * @return the string from date of a booking
+     */
     public String getFromDate() {
         return fromDate;
     }
 
+    /**
+     * @param fromDate
+     */
     public void setFromDate(String fromDate) {
         this.fromDate = fromDate;
     }
 
+    /**
+     * @return a string of the to date of a booking
+     */
     public String getToDate() {
         return toDate;
     }
 
+    /**
+     * @param toDate
+     */
     public void setToDate(String toDate) {
         this.toDate = toDate;
     }
 
+    /**
+     * @return total booking amount is returned
+     */
     public Double getTotal() {
         return total;
     }
 
+    /**
+     * @param total
+     */
     public void setTotal(Double total) {
         this.total = total;
     }
 
+    /**
+     * @return a boolean value for the paid status of a booking
+     */
     public Boolean getPaid() {
         return paid;
     }
 
+    /**
+     * @param paid
+     */
     public void setPaid(boolean paid) {
         this.paid = paid;
     }
 
+    /**
+     * @return a string value of the customer ID
+     */
     @Override
     public String toString() {
 
         return String.valueOf(this.getClientID());
     }
 
+    /**
+     * @description pass sql statement to insert a new booking into the database
+     */
     public void insertNewBooking() {
         String SQL = "insert into app.booking (CUSTOMERID,PITCHID, FROMDATE, TODATE, PAID, TOTAL) values\n" +
                 "(" + this.getClientID() + "," + this.getPitchID() + ",'" + this.getFromDate() + "','" + this.getToDate() + "'," + this.getPaid() + "," + this.getTotal() + ")";

@@ -13,8 +13,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BookingList extends GenericList<Booking> {
-    protected List<Booking> items;
+    protected List<Booking> items;// define a list object to pass items objects into
 
+    /**
+     * @return a items list containing item objects (of type list)
+     * @throws Exception
+     */
     public List<Booking> Items() throws Exception {
         if (items == null) {
             items = new ArrayList<Booking>();

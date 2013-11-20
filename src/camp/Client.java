@@ -17,6 +17,16 @@ public class Client extends Items {
     private String postcode;
     private Boolean Delete;
 
+    /**
+     * @param clientID
+     * @param firstName
+     * @param secondName
+     * @param carRegistration
+     * @param address
+     * @param postcode
+     * @param county
+     * @param Delete
+     */
     public Client(int clientID, String firstName, String secondName, String carRegistration, String address, String postcode, String county, Boolean Delete) {
         this.firstName = firstName;
         this.secondName = secondName;
@@ -28,7 +38,9 @@ public class Client extends Items {
         this.Delete = Delete;
     }
 
-
+    /**
+     * @return a string of the customers first name
+     */
     public String getFirstName() {
         return firstName;
     }

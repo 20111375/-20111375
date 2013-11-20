@@ -10,15 +10,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51f6022f-23b8-4194-a60c-864ebe07b5ce" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c4c0.dat" afterPath="$PROJECT_DIR$/database/seg0/c4c0.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c5b0.dat" afterPath="$PROJECT_DIR$/database/seg0/c5b0.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c5c1.dat" afterPath="$PROJECT_DIR$/database/seg0/c5c1.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c5d1.dat" afterPath="$PROJECT_DIR$/database/seg0/c5d1.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/log/log.ctrl" afterPath="$PROJECT_DIR$/database/log/log.ctrl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lib/pdfbox-app-1.8.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/pdfbox_app_1_8_2.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/log/log1.dat" afterPath="$PROJECT_DIR$/database/log/log1.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/log/logmirror.ctrl" afterPath="$PROJECT_DIR$/database/log/logmirror.ctrl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/DialogBookingSummary.form" afterPath="$PROJECT_DIR$/src/gui/DialogBookingSummary.form" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/camp/Booking.java" afterPath="$PROJECT_DIR$/src/camp/Booking.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/camp/BookingList.java" afterPath="$PROJECT_DIR$/src/camp/BookingList.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/camp/Client.java" afterPath="$PROJECT_DIR$/src/camp/Client.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/camp/Communication.java" afterPath="$PROJECT_DIR$/src/camp/Communication.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/DialogBookingSummary.java" afterPath="$PROJECT_DIR$/src/gui/DialogBookingSummary.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/DialogCustomerForm.java" afterPath="$PROJECT_DIR$/src/gui/DialogCustomerForm.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/DialogEmailForm.java" afterPath="$PROJECT_DIR$/src/gui/DialogEmailForm.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/DialogExtendBooking.java" afterPath="$PROJECT_DIR$/src/gui/DialogExtendBooking.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/DialogSearch.java" afterPath="$PROJECT_DIR$/src/gui/DialogSearch.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/FormBooking.java" afterPath="$PROJECT_DIR$/src/gui/FormBooking.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/MenuCampsite.java" afterPath="$PROJECT_DIR$/src/gui/MenuCampsite.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/camp/Pricing.java" afterPath="$PROJECT_DIR$/src/camp/Pricing.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/ReportBookingSummary.java" afterPath="$PROJECT_DIR$/src/gui/ReportBookingSummary.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/ReportDailyPitchList.java" afterPath="$PROJECT_DIR$/src/gui/ReportDailyPitchList.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/TestCustomerForm.java" afterPath="$PROJECT_DIR$/src/gui/TestCustomerForm.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/camp.iml" afterPath="$PROJECT_DIR$/camp.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/camp/camper.java" afterPath="$PROJECT_DIR$/src/camp/camper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/db.lck" afterPath="$PROJECT_DIR$/database/db.lck" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -89,39 +100,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DialogBookingSummary.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/gui/DialogBookingSummary.java">
+      <file leaf-file-name="Communication.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/camp/Communication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="227" column="0" selection-start="6772" selection-end="6856" vertical-scroll-proportion="0.34815952" vertical-offset="3190" max-vertical-offset="4216">
+            <state line="90" column="1" selection-start="2760" selection-end="2760" vertical-scroll-proportion="0.9357798" vertical-offset="0" max-vertical-offset="714">
               <folding>
-                <element signature="e#3168#3480#0" expanded="true" />
-                <element signature="e#3469#3470#0" expanded="true" />
-                <element signature="e#3535#3536#0" expanded="true" />
-                <element signature="e#3570#3571#0" expanded="true" />
-                <element signature="e#3615#3616#0" expanded="true" />
-                <element signature="e#3653#3654#0" expanded="true" />
-                <element signature="e#3814#3815#0" expanded="true" />
-                <element signature="e#3851#3852#0" expanded="true" />
-                <element signature="e#4012#4013#0" expanded="true" />
-                <element signature="e#4052#4053#0" expanded="true" />
-                <element signature="e#4233#4234#0" expanded="true" />
-                <element signature="e#4269#4270#0" expanded="true" />
-                <element signature="e#4479#4480#0" expanded="true" />
-                <element signature="e#4515#4516#0" expanded="true" />
-                <element signature="e#4670#4671#0" expanded="true" />
-                <element signature="e#4708#4709#0" expanded="true" />
-                <element signature="e#4872#4873#0" expanded="true" />
-                <element signature="e#4911#4912#0" expanded="true" />
-                <element signature="e#5079#5080#0" expanded="true" />
-                <element signature="e#5118#5119#0" expanded="true" />
-                <element signature="e#5298#5299#0" expanded="true" />
-                <element signature="e#5337#5338#0" expanded="true" />
-                <element signature="e#5503#5504#0" expanded="true" />
-                <element signature="e#5540#5541#0" expanded="true" />
-                <element signature="e#5700#5701#0" expanded="true" />
-                <element signature="e#5739#5740#0" expanded="true" />
-                <element signature="e#5916#5917#0" expanded="true" />
-                <element signature="e#5953#5954#0" expanded="true" />
+                <element signature="docComment;method#Communication#0;class#Communication#0" expanded="false" />
+                <element signature="method#Communication#0;class#Communication#0" expanded="false" />
+                <element signature="docComment;method#emailer#0;class#Communication#0" expanded="false" />
+                <element signature="method#emailer#0;class#Communication#0" expanded="false" />
+                <element signature="docComment;method#pdfer#0;class#Communication#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -147,29 +135,36 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/gui/DialogSearch.java" />
-        <option value="$PROJECT_DIR$/src/camp/BookingList.java" />
-        <option value="$PROJECT_DIR$/src/camp/Booking.java" />
-        <option value="$PROJECT_DIR$/src/camp/Pricing.java" />
-        <option value="$PROJECT_DIR$/src/camp/Client.java" />
         <option value="db-console:/ec21802b/f9b6cfa8-09c1-4d3d-a28c-cfc288b48a0b/" />
         <option value="$PROJECT_DIR$/src/camp/ClientList.java" />
         <option value="$PROJECT_DIR$/src/camp/scrap.java" />
         <option value="$PROJECT_DIR$/src/camp/Search.java" />
-        <option value="$PROJECT_DIR$/src/gui/FormBooking.java" />
-        <option value="$PROJECT_DIR$/src/gui/MenuCampsite.java" />
-        <option value="$PROJECT_DIR$/src/gui/DialogCustomerForm.java" />
-        <option value="$PROJECT_DIR$/src/gui/DialogEmailForm.java" />
-        <option value="$PROJECT_DIR$/src/camp/camper.java" />
-        <option value="$PROJECT_DIR$/src/camp/Communication.java" />
         <option value="$PROJECT_DIR$/src/db/connection.java" />
         <option value="$PROJECT_DIR$/src/gui/DialogBookingSummary.form" />
         <option value="$PROJECT_DIR$/src/gui/DialogBookingSummary.java" />
+        <option value="$PROJECT_DIR$/src/gui/DialogCustomerForm.java" />
+        <option value="$PROJECT_DIR$/src/gui/DialogEmailForm.java" />
+        <option value="$PROJECT_DIR$/src/gui/DialogExtendBooking.java" />
+        <option value="$PROJECT_DIR$/src/gui/DialogSearch.java" />
+        <option value="$PROJECT_DIR$/src/gui/FormBooking.java" />
+        <option value="$PROJECT_DIR$/src/gui/MenuCampsite.java" />
+        <option value="$PROJECT_DIR$/src/gui/ReportBookingSummary.java" />
+        <option value="$PROJECT_DIR$/src/gui/ReportDailyPitchList.java" />
+        <option value="$PROJECT_DIR$/src/gui/TestCustomerForm.java" />
+        <option value="$PROJECT_DIR$/src/camp/Pricing.java" />
+        <option value="$PROJECT_DIR$/src/camp/Booking.java" />
+        <option value="$PROJECT_DIR$/src/camp/BookingList.java" />
+        <option value="$PROJECT_DIR$/src/camp/camper.java" />
+        <option value="$PROJECT_DIR$/src/camp/Client.java" />
+        <option value="$PROJECT_DIR$/src/camp/Communication.java" />
       </list>
     </option>
   </component>
   <component name="MavenProjectNavigator">
     <treeState />
+  </component>
+  <component name="NamedScopeManager">
+    <scope name="LocalScope" pattern="file:src/*" />
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
@@ -205,10 +200,13 @@
           <State>
             <id>Probable bugs</id>
           </State>
+          <State>
+            <id>Spelling</id>
+          </State>
         </expanded-state>
         <selected-state>
           <State>
-            <id>EmptyTryBlock</id>
+            <id>SpellCheckingInspection</id>
           </State>
         </selected-state>
       </profile-state>
@@ -242,7 +240,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -289,35 +286,14 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="gui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
               <option name="myItemId" value="camp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="~20111375" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -353,7 +329,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
-    <property name="options.lastSelected" value="web.server" />
+    <property name="options.lastSelected" value="reference.plugin.settings.project.settings.cfml" />
     <property name="LayoutCode.rearrangeEntriesJava" value="true" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
@@ -365,11 +341,11 @@
       <recent name="gui" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Andrew\Documents\~20111375\Lib" />
       <recent name="$PROJECT_DIR$/Lib" />
       <recent name="C:\Users\Andrew\Documents\20111375" />
       <recent name="C:\Users\Andrew\Documents\20111375\Lib" />
       <recent name="C:\Users\Andrew\Documents\20111375\src" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunManager" selected="Application.camper">
@@ -716,7 +692,9 @@
       <workItem from="1384788076980" duration="1870000" />
       <workItem from="1384935487580" duration="2555000" />
       <workItem from="1384939280360" duration="111000" />
-      <workItem from="1384940159867" duration="4092000" />
+      <workItem from="1384940159867" duration="4281000" />
+      <workItem from="1384945237121" duration="2772000" />
+      <workItem from="1384948442220" duration="347000" />
     </task>
     <task id="LOCAL-00001" summary="amended header">
       <created>1383654964784</created>
@@ -822,11 +800,15 @@
       <created>1384942893723</created>
       <updated>1384942893723</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Hotfix for booking confirmation page when you deselect paid">
+      <created>1384944692423</created>
+      <updated>1384944692423</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="145703000" />
+    <option name="totallyTimeSpent" value="149011000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -852,7 +834,6 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20651014" sideWeight="0.75247526" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1724138" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -862,18 +843,18 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959481" sideWeight="0.75247526" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39933258" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2458287" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24528302" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33468395" sideWeight="0.7442244" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22530521" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2831661" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959481" sideWeight="0.79202276" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901135" sideWeight="0.76567656" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19103523" sideWeight="0.75247526" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2458287" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19103523" sideWeight="0.75247526" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2458287" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20651014" sideWeight="0.75247526" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33549434" sideWeight="0.75247526" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Sequence" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32925472" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
@@ -882,7 +863,8 @@
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.7975528" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32730263" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2820513" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39933258" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="UpdateCopyrightCheckinHandler">
@@ -920,7 +902,8 @@
     <MESSAGE value="email addition" />
     <MESSAGE value="Implementing email confirmation and printed copy" />
     <MESSAGE value="Implementing email confirmation and printed copy&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementing email confirmation and printed copy&#10;" />
+    <MESSAGE value="Hotfix for booking confirmation page when you deselect paid" />
+    <option name="LAST_COMMIT_MESSAGE" value="Hotfix for booking confirmation page when you deselect paid" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -939,60 +922,29 @@
     <entry file="file://$PROJECT_DIR$/src/camp/Communication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="41" selection-start="322" selection-end="322" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="969">
-          <folding />
+          <folding>
+            <element signature="docComment;method#Communication#0;class#Communication#0" expanded="false" />
+            <element signature="method#Communication#0;class#Communication#0" expanded="false" />
+            <element signature="docComment;method#emailer#0;class#Communication#0" expanded="false" />
+            <element signature="method#emailer#0;class#Communication#0" expanded="false" />
+            <element signature="docComment;method#pdfer#0;class#Communication#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/camp/scrap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="100" selection-start="515" selection-end="515" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="765">
-          <folding />
-        </state>
+        <state line="14" column="100" selection-start="515" selection-end="515" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="765" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/DialogBookingSummary.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="226" column="34" selection-start="6678" selection-end="6678" vertical-scroll-proportion="0.0" vertical-offset="3842" max-vertical-offset="4590">
-          <folding>
-            <element signature="e#3168#3480#0" expanded="true" />
-            <element signature="e#3469#3470#0" expanded="true" />
-            <element signature="e#3535#3536#0" expanded="true" />
-            <element signature="e#3570#3571#0" expanded="true" />
-            <element signature="e#3615#3616#0" expanded="true" />
-            <element signature="e#3653#3654#0" expanded="true" />
-            <element signature="e#3814#3815#0" expanded="true" />
-            <element signature="e#3851#3852#0" expanded="true" />
-            <element signature="e#4012#4013#0" expanded="true" />
-            <element signature="e#4052#4053#0" expanded="true" />
-            <element signature="e#4233#4234#0" expanded="true" />
-            <element signature="e#4269#4270#0" expanded="true" />
-            <element signature="e#4479#4480#0" expanded="true" />
-            <element signature="e#4515#4516#0" expanded="true" />
-            <element signature="e#4670#4671#0" expanded="true" />
-            <element signature="e#4708#4709#0" expanded="true" />
-            <element signature="e#4872#4873#0" expanded="true" />
-            <element signature="e#4911#4912#0" expanded="true" />
-            <element signature="e#5079#5080#0" expanded="true" />
-            <element signature="e#5118#5119#0" expanded="true" />
-            <element signature="e#5298#5299#0" expanded="true" />
-            <element signature="e#5337#5338#0" expanded="true" />
-            <element signature="e#5503#5504#0" expanded="true" />
-            <element signature="e#5540#5541#0" expanded="true" />
-            <element signature="e#5700#5701#0" expanded="true" />
-            <element signature="e#5739#5740#0" expanded="true" />
-            <element signature="e#5916#5917#0" expanded="true" />
-            <element signature="e#5953#5954#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="226" column="34" selection-start="6678" selection-end="6678" vertical-scroll-proportion="0.0" vertical-offset="3842" max-vertical-offset="4590" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/FormBooking.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="217" column="14" selection-start="8041" selection-end="8041" vertical-scroll-proportion="0.0" vertical-offset="3689" max-vertical-offset="4777">
-          <folding>
-            <element signature="method#actionPerformed#0;class#2655:2854" expanded="false" />
-          </folding>
-        </state>
+        <state line="217" column="14" selection-start="8041" selection-end="8041" vertical-scroll-proportion="0.0" vertical-offset="3689" max-vertical-offset="4777" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/DialogBookingSummary.form">
@@ -1008,51 +960,24 @@
     <entry file="file://$PROJECT_DIR$/src/camp/Communication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="41" selection-start="322" selection-end="322" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="969">
-          <folding />
+          <folding>
+            <element signature="docComment;method#Communication#0;class#Communication#0" expanded="false" />
+            <element signature="method#Communication#0;class#Communication#0" expanded="false" />
+            <element signature="docComment;method#emailer#0;class#Communication#0" expanded="false" />
+            <element signature="method#emailer#0;class#Communication#0" expanded="false" />
+            <element signature="docComment;method#pdfer#0;class#Communication#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/camp/scrap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="100" selection-start="515" selection-end="515" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="680">
-          <folding />
-        </state>
+        <state line="14" column="100" selection-start="515" selection-end="515" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="680" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/DialogBookingSummary.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="226" column="34" selection-start="6678" selection-end="6678" vertical-scroll-proportion="0.0" vertical-offset="3842" max-vertical-offset="4590">
-          <folding>
-            <element signature="e#3168#3480#0" expanded="true" />
-            <element signature="e#3469#3470#0" expanded="true" />
-            <element signature="e#3535#3536#0" expanded="true" />
-            <element signature="e#3570#3571#0" expanded="true" />
-            <element signature="e#3615#3616#0" expanded="true" />
-            <element signature="e#3653#3654#0" expanded="true" />
-            <element signature="e#3814#3815#0" expanded="true" />
-            <element signature="e#3851#3852#0" expanded="true" />
-            <element signature="e#4012#4013#0" expanded="true" />
-            <element signature="e#4052#4053#0" expanded="true" />
-            <element signature="e#4233#4234#0" expanded="true" />
-            <element signature="e#4269#4270#0" expanded="true" />
-            <element signature="e#4479#4480#0" expanded="true" />
-            <element signature="e#4515#4516#0" expanded="true" />
-            <element signature="e#4670#4671#0" expanded="true" />
-            <element signature="e#4708#4709#0" expanded="true" />
-            <element signature="e#4872#4873#0" expanded="true" />
-            <element signature="e#4911#4912#0" expanded="true" />
-            <element signature="e#5079#5080#0" expanded="true" />
-            <element signature="e#5118#5119#0" expanded="true" />
-            <element signature="e#5298#5299#0" expanded="true" />
-            <element signature="e#5337#5338#0" expanded="true" />
-            <element signature="e#5503#5504#0" expanded="true" />
-            <element signature="e#5540#5541#0" expanded="true" />
-            <element signature="e#5700#5701#0" expanded="true" />
-            <element signature="e#5739#5740#0" expanded="true" />
-            <element signature="e#5916#5917#0" expanded="true" />
-            <element signature="e#5953#5954#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="226" column="34" selection-start="6678" selection-end="6678" vertical-scroll-proportion="0.0" vertical-offset="3842" max-vertical-offset="4590" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/DialogBookingSummary.form">
@@ -1070,16 +995,9 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/camp/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="97" column="7" selection-start="2122" selection-end="2122" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/camp/ClientList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="57" selection-start="2199" selection-end="2199" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
+        <state line="53" column="57" selection-start="2199" selection-end="2199" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/DialogCustomerForm.form">
@@ -1087,88 +1005,14 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/camp/Search.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="26" selection-start="887" selection-end="887" vertical-scroll-proportion="0.036144577" vertical-offset="0" max-vertical-offset="0">
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/DialogExtendBooking.form">
       <provider selected="true" editor-type-id="ui-designer">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/DialogCustomerForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="241" column="14" selection-start="7852" selection-end="7852" vertical-scroll-proportion="0.4795181" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/MenuCampsite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="21" selection-start="982" selection-end="982" vertical-scroll-proportion="0.68457943" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/camp/scrap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="100" selection-start="515" selection-end="515" vertical-scroll-proportion="0.19418961" vertical-offset="26" max-vertical-offset="680">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/DialogEmailForm.form">
       <provider selected="true" editor-type-id="ui-designer">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/DialogSearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="24" selection-start="1385" selection-end="1406" vertical-scroll-proportion="0.0" vertical-offset="411" max-vertical-offset="2788">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/DialogEmailForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="50" selection-start="993" selection-end="993" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1003">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/camp/camper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="238" selection-end="238" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
-          <folding>
-            <element signature="e#269#508#0" expanded="true" />
-            <element signature="e#497#498#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/FormBooking.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="122" column="40" selection-start="4040" selection-end="4064" vertical-scroll-proportion="1.9033742" vertical-offset="0" max-vertical-offset="3587">
-          <folding>
-            <element signature="method#actionPerformed#0;class#2655:2854" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/camp/Communication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="54" selection-start="1258" selection-end="1258" vertical-scroll-proportion="0.5828221" vertical-offset="215" max-vertical-offset="867">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/db/connection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="112" selection-start="305" selection-end="305" vertical-scroll-proportion="0.05214724" vertical-offset="85" max-vertical-offset="1564">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/DialogBookingSummary.form">
@@ -1181,38 +1025,130 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/db/connection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="55" selection-start="235" selection-end="248" vertical-scroll-proportion="0.05214724" vertical-offset="85" max-vertical-offset="1564" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/CalListen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="13" selection-start="224" selection-end="224" vertical-scroll-proportion="0.1303681" vertical-offset="0" max-vertical-offset="652" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/DialogBookingSummary.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="227" column="0" selection-start="6772" selection-end="6856" vertical-scroll-proportion="0.34815952" vertical-offset="3190" max-vertical-offset="4216">
+        <state line="0" column="0" selection-start="0" selection-end="91" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3910" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/DialogSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="3" selection-start="91" selection-end="91" vertical-scroll-proportion="0.13302034" vertical-offset="0" max-vertical-offset="2890" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/DialogExtendBooking.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="3" selection-start="91" selection-end="91" vertical-scroll-proportion="0.1303681" vertical-offset="0" max-vertical-offset="1445" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/DialogEmailForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="3" selection-start="91" selection-end="91" vertical-scroll-proportion="0.1303681" vertical-offset="0" max-vertical-offset="1105" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/DialogCustomerForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="3" selection-start="91" selection-end="91" vertical-scroll-proportion="0.13302034" vertical-offset="0" max-vertical-offset="3502" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/FormBooking.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="3" selection-start="91" selection-end="91" vertical-scroll-proportion="0.1303681" vertical-offset="0" max-vertical-offset="3604" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/MenuCampsite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="3" selection-start="91" selection-end="91" vertical-scroll-proportion="0.1303681" vertical-offset="0" max-vertical-offset="652" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/TestCustomerForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="3" selection-start="91" selection-end="91" vertical-scroll-proportion="0.1303681" vertical-offset="0" max-vertical-offset="731" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/ReportDailyPitchList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="3" selection-start="91" selection-end="91" vertical-scroll-proportion="0.1303681" vertical-offset="0" max-vertical-offset="663" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/ReportBookingSummary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="3" selection-start="91" selection-end="91" vertical-scroll-proportion="0.1303681" vertical-offset="0" max-vertical-offset="1717" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/TestForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="13" selection-start="503" selection-end="503" vertical-scroll-proportion="0.1303681" vertical-offset="0" max-vertical-offset="1513" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/camp/Items.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="13" selection-start="120" selection-end="120" vertical-scroll-proportion="0.20858896" vertical-offset="0" max-vertical-offset="652" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/camp/Pitch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="13" selection-start="121" selection-end="121" vertical-scroll-proportion="0.23466258" vertical-offset="0" max-vertical-offset="1224" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/camp/PitchList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="13" selection-start="222" selection-end="222" vertical-scroll-proportion="0.26447573" vertical-offset="1" max-vertical-offset="1326" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/camp/Pricing.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="3" selection-start="91" selection-end="91" vertical-scroll-proportion="0.1303681" vertical-offset="0" max-vertical-offset="816" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/camp/scrap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="100" selection-start="515" selection-end="515" vertical-scroll-proportion="0.23466258" vertical-offset="0" max-vertical-offset="680" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/camp/Search.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="82" column="13" selection-start="2591" selection-end="2591" vertical-scroll-proportion="1.8888888" vertical-offset="0" max-vertical-offset="1768" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/camp/Booking.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="66" selection-start="218" selection-end="218" vertical-scroll-proportion="-1.0175097" vertical-offset="659" max-vertical-offset="1173" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/camp/BookingList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="50" selection-start="517" selection-end="517" vertical-scroll-proportion="0.29766536" vertical-offset="0" max-vertical-offset="514" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/camp/camper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="4" selection-start="586" selection-end="586" vertical-scroll-proportion="0.29766536" vertical-offset="0" max-vertical-offset="514" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/camp/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="4" selection-start="1049" selection-end="1049" vertical-scroll-proportion="0.5229541" vertical-offset="350" max-vertical-offset="1955" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/camp/Communication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="90" column="1" selection-start="2760" selection-end="2760" vertical-scroll-proportion="0.9357798" vertical-offset="0" max-vertical-offset="714">
           <folding>
-            <element signature="e#3168#3480#0" expanded="true" />
-            <element signature="e#3469#3470#0" expanded="true" />
-            <element signature="e#3535#3536#0" expanded="true" />
-            <element signature="e#3570#3571#0" expanded="true" />
-            <element signature="e#3615#3616#0" expanded="true" />
-            <element signature="e#3653#3654#0" expanded="true" />
-            <element signature="e#3814#3815#0" expanded="true" />
-            <element signature="e#3851#3852#0" expanded="true" />
-            <element signature="e#4012#4013#0" expanded="true" />
-            <element signature="e#4052#4053#0" expanded="true" />
-            <element signature="e#4233#4234#0" expanded="true" />
-            <element signature="e#4269#4270#0" expanded="true" />
-            <element signature="e#4479#4480#0" expanded="true" />
-            <element signature="e#4515#4516#0" expanded="true" />
-            <element signature="e#4670#4671#0" expanded="true" />
-            <element signature="e#4708#4709#0" expanded="true" />
-            <element signature="e#4872#4873#0" expanded="true" />
-            <element signature="e#4911#4912#0" expanded="true" />
-            <element signature="e#5079#5080#0" expanded="true" />
-            <element signature="e#5118#5119#0" expanded="true" />
-            <element signature="e#5298#5299#0" expanded="true" />
-            <element signature="e#5337#5338#0" expanded="true" />
-            <element signature="e#5503#5504#0" expanded="true" />
-            <element signature="e#5540#5541#0" expanded="true" />
-            <element signature="e#5700#5701#0" expanded="true" />
-            <element signature="e#5739#5740#0" expanded="true" />
-            <element signature="e#5916#5917#0" expanded="true" />
-            <element signature="e#5953#5954#0" expanded="true" />
+            <element signature="docComment;method#Communication#0;class#Communication#0" expanded="false" />
+            <element signature="method#Communication#0;class#Communication#0" expanded="false" />
+            <element signature="docComment;method#emailer#0;class#Communication#0" expanded="false" />
+            <element signature="method#emailer#0;class#Communication#0" expanded="false" />
+            <element signature="docComment;method#pdfer#0;class#Communication#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1236,6 +1172,18 @@
               <list>
                 <option value="0.2" />
                 <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="Copyright.UI">
+        <settings>
+          <last-edited>copy</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
               </list>
             </option>
           </splitter-proportions>
@@ -1314,6 +1262,7 @@
       </state>
       <state key="ScopeChooserConfigurable.UI">
         <settings>
+          <last-edited>LocalScope</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1321,6 +1270,9 @@
               </list>
             </option>
           </splitter-proportions>
+          <order>
+            <scope name="LocalScope" />
+          </order>
         </settings>
       </state>
     </states>

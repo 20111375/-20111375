@@ -10,8 +10,11 @@ import gui.MenuCampsite;
 
 import java.awt.*;
 
-
 public class camper {
+    /**
+     * @param args
+     * @throws Exception
+     */
     public static void main(String[] args) throws Exception {
         EventQueue.invokeLater(new Runnable() {
             public void run() {
