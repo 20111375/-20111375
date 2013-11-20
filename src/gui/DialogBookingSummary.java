@@ -12,6 +12,11 @@ import java.util.Calendar;
 
 public class DialogBookingSummary extends JDialog {
     public JTextArea BookingForeName;
+    public Client ClientSummary = new Client();
+    public Pitch PitchSummary = new Pitch();
+    public Booking submit = new Booking();
+    public String Start;
+    public String End;
     private JPanel BookingSummary;
     private JButton buttonOK;
     private JButton buttonCancel;
@@ -44,12 +49,8 @@ public class DialogBookingSummary extends JDialog {
     private JLabel StartDate;
     private JLabel Cost;
     private JCheckBox paidCheckBox;
-    public Client ClientSummary = new Client();
-    public Pitch PitchSummary = new Pitch();
-    public Booking submit = new Booking();
-    public String Start;
-    public String End;
     private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+    private DialogEmailForm emailConfirm = new DialogEmailForm(SwingUtilities.getWindowAncestor(this));
 
     public DialogBookingSummary() {
         setContentPane(BookingSummary);
@@ -89,6 +90,7 @@ public class DialogBookingSummary extends JDialog {
         });
         email.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
+                getEmailConfirm().make(emailConfirm);
             }
         });
         paidCheckBox.addActionListener(new ActionListener() {
@@ -105,6 +107,10 @@ public class DialogBookingSummary extends JDialog {
                 }
             }
         });
+    }
+
+    public DialogEmailForm getEmailConfirm() {
+        return emailConfirm;
     }
 
     public JTextArea getBookingForeName() {

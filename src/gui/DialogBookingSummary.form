@@ -364,6 +364,7 @@
               </grid>
             </constraints>
             <properties>
+              <selected value="false"/>
               <text value="Email confirmation"/>
             </properties>
           </component>
@@ -374,6 +375,7 @@
               </grid>
             </constraints>
             <properties>
+              <selected value="false"/>
               <text value="Print confirmation"/>
             </properties>
           </component>

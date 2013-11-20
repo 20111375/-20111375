@@ -11,6 +11,7 @@
     <orderEntry type="library" exported="" name="derby" level="project" />
     <orderEntry type="library" exported="" name="Java EE 6-Java EE 6" level="project" />
     <orderEntry type="library" name="javax.mail" level="project" />
+    <orderEntry type="library" name="javax.mail" level="project" />
   </component>
 </module>
 

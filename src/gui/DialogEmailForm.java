@@ -1,6 +1,7 @@
 package gui;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.*;
 
 public class DialogEmailForm extends JDialog {
@@ -19,7 +20,7 @@ public class DialogEmailForm extends JDialog {
     private JTextArea emailAddress;
     private JCheckBox copyToOfficeCheckBox;
 
-    public DialogEmailForm() {
+    public DialogEmailForm(Window windowAncestor) {
         setContentPane(contentPane);
         setModal(true);
         getRootPane().setDefaultButton(buttonOK);
@@ -71,10 +72,8 @@ public class DialogEmailForm extends JDialog {
         dispose();
     }
 
-    public static void main(String[] args) {
-        DialogEmailForm dialog = new DialogEmailForm();
-        dialog.pack();
-        dialog.setVisible(true);
-        System.exit(0);
+    public static void make(DialogEmailForm D) {
+        D.pack();
+        D.setVisible(true);
     }
 }

@@ -10,16 +10,20 @@ import java.sql.*;
 
 public class connection {
     protected ResultSet resultset = null;
+    private String PathToDB = "jdbc:derby:../~20111375/database";
 
     public connection() {
+    }
+
+    public String getPathToDB() {
+        return PathToDB;
     }
 
     public ResultSet connect(String SQLString) {
 
         try {
             Class.forName("org.apache.derby.jdbc.EmbeddedDriver").newInstance();
-            Connection connect = DriverManager.getConnection("jdbc:derby:../~20111375/database");
-            //Connection connect = DriverManager.getConnection("jdbc:derby:../20111375/database");
+            Connection connect = DriverManager.getConnection(getPathToDB());
             PreparedStatement statement = connect.prepareStatement(SQLString);
             resultset = statement.executeQuery();
         } catch (InstantiationException e) {
@@ -37,7 +41,7 @@ public class connection {
     public void ExecuteCustomerUpdate(String SQL) {
         try {
             Class.forName("org.apache.derby.jdbc.EmbeddedDriver").newInstance();
-            Connection connect = DriverManager.getConnection("jdbc:derby:../~20111375/database");
+            Connection connect = DriverManager.getConnection(getPathToDB());
             PreparedStatement statement = connect.prepareStatement(SQL);
             statement.executeUpdate();
         } catch (InstantiationException e) {
@@ -54,7 +58,7 @@ public class connection {
     public void ExecuteCustomerInsert(String SQL) {
         try {
             Class.forName("org.apache.derby.jdbc.EmbeddedDriver").newInstance();
-            Connection connect = DriverManager.getConnection("jdbc:derby:../~20111375/database");
+            Connection connect = DriverManager.getConnection(getPathToDB());
             PreparedStatement statement = connect.prepareStatement(SQL);
             statement.executeUpdate();
         } catch (InstantiationException e) {
@@ -72,8 +76,7 @@ public class connection {
 
         try {
             Class.forName("org.apache.derby.jdbc.EmbeddedDriver").newInstance();
-            Connection connect = DriverManager.getConnection("jdbc:derby:../~20111375/database");
-            //Connection connect = DriverManager.getConnection("jdbc:derby:../20111375/database");
+            Connection connect = DriverManager.getConnection(getPathToDB());
             PreparedStatement statement = connect.prepareStatement(SQLString);
             resultset = statement.executeQuery();
         } catch (InstantiationException e) {

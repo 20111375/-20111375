@@ -14,8 +14,12 @@ import java.util.Properties;
 public class Communication {
 
     public Communication() {
+
+    }
+
+    public void emailer(Booking E) {
         final String username = "campadoodledoo@gmail.com";
-        final String password = "password";
+        final String password = "";
 
         Properties props = new Properties();
         props.put("mail.smtp.auth", "true");
@@ -34,15 +38,13 @@ public class Communication {
             Message message = new MimeMessage(session);
             message.setFrom(new InternetAddress("campadoodledoo@gmail.com"));
             message.setRecipients(Message.RecipientType.TO,
-                    InternetAddress.parse("to-email@gmail.com"));
-            message.setSubject("Confirmation");
-            message.setText("Dear xxx,"
-                    + "\n\n message here.");
-
+                    InternetAddress.parse("a@b.com"));
+            message.setSubject("Booking reservation");
+            message.setText("Dear ,"
+                    + "\n\n Your campsite pitch awaits.");
             Transport.send(message);
         } catch (MessagingException e) {
-            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+            e.printStackTrace();
         }
-
     }
 }
