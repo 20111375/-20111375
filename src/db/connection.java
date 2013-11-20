@@ -10,7 +10,7 @@ import java.sql.*;
 
 public class connection {
     protected ResultSet resultset = null;
-    private String PathToDB = "jdbc:derby:../~20111375/database";
+    private String PathToDB = "jdbc:derby:../~20111375/database";// set this to the relative path of the project
 
     public connection() {
     }
