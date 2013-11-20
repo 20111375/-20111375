@@ -32,6 +32,15 @@ where not exists(
           and '2013-01-16' <= App.booking.FROMDATE and '2013-01-17' <= APP.booking.TODATE
 );
 
+select app.PITCH.PITCHID, app.PITCH.PITCHNAME from app.PITCH join PITCHTYPE on app.pitch.pitchtypeid  = app.PITCHTYPE.pitchtypeid
+                                                                               and (CARAVAN = FALSE) and (MOTORHOME = FALSE ) and (TENT = TRUE)
+where not exists(
+    select * from app.BOOKING
+    where app.BOOKING.PITCHID = app.PITCH.PITCHID
+          and ('2013-11-13' BETWEEN App.booking.FROMDATE AND app.BOOKING.TODATE)
+  or  ('2013-11-15' BETWEEN App.booking.FROMDATE AND app.BOOKING.TODATE)
+);
+
 This query returns available pitches of a specific type:
 select app.PITCH.PITCHID from app.PITCH
 where not exists(
