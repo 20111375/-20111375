@@ -42,7 +42,7 @@ public class PitchList extends GenericList<Pitch> {
                         "where not exists(\n" +
                         "    select * from app.BOOKING\n" +
                         "    where app.BOOKING.PITCHID = app.PITCH.PITCHID\n" +
-                        "          and '" + Start + "' <= App.booking.FROMDATE and '" + End + "' <= APP.booking.TODATE\n" +
+                        "          and '" + Start + "' >= App.booking.FROMDATE and '" + End + "' <= APP.booking.TODATE\n" +
                         ")";
                 ResultSet resultset = new connection().connect(SQL);
                 while (resultset.next()) {

@@ -267,7 +267,7 @@ public class DialogBookingSummary extends JDialog {
         D.setBookingPitchType(PitchSummary.getPitchType());
         D.setBookingPitchID(PitchSummary.getPitchID());
         D.setBookingStartDate(start);
-        D.setBookingEndDate(start);
+        D.setBookingEndDate(end);
         D.setBookingCostTotal(PitchSummary.getTotal());
 
         D.setResizable(false);
