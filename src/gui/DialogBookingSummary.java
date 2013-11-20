@@ -56,13 +56,11 @@ public class DialogBookingSummary extends JDialog {
         setContentPane(BookingSummary);
         setModal(true);
         getRootPane().setDefaultButton(buttonOK);
-
         buttonOK.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 onOK();
             }
         });
-
         buttonCancel.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 onCancel();
@@ -101,9 +99,6 @@ public class DialogBookingSummary extends JDialog {
             public void actionPerformed(ActionEvent e) {
                 if (paidCheckBox.isSelected()) {
                     submit.setPaid(true);
-                }
-                if (!paidCheckBox.isSelected()) {
-                    submit.setPaid(false);
                 }
             }
         });
@@ -230,6 +225,9 @@ public class DialogBookingSummary extends JDialog {
         submit.setFromDate(getBookingStartDate().getText());
         submit.setToDate(getBookingEndDate().getText());
         submit.setTotal(Double.valueOf(getBookingCostTotal().getText()));
+        if (!paidCheckBox.isSelected()) {
+            submit.setPaid(false);
+        }
         submit.insertNewBooking();
         javax.swing.SwingUtilities.getWindowAncestor(DialogBookingSummary.this).dispose();
         dispose();
