@@ -8,6 +8,7 @@ package gui;
 
 import camp.Booking;
 import camp.Client;
+import camp.Communication;
 import camp.Pitch;
 
 import javax.swing.*;
@@ -95,6 +96,7 @@ public class DialogBookingSummary extends JDialog {
         email.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 getEmailConfirm().make(emailConfirm);
+                new Communication().emailer(submit, ClientSummary);//--this doesn't work
             }
         });
         paidCheckBox.addActionListener(new ActionListener() {

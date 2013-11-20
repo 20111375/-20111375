@@ -31,7 +31,7 @@ public class Communication {
     /**
      * @param E
      */
-    public void emailer(Booking E) {
+    public void emailer(Booking E, Client F) {
         final String username = "campadoodledoo@gmail.com";
         final String password = "";
 
@@ -51,10 +51,15 @@ public class Communication {
             Message message = new MimeMessage(session);
             message.setFrom(new InternetAddress("campadoodledoo@gmail.com"));
             message.setRecipients(Message.RecipientType.TO,
-                    InternetAddress.parse("a@b.com"));
+                    InternetAddress.parse("design@learningclip.co.uk"));
             message.setSubject("Booking reservation");
-            message.setText("Dear ,"
-                    + "\n\n Your campsite pitch awaits.");
+            message.setText("Hello" + F.getFirstName() + "\n" +
+                    "Thank you for your picking Camp-a-doodle-doo, your reservation details are: " + "\n" +
+                    "Start Date:" + E.getFromDate() + "\n" +
+                    "Finish Date " + E.getToDate() + "\n" +
+                    "Pitch number: " + E.getPitchID() + "\n" +
+                    "Total Cost: £" + E.getTotal() + "\n" +
+                    "Once again thank you and we hope you have a good stay.");
             Transport.send(message);
         } catch (MessagingException e) {
             e.printStackTrace();
@@ -62,11 +67,10 @@ public class Communication {
     }
 
     /**
-     *
      * @param E
      * @throws IOException
      */
-    public void pdfer(Booking E) throws IOException {
+    public void pdfer(Booking E, Client F) throws IOException {
         PDDocument document = new PDDocument();
         PDPage page = new PDPage();
         document.addPage(page);
@@ -77,7 +81,13 @@ public class Communication {
         contentStream.beginText();
         contentStream.setFont(font, 10);
         contentStream.moveTextPositionByAmount(100, 700);
-        contentStream.drawString("Hello");
+        contentStream.drawString("Hello" + F.getFirstName() + "\n" +
+                "Thank you for your picking Camp-a-doodle-doo, your reservation details are: " + "\n" +
+                "Start Date:" + E.getFromDate() + "\n" +
+                "Finish Date " + E.getToDate() + "\n" +
+                "Pitch number: " + E.getPitchID() + "\n" +
+                "Total Cost: £" + E.getTotal() + "\n" +
+                "Once again thank you and we hope you have a good stay.");
         contentStream.endText();
         contentStream.close();
 
