@@ -13,6 +13,7 @@ import camp.Pitch;
 
 import javax.swing.*;
 import java.awt.event.*;
+import java.io.IOException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -58,6 +59,7 @@ public class DialogBookingSummary extends JDialog {
     private JCheckBox paidCheckBox;
     private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
     private DialogEmailForm emailConfirm = new DialogEmailForm(SwingUtilities.getWindowAncestor(this));
+    private int BookingPitchID;
 
     public DialogBookingSummary() {
         setContentPane(BookingSummary);
@@ -91,6 +93,7 @@ public class DialogBookingSummary extends JDialog {
         PrintIt.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+
             }
         });
         email.addActionListener(new ActionListener() {
@@ -148,7 +151,8 @@ public class DialogBookingSummary extends JDialog {
         BookingCarReg.setText(bookingCarReg);
     }
 
-    private void setBookingPitchID(int pitchID) {
+    private void setBookingPitchID(int bookingPitchID) {
+        BookingPitchID = bookingPitchID;
     }
 
     public JTextArea getBookingCounty() {
@@ -229,7 +233,7 @@ public class DialogBookingSummary extends JDialog {
 // add your code here
 
         submit.setClientID(Integer.valueOf(getBookingCustomerID().getText()));
-        submit.setPitchID(Integer.valueOf(getBookingPitchType().getText()));
+        submit.setPitchID(BookingPitchID);
         submit.setFromDate(getBookingStartDate().getText());
         submit.setToDate(getBookingEndDate().getText());
         submit.setTotal(Double.valueOf(getBookingCostTotal().getText()));
@@ -237,6 +241,16 @@ public class DialogBookingSummary extends JDialog {
             submit.setPaid(false);
         }
         submit.insertNewBooking();
+        submit.insertNewPayment();
+        ClientSummary.setFirstName(getBookingForeName().getText());
+
+        if (PrintIt.isSelected()) {
+            try {
+                new Communication().pdfer(submit, ClientSummary);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
         javax.swing.SwingUtilities.getWindowAncestor(DialogBookingSummary.this).dispose();
         dispose();
     }
@@ -269,7 +283,6 @@ public class DialogBookingSummary extends JDialog {
         D.setBookingStartDate(start);
         D.setBookingEndDate(end);
         D.setBookingCostTotal(PitchSummary.getTotal());
-
         D.setResizable(false);
         D.setVisible(true);
     }

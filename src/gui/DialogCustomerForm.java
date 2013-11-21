@@ -131,7 +131,20 @@ public class DialogCustomerForm extends JDialog {
         DeleteButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                //To change body of implemented methods use File | Settings | File Templates.
+                if (!CustomerList.isSelectionEmpty()) {
+                    String tmpStr = (String) (String) CustomerList.getSelectedValue();
+                    String[] tmpArray = tmpStr.split(":");
+                    System.out.println(tmpArray[0]);
+                    for (Client F : ClientList.customerList()) {
+                        if (F.getClientID() == Integer.parseInt(tmpArray[0])) {
+                            F.setDelete(true);
+                            new ClientList().deleteCustomer(F);
+                        }
+                    }
+                }
+                ClearText();
+                textList();
+                DeleteButton.setEnabled(false);
             }
         });
         EditButton.addActionListener(new ActionListener() {

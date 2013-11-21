@@ -81,9 +81,9 @@ public class Communication {
         contentStream.beginText();
         contentStream.setFont(font, 10);
         contentStream.moveTextPositionByAmount(100, 700);
-        contentStream.drawString("Hello" + F.getFirstName() + "\n" +
+        contentStream.drawString("Hello " + F.getFirstName() + "\n" +
                 "Thank you for your picking Camp-a-doodle-doo, your reservation details are: " + "\n" +
-                "Start Date:" + E.getFromDate() + "\n" +
+                "Start Date: " + E.getFromDate() + "\n" +
                 "Finish Date " + E.getToDate() + "\n" +
                 "Pitch number: " + E.getPitchID() + "\n" +
                 "Total Cost: £" + E.getTotal() + "\n" +

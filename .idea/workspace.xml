@@ -10,17 +10,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51f6022f-23b8-4194-a60c-864ebe07b5ce" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/camp/PitchList.java" afterPath="$PROJECT_DIR$/src/camp/PitchList.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c4c0.dat" afterPath="$PROJECT_DIR$/database/seg0/c4c0.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c4d1.dat" afterPath="$PROJECT_DIR$/database/seg0/c4d1.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c5b0.dat" afterPath="$PROJECT_DIR$/database/seg0/c5b0.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c5c1.dat" afterPath="$PROJECT_DIR$/database/seg0/c5c1.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c5d1.dat" afterPath="$PROJECT_DIR$/database/seg0/c5d1.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c5f0.dat" afterPath="$PROJECT_DIR$/database/seg0/c5f0.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c6a0.dat" afterPath="$PROJECT_DIR$/database/seg0/c6a0.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c6b1.dat" afterPath="$PROJECT_DIR$/database/seg0/c6b1.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c6c1.dat" afterPath="$PROJECT_DIR$/database/seg0/c6c1.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c90.dat" afterPath="$PROJECT_DIR$/database/seg0/c90.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/ca1.dat" afterPath="$PROJECT_DIR$/database/seg0/ca1.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/cb1.dat" afterPath="$PROJECT_DIR$/database/seg0/cb1.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/log/log.ctrl" afterPath="$PROJECT_DIR$/database/log/log.ctrl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/log/log1.dat" afterPath="$PROJECT_DIR$/database/log/log1.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/log/logmirror.ctrl" afterPath="$PROJECT_DIR$/database/log/logmirror.ctrl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/camp/Booking.java" afterPath="$PROJECT_DIR$/src/camp/Booking.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/camp/ClientList.java" afterPath="$PROJECT_DIR$/src/camp/ClientList.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/camp/Communication.java" afterPath="$PROJECT_DIR$/src/camp/Communication.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/DialogBookingSummary.java" afterPath="$PROJECT_DIR$/src/gui/DialogBookingSummary.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/DialogCustomerForm.java" afterPath="$PROJECT_DIR$/src/gui/DialogCustomerForm.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/db.lck" afterPath="$PROJECT_DIR$/database/db.lck" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/camp/scrap.java" afterPath="$PROJECT_DIR$/src/camp/scrap.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="camp.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="51f6022f-23b8-4194-a60c-864ebe07b5ce" time="1385016307522" ignored="false" />
-    <file path="/database" changelist="51f6022f-23b8-4194-a60c-864ebe07b5ce" time="1385016376574" ignored="false" />
-    <file path="/a.sql" changelist="51f6022f-23b8-4194-a60c-864ebe07b5ce" time="1384979725495" ignored="false" />
-    <file path="/DialogBookingSummary.java" changelist="51f6022f-23b8-4194-a60c-864ebe07b5ce" time="1384982236444" ignored="false" />
+    <file path="/Dummy.txt" changelist="51f6022f-23b8-4194-a60c-864ebe07b5ce" time="1385031894300" ignored="false" />
+    <file path="/database" changelist="51f6022f-23b8-4194-a60c-864ebe07b5ce" time="1385034353104" ignored="false" />
+    <file path="/a.sql" changelist="51f6022f-23b8-4194-a60c-864ebe07b5ce" time="1385034761622" ignored="false" />
+    <file path="/DialogBookingSummary.java" changelist="51f6022f-23b8-4194-a60c-864ebe07b5ce" time="1385044316747" ignored="false" />
     <file path="/PitchList.java" changelist="51f6022f-23b8-4194-a60c-864ebe07b5ce" time="1385017136832" ignored="false" />
+    <file path="/Booking.java" changelist="51f6022f-23b8-4194-a60c-864ebe07b5ce" time="1385033191937" ignored="false" />
+    <file path="/DialogCustomerForm.java" changelist="51f6022f-23b8-4194-a60c-864ebe07b5ce" time="1385034640191" ignored="false" />
+    <file path="/ClientList.java" changelist="51f6022f-23b8-4194-a60c-864ebe07b5ce" time="1385034459318" ignored="false" />
+    <file path="/dummy.sql" changelist="51f6022f-23b8-4194-a60c-864ebe07b5ce" time="1385034751286" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,26 +115,7 @@
     <favorites_list name="camp" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="database" pinned="false" current="false" current-in-tab="false">
-        <entry file="dbDummy://db-console:/ec21802b/f9b6cfa8-09c1-4d3d-a28c-cfc288b48a0b/">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="464" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PitchList.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/camp/PitchList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="35" selection-start="1112" selection-end="1112" vertical-scroll-proportion="0.424821">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -129,22 +135,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/camp/Booking.java" />
-        <option value="$PROJECT_DIR$/src/camp/BookingList.java" />
-        <option value="$PROJECT_DIR$/src/camp/camper.java" />
-        <option value="$PROJECT_DIR$/src/camp/Client.java" />
-        <option value="$PROJECT_DIR$/src/camp/Communication.java" />
         <option value="$PROJECT_DIR$/src/gui/ReportDailyPitchList.form" />
         <option value="$PROJECT_DIR$/src/gui/Reports.form" />
         <option value="db-console:/a6616f22/f9b6cfa8-09c1-4d3d-a28c-cfc288b48a0b/" />
         <option value="$PROJECT_DIR$/src/gui/DialogCustomerForm.form" />
-        <option value="$PROJECT_DIR$/src/gui/DialogCustomerForm.java" />
         <option value="$PROJECT_DIR$/src/gui/DialogExtendBooking.form" />
         <option value="$PROJECT_DIR$/src/gui/FormBooking.java" />
-        <option value="$PROJECT_DIR$/src/gui/DialogBookingSummary.java" />
         <option value="$PROJECT_DIR$/src/camp/Search.java" />
         <option value="db-console:/ec21802b/f9b6cfa8-09c1-4d3d-a28c-cfc288b48a0b/" />
         <option value="$PROJECT_DIR$/src/camp/PitchList.java" />
+        <option value="$PROJECT_DIR$/src/camp/Booking.java" />
+        <option value="db-console:/a6616f22/3fdaf5cc-dcc7-41e2-badd-6194580216a8/" />
+        <option value="$PROJECT_DIR$/src/camp/ClientList.java" />
+        <option value="$PROJECT_DIR$/src/gui/DialogCustomerForm.java" />
+        <option value="$PROJECT_DIR$/src/camp/scrap.java" />
+        <option value="$PROJECT_DIR$/src/gui/DialogBookingSummary.java" />
+        <option value="$PROJECT_DIR$/src/camp/Communication.java" />
       </list>
     </option>
   </component>
@@ -152,9 +158,10 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="22" />
-    <option name="width" value="1280" />
-    <option name="height" value="726" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -231,48 +238,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="camp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="camp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="~20111375" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="camp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="~20111375" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="camp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="~20111375" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="camp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -827,31 +792,32 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1280" height="726" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31188118" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3114572" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21771611" sideWeight="0.76084536" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17168339" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.7975528" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1191248" sideWeight="0.7590759" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1189968" sideWeight="0.76084536" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32703003" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18836713" sideWeight="0.67296994" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959481" sideWeight="0.75247526" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18881686" sideWeight="0.7590759" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39933258" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24092409" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32703003" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33468395" sideWeight="0.7442244" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2246941" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27796054" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2769744" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33549434" sideWeight="0.75247526" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32887402" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959481" sideWeight="0.79202276" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901135" sideWeight="0.76567656" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22771475" sideWeight="0.7590759" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24092409" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21799028" sideWeight="0.7590759" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13713981" sideWeight="0.67296994" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23915462" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Sequence" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32925472" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
@@ -859,7 +825,6 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1928651" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32730263" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39933258" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -962,44 +927,33 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/db/connection.java">
+    <entry file="dbDummy://db-console:/a6616f22/3fdaf5cc-dcc7-41e2-badd-6194580216a8/">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="51" selection-start="373" selection-end="373" vertical-scroll-proportion="0.25059667" />
+        <state line="0" column="0" selection-start="0" selection-end="75" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/camp/camper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="48" selection-start="152" selection-end="152" vertical-scroll-proportion="0.13824885" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/service.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/dbex.lck">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/db.lck">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/ec21802b/f9b6cfa8-09c1-4d3d-a28c-cfc288b48a0b/.APP.PITCH">
+    <entry file="dbDummy://dbtable:/a6616f22/3fdaf5cc-dcc7-41e2-badd-6194580216a8/.APP.CUSTOMER">
       <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/FormBooking.java">
+    <entry file="file://$PROJECT_DIR$/src/camp/ClientList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="178" column="56" selection-start="6394" selection-end="6394" vertical-scroll-proportion="0.599537" />
+        <state line="45" column="45" selection-start="1762" selection-end="1762" vertical-scroll-proportion="0.2620155">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/FormBooking.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
+    <entry file="file://$PROJECT_DIR$/src/gui/DialogCustomerForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="146" column="45" selection-start="4021" selection-end="4021" vertical-scroll-proportion="0.5007752">
+          <folding>
+            <element signature="e#3239#4047#0" expanded="true" />
+            <element signature="e#4036#4037#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/DialogBookingSummary.form">
@@ -1007,19 +961,11 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/DialogBookingSummary.java">
+    <entry file="file://$PROJECT_DIR$/src/camp/scrap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="269" column="31" selection-start="8216" selection-end="8216" vertical-scroll-proportion="0.5486111" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/camp/Search.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="2" selection-start="1644" selection-end="1644" vertical-scroll-proportion="0.73866665" />
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/ec21802b/f9b6cfa8-09c1-4d3d-a28c-cfc288b48a0b/.APP.BOOKING">
-      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
-        <state />
+        <state line="14" column="37" selection-start="453" selection-end="453" vertical-scroll-proportion="0.2325228">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/camp/BookingList.java">
@@ -1029,23 +975,64 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/camp/Pitch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="19" selection-start="316" selection-end="316" vertical-scroll-proportion="0.25835866">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/a6616f22/3fdaf5cc-dcc7-41e2-badd-6194580216a8/.APP.PITCH">
+      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/a6616f22/3fdaf5cc-dcc7-41e2-badd-6194580216a8/.APP.BOOKING">
+      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/FormBooking.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/FormBooking.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="198" column="81" selection-start="7371" selection-end="7387" vertical-scroll-proportion="0.44832826">
+          <folding>
+            <element signature="e#2934#3532#0" expanded="true" />
+            <element signature="e#3521#3522#0" expanded="true" />
+            <element signature="e#5430#5739#0" expanded="true" />
+            <element signature="e#5728#5729#0" expanded="true" />
+            <element signature="e#6119#6420#0" expanded="true" />
+            <element signature="e#6409#6410#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/a6616f22/3fdaf5cc-dcc7-41e2-badd-6194580216a8/.APP.PAYMENT">
+      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/camp/Booking.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="13" selection-start="143" selection-end="143" vertical-scroll-proportion="0.0">
+        <state line="147" column="64" selection-start="3171" selection-end="3171" vertical-scroll-proportion="0.7158055">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://db-console:/ec21802b/f9b6cfa8-09c1-4d3d-a28c-cfc288b48a0b/">
+    <entry file="file://$PROJECT_DIR$/src/camp/Communication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="464" vertical-scroll-proportion="-0.0">
+        <state line="86" column="65" selection-start="3175" selection-end="3175" vertical-scroll-proportion="0.5866261">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/camp/PitchList.java">
+    <entry file="file://$PROJECT_DIR$/src/gui/DialogBookingSummary.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="35" selection-start="1112" selection-end="1112" vertical-scroll-proportion="0.424821">
+        <state line="244" column="65" selection-start="7277" selection-end="7277" vertical-scroll-proportion="0.37082067">
           <folding />
         </state>
       </provider>

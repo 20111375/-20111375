@@ -38,8 +38,8 @@ public class ClientList extends GenericList<Client> {
     }
 
     public void deleteCustomer(Client C) {
-        String SQL = "ALTER  APP.CUSTOMER (delete)\n" +
-                "values ('" + C.getDelete() + "')";
+        String SQL = "UPDATE APP.CUSTOMER SET \"DELETE\" = true \n" +
+                "WHERE App.CUSTOMER.CUSTOMERID = " + C.getClientID() + "";
         new connection().ExecuteCustomerUpdate(SQL);
     }
 

@@ -143,4 +143,11 @@ public class Booking extends Items {
         new connection().ExecuteCustomerInsert(SQL);
 
     }
+
+    public void insertNewPayment() {
+        String SQL = "INSERT INTO APP.PAYMENT (CUSTOMERID, AMOUNT, RECEIVED)\n" +
+                "VALUES (" + getClientID() + ", " + getTotal() + ",CURRENT_DATE )";
+        new connection().ExecuteCustomerInsert(SQL);
+
+    }
 }
