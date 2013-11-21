@@ -32,6 +32,7 @@ public class PitchList extends GenericList<Pitch> {
         return items;
     }
 
+    // Martin Fowlers range pattern
     public List<Pitch> Items(String Start, String End, String Name) throws Exception {
         if (items == null) {
             items = new ArrayList<Pitch>();
@@ -42,7 +43,7 @@ public class PitchList extends GenericList<Pitch> {
                         "where not exists(\n" +
                         "    select * from app.BOOKING\n" +
                         "    where app.BOOKING.PITCHID = app.PITCH.PITCHID\n" +
-                        "          and '" + Start + "' >= App.booking.FROMDATE and '" + End + "' <= APP.booking.TODATE\n" +
+                        "          and ('" + Start + "' < App.booking.TODATE and APP.booking.FROMDATE < '" + End + "')\n" +
                         ")";
                 ResultSet resultset = new connection().connect(SQL);
                 while (resultset.next()) {
