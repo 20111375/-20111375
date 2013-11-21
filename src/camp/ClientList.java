@@ -31,6 +31,28 @@ public class ClientList extends GenericList<Client> {
         return items;
     }
 
+    public List<Client> CarList() throws Exception {
+        if (items == null) {
+            items = new ArrayList<Client>();
+            try {
+                String SQL = "select * from APP.CUSTOMER\n" +
+                        "where exists(\n" +
+                        "    select * FROM app.BOOKING, app.PITCH\n" +
+                        "    where app.BOOKING.PITCHID = app.PITCH.PITCHID\n" +
+                        "          and CURRENT_DATE BETWEEN App.booking.FROMDATE and APP.booking.TODATE\n" +
+                        ")\n" +
+                        "ORDER BY APP.CUSTOMER.CARREGISTRATION  DESC";
+                ResultSet resultset = new connection().connect(SQL);
+                while (resultset.next()) {
+                    items.add(new Client(resultset.getInt("CUSTOMERID"), resultset.getString("FIRSTNAME"), resultset.getString("SECONDNAME"), resultset.getString("CARREGISTRATION"), resultset.getString("ADDRESS"), resultset.getString("POSTCODE"), resultset.getString("COUNTY"), resultset.getBoolean("DELETE")));
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return items;
+    }
+
     public void insertNewCustomer(Client C) {
         String SQL = "INSERT INTO  APP.CUSTOMER (firstname,secondname,address,county,postcode,carregistration)\n" +
                 "values ('" + C.getFirstName() + "','" + C.getSecondName() + "','" + C.getAddress() + "','" + C.getCounty() + "','" + C.getPostcode() + "', '" + C.getCarRegistration() + "')";

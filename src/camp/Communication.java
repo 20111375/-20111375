@@ -6,16 +6,16 @@
  */
 package camp;
 
-import org.apache.pdfbox.exceptions.COSVisitorException;
-import org.apache.pdfbox.pdmodel.PDDocument;
-import org.apache.pdfbox.pdmodel.PDPage;
-import org.apache.pdfbox.pdmodel.edit.PDPageContentStream;
-import org.apache.pdfbox.pdmodel.font.PDFont;
-import org.apache.pdfbox.pdmodel.font.PDType1Font;
+import com.itextpdf.text.Document;
+import com.itextpdf.text.DocumentException;
+import com.itextpdf.text.Paragraph;
+import com.itextpdf.text.pdf.PdfWriter;
 
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Properties;
 
@@ -33,8 +33,7 @@ public class Communication {
      */
     public void emailer(Booking E, Client F, String G) {
         final String username = "campadoodledoo@gmail.com";
-        final String password = "";
-
+        final String PassWord = "this-is-the-password";
         Properties props = new Properties();
         props.put("mail.smtp.auth", "true");
         props.put("mail.smtp.starttls.enable", "true");
@@ -43,7 +42,7 @@ public class Communication {
         Session session = Session.getInstance(props,
                 new javax.mail.Authenticator() {
                     protected PasswordAuthentication getPasswordAuthentication() {
-                        return new PasswordAuthentication(username, password);
+                        return new PasswordAuthentication(username, PassWord);
                     }
                 });
 
@@ -70,30 +69,27 @@ public class Communication {
      * @param E
      * @throws IOException
      */
-    public void pdfer(Booking E, Client F) throws IOException {
-        PDDocument document = new PDDocument();
-        PDPage page = new PDPage();
-        document.addPage(page);
-        PDFont font = PDType1Font.HELVETICA_BOLD;
+    public void pdfer(Booking E, Client F) {
 
-        PDPageContentStream contentStream = new PDPageContentStream(document, page);
-
-        contentStream.beginText();
-        contentStream.setFont(font, 10);
-        contentStream.moveTextPositionByAmount(100, 700);
-        contentStream.drawString("Hello " + F.getFirstName() + "\n" +
-                "Thank you for your picking Camp-a-doodle-doo, your reservation details are: " + "\n" +
-                "Start Date: " + E.getFromDate() + "\n" +
-                "Finish Date " + E.getToDate() + "\n" +
-                "Pitch number: " + E.getPitchID() + "\n" +
-                "Total Cost: £" + E.getTotal() + "\n" +
-                "Once again thank you and we hope you have a good stay.");
-        contentStream.endText();
-        contentStream.close();
-
+        final String OutPut = "./PDF/demo.pdf";
+        Document document = new Document();
         try {
-            document.save("../~20111375/PDF/demo.pdf");
-        } catch (COSVisitorException e) {
+            PdfWriter.getInstance(document, new FileOutputStream(OutPut));
+        } catch (DocumentException e) {
+            e.printStackTrace();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        document.open();
+        try {
+            document.add(new Paragraph("Hello " + F.getFirstName() + "\n" +
+                    "Thank you for your picking Camp-a-doodle-doo, your reservation details are: " + "\n" +
+                    "Start Date:" + E.getFromDate() + "\n" +
+                    "Finish Date " + E.getToDate() + "\n" +
+                    "Pitch number: " + E.getPitchID() + "\n" +
+                    "Total Cost: £" + E.getTotal() + "\n" +
+                    "Once again thank you and we hope you have a good stay."));
+        } catch (DocumentException e) {
             e.printStackTrace();
         }
         document.close();

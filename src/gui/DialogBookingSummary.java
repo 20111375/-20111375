@@ -13,7 +13,6 @@ import camp.Pitch;
 
 import javax.swing.*;
 import java.awt.event.*;
-import java.io.IOException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -247,11 +246,7 @@ public class DialogBookingSummary extends JDialog {
         ClientSummary.setFirstName(getBookingForeName().getText());
 
         if (PrintIt.isSelected()) {
-            try {
-                new Communication().pdfer(submit, ClientSummary);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+            new Communication().pdfer(submit, ClientSummary);
         }
         new Communication().emailer(submit, ClientSummary, emailConfirm.getEmail());
         javax.swing.SwingUtilities.getWindowAncestor(DialogBookingSummary.this).dispose();
