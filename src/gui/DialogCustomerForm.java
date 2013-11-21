@@ -22,63 +22,6 @@ public class DialogCustomerForm extends JDialog {
     private JButton DeleteButton;
     private JTextArea Forename;
     private JTextArea Surname;
-
-    public JTextArea getPostCode() {
-        return PostCode;
-    }
-
-    public void setPostCode(JTextArea postCode) {
-        PostCode = postCode;
-    }
-
-    public JTextArea getForename() {
-        return Forename;
-    }
-
-    public void setForename(JTextArea forename) {
-        Forename = forename;
-    }
-
-    public JTextArea getSurname() {
-        return Surname;
-    }
-
-    public void setSurname(JTextArea surname) {
-        Surname = surname;
-    }
-
-    public JTextArea getCustomerID() {
-        return CustomerID;
-    }
-
-    public void setCustomerID(JTextArea customerID) {
-        CustomerID = customerID;
-    }
-
-    public JTextArea getCarReg() {
-        return CarReg;
-    }
-
-    public void setCarReg(JTextArea carReg) {
-        CarReg = carReg;
-    }
-
-    public JTextArea getAddress() {
-        return Address;
-    }
-
-    public void setAddress(JTextArea address) {
-        Address = address;
-    }
-
-    public JTextArea getCounty() {
-        return County;
-    }
-
-    public void setCounty(JTextArea county) {
-        County = county;
-    }
-
     private JTextArea CustomerID;
     private JTextArea CarReg;
     private JTextArea Address;
@@ -246,6 +189,70 @@ public class DialogCustomerForm extends JDialog {
         });
     }
 
+    public static void make() {
+        DialogCustomerForm dialog = new DialogCustomerForm();
+        dialog.pack();
+        dialog.setVisible(true);
+        dialog.setLocationRelativeTo(null);
+        //System.exit(0);
+    }
+
+    public JTextArea getPostCode() {
+        return PostCode;
+    }
+
+    public void setPostCode(JTextArea postCode) {
+        PostCode = postCode;
+    }
+
+    public JTextArea getForename() {
+        return Forename;
+    }
+
+    public void setForename(JTextArea forename) {
+        Forename = forename;
+    }
+
+    public JTextArea getSurname() {
+        return Surname;
+    }
+
+    public void setSurname(JTextArea surname) {
+        Surname = surname;
+    }
+
+    public JTextArea getCustomerID() {
+        return CustomerID;
+    }
+
+    public void setCustomerID(JTextArea customerID) {
+        CustomerID = customerID;
+    }
+
+    public JTextArea getCarReg() {
+        return CarReg;
+    }
+
+    public void setCarReg(JTextArea carReg) {
+        CarReg = carReg;
+    }
+
+    public JTextArea getAddress() {
+        return Address;
+    }
+
+    public void setAddress(JTextArea address) {
+        Address = address;
+    }
+
+    public JTextArea getCounty() {
+        return County;
+    }
+
+    public void setCounty(JTextArea county) {
+        County = county;
+    }
+
     private void onOK() {
 // add your code here
         dispose();
@@ -254,14 +261,6 @@ public class DialogCustomerForm extends JDialog {
     private void onCancel() {
 // add your code here if necessary
         dispose();
-    }
-
-    public static void make() {
-        DialogCustomerForm dialog = new DialogCustomerForm();
-        dialog.pack();
-        dialog.setVisible(true);
-        dialog.setLocationRelativeTo(null);
-        //System.exit(0);
     }
 
     private void createUIComponents() {

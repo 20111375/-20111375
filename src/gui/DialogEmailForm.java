@@ -23,6 +23,14 @@ public class DialogEmailForm extends JDialog {
         this.emailAddress = emailAddress;
     }
 
+    public String getEmail() {
+        if (getEmailAddress().getText() != null) {
+            String address = getEmailAddress().getText();
+            return address;
+        }
+        return "empty";
+    }
+
     private JTextArea emailAddress;
     private JCheckBox copyToOfficeCheckBox;
 
@@ -63,13 +71,14 @@ public class DialogEmailForm extends JDialog {
              */
             @Override
             public void actionPerformed(ActionEvent e) {
-                //To change body of implemented methods use File | Settings | File Templates.
+
             }
         });
     }
 
     private void onOK() {
 // add your code here
+
         dispose();
     }
 
@@ -80,6 +89,7 @@ public class DialogEmailForm extends JDialog {
 
     public static void make(DialogEmailForm D) {
         D.pack();
+        D.setResizable(false);
         D.setVisible(true);
     }
 }

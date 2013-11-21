@@ -98,8 +98,10 @@ public class DialogBookingSummary extends JDialog {
         });
         email.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                getEmailConfirm().make(emailConfirm);
-                new Communication().emailer(submit, ClientSummary);//--this doesn't work
+                if (email.isSelected()) {
+                    getEmailConfirm().make(emailConfirm);
+                }
+
             }
         });
         paidCheckBox.addActionListener(new ActionListener() {
@@ -251,6 +253,7 @@ public class DialogBookingSummary extends JDialog {
                 e.printStackTrace();
             }
         }
+        new Communication().emailer(submit, ClientSummary, emailConfirm.getEmail());
         javax.swing.SwingUtilities.getWindowAncestor(DialogBookingSummary.this).dispose();
         dispose();
     }

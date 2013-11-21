@@ -31,7 +31,7 @@ public class Communication {
     /**
      * @param E
      */
-    public void emailer(Booking E, Client F) {
+    public void emailer(Booking E, Client F, String G) {
         final String username = "campadoodledoo@gmail.com";
         final String password = "";
 
@@ -51,7 +51,7 @@ public class Communication {
             Message message = new MimeMessage(session);
             message.setFrom(new InternetAddress("campadoodledoo@gmail.com"));
             message.setRecipients(Message.RecipientType.TO,
-                    InternetAddress.parse("design@learningclip.co.uk"));
+                    InternetAddress.parse(G));
             message.setSubject("Booking reservation");
             message.setText("Hello" + F.getFirstName() + "\n" +
                     "Thank you for your picking Camp-a-doodle-doo, your reservation details are: " + "\n" +
