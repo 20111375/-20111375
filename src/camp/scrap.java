@@ -8,7 +8,7 @@ package camp;
 
 /*
 Produce an on screen summary of a booking- DONE
-The ability to extend a booking for extra nights
+The ability to extend a booking for extra nights-IN PROGRESS
 Book a tent or caravan pitch for a number of nights-DONE
 Set a price for each pitch- this is a variable based on season which are off,low and high-DONE
 Store the details of the person who books the pitch-DONE
@@ -19,21 +19,13 @@ View a list of available pitches for given day - DONE
 View a list of booked pitches per day
 A list of customers who have not yet paid
 A sorted list by car registration to allow the staff to check who is on the site-DONE
+
+Customers records to be added or deleted-DONE
+Customers addresses to be added-DONE
+Customers to be allocated a customer number-DONE
+Customers to be associated with a car registration number-DONE
  */
 public class scrap {
 
 }
 
-/*
-for(Datapoint d : dataPointList){
-        if(d.getName() != null && d.getName().contains(search))
-           //something here
-    }
-
-for(DataPoint myPoint : myList) {
-    if(myPoint.getName() != null && myPoint.getName().equals("Michael Hoffmann")) {
-        //Process data do whatever you want
-        System.out.println("Found it!");
-     }
-}
- */

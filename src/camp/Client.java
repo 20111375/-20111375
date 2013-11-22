@@ -18,7 +18,7 @@ public class Client extends Items {
     private Boolean Delete;
 
     /**
-     * @param cLientID
+     * @param clientID
      * @param firstName
      * @param secondName
      * @param carRegistration

@@ -34,4 +34,22 @@ public class BookingList extends GenericList<Booking> {
         }
         return items;
     }
+
+    public List<Booking> Items(int CustID) throws Exception {
+        if (items == null) {
+            items = new ArrayList<Booking>();
+            try {
+                String SQL = "select  * from booking\n" +
+                        "where customerid = " + CustID + " and\n" +
+                        "CURRENT_DATE between fromdate and todate";
+                ResultSet resultset = new connection().connect(SQL);
+                while (resultset.next()) {
+                    items.add(new Booking(resultset.getInt(1), resultset.getInt(2), resultset.getString("FROMDATE"), resultset.getString("TODATE"), resultset.getDouble("TOTAL"), resultset.getBoolean("PAID")));
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return items;
+    }
 }

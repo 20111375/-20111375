@@ -51,6 +51,16 @@ public class FormBooking extends JDialog {
     private Pitch BookingPitch;
     private DialogSearch search = new DialogSearch(SwingUtilities.getWindowAncestor(this));
 
+    public DialogExtendBooking getBookingCheck() {
+        return bookingCheck;
+    }
+
+    public void setBookingCheck(DialogExtendBooking bookingCheck) {
+        this.bookingCheck = bookingCheck;
+    }
+
+    private DialogExtendBooking bookingCheck = new DialogExtendBooking(SwingUtilities.getWindowAncestor(this));
+
     public FormBooking() {
         setContentPane(FormBooking);
         setModal(true);
@@ -89,6 +99,7 @@ public class FormBooking extends JDialog {
              */
             @Override
             public void actionPerformed(ActionEvent e) {
+                getBookingCheck().make(bookingCheck);
             }
         });
 
