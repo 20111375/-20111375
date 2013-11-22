@@ -18,7 +18,7 @@ Cancel  or amend a booking
 View a list of available pitches for given day - DONE
 View a list of booked pitches per day
 A list of customers who have not yet paid
-A sorted list by car registration to allow the staff to check who is on the site
+A sorted list by car registration to allow the staff to check who is on the site-DONE
  */
 public class scrap {
 

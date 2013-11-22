@@ -18,7 +18,7 @@ public class Client extends Items {
     private Boolean Delete;
 
     /**
-     * @param clientID
+     * @param cLientID
      * @param firstName
      * @param secondName
      * @param carRegistration
@@ -36,6 +36,11 @@ public class Client extends Items {
         this.county = county;
         this.postcode = postcode;
         this.Delete = Delete;
+    }
+
+    public Client(int clientID, String carRegistration) {
+        this.clientID = clientID;
+        this.carRegistration = carRegistration;
     }
 
     /**

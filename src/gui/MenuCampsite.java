@@ -28,6 +28,15 @@ public class MenuCampsite {
                 new FormBooking().run();
             }
         });
+        pitchesButton.addActionListener(new ActionListener() {
+            /**
+             * Invoked when an action occurs.
+             */
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new Reports().make();
+            }
+        });
     }
 
     public void run() {

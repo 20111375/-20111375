@@ -1,5 +1,8 @@
 package gui;
 
+import camp.Client;
+import camp.ClientList;
+
 import javax.swing.*;
 import java.awt.event.*;
 
@@ -10,6 +13,7 @@ public class Reports extends JDialog {
     private JTabbedPane pitchesperday;
     private JPanel buttons;
     private JPanel tabs;
+    private JList list1;
 
     public Reports() {
         setContentPane(contentPane);
@@ -54,10 +58,21 @@ public class Reports extends JDialog {
         dispose();
     }
 
-    public static void main(String[] args) {
+    public void make() {
         Reports dialog = new Reports();
         dialog.pack();
         dialog.setVisible(true);
-        System.exit(0);
+    }
+
+    private void createUIComponents() {
+        DefaultListModel CustModel = new DefaultListModel();
+        try {
+            for (Client M : new ClientList().CarList()) {
+                CustModel.addElement(M.getClientID() + ": " + M.getCarRegistration());
+            }
+        } catch (Exception e) {
+            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+        }
+        list1 = new JList(CustModel);
     }
 }

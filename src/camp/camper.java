@@ -25,9 +25,5 @@ public class camper {
                 }
             }
         });
-        ClientList F = new ClientList();
-        for (Client G : F.CarList()) {
-            System.out.println(G.getCarRegistration());
-        }
     }
 }

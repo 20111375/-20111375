@@ -33,35 +33,36 @@ public class Communication {
      */
     public void emailer(Booking E, Client F, String G) {
         final String username = "campadoodledoo@gmail.com";
-        final String PassWord = "this-is-the-password";
+        final String PassWord = "";
         Properties props = new Properties();
         props.put("mail.smtp.auth", "true");
         props.put("mail.smtp.starttls.enable", "true");
         props.put("mail.smtp.host", "smtp.gmail.com");
         props.put("mail.smtp.port", "587");
-        Session session = Session.getInstance(props,
-                new javax.mail.Authenticator() {
-                    protected PasswordAuthentication getPasswordAuthentication() {
-                        return new PasswordAuthentication(username, PassWord);
-                    }
-                });
+        if (!PassWord.isEmpty()) {
+            Session session = Session.getInstance(props, new javax.mail.Authenticator() {
+                protected PasswordAuthentication getPasswordAuthentication() {
+                    return new PasswordAuthentication(username, PassWord);
+                }
+            });
 
-        try {
-            Message message = new MimeMessage(session);
-            message.setFrom(new InternetAddress("campadoodledoo@gmail.com"));
-            message.setRecipients(Message.RecipientType.TO,
-                    InternetAddress.parse(G));
-            message.setSubject("Booking reservation");
-            message.setText("Hello" + F.getFirstName() + "\n" +
-                    "Thank you for your picking Camp-a-doodle-doo, your reservation details are: " + "\n" +
-                    "Start Date:" + E.getFromDate() + "\n" +
-                    "Finish Date " + E.getToDate() + "\n" +
-                    "Pitch number: " + E.getPitchID() + "\n" +
-                    "Total Cost: £" + E.getTotal() + "\n" +
-                    "Once again thank you and we hope you have a good stay.");
-            Transport.send(message);
-        } catch (MessagingException e) {
-            e.printStackTrace();
+            try {
+                Message message = new MimeMessage(session);
+                message.setFrom(new InternetAddress("campadoodledoo@gmail.com"));
+                message.setRecipients(Message.RecipientType.TO,
+                        InternetAddress.parse(G));
+                message.setSubject("Booking reservation");
+                message.setText("Hello" + F.getFirstName() + "\n" +
+                        "Thank you for your picking Camp-a-doodle-doo, your reservation details are: " + "\n" +
+                        "Start Date:" + E.getFromDate() + "\n" +
+                        "Finish Date " + E.getToDate() + "\n" +
+                        "Pitch number: " + E.getPitchID() + "\n" +
+                        "Total Cost: £" + E.getTotal() + "\n" +
+                        "Once again thank you and we hope you have a good stay.");
+                Transport.send(message);
+            } catch (MessagingException e) {
+                e.printStackTrace();
+            }
         }
     }
 

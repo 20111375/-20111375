@@ -43,8 +43,10 @@ public class DialogExtendBooking extends JDialog {
     }
 
     private JTextArea PostCode;
-    private JButton button1;
+    private JButton submitButton;
     private JList list1;
+    private JButton checkAvailabilityButton;
+    private JComboBox comboBox1;
     private JTextArea CarReg;
 
     public DialogExtendBooking() {
