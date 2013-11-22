@@ -33,7 +33,7 @@ public class Communication {
      */
     public void emailer(Booking E, Client F, String G) {
         final String username = "campadoodledoo@gmail.com";
-        final String PassWord = "this-is-the-password";
+        final String PassWord = "";
         Properties props = new Properties();
         props.put("mail.smtp.auth", "true");
         props.put("mail.smtp.starttls.enable", "true");

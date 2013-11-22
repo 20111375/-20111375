@@ -24,11 +24,11 @@ public class DialogEmailForm extends JDialog {
     }
 
     public String getEmail() {
-        if (getEmailAddress().getText() != null) {
+        if (getEmailAddress().getText().length() != 0) {
             String address = getEmailAddress().getText();
             return address;
         }
-        return "empty";
+        return null;
     }
 
     private JTextArea emailAddress;
@@ -78,7 +78,9 @@ public class DialogEmailForm extends JDialog {
 
     private void onOK() {
 // add your code here
-
+        if (getEmailAddress().getText().isEmpty()) {
+            buttonOK.setEnabled(false);
+        }
         dispose();
     }
 
