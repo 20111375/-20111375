@@ -52,4 +52,14 @@ public class BookingList extends GenericList<Booking> {
         }
         return items;
     }
+
+    public static final List<Booking> customerList() {
+        List<Booking> bookinglist = null;
+        try {
+            bookinglist = new BookingList().Items();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return bookinglist;
+    }
 }

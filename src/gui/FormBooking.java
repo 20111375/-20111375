@@ -50,15 +50,6 @@ public class FormBooking extends JDialog {
     private Client BookingClient;
     private Pitch BookingPitch;
     private DialogSearch search = new DialogSearch(SwingUtilities.getWindowAncestor(this));
-
-    public DialogExtendBooking getBookingCheck() {
-        return bookingCheck;
-    }
-
-    public void setBookingCheck(DialogExtendBooking bookingCheck) {
-        this.bookingCheck = bookingCheck;
-    }
-
     private DialogExtendBooking bookingCheck = new DialogExtendBooking(SwingUtilities.getWindowAncestor(this));
 
     public FormBooking() {
@@ -310,6 +301,14 @@ public class FormBooking extends JDialog {
 
     public void setPitchDetails(JTextArea pitchDetails) {
         PitchDetails = pitchDetails;
+    }
+
+    public DialogExtendBooking getBookingCheck() {
+        return bookingCheck;
+    }
+
+    public void setBookingCheck(DialogExtendBooking bookingCheck) {
+        this.bookingCheck = bookingCheck;
     }
 
     private void onOK() {

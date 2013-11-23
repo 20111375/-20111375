@@ -6,30 +6,49 @@
  */
 package gui;
 
+import camp.Booking;
 import camp.BookingList;
+import camp.Client;
+import camp.Pitch;
 
 import javax.swing.*;
+import javax.swing.text.MaskFormatter;
 import java.awt.*;
 import java.awt.event.*;
+import java.text.ParseException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class DialogExtendBooking extends JDialog {
+    //public BookingList check = new BookingList();
+    public Client myBooking = new Client();
+    public Booking extendThis = new Booking();
     private JPanel contentPane;
     private JButton buttonOK;
     private JButton buttonCancel;
+    private JButton submitButton;
+    private JButton checkAvailabilityButton;
     private JRadioButton customerIDRadioButton;
     private JRadioButton carRegRadioButton;
     private JTextArea ID;
-    private JTextArea Customer;
-    private JButton submitButton;
-    private JList list1;
-    private JButton checkAvailabilityButton;
-    private JComboBox comboBox1;
+    private JFormattedTextField Customer;
     private JTextArea CarReg;
+    private JComboBox extendByDays;
+    private JList CustomerBookingsList;
+    private List<JFormattedTextField> fieldList = new ArrayList<JFormattedTextField>();
+    private DocListener docListener = new DocListener();
+    private List<Pitch> pitches = null;
 
     public DialogExtendBooking(Window windowAncestor) {
         setContentPane(contentPane);
         setModal(true);
         getRootPane().setDefaultButton(buttonOK);
+        docListener.setBtn(submitButton);
+        docListener.setObjectList(fieldList);
+        fieldList.add(Customer);
+        for (JFormattedTextField F : fieldList) {
+            F.getDocument().addDocumentListener(docListener);
+        }
 
         buttonOK.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -57,24 +76,42 @@ public class DialogExtendBooking extends JDialog {
                 onCancel();
             }
         }, KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
+
         submitButton.addActionListener(new ActionListener() {
             /**
              * Invoked when an action occurs.
              */
             @Override
             public void actionPerformed(ActionEvent e) {
-                if (getCustomer().getText().length() != 0) {
-                    BookingList check = new BookingList();
-                    try {
-                        check.Items(Integer.parseInt(getCustomer().getText()));
-                        list1.setListData(check.Items(Integer.parseInt(getCustomer().getText())).toArray());
-                    } catch (Exception e1) {
-                        e1.printStackTrace();
-                    }
+
+                BookingList check = new BookingList();
+                try {
+                    check.Items(Integer.parseInt(Customer.getText()));
+                } catch (Exception e1) {
+                    e1.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
                 }
+                DefaultListModel CustModel = new DefaultListModel();
+                try {
+                    for (Booking B : check.Items(Integer.parseInt(Customer.getText()))) {
+
+                        CustModel.addElement(B.getClientID() + " " + B.getFromDate() + " " + B.getToDate());
+                    }
+                } catch (Exception e1) {
+                    e1.printStackTrace();
+                }
+                CustomerBookingsList.setModel(CustModel);
+                CustomerBookingsList.repaint();
             }
         });
 
+        checkAvailabilityButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if (extendByDays != null && !CustomerBookingsList.isSelectionEmpty()) {
+                    //String tmpDate = new DateMaker().DateMaker(extendByDays.getSelectedIndex(), startdate);
+                }
+            }
+        });
     }
 
     public JTextArea getCarReg() {
@@ -93,12 +130,12 @@ public class DialogExtendBooking extends JDialog {
         this.ID = ID;
     }
 
-    public JTextArea getCustomer() {
+    public JTextField getCustomer() {
         return Customer;
     }
 
-    public void setCustomer(JTextArea customer) {
-        Customer = customer;
+    public void setCustomer(String customer) {
+        Customer.setText(customer);
     }
 
     private void onOK() {
@@ -116,5 +153,16 @@ public class DialogExtendBooking extends JDialog {
         D.setResizable(false);
         D.setVisible(true);
         D.setLocationRelativeTo(null);
+    }
+
+    private void createUIComponents() {
+        MaskFormatter BookingIDFormat = null;
+        try {
+            BookingIDFormat = new MaskFormatter("#######");
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        BookingIDFormat.setValidCharacters("0123456789");
+        Customer = new JFormattedTextField(BookingIDFormat);
     }
 }
