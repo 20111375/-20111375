@@ -10,15 +10,57 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51f6022f-23b8-4194-a60c-864ebe07b5ce" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/DialogExtendBooking.form" afterPath="$PROJECT_DIR$/src/gui/DialogExtendBooking.form" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/camp/Booking.html" afterPath="$PROJECT_DIR$/Docs/camp/Booking.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/gui/BookingForm.html" afterPath="$PROJECT_DIR$/Docs/gui/BookingForm.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/camp/BookingList.html" afterPath="$PROJECT_DIR$/Docs/camp/BookingList.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/gui/CalListen.html" afterPath="$PROJECT_DIR$/Docs/gui/CalListen.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/camp/Client.html" afterPath="$PROJECT_DIR$/Docs/camp/Client.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/camp/ClientList.html" afterPath="$PROJECT_DIR$/Docs/camp/ClientList.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/DialogExtendBooking.java" afterPath="$PROJECT_DIR$/src/gui/DialogExtendBooking.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/camp/GenericList.html" afterPath="$PROJECT_DIR$/Docs/camp/GenericList.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/camp/Items.html" afterPath="$PROJECT_DIR$/Docs/camp/Items.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/camp/Pitch.html" afterPath="$PROJECT_DIR$/Docs/camp/Pitch.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/camp/PitchList.html" afterPath="$PROJECT_DIR$/Docs/camp/PitchList.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/camp/Search.html" afterPath="$PROJECT_DIR$/Docs/camp/Search.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/allclasses-frame.html" afterPath="$PROJECT_DIR$/Docs/allclasses-frame.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/allclasses-noframe.html" afterPath="$PROJECT_DIR$/Docs/allclasses-noframe.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/camp/camper.html" afterPath="$PROJECT_DIR$/Docs/camp/camper.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/db/connection.html" afterPath="$PROJECT_DIR$/Docs/db/connection.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/constant-values.html" afterPath="$PROJECT_DIR$/Docs/constant-values.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/db.lck" afterPath="$PROJECT_DIR$/database/db.lck" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/deprecated-list.html" afterPath="$PROJECT_DIR$/Docs/deprecated-list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/help-doc.html" afterPath="$PROJECT_DIR$/Docs/help-doc.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/index-files/index-1.html" afterPath="$PROJECT_DIR$/Docs/index-files/index-1.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/index-files/index-10.html" afterPath="$PROJECT_DIR$/Docs/index-files/index-10.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/index-files/index-11.html" afterPath="$PROJECT_DIR$/Docs/index-files/index-11.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/index-files/index-2.html" afterPath="$PROJECT_DIR$/Docs/index-files/index-2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/index-files/index-3.html" afterPath="$PROJECT_DIR$/Docs/index-files/index-3.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/index-files/index-4.html" afterPath="$PROJECT_DIR$/Docs/index-files/index-4.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/index-files/index-5.html" afterPath="$PROJECT_DIR$/Docs/index-files/index-5.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/index-files/index-6.html" afterPath="$PROJECT_DIR$/Docs/index-files/index-6.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/index-files/index-7.html" afterPath="$PROJECT_DIR$/Docs/index-files/index-7.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/index-files/index-8.html" afterPath="$PROJECT_DIR$/Docs/index-files/index-8.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/index-files/index-9.html" afterPath="$PROJECT_DIR$/Docs/index-files/index-9.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/index.html" afterPath="$PROJECT_DIR$/Docs/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/overview-frame.html" afterPath="$PROJECT_DIR$/Docs/overview-frame.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/overview-summary.html" afterPath="$PROJECT_DIR$/Docs/overview-summary.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/overview-tree.html" afterPath="$PROJECT_DIR$/Docs/overview-tree.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/camp/package-frame.html" afterPath="$PROJECT_DIR$/Docs/camp/package-frame.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/db/package-frame.html" afterPath="$PROJECT_DIR$/Docs/db/package-frame.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/gui/package-frame.html" afterPath="$PROJECT_DIR$/Docs/gui/package-frame.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/camp/package-summary.html" afterPath="$PROJECT_DIR$/Docs/camp/package-summary.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/db/package-summary.html" afterPath="$PROJECT_DIR$/Docs/db/package-summary.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/gui/package-summary.html" afterPath="$PROJECT_DIR$/Docs/gui/package-summary.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/camp/package-tree.html" afterPath="$PROJECT_DIR$/Docs/camp/package-tree.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/db/package-tree.html" afterPath="$PROJECT_DIR$/Docs/db/package-tree.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/gui/package-tree.html" afterPath="$PROJECT_DIR$/Docs/gui/package-tree.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/camp/scrap.html" afterPath="$PROJECT_DIR$/Docs/camp/scrap.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/stylesheet.css" afterPath="$PROJECT_DIR$/Docs/stylesheet.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="camp.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="51f6022f-23b8-4194-a60c-864ebe07b5ce" time="1385141579795" ignored="false" />
+    <file path="/Dummy.txt" changelist="51f6022f-23b8-4194-a60c-864ebe07b5ce" time="1385189585962" ignored="false" />
     <file path="/database" changelist="51f6022f-23b8-4194-a60c-864ebe07b5ce" time="1385125393822" ignored="false" />
     <file path="/a.sql" changelist="51f6022f-23b8-4194-a60c-864ebe07b5ce" time="1385034761622" ignored="false" />
     <file path="/DialogBookingSummary.java" changelist="51f6022f-23b8-4194-a60c-864ebe07b5ce" time="1385070000644" ignored="false" />
@@ -35,7 +77,7 @@
     <file path="/Reports.java" changelist="51f6022f-23b8-4194-a60c-864ebe07b5ce" time="1385117343268" ignored="false" />
     <file path="/MenuCampsite.java" changelist="51f6022f-23b8-4194-a60c-864ebe07b5ce" time="1385114779232" ignored="false" />
     <file path="/Client.java" changelist="51f6022f-23b8-4194-a60c-864ebe07b5ce" time="1385115504194" ignored="false" />
-    <file path="/DialogExtendBooking.java" changelist="51f6022f-23b8-4194-a60c-864ebe07b5ce" time="1385143506203" ignored="false" />
+    <file path="/DialogExtendBooking.java" changelist="51f6022f-23b8-4194-a60c-864ebe07b5ce" time="1385194751907" ignored="false" />
     <file path="/FormBooking.java" changelist="51f6022f-23b8-4194-a60c-864ebe07b5ce" time="1385126310453" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -244,77 +286,23 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="camp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="~20111375" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="camp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="~20111375" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="camp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="~20111375" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DialogExtendBooking" />
-              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="Modules" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="107" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="105" />
-    <property name="OverrideImplement.combined" value="true" />
     <property name="project.structure.proportion" value="0.15" />
+    <property name="OverrideImplement.combined" value="true" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="105" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
-    <property name="MemberChooser.sorted" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="200" />
+    <property name="recentsLimit" value="5" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Lib" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="108" />
@@ -332,17 +320,17 @@
     <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
     <property name="options.lastSelected" value="project.scopes" />
-    <property name="LayoutCode.rearrangeEntriesJava" value="true" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="LayoutCode.rearrangeEntriesJava" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -840,7 +828,11 @@
       <created>1385120158409</created>
       <updated>1385120158409</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="added car reg list and begun extending booking pane">
+      <created>1385154891611</created>
+      <updated>1385154891611</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -882,15 +874,15 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33468395" sideWeight="0.7442244" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2246941" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2739274" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27227724" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33549434" sideWeight="0.76237625" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32887402" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959481" sideWeight="0.79202276" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901135" sideWeight="0.76567656" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22042139" sideWeight="0.7640264" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2359736" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22042139" sideWeight="0.7640264" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2359736" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Sequence" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32925472" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
@@ -1006,30 +998,17 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/camp/camper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="60" selection-start="295" selection-end="295" vertical-scroll-proportion="0.18030304">
-          <folding>
-            <element signature="docComment;method#main#0;class#camper#0" expanded="false" />
-            <element signature="method#main#0;class#camper#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="17" column="60" selection-start="295" selection-end="295" vertical-scroll-proportion="0.18030304" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/camp/Communication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="12" selection-start="1060" selection-end="1060" vertical-scroll-proportion="0.8242424">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;method#Communication#0;class#Communication#0" expanded="false" />
-            <element signature="method#Communication#0;class#Communication#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="41" column="12" selection-start="1060" selection-end="1060" vertical-scroll-proportion="0.8242424" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/camp/Search.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="13" selection-start="3121" selection-end="3121" vertical-scroll-proportion="2.0955317">
-          <folding />
-        </state>
+        <state line="91" column="13" selection-start="3121" selection-end="3121" vertical-scroll-proportion="2.0955317" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/camp/Client.java">
@@ -1055,9 +1034,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/camp/scrap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="21" selection-start="106" selection-end="106" vertical-scroll-proportion="0.05151515">
-          <folding />
-        </state>
+        <state line="7" column="21" selection-start="106" selection-end="106" vertical-scroll-proportion="0.05151515" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/db/connection.java">
@@ -1093,11 +1070,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/DialogExtendBooking.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="50" selection-start="3503" selection-end="3503" vertical-scroll-proportion="0.6666667">
-          <folding>
-            <element signature="e#3012#3545#0" expanded="true" />
-            <element signature="e#3534#3535#0" expanded="true" />
-          </folding>
+        <state line="116" column="5" selection-start="3247" selection-end="3247" vertical-scroll-proportion="0.5609195">
+          <folding />
         </state>
       </provider>
     </entry>

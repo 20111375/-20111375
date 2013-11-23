@@ -9,12 +9,8 @@ package gui;
 import camp.BookingList;
 
 import javax.swing.*;
-import javax.swing.event.ListSelectionEvent;
-import javax.swing.event.ListSelectionListener;
 import java.awt.*;
 import java.awt.event.*;
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
 
 public class DialogExtendBooking extends JDialog {
     private JPanel contentPane;
@@ -78,31 +74,7 @@ public class DialogExtendBooking extends JDialog {
                 }
             }
         });
-        list1.addListSelectionListener(new ListSelectionListener() {
-            /**
-             * Called whenever the value of the selection changes.
-             *
-             * @param e the event that characterizes the change.
-             */
-            @Override
-            public void valueChanged(ListSelectionEvent e) {
 
-            }
-        });
-        Customer.addPropertyChangeListener(new PropertyChangeListener() {
-            /**
-             * This method gets called when a bound property is changed.
-             *
-             * @param evt A PropertyChangeEvent object describing the event source
-             *            and the property that has changed.
-             */
-            @Override
-            public void propertyChange(PropertyChangeEvent evt) {
-                if (getCustomer().getText().length() > 0) {
-                    submitButton.setEnabled(true);
-                }
-            }
-        });
     }
 
     public JTextArea getCarReg() {
