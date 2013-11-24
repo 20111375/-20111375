@@ -13,6 +13,8 @@ import javax.swing.*;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import java.awt.event.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class DialogCustomerForm extends JDialog {
     private JPanel contentPane;
@@ -20,13 +22,13 @@ public class DialogCustomerForm extends JDialog {
     private JButton buttonCancel;
     private JButton EditButton;
     private JButton DeleteButton;
-    private JTextArea Forename;
-    private JTextArea Surname;
-    private JTextArea CustomerID;
-    private JTextArea CarReg;
-    private JTextArea Address;
-    private JTextArea County;
-    private JTextArea PostCode;
+    private JFormattedTextField Forename;
+    private JFormattedTextField Surname;
+    private JFormattedTextField CustomerID;
+    private JFormattedTextField CarReg;
+    private JFormattedTextField Address;
+    private JFormattedTextField County;
+    private JFormattedTextField PostCode;
     private JPanel DialogButtons;
     private JPanel CustomerInfoPane;
     private JPanel ListCustomersPane;
@@ -38,12 +40,24 @@ public class DialogCustomerForm extends JDialog {
     private JButton SaveButton;
     private JButton AddNewButton;
     private JButton ResetButton;
+    private List<JFormattedTextField> fieldList = new ArrayList<JFormattedTextField>();
+    private DocListener docListener = new DocListener();
 
     public DialogCustomerForm() {
-
         setContentPane(contentPane);
         setModal(true);
         getRootPane().setDefaultButton(buttonOK);
+        docListener.setBtn(AddNewButton);
+        docListener.setObjectList(fieldList);
+        fieldList.add(Forename);
+        fieldList.add(Surname);
+        fieldList.add(CarReg);
+        fieldList.add(Address);
+        fieldList.add(County);
+        fieldList.add(PostCode);
+        for (JFormattedTextField F : fieldList) {
+            F.getDocument().addDocumentListener(docListener);
+        }
 
         buttonOK.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -90,11 +104,13 @@ public class DialogCustomerForm extends JDialog {
                 DeleteButton.setEnabled(false);
             }
         });
+        /**
+         *
+         */
         EditButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 if (!CustomerList.isSelectionEmpty()) {
-                    AddNewButton.setEnabled(false);
                     SaveButton.setEnabled(true);
                     String tmpStr = (String) (String) CustomerList.getSelectedValue();
                     String[] tmpArray = tmpStr.split(":");
@@ -102,13 +118,13 @@ public class DialogCustomerForm extends JDialog {
                     for (Client F : ClientList.customerList()) {
                         if (F.getClientID() == Integer.parseInt(tmpArray[0])) {
                             ClearText();
-                            CustomerID.append(String.valueOf(F.getClientID()));
-                            Forename.append(F.getFirstName());
-                            Surname.append(F.getSecondName());
-                            CarReg.append(F.getCarRegistration());
-                            Address.append(F.getAddress());
-                            County.append(F.getCounty());
-                            PostCode.append(F.getPostcode());
+                            CustomerID.setText(String.valueOf(F.getClientID()));
+                            Forename.setText(F.getFirstName());
+                            Surname.setText(F.getSecondName());
+                            CarReg.setText(F.getCarRegistration());
+                            Address.setText(F.getAddress());
+                            County.setText(F.getCounty());
+                            PostCode.setText(F.getPostcode());
                         }
                     }
                 }
@@ -122,14 +138,10 @@ public class DialogCustomerForm extends JDialog {
              */
             @Override
             public void valueChanged(ListSelectionEvent e) {
-                //To change body of implemented methods use File | Settings | File Templates.
-                //String[] splitThis = CustomerList.getSelectedValue().toString().split(":");
-                //System.out.println(Integer.parseInt(splitThis[0]));
                 DeleteButton.setEnabled(true);
-                //System.out.println(ClientList.customerList().get(CustomerList.getSelectedIndex()).getFirstName());
-                //System.out.println(ClientList.customerList().get(CustomerList.getSelectedIndex()).getClientID());
             }
         });
+
         SaveButton.addActionListener(new ActionListener() {
             /**
              * Invoked when an action occurs.
@@ -138,17 +150,21 @@ public class DialogCustomerForm extends JDialog {
              */
             @Override
             public void actionPerformed(ActionEvent e) {
-                Client tmp = new Client();
-                tmp.setFirstName(Forename.getText());
-                tmp.setSecondName(Surname.getText());
-                tmp.setAddress(Address.getText());
-                tmp.setCounty(County.getText());
-                tmp.setPostcode(PostCode.getText());
-                tmp.setCarRegistration(CarReg.getText());
-                tmp.setClientID(Integer.valueOf(CustomerID.getText()));
-                new ClientList().editCustomer(tmp);
-                ClearText();
-                textList();
+                if (!getForename().getText().trim().isEmpty() && !getSurname().getText().trim().isEmpty() &&
+                        !getAddress().getText().trim().isEmpty() && !getCounty().getText().trim().isEmpty()
+                        && !getPostCode().getText().trim().isEmpty() && !getCarReg().getText().trim().isEmpty()) {
+                    Client tmp = new Client();
+                    tmp.setFirstName(Forename.getText());
+                    tmp.setSecondName(Surname.getText());
+                    tmp.setAddress(Address.getText());
+                    tmp.setCounty(County.getText());
+                    tmp.setPostcode(PostCode.getText());
+                    tmp.setCarRegistration(CarReg.getText());
+                    tmp.setClientID(Integer.valueOf(CustomerID.getText()));
+                    new ClientList().editCustomer(tmp);
+                    ClearText();
+                    textList();
+                }
             }
         });
 
@@ -161,18 +177,23 @@ public class DialogCustomerForm extends JDialog {
             @Override
             //firstname,secondname,address,county,postcode,carregistration
             public void actionPerformed(ActionEvent e) {
-                Client tmp = new Client();
-                tmp.setFirstName(Forename.getText());
-                tmp.setSecondName(Surname.getText());
-                tmp.setAddress(Address.getText());
-                tmp.setCounty(County.getText());
-                tmp.setPostcode(PostCode.getText());
-                tmp.setCarRegistration(CarReg.getText());
-                new ClientList().insertNewCustomer(tmp);
-                ClearText();
-                //Refresh Customer List JList with new customer
-                textList();
-                //endregion
+                if (!getForename().getText().trim().isEmpty() && !getSurname().getText().trim().isEmpty() &&
+                        !getAddress().getText().trim().isEmpty() && !getCounty().getText().trim().isEmpty()
+                        && !getPostCode().getText().trim().isEmpty() && !getCarReg().getText().trim().isEmpty()) {
+                    Client tmp = new Client();
+                    tmp.setFirstName(Forename.getText());
+                    tmp.setSecondName(Surname.getText());
+                    tmp.setAddress(Address.getText());
+                    tmp.setCounty(County.getText());
+                    tmp.setPostcode(PostCode.getText());
+                    tmp.setCarRegistration(CarReg.getText());
+                    new ClientList().insertNewCustomer(tmp);
+                    ClearText();
+                    //Refresh Customer List JList with new customer
+                    textList();
+                    //endregion
+                }
+
             }
         });
         ResetButton.addActionListener(new ActionListener() {
@@ -184,7 +205,9 @@ public class DialogCustomerForm extends JDialog {
             @Override
             public void actionPerformed(ActionEvent e) {
                 ClearText();
-                AddNewButton.setEnabled(true);
+                SaveButton.setEnabled(false);
+                CustomerList.setSelectedIndex(0);
+                //AddNewButton.setEnabled(true);
             }
         });
     }
@@ -194,62 +217,62 @@ public class DialogCustomerForm extends JDialog {
         dialog.pack();
         dialog.setVisible(true);
         dialog.setLocationRelativeTo(null);
-        //System.exit(0);
+        dialog.setResizable(false);
     }
 
-    public JTextArea getPostCode() {
+    public JFormattedTextField getPostCode() {
         return PostCode;
     }
 
-    public void setPostCode(JTextArea postCode) {
+    public void setPostCode(JFormattedTextField postCode) {
         PostCode = postCode;
     }
 
-    public JTextArea getForename() {
+    public JFormattedTextField getForename() {
         return Forename;
     }
 
-    public void setForename(JTextArea forename) {
+    public void setForename(JFormattedTextField forename) {
         Forename = forename;
     }
 
-    public JTextArea getSurname() {
+    public JFormattedTextField getSurname() {
         return Surname;
     }
 
-    public void setSurname(JTextArea surname) {
+    public void setSurname(JFormattedTextField surname) {
         Surname = surname;
     }
 
-    public JTextArea getCustomerID() {
+    public JFormattedTextField getCustomerID() {
         return CustomerID;
     }
 
-    public void setCustomerID(JTextArea customerID) {
+    public void setCustomerID(JFormattedTextField customerID) {
         CustomerID = customerID;
     }
 
-    public JTextArea getCarReg() {
+    public JFormattedTextField getCarReg() {
         return CarReg;
     }
 
-    public void setCarReg(JTextArea carReg) {
+    public void setCarReg(JFormattedTextField carReg) {
         CarReg = carReg;
     }
 
-    public JTextArea getAddress() {
+    public JFormattedTextField getAddress() {
         return Address;
     }
 
-    public void setAddress(JTextArea address) {
+    public void setAddress(JFormattedTextField address) {
         Address = address;
     }
 
-    public JTextArea getCounty() {
+    public JFormattedTextField getCounty() {
         return County;
     }
 
-    public void setCounty(JTextArea county) {
+    public void setCounty(JFormattedTextField county) {
         County = county;
     }
 
