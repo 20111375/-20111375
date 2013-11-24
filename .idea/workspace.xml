@@ -10,22 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51f6022f-23b8-4194-a60c-864ebe07b5ce" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c4c0.dat" afterPath="$PROJECT_DIR$/database/seg0/c4c0.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c4d1.dat" afterPath="$PROJECT_DIR$/database/seg0/c4d1.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c90.dat" afterPath="$PROJECT_DIR$/database/seg0/c90.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/log/log.ctrl" afterPath="$PROJECT_DIR$/database/log/log.ctrl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/log/log1.dat" afterPath="$PROJECT_DIR$/database/log/log1.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/log/logmirror.ctrl" afterPath="$PROJECT_DIR$/database/log/logmirror.ctrl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/DialogCustomerForm.form" afterPath="$PROJECT_DIR$/src/gui/DialogCustomerForm.form" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/DialogCustomerForm.java" afterPath="$PROJECT_DIR$/src/gui/DialogCustomerForm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/DocListener.java" afterPath="$PROJECT_DIR$/src/gui/DocListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/db.lck" afterPath="$PROJECT_DIR$/database/db.lck" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/derby.log" afterPath="$PROJECT_DIR$/derby.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="camp.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="51f6022f-23b8-4194-a60c-864ebe07b5ce" time="1385326413204" ignored="false" />
+    <file path="/Dummy.txt" changelist="51f6022f-23b8-4194-a60c-864ebe07b5ce" time="1385328023792" ignored="false" />
     <file path="/database" changelist="51f6022f-23b8-4194-a60c-864ebe07b5ce" time="1385290140824" ignored="false" />
     <file path="/a.sql" changelist="51f6022f-23b8-4194-a60c-864ebe07b5ce" time="1385034761622" ignored="false" />
     <file path="/DialogBookingSummary.java" changelist="51f6022f-23b8-4194-a60c-864ebe07b5ce" time="1385322065824" ignored="false" />
@@ -925,7 +914,11 @@
       <created>1385322354200</created>
       <updated>1385322354201</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="amended button logic of customer form">
+      <created>1385328039046</created>
+      <updated>1385328039046</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -1038,7 +1031,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding comments are rearranging code" />
+    <option name="LAST_COMMIT_MESSAGE" value="amended button logic of customer form" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1052,7 +1045,6 @@
     <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="UI changes (bug found in jGoodies)." />
     <MESSAGE value="UI changes (bug found in jGoodies).&#10;" />
     <MESSAGE value="SQL changes and UI methods&#10;" />
     <MESSAGE value="UI and diagram changes&#10;" />
@@ -1077,6 +1069,7 @@
     <MESSAGE value="extend booking updates" />
     <MESSAGE value="added lists and finished extending a booking" />
     <MESSAGE value="adding comments are rearranging code" />
+    <MESSAGE value="amended button logic of customer form" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1272,8 +1265,8 @@
             <element signature="e#4856#4857#0" expanded="true" />
             <element signature="e#4916#5278#0" expanded="true" />
             <element signature="e#5267#5268#0" expanded="true" />
-            <element signature="e#5319#6496#0" expanded="true" />
-            <element signature="e#6485#6486#0" expanded="true" />
+            <element signature="e#5319#6498#0" expanded="true" />
+            <element signature="e#6487#6488#0" expanded="true" />
           </folding>
         </state>
       </provider>
