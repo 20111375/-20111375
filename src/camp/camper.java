@@ -14,6 +14,7 @@ public class camper {
     /**
      * @param args
      * @throws Exception
+     * @description main function to execute application
      */
     public static void main(String[] args) throws Exception {
         EventQueue.invokeLater(new Runnable() {

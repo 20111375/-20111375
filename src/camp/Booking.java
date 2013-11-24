@@ -8,8 +8,10 @@ package camp;
 
 import db.connection;
 
+/**
+ * @description booking object which extends a generic items list
+ */
 public class Booking extends Items {
-
     private int clientID;
     private int pitchID;
     private String fromDate;
@@ -25,12 +27,12 @@ public class Booking extends Items {
     }
 
     /**
-     * @param clientID
-     * @param pitchID
-     * @param fromDate
-     * @param toDate
-     * @param total
-     * @param paid
+     * @param clientID integer of customer id
+     * @param pitchID  integer of pitch id
+     * @param fromDate string of start date
+     * @param toDate   string of end date
+     * @param total    double of reservation cost
+     * @param paid     boolean of paid status
      */
     public Booking(Integer clientID, Integer pitchID, String fromDate, String toDate, Double total, Boolean paid) {
         this.clientID = clientID;
@@ -49,7 +51,7 @@ public class Booking extends Items {
     }
 
     /**
-     * @param clientID
+     * @param clientID an integer used to uniquely id a customer
      */
     public void setClientID(Integer clientID) {
         this.clientID = clientID;
@@ -63,7 +65,7 @@ public class Booking extends Items {
     }
 
     /**
-     * @param pitchID
+     * @param pitchID an integer used to uniquely id a campsite pitch
      */
     public void setPitchID(Integer pitchID) {
         this.pitchID = pitchID;
@@ -77,7 +79,7 @@ public class Booking extends Items {
     }
 
     /**
-     * @param fromDate
+     * @param fromDate a string (formatted to yyyy-MM-dd) to identify the start of a reservation
      */
     public void setFromDate(String fromDate) {
         this.fromDate = fromDate;
@@ -91,7 +93,7 @@ public class Booking extends Items {
     }
 
     /**
-     * @param toDate
+     * @param toDate a string (formatted to yyyy-MM-dd) to identify the end of a reservation
      */
     public void setToDate(String toDate) {
         this.toDate = toDate;
@@ -105,7 +107,7 @@ public class Booking extends Items {
     }
 
     /**
-     * @param total
+     * @param total a double of the total reservation cost
      */
     public void setTotal(Double total) {
         this.total = total;
@@ -119,7 +121,7 @@ public class Booking extends Items {
     }
 
     /**
-     * @param paid
+     * @param paid a boolean of whether the reservation has been paid for
      */
     public void setPaid(boolean paid) {
         this.paid = paid;
@@ -141,9 +143,11 @@ public class Booking extends Items {
         String SQL = "insert into app.booking (CUSTOMERID,PITCHID, FROMDATE, TODATE, PAID, TOTAL) values\n" +
                 "(" + this.getClientID() + "," + this.getPitchID() + ",'" + this.getFromDate() + "','" + this.getToDate() + "'," + this.getPaid() + "," + this.getTotal() + ")";
         new connection().ExecuteCustomerInsert(SQL);
-
     }
 
+    /**
+     * @description pass sql statement to insert a new payment into the database
+     */
     public void insertNewPayment() {
         String SQL = "INSERT INTO APP.PAYMENT (CUSTOMERID, AMOUNT, RECEIVED)\n" +
                 "VALUES (" + getClientID() + ", " + getTotal() + ",CURRENT_DATE )";

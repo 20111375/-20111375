@@ -16,7 +16,6 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
-import java.io.IOException;
 import java.util.Properties;
 
 public class Communication {
@@ -29,7 +28,10 @@ public class Communication {
     }
 
     /**
-     * @param E
+     * @param E booking object
+     * @param F client object
+     * @param G string value of email address
+     * @description accepts booking details, customer details and customer email address
      */
     public void emailer(Booking E, Client F, String G) {
         final String username = "campadoodledoo@gmail.com";
@@ -39,13 +41,14 @@ public class Communication {
         props.put("mail.smtp.starttls.enable", "true");
         props.put("mail.smtp.host", "smtp.gmail.com");
         props.put("mail.smtp.port", "587");
+        //if the password variable isn't passed don't try to make a message
         if (!PassWord.isEmpty()) {
             Session session = Session.getInstance(props, new javax.mail.Authenticator() {
                 protected PasswordAuthentication getPasswordAuthentication() {
                     return new PasswordAuthentication(username, PassWord);
                 }
             });
-
+            //try to setup email message and send it.
             try {
                 Message message = new MimeMessage(session);
                 message.setFrom(new InternetAddress("campadoodledoo@gmail.com"));
@@ -63,16 +66,16 @@ public class Communication {
             } catch (MessagingException e) {
                 e.printStackTrace();
             }
+
         }
     }
 
     /**
-     * @param E
-     * @throws IOException
+     * @param E accepts a booking object
+     * @param F accepts a client object
      */
     public void pdfer(Booking E, Client F) {
-
-        final String OutPut = "./PDF/demo.pdf";
+        final String OutPut = "./PDF/demo.pdf";// define a static location for all pdf files
         Document document = new Document();
         try {
             PdfWriter.getInstance(document, new FileOutputStream(OutPut));

@@ -15,6 +15,10 @@ import java.util.List;
 public class PitchList extends GenericList<Pitch> {
     protected List<Pitch> items;
 
+    /**
+     * @return
+     * @throws Exception
+     */
     public List<Pitch> Items() throws Exception {
         if (items == null) {
             items = new ArrayList<Pitch>();
@@ -32,7 +36,14 @@ public class PitchList extends GenericList<Pitch> {
         return items;
     }
 
-    // Martin Fowlers range pattern
+    /**
+     * @param Start string (format yyyy-MM-dd) start date
+     * @param End   string (format yyyy-MM-dd) end date
+     * @param Name  string of pitch type name (e.g. CARAVAN, TENT, MOTORHOME)
+     * @return collection of items
+     * @throws Exception
+     * @description algorithm uses is Martin Fowler's range pattern
+     */
     public List<Pitch> Items(String Start, String End, String Name) throws Exception {
         if (items == null) {
             items = new ArrayList<Pitch>();
@@ -57,6 +68,12 @@ public class PitchList extends GenericList<Pitch> {
         return items;
     }
 
+    /**
+     * @param Start string (format yyyy-MM-dd) start date
+     * @param End   string (format yyyy-MM-dd) end date
+     * @return collection of items
+     * @throws Exception
+     */
     public List<Pitch> Items(String Start, String End) throws Exception {
         if (items == null) {
             items = new ArrayList<Pitch>();
@@ -80,6 +97,11 @@ public class PitchList extends GenericList<Pitch> {
         return items;
     }
 
+    /**
+     * @param Name string of pitch type name (e.g. CARAVAN, TENT, MOTORHOME)
+     * @return collection of items
+     * @throws Exception
+     */
     public List<Pitch> Items(String Name) throws Exception {
         if (items == null) {
             items = new ArrayList<Pitch>();
@@ -97,6 +119,13 @@ public class PitchList extends GenericList<Pitch> {
         return items;
     }
 
+    /**
+     * @param Start string (format yyyy-MM-dd) start date
+     * @param End   string (format yyyy-MM-dd) end date
+     * @param pitch int of pitch type name (e.g. 1 = CARAVAN, 2 = MOTORHOME, 3 = TENT)
+     * @return collection of items
+     * @throws Exception
+     */
     public List<Pitch> Items(String Start, String End, int pitch) throws Exception {
         if (items == null) {
             items = new ArrayList<Pitch>();
@@ -121,4 +150,3 @@ public class PitchList extends GenericList<Pitch> {
         return items;
     }
 }
-

@@ -7,8 +7,10 @@
 
 package camp;
 
+/**
+ *
+ */
 public class Pitch extends Items {
-
     private String pitchName;
     private Integer pitchType;
     private int[] TypeID;
@@ -16,22 +18,26 @@ public class Pitch extends Items {
     private int PitchID;
     private double total;
 
-    public int getPitchID() {
-        return PitchID;
-    }
-
-    public void setPitchID(int pitchID) {
-        PitchID = pitchID;
-    }
-
+    /**
+     *
+     */
     public Pitch() {
 
     }
 
+    /**
+     * @param pitchName
+     */
     public Pitch(String pitchName) {
         this.pitchName = pitchName;
     }
 
+    /**
+     * @param pitchName
+     * @param pitchType
+     * @param typeID
+     * @param pitchID
+     */
     public Pitch(String pitchName, int pitchType, int[] typeID, int pitchID) {
         this.pitchName = pitchName;
         this.pitchType = pitchType;
@@ -39,34 +45,72 @@ public class Pitch extends Items {
         this.PitchID = pitchID;
     }
 
+    /**
+     * @return
+     */
+    public int getPitchID() {
+        return PitchID;
+    }
+
+    /**
+     * @param pitchID
+     */
+    public void setPitchID(int pitchID) {
+        PitchID = pitchID;
+    }
+
+    /**
+     * @return
+     */
     public double getTotal() {
         return total;
     }
 
+    /**
+     * @param total
+     */
     public void setTotal(double total) {
         this.total = total;
     }
 
+    /**
+     * @return
+     */
     public Integer getPitchType() {
         return pitchType;
     }
 
+    /**
+     * @param pitchType
+     */
     public void setPitchType(Integer pitchType) {
         this.pitchType = pitchType;
     }
 
+    /**
+     * @return gets pitch name of type string
+     */
     public String getPitchName() {
         return pitchName;
     }
 
+    /**
+     * @param pitchName pitch name of type string
+     */
     public void setPitchName(String pitchName) {
         this.pitchName = pitchName;
     }
 
+    /**
+     * @return pitch type id index of type int array
+     */
     public int[] getTypeID() {
         return TypeID;
     }
 
+    /**
+     * @return string of pitch type name (e.g. CARAVAN, TENT, MOTORHOME)
+     */
     public String[] getTypeName() {
         for (int i = 0; i < this.TypeID.length; i++) {
             if (this.TypeID[i] != 1) {
@@ -76,6 +120,9 @@ public class Pitch extends Items {
         return TypeName;
     }
 
+    /**
+     * @return string of pitch name
+     */
     @Override
     public String toString() {
 

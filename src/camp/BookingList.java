@@ -35,6 +35,11 @@ public class BookingList extends GenericList<Booking> {
         return items;
     }
 
+    /**
+     * @param CustID using a customer ID to construct a bookings list
+     * @return a collection of items
+     * @throws Exception
+     */
     public List<Booking> Items(int CustID) throws Exception {
         if (items == null) {
             items = new ArrayList<Booking>();
@@ -53,6 +58,9 @@ public class BookingList extends GenericList<Booking> {
         return items;
     }
 
+    /**
+     * @return a booking list collection
+     */
     public static final List<Booking> customerList() {
         List<Booking> bookinglist = null;
         try {
@@ -63,6 +71,10 @@ public class BookingList extends GenericList<Booking> {
         return bookinglist;
     }
 
+    /**
+     * @return a collection of booking items
+     * @throws Exception
+     */
     public List<Booking> WhoHasntPaid() throws Exception {
         if (items == null) {
             items = new ArrayList<Booking>();

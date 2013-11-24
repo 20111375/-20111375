@@ -9,10 +9,11 @@ package gui;
 import com.jcalendar.event.CalendarEvent;
 import com.jcalendar.pane.calendar.CalendarSelectionListener;
 
+/**
+ * @description Calendar listener interface
+ */
 public class CalListen implements CalendarSelectionListener {
     @Override
     public void selectionChanged(CalendarEvent calendarEvent) {
-
-        //To change body of implemented methods use File | Settings | File Templates.
     }
 }

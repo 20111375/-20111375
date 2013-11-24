@@ -8,17 +8,31 @@ package db;
 
 import java.sql.*;
 
+/**
+ * @description class definition
+ */
 public class connection {
     protected ResultSet resultset = null;
     private String PathToDB = "jdbc:derby:../~20111375/database";// set this to the relative path of the project
 
+    /**
+     * @descripion class constructor
+     */
     public connection() {
     }
 
+    /**
+     * @return gets the path to the database as a string
+     */
     public String getPathToDB() {
         return PathToDB;
     }
 
+    /**
+     * @param SQLString accepts string of sql statement (do not include semi colon)
+     * @return an sql result set collection
+     * @description returns an execute query collection
+     */
     public ResultSet connect(String SQLString) {
 
         try {
@@ -38,6 +52,10 @@ public class connection {
         return resultset;
     }
 
+    /**
+     * @param SQL accepts string of sql statement (do not include semi colon)
+     * @description executes an sql update for customer update
+     */
     public void ExecuteCustomerUpdate(String SQL) {
         try {
             Class.forName("org.apache.derby.jdbc.EmbeddedDriver").newInstance();
@@ -55,6 +73,10 @@ public class connection {
         }
     }
 
+    /**
+     * @param SQL accepts string of sql statement (do not include semi colon)
+     * @description executes an sql update for customer insert
+     */
     public void ExecuteCustomerInsert(String SQL) {
         try {
             Class.forName("org.apache.derby.jdbc.EmbeddedDriver").newInstance();
@@ -72,6 +94,10 @@ public class connection {
         }
     }
 
+    /**
+     * @param SQLString
+     * @return
+     */
     public ResultSet Discount(String SQLString) {
 
         try {

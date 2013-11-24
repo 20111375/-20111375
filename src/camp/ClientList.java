@@ -12,6 +12,9 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @description collection of customers, extending the generic class GenericList
+ */
 public class ClientList extends GenericList<Client> {
     protected List<Client> items;
 
@@ -31,6 +34,10 @@ public class ClientList extends GenericList<Client> {
         return items;
     }
 
+    /**
+     * @return a collection of customers with an index of id and car registration
+     * @throws Exception
+     */
     public List<Client> CarList() throws Exception {
         if (items == null) {
             items = new ArrayList<Client>();
@@ -49,18 +56,27 @@ public class ClientList extends GenericList<Client> {
         return items;
     }
 
+    /**
+     * @param C customer object
+     */
     public void insertNewCustomer(Client C) {
         String SQL = "INSERT INTO  APP.CUSTOMER (firstname,secondname,address,county,postcode,carregistration)\n" +
                 "values ('" + C.getFirstName() + "','" + C.getSecondName() + "','" + C.getAddress() + "','" + C.getCounty() + "','" + C.getPostcode() + "', '" + C.getCarRegistration() + "')";
         new connection().ExecuteCustomerUpdate(SQL);
     }
 
+    /**
+     * @param C customer object
+     */
     public void deleteCustomer(Client C) {
         String SQL = "UPDATE APP.CUSTOMER SET \"DELETE\" = true \n" +
                 "WHERE App.CUSTOMER.CUSTOMERID = " + C.getClientID() + "";
         new connection().ExecuteCustomerUpdate(SQL);
     }
 
+    /**
+     * @param C customer object
+     */
     public void editCustomer(Client C) {
         String SQL = "update app.CUSTOMER SET\n" +
                 "FIRSTNAME='" + C.getFirstName() + "',\n" +
@@ -73,6 +89,9 @@ public class ClientList extends GenericList<Client> {
         new connection().ExecuteCustomerUpdate(SQL);
     }
 
+    /**
+     * @return a collection of customers
+     */
     public static final List<Client> customerList() {
         List<Client> customerlist = null;
         try {

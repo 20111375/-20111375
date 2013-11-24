@@ -12,6 +12,10 @@ import java.util.List;
 public class GenericList<E> {
     protected List<E> items;
 
+    /**
+     * @return a collection of item objects
+     * @throws Exception
+     */
     public List<E> Items() throws Exception {
         if (items == null) {
             items = new ArrayList<E>();

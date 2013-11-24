@@ -64,6 +64,7 @@ public class Reports extends JDialog {
     public void make() {
         Reports dialog = new Reports();
         dialog.pack();
+        dialog.setResizable(false);
         dialog.setVisible(true);
     }
 

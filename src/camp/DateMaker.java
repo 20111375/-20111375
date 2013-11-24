@@ -11,9 +11,18 @@ import java.util.Calendar;
  * Time: 09:51
  * Project: OOP Campsite
  */
+
+/**
+ * @description datemaker class
+ */
 public class DateMaker {
     private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
 
+    /**
+     * @param day   accepts an integer of days
+     * @param Start accepts a string (formatted tp yyyy-MM-dd) representing a start date
+     * @return a string (formatted tp yyyy-MM-dd)
+     */
     public String DateMaker(int day, String Start) {
         Calendar calendar = Calendar.getInstance();
         try {
