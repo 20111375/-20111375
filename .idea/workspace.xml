@@ -10,40 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51f6022f-23b8-4194-a60c-864ebe07b5ce" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/gui/ReportBookingSummary.form" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/gui/ReportBookingSummary.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/gui/TestCustomerForm.form" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/gui/TestCustomerForm.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/gui/TestForm.form" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/gui/TestForm.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/log/log.ctrl" afterPath="$PROJECT_DIR$/database/log/log.ctrl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/log/log1.dat" afterPath="$PROJECT_DIR$/database/log/log1.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/log/logmirror.ctrl" afterPath="$PROJECT_DIR$/database/log/logmirror.ctrl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/camp/Booking.java" afterPath="$PROJECT_DIR$/src/camp/Booking.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/camp/BookingList.java" afterPath="$PROJECT_DIR$/src/camp/BookingList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/CalListen.java" afterPath="$PROJECT_DIR$/src/gui/CalListen.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/camp/Client.java" afterPath="$PROJECT_DIR$/src/camp/Client.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/camp/ClientList.java" afterPath="$PROJECT_DIR$/src/camp/ClientList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/camp/Communication.java" afterPath="$PROJECT_DIR$/src/camp/Communication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/camp/DateMaker.java" afterPath="$PROJECT_DIR$/src/camp/DateMaker.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/DialogBookingSummary.java" afterPath="$PROJECT_DIR$/src/gui/DialogBookingSummary.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/DocListener.java" afterPath="$PROJECT_DIR$/src/gui/DocListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/camp/GenericList.java" afterPath="$PROJECT_DIR$/src/camp/GenericList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/camp/Items.java" afterPath="$PROJECT_DIR$/src/camp/Items.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/camp/Pitch.java" afterPath="$PROJECT_DIR$/src/camp/Pitch.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/camp/PitchList.java" afterPath="$PROJECT_DIR$/src/camp/PitchList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/camp/Pricing.java" afterPath="$PROJECT_DIR$/src/camp/Pricing.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/Reports.form" afterPath="$PROJECT_DIR$/src/gui/Reports.form" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/Reports.java" afterPath="$PROJECT_DIR$/src/gui/Reports.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/camp/camper.java" afterPath="$PROJECT_DIR$/src/camp/camper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/db/connection.java" afterPath="$PROJECT_DIR$/src/db/connection.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/db.lck" afterPath="$PROJECT_DIR$/database/db.lck" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/derby.log" afterPath="$PROJECT_DIR$/derby.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="camp.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="51f6022f-23b8-4194-a60c-864ebe07b5ce" time="1385308657687" ignored="false" />
+    <file path="/Dummy.txt" changelist="51f6022f-23b8-4194-a60c-864ebe07b5ce" time="1385322198419" ignored="false" />
     <file path="/database" changelist="51f6022f-23b8-4194-a60c-864ebe07b5ce" time="1385290140824" ignored="false" />
     <file path="/a.sql" changelist="51f6022f-23b8-4194-a60c-864ebe07b5ce" time="1385034761622" ignored="false" />
     <file path="/DialogBookingSummary.java" changelist="51f6022f-23b8-4194-a60c-864ebe07b5ce" time="1385322065824" ignored="false" />
@@ -836,7 +807,11 @@
       <created>1385306600390</created>
       <updated>1385306600390</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="adding comments are rearranging code">
+      <created>1385322228114</created>
+      <updated>1385322228115</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -949,7 +924,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="added lists and finished extending a booking" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding comments are rearranging code" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -963,7 +938,6 @@
     <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="test rename" />
     <MESSAGE value="UI changes (bug found in jGoodies)." />
     <MESSAGE value="UI changes (bug found in jGoodies).&#10;" />
     <MESSAGE value="SQL changes and UI methods&#10;" />
@@ -988,6 +962,7 @@
     <MESSAGE value="added car reg list and begun extending booking pane" />
     <MESSAGE value="extend booking updates" />
     <MESSAGE value="added lists and finished extending a booking" />
+    <MESSAGE value="adding comments are rearranging code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1073,8 +1048,8 @@
             <element signature="method#Communication#0;class#Communication#0" expanded="false" />
             <element signature="docComment;method#emailer#0;class#Communication#0" expanded="false" />
             <element signature="method#emailer#0;class#Communication#0" expanded="false" />
-            <element signature="class#1400:1614" expanded="false" />
-            <element signature="method#getPasswordAuthentication#0;class#1400:1614" expanded="false" />
+            <element signature="class#1372:1586" expanded="false" />
+            <element signature="method#getPasswordAuthentication#0;class#1372:1586" expanded="false" />
             <element signature="docComment;method#pdfer#0;class#Communication#0" expanded="false" />
             <element signature="method#pdfer#0;class#Communication#0" expanded="false" />
           </folding>
@@ -1319,12 +1294,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="124" column="17" selection-start="3696" selection-end="3696" vertical-scroll-proportion="0.60273975">
           <folding>
-            <element signature="e#2791#2922#0" expanded="true" />
-            <element signature="e#2911#2912#0" expanded="true" />
-            <element signature="e#3355#3706#0" expanded="true" />
-            <element signature="e#3695#3696#0" expanded="true" />
-            <element signature="e#3783#4095#0" expanded="true" />
-            <element signature="e#4084#4085#0" expanded="true" />
+            <element signature="e#2793#2924#0" expanded="true" />
+            <element signature="e#2913#2914#0" expanded="true" />
+            <element signature="e#3357#3708#0" expanded="true" />
+            <element signature="e#3697#3698#0" expanded="true" />
+            <element signature="e#3785#4097#0" expanded="true" />
+            <element signature="e#4086#4087#0" expanded="true" />
           </folding>
         </state>
       </provider>
