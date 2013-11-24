@@ -14,7 +14,7 @@
     </list>
     <ignored path="camp.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="51f6022f-23b8-4194-a60c-864ebe07b5ce" time="1385322198419" ignored="false" />
+    <file path="/Dummy.txt" changelist="51f6022f-23b8-4194-a60c-864ebe07b5ce" time="1385322256718" ignored="false" />
     <file path="/database" changelist="51f6022f-23b8-4194-a60c-864ebe07b5ce" time="1385290140824" ignored="false" />
     <file path="/a.sql" changelist="51f6022f-23b8-4194-a60c-864ebe07b5ce" time="1385034761622" ignored="false" />
     <file path="/DialogBookingSummary.java" changelist="51f6022f-23b8-4194-a60c-864ebe07b5ce" time="1385322065824" ignored="false" />
@@ -811,7 +811,11 @@
       <created>1385322228114</created>
       <updated>1385322228115</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="adding comments are rearranging code">
+      <created>1385322265526</created>
+      <updated>1385322265526</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
