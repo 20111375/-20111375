@@ -62,4 +62,23 @@ public class BookingList extends GenericList<Booking> {
         }
         return bookinglist;
     }
+
+    public List<Booking> WhoHasntPaid() throws Exception {
+        if (items == null) {
+            items = new ArrayList<Booking>();
+            try {
+                String SQL = "SELECT * FROM APP.BOOKING\n" +
+                        "WHERE\n" +
+                        "  APP.BOOKING.PAID = FALSE\n" +
+                        "ORDER BY CURRENT_DATE  DESC";
+                ResultSet resultset = new connection().connect(SQL);
+                while (resultset.next()) {
+                    items.add(new Booking(resultset.getInt(1), resultset.getInt(2), resultset.getString("FROMDATE"), resultset.getString("TODATE"), resultset.getDouble("TOTAL"), resultset.getBoolean("PAID")));
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return items;
+    }
 }

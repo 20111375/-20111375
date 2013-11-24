@@ -1,5 +1,7 @@
 package gui;
 
+import camp.Booking;
+import camp.BookingList;
 import camp.Client;
 import camp.ClientList;
 
@@ -14,6 +16,7 @@ public class Reports extends JDialog {
     private JPanel buttons;
     private JPanel tabs;
     private JList list1;
+    private JList list2;
 
     public Reports() {
         setContentPane(contentPane);
@@ -71,8 +74,20 @@ public class Reports extends JDialog {
                 CustModel.addElement(M.getClientID() + ": " + M.getCarRegistration());
             }
         } catch (Exception e) {
-            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+            e.printStackTrace();
         }
         list1 = new JList(CustModel);
+
+        DefaultListModel PaidModel = new DefaultListModel();
+        try {
+            for (Booking N : new BookingList().WhoHasntPaid()) {
+                PaidModel.addElement(N.getClientID() + " " + N.getPitchID() + " " + N.getFromDate() + " " + N.getToDate() + " " + N.getTotal());
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        list2 = new JList(PaidModel);
+
+
     }
 }

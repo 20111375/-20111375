@@ -10,8 +10,6 @@ import camp.Client;
 import camp.ClientList;
 
 import javax.swing.*;
-import javax.swing.event.ListSelectionEvent;
-import javax.swing.event.ListSelectionListener;
 import javax.swing.text.MaskFormatter;
 import java.awt.*;
 import java.awt.event.*;
@@ -155,17 +153,6 @@ public class DialogSearch extends JDialog {
                 } else {
                     CustomerID.setEnabled(false);
                 }
-            }
-        });
-        SearchResultList.addListSelectionListener(new ListSelectionListener() {
-            /**
-             * Called whenever the value of the selection changes.
-             *
-             * @param e the event that characterizes the change.
-             */
-            @Override
-            public void valueChanged(ListSelectionEvent e) {
-
             }
         });
     }

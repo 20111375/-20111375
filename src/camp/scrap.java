@@ -8,7 +8,7 @@ package camp;
 
 /*
 Produce an on screen summary of a booking- DONE
-The ability to extend a booking for extra nights-IN PROGRESS
+The ability to extend a booking for extra nights-DONE
 Book a tent or caravan pitch for a number of nights-DONE
 Set a price for each pitch- this is a variable based on season which are off,low and high-DONE
 Store the details of the person who books the pitch-DONE
@@ -16,8 +16,8 @@ Produce a booking confirmation which can be emailed to the customer or printed f
 Search for a free pitch for a tent or a caravan-DONE
 Cancel  or amend a booking
 View a list of available pitches for given day - DONE
-View a list of booked pitches per day
-A list of customers who have not yet paid
+View a list of booked pitches per day-DONE
+A list of customers who have not yet paid-DONE
 A sorted list by car registration to allow the staff to check who is on the site-DONE
 
 Customers records to be added or deleted-DONE

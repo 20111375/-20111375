@@ -6,10 +6,7 @@
  */
 package gui;
 
-import camp.Booking;
-import camp.BookingList;
-import camp.Client;
-import camp.Pitch;
+import camp.*;
 
 import javax.swing.*;
 import javax.swing.text.MaskFormatter;
@@ -20,7 +17,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DialogExtendBooking extends JDialog {
-    //public BookingList check = new BookingList();
     public Client myBooking = new Client();
     public Booking extendThis = new Booking();
     private JPanel contentPane;
@@ -35,9 +31,15 @@ public class DialogExtendBooking extends JDialog {
     private JTextArea CarReg;
     private JComboBox extendByDays;
     private JList CustomerBookingsList;
+    private JLabel Warning;
     private List<JFormattedTextField> fieldList = new ArrayList<JFormattedTextField>();
     private DocListener docListener = new DocListener();
     private List<Pitch> pitches = null;
+
+    private String returnItem(String item, int at) {
+        String[] tmp = item.split(" ");
+        return tmp[at];
+    }
 
     public DialogExtendBooking(Window windowAncestor) {
         setContentPane(contentPane);
@@ -50,8 +52,17 @@ public class DialogExtendBooking extends JDialog {
             F.getDocument().addDocumentListener(docListener);
         }
 
+
         buttonOK.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
+                extendThis.setClientID(Integer.parseInt(returnItem(CustomerBookingsList.getSelectedValue().toString(), 0)));
+                extendThis.setPitchID(Integer.parseInt(returnItem(CustomerBookingsList.getSelectedValue().toString(), 1)));
+                extendThis.setFromDate(returnItem(CustomerBookingsList.getSelectedValue().toString(), 3));
+                extendThis.setPaid(false);
+                Pricing price = new Pricing();
+                double total = price.Total(price.getFee(), price.Discount(extendThis.getFromDate()), extendByDays.getSelectedIndex());
+                extendThis.setTotal(total);
+                extendThis.insertNewBooking();
                 onOK();
             }
         });
@@ -88,27 +99,44 @@ public class DialogExtendBooking extends JDialog {
                 try {
                     check.Items(Integer.parseInt(Customer.getText()));
                 } catch (Exception e1) {
-                    e1.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+                    e1.printStackTrace();
                 }
                 DefaultListModel CustModel = new DefaultListModel();
                 try {
                     for (Booking B : check.Items(Integer.parseInt(Customer.getText()))) {
 
-                        CustModel.addElement(B.getClientID() + " " + B.getFromDate() + " " + B.getToDate());
+                        CustModel.addElement(B.getClientID() + " " + B.getPitchID() + " " + B.getFromDate() + " " + B.getToDate());
                     }
                 } catch (Exception e1) {
                     e1.printStackTrace();
                 }
+                checkAvailabilityButton.setEnabled(true);
                 CustomerBookingsList.setModel(CustModel);
                 CustomerBookingsList.repaint();
             }
         });
 
+
         checkAvailabilityButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 if (extendByDays != null && !CustomerBookingsList.isSelectionEmpty()) {
-                    //String tmpDate = new DateMaker().DateMaker(extendByDays.getSelectedIndex(), startdate);
+                    String tmpDate = new DateMaker().DateMaker(extendByDays.getSelectedIndex(), returnItem(CustomerBookingsList.getSelectedValue().toString(), 3));
+                    try {
+                        pitches = new PitchList().Items(returnItem(CustomerBookingsList.getSelectedValue().toString(), 3), tmpDate, Integer.parseInt(returnItem(CustomerBookingsList.getSelectedValue().toString(), 1)));
+                        if (pitches.isEmpty()) {
+                            System.out.println("nothing was returned");
+                            Warning.setText("nothing was returned");
+                        } else {
+                            for (Pitch B : pitches) {
+                                extendThis.setToDate(tmpDate);
+                                Warning.setText("Press the OK button to extend the booking");
+                                System.out.println(B.getPitchID() + " " + B.getPitchName());
+                            }
+                        }
+                    } catch (Exception e1) {
+                        e1.printStackTrace();
+                    }
                 }
             }
         });
