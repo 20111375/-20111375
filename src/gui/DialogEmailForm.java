@@ -88,6 +88,7 @@ public class DialogEmailForm extends JDialog {
 
     public static void make(DialogEmailForm D) {
         D.pack();
+        D.setTitle("email a receipt to the customer");
         D.setResizable(false);
         D.setVisible(true);
     }

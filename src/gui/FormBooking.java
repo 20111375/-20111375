@@ -41,6 +41,7 @@ public class FormBooking extends JDialog {
     private JPanel BookForm;
     private JButton buttonCancel;
     private JButton buttonOK;
+    private JButton cancelABookingButton;
     private String TypeName;
     private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
     private String StartDate = null;
@@ -51,6 +52,7 @@ public class FormBooking extends JDialog {
     private Pitch BookingPitch;
     private DialogSearch search = new DialogSearch(SwingUtilities.getWindowAncestor(this));
     private DialogExtendBooking bookingCheck = new DialogExtendBooking(SwingUtilities.getWindowAncestor(this));
+    private DialogDeleteBooking bookingDelete = new DialogDeleteBooking(SwingUtilities.getWindowAncestor(this));
 
     public FormBooking() {
         setContentPane(FormBooking);
@@ -211,11 +213,21 @@ public class FormBooking extends JDialog {
 
             }
         });
+        cancelABookingButton.addActionListener(new ActionListener() {
+            /**
+             * Invoked when an action occurs.
+             */
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                getBookingDelete().make(bookingDelete);
+            }
+        });
     }
 
     public static void run() {
         FormBooking dialog = new FormBooking();
         dialog.pack();
+        dialog.setTitle("Booking form");
         dialog.setResizable(false);
         dialog.setVisible(true);
         dialog.setLocationRelativeTo(null);
@@ -309,6 +321,14 @@ public class FormBooking extends JDialog {
 
     public void setBookingCheck(DialogExtendBooking bookingCheck) {
         this.bookingCheck = bookingCheck;
+    }
+
+    public DialogDeleteBooking getBookingDelete() {
+        return bookingDelete;
+    }
+
+    public void setBookingDelete(DialogDeleteBooking bookingDelete) {
+        this.bookingDelete = bookingDelete;
     }
 
     private void onOK() {

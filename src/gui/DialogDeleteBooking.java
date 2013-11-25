@@ -6,7 +6,9 @@
  */
 package gui;
 
-import camp.*;
+import camp.Booking;
+import camp.BookingList;
+import camp.Client;
 
 import javax.swing.*;
 import javax.swing.text.MaskFormatter;
@@ -16,32 +18,27 @@ import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DialogExtendBooking extends JDialog {
+public class DialogDeleteBooking extends JDialog {
     public Client myBooking = new Client();
-    public Booking extendThis = new Booking();
+    public Booking deleteThis = new Booking();
     private JPanel contentPane;
     private JButton buttonOK;
     private JButton buttonCancel;
     private JButton submitButton;
-    private JButton checkAvailabilityButton;
-    private JRadioButton customerIDRadioButton;
-    private JRadioButton carRegRadioButton;
+    private JButton deleteButton;
     private JTextArea ID;
     private JFormattedTextField Customer;
     private JTextArea CarReg;
-    private JComboBox extendByDays;
     private JList CustomerBookingsList;
-    private JLabel Warning;
     private List<JFormattedTextField> fieldList = new ArrayList<JFormattedTextField>();
     private DocListener docListener = new DocListener();
-    private List<Pitch> pitches = null;
 
     private String returnItem(String item, int at) {
         String[] tmp = item.split(" ");
         return tmp[at];
     }
 
-    public DialogExtendBooking(Window windowAncestor) {
+    public DialogDeleteBooking(Window windowAncestor) {
         setContentPane(contentPane);
         setModal(true);
         getRootPane().setDefaultButton(buttonOK);
@@ -55,14 +52,7 @@ public class DialogExtendBooking extends JDialog {
 
         buttonOK.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                extendThis.setClientID(Integer.parseInt(returnItem(CustomerBookingsList.getSelectedValue().toString(), 0)));
-                extendThis.setPitchID(Integer.parseInt(returnItem(CustomerBookingsList.getSelectedValue().toString(), 1)));
-                extendThis.setFromDate(returnItem(CustomerBookingsList.getSelectedValue().toString(), 3));
-                extendThis.setPaid(false);
-                Pricing price = new Pricing();
-                double total = price.Total(price.getFee(), price.Discount(extendThis.getFromDate()), extendByDays.getSelectedIndex());
-                extendThis.setTotal(total);
-                extendThis.insertNewBooking();
+
                 onOK();
             }
         });
@@ -110,34 +100,22 @@ public class DialogExtendBooking extends JDialog {
                 } catch (Exception e1) {
                     e1.printStackTrace();
                 }
-                checkAvailabilityButton.setEnabled(true);
+                deleteButton.setEnabled(true);
                 CustomerBookingsList.setModel(CustModel);
                 CustomerBookingsList.repaint();
             }
         });
-
-
-        checkAvailabilityButton.addActionListener(new ActionListener() {
+        deleteButton.addActionListener(new ActionListener() {
+            /**
+             * Invoked when an action occurs.
+             */
             @Override
             public void actionPerformed(ActionEvent e) {
-                if (extendByDays != null && !CustomerBookingsList.isSelectionEmpty()) {
-                    String tmpDate = new DateMaker().DateMaker(extendByDays.getSelectedIndex(), returnItem(CustomerBookingsList.getSelectedValue().toString(), 3));
-                    try {
-                        pitches = new PitchList().Items(returnItem(CustomerBookingsList.getSelectedValue().toString(), 3), tmpDate, Integer.parseInt(returnItem(CustomerBookingsList.getSelectedValue().toString(), 1)));
-                        if (pitches.isEmpty()) {
-                            System.out.println("nothing was returned");
-                            Warning.setText("nothing was returned");
-                        } else {
-                            for (Pitch B : pitches) {
-                                extendThis.setToDate(tmpDate);
-                                Warning.setText("Press the OK button to extend the booking");
-                                System.out.println(B.getPitchID() + " " + B.getPitchName());
-                            }
-                        }
-                    } catch (Exception e1) {
-                        e1.printStackTrace();
-                    }
-                }
+                deleteThis.setClientID(Integer.parseInt(returnItem(CustomerBookingsList.getSelectedValue().toString(), 0)));
+                deleteThis.setPitchID(Integer.parseInt(returnItem(CustomerBookingsList.getSelectedValue().toString(), 1)));
+                deleteThis.setFromDate(returnItem(CustomerBookingsList.getSelectedValue().toString(), 2));
+                deleteThis.setToDate(returnItem(CustomerBookingsList.getSelectedValue().toString(), 3));
+                deleteThis.deleteBooking();
             }
         });
     }
@@ -176,9 +154,9 @@ public class DialogExtendBooking extends JDialog {
         dispose();
     }
 
-    public void make(DialogExtendBooking D) {
+    public void make(DialogDeleteBooking D) {
         D.pack();
-        D.setTitle("Extend a booking");
+        D.setTitle("Delete a booking");
         D.setResizable(false);
         D.setVisible(true);
         D.setLocationRelativeTo(null);

@@ -191,6 +191,7 @@ public class DialogCustomerForm extends JDialog {
 
     public static void make() {
         DialogCustomerForm dialog = new DialogCustomerForm();
+        dialog.setTitle("Customer details");
         dialog.pack();
         dialog.setVisible(true);
         dialog.setLocationRelativeTo(null);

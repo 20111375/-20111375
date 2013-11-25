@@ -154,6 +154,13 @@ public class Booking extends Items {
         new connection().ExecuteCustomerInsert(SQL);
 
     }
+
+    public void deleteBooking() {
+        String SQL = "delete from booking\n" +
+                "where customerid = " + this.getClientID() + " and pitchid = " + this.getPitchID() + " and fromdate = '" + this.getFromDate() + "' and todate = '" + this.getToDate() + "'";
+        new connection().ExecuteCustomerInsert(SQL);
+
+    }
 }
 
 

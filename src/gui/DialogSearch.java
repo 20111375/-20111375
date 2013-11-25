@@ -22,10 +22,8 @@ public class DialogSearch extends JDialog {
     private JButton buttonCancel;
     private JList SearchResultList;
     private JRadioButton customerIDRadioButton;
-    private JRadioButton postCodeRadioButton;
     private JRadioButton carRegRadioButton;
     private JFormattedTextField CustomerID;
-    private JFormattedTextField PostCode;
     private JFormattedTextField CarReg;
     private JButton searchButton;
 
@@ -49,7 +47,6 @@ public class DialogSearch extends JDialog {
     }
 
     public DialogSearch(Window windowAncestor) {
-
         setContentPane(dialogSearch);
         setModal(true);
         getRootPane().setDefaultButton(buttonOK);
@@ -86,16 +83,33 @@ public class DialogSearch extends JDialog {
              */
             @Override
             public void actionPerformed(ActionEvent e) {
-                for (Client C : ClientList.customerList()) {
-                    if (customerIDRadioButton.isSelected() == true && C.getClientID() == Integer.parseInt(CustomerID.getText())) {
-                        DefaultListModel CustModel = new DefaultListModel();
-                        for (Client M : ClientList.customerList()) {
-                            if (M.getClientID() == Integer.parseInt(CustomerID.getText())) {
-                                CustModel.addElement(M.getClientID() + ": " + M.getFirstName() + " | " + M.getSecondName() + " | " + M.getCarRegistration() + " | " + M.getPostcode());
+                if (customerIDRadioButton.isSelected() == true && carRegRadioButton.isSelected() == false) {
+                    for (Client C : ClientList.customerList()) {
+                        if (customerIDRadioButton.isSelected() == true && C.getClientID() == Integer.parseInt(CustomerID.getText())) {
+                            DefaultListModel CustModel = new DefaultListModel();
+                            for (Client M : ClientList.customerList()) {
+                                if (M.getClientID() == Integer.parseInt(CustomerID.getText())) {
+                                    CustModel.addElement(M.getClientID() + ": " + M.getFirstName() + " | " + M.getSecondName() + " | " + M.getCarRegistration() + " | " + M.getPostcode());
+                                }
                             }
+                            SearchResultList.setModel(CustModel);
+                            SearchResultList.repaint();
                         }
-                        SearchResultList.setModel(CustModel);
-                        SearchResultList.repaint();
+                    }
+                }
+
+                if (carRegRadioButton.isSelected() == true) {
+                    for (Client C : ClientList.customerList()) {
+                        if (C.getCarRegistration().equals(CarReg.getText())) {
+                            DefaultListModel CustModel = new DefaultListModel();
+                            for (Client M : ClientList.customerList()) {
+                                if (M.getCarRegistration().equals(CarReg.getText())) {
+                                    CustModel.addElement(M.getClientID() + ": " + M.getFirstName() + " | " + M.getSecondName() + " | " + M.getCarRegistration() + " | " + M.getPostcode());
+                                }
+                            }
+                            SearchResultList.setModel(CustModel);
+                            SearchResultList.repaint();
+                        }
                     }
                 }
             }
@@ -107,10 +121,7 @@ public class DialogSearch extends JDialog {
              */
             @Override
             public void actionPerformed(ActionEvent e) {
-                //To change body of implemented methods use File | Settings | File Templates.
                 if (carRegRadioButton.isSelected()) {
-                    postCodeRadioButton.setSelected(false);
-                    PostCode.setEnabled(false);
                     customerIDRadioButton.setSelected(false);
                     CustomerID.setEnabled(false);
                     CarReg.setEnabled(true);
@@ -119,36 +130,16 @@ public class DialogSearch extends JDialog {
                 }
             }
         });
-        postCodeRadioButton.addActionListener(new ActionListener() {
-            /**
-             * Invoked when an action occurs.
-             */
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                //To change body of implemented methods use File | Settings | File Templates.
-                if (postCodeRadioButton.isSelected()) {
-                    carRegRadioButton.setSelected(false);
-                    CarReg.setEnabled(false);
-                    customerIDRadioButton.setSelected(false);
-                    CustomerID.setEnabled(false);
-                    PostCode.setEnabled(true);
-                } else {
-                    PostCode.setEnabled(false);
-                }
-            }
-        });
+
         customerIDRadioButton.addActionListener(new ActionListener() {
             /**
              * Invoked when an action occurs.
              */
             @Override
             public void actionPerformed(ActionEvent e) {
-                //To change body of implemented methods use File | Settings | File Templates.
                 if (customerIDRadioButton.isSelected()) {
                     carRegRadioButton.setSelected(false);
                     CarReg.setEnabled(false);
-                    postCodeRadioButton.setSelected(false);
-                    PostCode.setEnabled(false);
                     CustomerID.setEnabled(true);
                 } else {
                     CustomerID.setEnabled(false);
@@ -158,31 +149,31 @@ public class DialogSearch extends JDialog {
     }
 
     private void onOK() {
-// add your code here
         dispose();
     }
 
     private void onCancel() {
-// add your code here if necessary
         dispose();
     }
 
     public void make(DialogSearch D) {
         D.pack();
+        D.setTitle("Find a Customer");
         D.setResizable(false);
         D.setVisible(true);
-        //System.exit(0);
     }
 
     private void createUIComponents() {
         MaskFormatter CustomerIDFormat = null;
+        MaskFormatter RegIDFormat = null;
         try {
             CustomerIDFormat = new MaskFormatter("#######");
+            RegIDFormat = new MaskFormatter("AAAA" + " " + "AAA");
         } catch (ParseException e) {
             e.printStackTrace();
         }
-        CustomerIDFormat.setValidCharacters("0123456789");
         CustomerID = new JFormattedTextField(CustomerIDFormat);
+        CarReg = new JFormattedTextField(RegIDFormat);
 
         DefaultListModel CustModel = new DefaultListModel();
         for (Client M : ClientList.customerList()) {
