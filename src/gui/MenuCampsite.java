@@ -13,8 +13,7 @@ import java.awt.event.ActionListener;
 public class MenuCampsite {
     private JPanel MainPanel;
     private JButton bookingsButton;
-    private JButton pitchesButton;
-    private JButton reportsButton;
+    private JButton reportssButton;
 
     public MenuCampsite() {
         bookingsButton.addActionListener(new ActionListener() {
@@ -28,7 +27,7 @@ public class MenuCampsite {
                 new FormBooking().run();
             }
         });
-        pitchesButton.addActionListener(new ActionListener() {
+        reportssButton.addActionListener(new ActionListener() {
             /**
              * Invoked when an action occurs.
              */
@@ -40,7 +39,7 @@ public class MenuCampsite {
     }
 
     public void run() {
-        JFrame frame = new JFrame("MenuCampsite");
+        JFrame frame = new JFrame("Campsite System");
         frame.setResizable(false);
         frame.setContentPane(new MenuCampsite().MainPanel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
