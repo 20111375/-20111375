@@ -35,6 +35,9 @@ public class FormBooking extends JDialog {
     private JButton NewCustomerButton;
     private JButton ConfirmButton;
     private JButton extendABookingButton;
+    private JButton buttonCancel;
+    private JButton buttonOK;
+    private JButton cancelABookingButton;
     private JTextArea CustomerDetails;
     private JTextArea PitchDetails;
     private JComboBox EndDate;
@@ -43,9 +46,6 @@ public class FormBooking extends JDialog {
     private JPanel ExtendBooking;
     private JPanel FormBooking;
     private JPanel BookForm;
-    private JButton buttonCancel;
-    private JButton buttonOK;
-    private JButton cancelABookingButton;
     private String TypeName;
     private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
     private String StartDate = null;
@@ -151,7 +151,8 @@ public class FormBooking extends JDialog {
              */
             @Override
             public void actionPerformed(ActionEvent e) {
-                getSearch().run(search);
+                setSearch(search);// if a new customer is inserted the DialogSearch object needs to be refreshed
+                getSearch().run(search);// loads the  DialogSearch object
                 setBookingClient(search.getPickedClient());
                 if (BookingClient != null) {
                     CustomerDetails.setText("");
@@ -317,6 +318,13 @@ public class FormBooking extends JDialog {
      */
     public DialogSearch getSearch() {
         return search;
+    }
+
+    /**
+     * @param search sets a new DialogSearch object and assigns it to search
+     */
+    public void setSearch(DialogSearch search) {
+        this.search = new DialogSearch(SwingUtilities.getWindowAncestor(this));
     }
 
     /**

@@ -214,7 +214,7 @@ public class DialogSearch extends JDialog {
         } catch (ParseException e) {
             e.printStackTrace();
         }
-        //attach formatter's
+        //attach formatter
         CustomerID = new JFormattedTextField(CustomerIDFormat);
         CarReg = new JFormattedTextField(RegIDFormat);
         //populate list model
@@ -227,5 +227,6 @@ public class DialogSearch extends JDialog {
             }
         }
         SearchResultList = new JList(CustModel);
+        SearchResultList.repaint();
     }
 }
