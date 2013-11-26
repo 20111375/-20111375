@@ -17,7 +17,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @description class definition
+ * class definition
  */
 public class DialogExtendBooking extends JDialog {
     public Client myBooking = new Client();
@@ -40,8 +40,7 @@ public class DialogExtendBooking extends JDialog {
     private List<Pitch> pitches = null;
 
     /**
-     * @param windowAncestor
-     * @description class constructor
+     * @param windowAncestor class constructor
      */
     public DialogExtendBooking(Window windowAncestor) {
         setContentPane(contentPane);
@@ -55,7 +54,7 @@ public class DialogExtendBooking extends JDialog {
         }
 
         /**
-         *@description button listener
+         *button listener
          */
         buttonOK.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -73,7 +72,7 @@ public class DialogExtendBooking extends JDialog {
             }
         });
         /**
-         *@description button listener
+         *button listener
          */
         buttonCancel.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -97,7 +96,7 @@ public class DialogExtendBooking extends JDialog {
         }, KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
 
         /**
-         *@description button listener
+         *button listener
          */
         submitButton.addActionListener(new ActionListener() {
             /**
@@ -128,7 +127,7 @@ public class DialogExtendBooking extends JDialog {
         });
 
         /**
-         *@description button listener
+         *button listener
          */
         checkAvailabilityButton.addActionListener(new ActionListener() {
             @Override
@@ -208,14 +207,14 @@ public class DialogExtendBooking extends JDialog {
     }
 
     /**
-     * @description destroys window
+     * destroys window
      */
     private void onOK() {
         dispose();
     }
 
     /**
-     * @description destroys window
+     * destroys window
      */
     private void onCancel() {
         dispose();
@@ -233,7 +232,7 @@ public class DialogExtendBooking extends JDialog {
     }
 
     /**
-     * @description custom ui initiliser
+     * custom ui initiliser
      */
     private void createUIComponents() {
         MaskFormatter BookingIDFormat = null;

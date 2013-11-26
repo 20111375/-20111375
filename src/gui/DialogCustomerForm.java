@@ -17,7 +17,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @description class definition
+ * class definition
  */
 public class DialogCustomerForm extends JDialog {
     private JPanel contentPane;
@@ -47,7 +47,7 @@ public class DialogCustomerForm extends JDialog {
     private DocListener docListener = new DocListener();
 
     /**
-     * @description class constrictor
+     * class constrictor
      */
     public DialogCustomerForm() {
         setContentPane(contentPane);
@@ -65,7 +65,7 @@ public class DialogCustomerForm extends JDialog {
             F.getDocument().addDocumentListener(docListener);
         }
         /**
-         *@description button listener
+         *button listener
          */
         buttonOK.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -73,7 +73,7 @@ public class DialogCustomerForm extends JDialog {
             }
         });
         /**
-         *@description button listener
+         *button listener
          */
         buttonCancel.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -115,7 +115,7 @@ public class DialogCustomerForm extends JDialog {
             }
         });
         /**
-         *@description button listener
+         *button listener
          */
         EditButton.addActionListener(new ActionListener() {
             @Override
@@ -142,7 +142,7 @@ public class DialogCustomerForm extends JDialog {
         });
 
         /**
-         *@description list listener
+         *list listener
          */
         CustomerList.addListSelectionListener(new ListSelectionListener() {
             /**
@@ -157,7 +157,7 @@ public class DialogCustomerForm extends JDialog {
         });
 
         /**
-         *@description button listener
+         *button listener
          */
         SaveButton.addActionListener(new ActionListener() {
             /**
@@ -186,7 +186,7 @@ public class DialogCustomerForm extends JDialog {
         });
 
         /**
-         *@description button listener
+         *button listener
          */
         AddNewButton.addActionListener(new ActionListener() {
             /**
@@ -218,7 +218,7 @@ public class DialogCustomerForm extends JDialog {
         });
 
         /**
-         *@description button listener
+         *button listener
          */
         ResetButton.addActionListener(new ActionListener() {
             /**
@@ -237,7 +237,7 @@ public class DialogCustomerForm extends JDialog {
     }
 
     /**
-     * @description initilise a window
+     * initilise a window
      */
     public static void make() {
         DialogCustomerForm dialog = new DialogCustomerForm();
@@ -347,21 +347,21 @@ public class DialogCustomerForm extends JDialog {
     }
 
     /**
-     * @description destroys a window
+     * destroys a window
      */
     private void onOK() {
         dispose();
     }
 
     /**
-     * @description destroys a window
+     * destroys a window
      */
     private void onCancel() {
         dispose();
     }
 
     /**
-     * @description initilises custom UI components
+     * initilises custom UI components
      */
     private void createUIComponents() {
         DefaultListModel CustModel = new DefaultListModel();
@@ -376,7 +376,7 @@ public class DialogCustomerForm extends JDialog {
     }
 
     /**
-     * @decription clear all text fields
+     * clear all text fields
      */
     private void ClearText() {
         CustomerID.setText(null);
@@ -389,7 +389,7 @@ public class DialogCustomerForm extends JDialog {
     }
 
     /**
-     * @description produces a customer list model
+     * produces a customer list model
      */
     private void textList() {
         DefaultListModel CustModel = new DefaultListModel();

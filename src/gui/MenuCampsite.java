@@ -11,7 +11,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 /**
- * @description class definition
+ * class definition
  */
 public class MenuCampsite {
     private JPanel MainPanel;
@@ -19,12 +19,12 @@ public class MenuCampsite {
     private JButton reportsButton;
 
     /**
-     * @description class constructor
+     * class constructor
      */
     public MenuCampsite() {
 
         /**
-         *@description book event listener
+         *book event listener
          */
         bookingsButton.addActionListener(new ActionListener() {
             /**
@@ -39,7 +39,7 @@ public class MenuCampsite {
         });
 
         /**
-         *@description book event listener
+         *book event listener
          */
         reportsButton.addActionListener(new ActionListener() {
             /**
@@ -53,7 +53,7 @@ public class MenuCampsite {
     }
 
     /**
-     * @description initilise in the parent window
+     * initilise in the parent window
      */
     public void run() {
         JFrame frame = new JFrame("Campsite System");

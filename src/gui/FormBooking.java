@@ -24,7 +24,7 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * @description class definition
+ * class definition
  */
 public class FormBooking extends JDialog {
     private JComboBox PitchType;
@@ -58,7 +58,7 @@ public class FormBooking extends JDialog {
     private DialogDeleteBooking bookingDelete = new DialogDeleteBooking(SwingUtilities.getWindowAncestor(this));
 
     /**
-     * @description class constructor
+     * class constructor
      */
     public FormBooking() {
         setContentPane(FormBooking);
@@ -66,7 +66,7 @@ public class FormBooking extends JDialog {
         getRootPane().setDefaultButton(buttonOK);
 
         /**
-         *@description button event listener
+         *button event listener
          */
         buttonOK.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -75,7 +75,7 @@ public class FormBooking extends JDialog {
         });
 
         /**
-         *@description button event listener
+         *button event listener
          */
         buttonCancel.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -99,7 +99,7 @@ public class FormBooking extends JDialog {
         }, KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
 
         /**
-         *@description button event listener
+         *button event listener
          */
         extendABookingButton.addActionListener(new ActionListener() {
             /**
@@ -112,7 +112,7 @@ public class FormBooking extends JDialog {
         });
 
         /**
-         *@description button event listener
+         *button event listener
          */
         ConfirmButton.addActionListener(new ActionListener() {
             /**
@@ -129,7 +129,7 @@ public class FormBooking extends JDialog {
         });
 
         /**
-         *@description button event listener
+         *button event listener
          */
         NewCustomerButton.addActionListener(new ActionListener() {
             /**
@@ -142,7 +142,7 @@ public class FormBooking extends JDialog {
         });
 
         /**
-         *@description button event listener
+         *button event listener
          */
         FindCustomerButton.addActionListener(new ActionListener() {
             /**
@@ -162,7 +162,7 @@ public class FormBooking extends JDialog {
         });
 
         /**
-         *@description button event listener
+         *button event listener
          */
         SearchButton.addActionListener(new ActionListener() {
             /**
@@ -183,7 +183,7 @@ public class FormBooking extends JDialog {
         });
 
         /**
-         *@description pitch type listener
+         *pitch type listener
          */
         PitchType.addActionListener(new ActionListener() {
             /**
@@ -198,7 +198,7 @@ public class FormBooking extends JDialog {
         });
 
         /**
-         *@description calendar event listener
+         *calendar event listener
          */
         FromDate.addCalendarSelectionListener(new CalListen() {
             public void selectionChanged(CalendarEvent arg0) {
@@ -211,7 +211,7 @@ public class FormBooking extends JDialog {
         });
 
         /**
-         *@description combo box listener
+         *combo box listener
          */
         EndDate.addActionListener(new ActionListener() {
             /**
@@ -226,7 +226,7 @@ public class FormBooking extends JDialog {
         });
 
         /**
-         *@description list listener
+         *list listener
          */
         SearchResultList.addListSelectionListener(new ListSelectionListener() {
             /**
@@ -258,7 +258,7 @@ public class FormBooking extends JDialog {
         });
 
         /**
-         *@description button listener
+         *button listener
          */
         cancelABookingButton.addActionListener(new ActionListener() {
             /**
@@ -272,7 +272,7 @@ public class FormBooking extends JDialog {
     }
 
     /**
-     * @description intilise in the parent window
+     * intilise in the parent window
      */
     public static void run() {
         FormBooking dialog = new FormBooking();
@@ -447,7 +447,7 @@ public class FormBooking extends JDialog {
     }
 
     /**
-     * @description remove this window
+     * remove this window
      */
     private void onOK() {
 // add your code here
@@ -455,7 +455,7 @@ public class FormBooking extends JDialog {
     }
 
     /**
-     * @description remove this window
+     * remove this window
      */
     private void onCancel() {
 // add your code here if necessary

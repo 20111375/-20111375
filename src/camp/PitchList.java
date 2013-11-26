@@ -16,7 +16,7 @@ public class PitchList extends GenericList<Pitch> {
     protected List<Pitch> items;
 
     /**
-     * @return
+     * @return an array list of items
      * @throws Exception
      */
     public List<Pitch> Items() throws Exception {
@@ -41,8 +41,7 @@ public class PitchList extends GenericList<Pitch> {
      * @param End   string (format yyyy-MM-dd) end date
      * @param Name  string of pitch type name (e.g. CARAVAN, TENT, MOTORHOME)
      * @return collection of items
-     * @throws Exception
-     * @description algorithm uses is Martin Fowler's range pattern
+     * @throws Exception algorithm uses is Martin Fowler's range pattern
      */
     public List<Pitch> Items(String Start, String End, String Name) throws Exception {
         if (items == null) {

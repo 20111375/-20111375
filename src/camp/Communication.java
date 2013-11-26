@@ -21,7 +21,7 @@ import java.util.Properties;
 public class Communication {
 
     /**
-     * @description class constructor
+     * class constructor
      */
     public Communication() {
 
@@ -31,7 +31,7 @@ public class Communication {
      * @param E booking object
      * @param F client object
      * @param G string value of email address
-     * @description accepts booking details, customer details and customer email address
+     *          accepts booking details, customer details and customer email address
      */
     public void emailer(Booking E, Client F, String G) {
         final String username = "campadoodledoo@gmail.com";
@@ -56,11 +56,13 @@ public class Communication {
                         InternetAddress.parse(G));
                 message.setSubject("Booking reservation");
                 message.setText("Hello" + F.getFirstName() + "\n" +
-                        "Thank you for your picking Camp-a-doodle-doo, your reservation details are: " + "\n" +
+                        "Thank you for picking High farm, your reservation details are: " + "\n" +
+                        "Customer ID: " + E.getClientID() + "\n" +
+                        "Pitch ID: " + E.getPitchID() + "\n" +
                         "Start Date:" + E.getFromDate() + "\n" +
                         "Finish Date " + E.getToDate() + "\n" +
                         "Pitch number: " + E.getPitchID() + "\n" +
-                        "Total Cost: £" + E.getTotal() + "\n" +
+                        "Total Cost: " + E.getTotal() + "\n" +
                         "Once again thank you and we hope you have a good stay.");
                 Transport.send(message);
             } catch (MessagingException e) {
@@ -87,11 +89,13 @@ public class Communication {
         document.open();
         try {
             document.add(new Paragraph("Hello " + F.getFirstName() + "\n" +
-                    "Thank you for your picking Camp-a-doodle-doo, your reservation details are: " + "\n" +
+                    "Thank you for picking High farm, your reservation details are: " + "\n" +
+                    "Customer ID: " + E.getClientID() + "\n" +
+                    "Pitch ID: " + E.getPitchID() + "\n" +
                     "Start Date:" + E.getFromDate() + "\n" +
                     "Finish Date " + E.getToDate() + "\n" +
                     "Pitch number: " + E.getPitchID() + "\n" +
-                    "Total Cost: £" + E.getTotal() + "\n" +
+                    "Total Cost: " + E.getTotal() + "\n" +
                     "Once again thank you and we hope you have a good stay."));
         } catch (DocumentException e) {
             e.printStackTrace();

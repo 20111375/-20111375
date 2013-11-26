@@ -19,7 +19,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @description class definition
+ * class definition
  */
 public class DialogDeleteBooking extends JDialog {
     public Client myBooking = new Client();
@@ -37,8 +37,7 @@ public class DialogDeleteBooking extends JDialog {
     private DocListener docListener = new DocListener();
 
     /**
-     * @param windowAncestor
-     * @description class constructor
+     * @param windowAncestor class constructor
      */
     public DialogDeleteBooking(Window windowAncestor) {
         setContentPane(contentPane);
@@ -52,7 +51,7 @@ public class DialogDeleteBooking extends JDialog {
         }
 
         /**
-         *@description button listener
+         *button listener
          */
         buttonOK.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -62,7 +61,7 @@ public class DialogDeleteBooking extends JDialog {
         });
 
         /**
-         *@description button listener
+         *button listener
          */
         buttonCancel.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -86,7 +85,7 @@ public class DialogDeleteBooking extends JDialog {
         }, KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
 
         /**
-         *@description button listener
+         *button listener
          */
         submitButton.addActionListener(new ActionListener() {
             /**
@@ -116,7 +115,7 @@ public class DialogDeleteBooking extends JDialog {
         });
 
         /**
-         *@description button listener
+         *button listener
          */
         deleteButton.addActionListener(new ActionListener() {
             /**
@@ -137,7 +136,7 @@ public class DialogDeleteBooking extends JDialog {
      * @param item string type string
      * @param at   integer index number
      * @return string array
-     * @description returns a sub string from a string
+     *         returns a sub string from a string
      */
     private String returnItem(String item, int at) {
         String[] tmp = item.split(" ");
@@ -187,14 +186,14 @@ public class DialogDeleteBooking extends JDialog {
     }
 
     /**
-     * @description destroy the window
+     * destroy the window
      */
     private void onOK() {
         dispose();
     }
 
     /**
-     * @description destroy the window
+     * destroy the window
      */
     private void onCancel() {
         dispose();
@@ -202,7 +201,7 @@ public class DialogDeleteBooking extends JDialog {
 
     /**
      * @param D accepts type DialogDeleteBooking
-     * @description initialise an instance of the window
+     *          initialise an instance of the window
      */
     public void make(DialogDeleteBooking D) {
         D.pack();
@@ -213,7 +212,7 @@ public class DialogDeleteBooking extends JDialog {
     }
 
     /**
-     * @description initilise custom ui elements
+     * initilise custom ui elements
      */
     private void createUIComponents() {
         MaskFormatter BookingIDFormat = null;

@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @description collection of customers, extending the generic class GenericList
+ * collection of customers, extending the generic class GenericList
  */
 public class ClientList extends GenericList<Client> {
     protected List<Client> items;

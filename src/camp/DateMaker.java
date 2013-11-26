@@ -12,7 +12,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 /**
- * @description datemaker class
+ * datemaker class
  */
 public class DateMaker {
     private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");

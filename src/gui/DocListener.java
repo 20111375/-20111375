@@ -68,7 +68,7 @@ public class DocListener implements DocumentListener {
     /**
      * @param btn       accepts a jbutton as input and registers formatted text fields to it
      * @param fieldList accepts a collection of formatted text fields
-     * @description set a button to listen to a list of text fields (default set to disabled)
+     *                  set a button to listen to a list of text fields (default set to disabled)
      */
     private void checkContent(JButton btn, List<JFormattedTextField> fieldList) {
         for (JFormattedTextField field : fieldList) {

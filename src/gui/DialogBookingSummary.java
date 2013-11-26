@@ -18,7 +18,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 /**
- * @description class definition
+ * class definition
  */
 public class DialogBookingSummary extends JDialog {
     public JTextArea BookingForeName;
@@ -64,7 +64,7 @@ public class DialogBookingSummary extends JDialog {
     private int BookingPitchID;
 
     /**
-     * @description class constructor
+     * class constructor
      */
     public DialogBookingSummary() {
         setContentPane(BookingSummary);
@@ -97,7 +97,7 @@ public class DialogBookingSummary extends JDialog {
         }, KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
 
         /**
-         *@description combo box listener
+         *combo box listener
          */
         PrintIt.addActionListener(new ActionListener() {
             /**
@@ -110,7 +110,7 @@ public class DialogBookingSummary extends JDialog {
         });
 
         /**
-         *@description combo box listener
+         *combo box listener
          */
         email.addActionListener(new ActionListener() {
             /**
@@ -125,7 +125,7 @@ public class DialogBookingSummary extends JDialog {
         });
 
         /**
-         *@description combo box listener
+         *combo box listener
          */
         paidCheckBox.addActionListener(new ActionListener() {
             /**
@@ -337,7 +337,7 @@ public class DialogBookingSummary extends JDialog {
     }
 
     /**
-     * @description pass booking details to booking object, insert to db and class this + parent
+     * pass booking details to booking object, insert to db and class this + parent
      */
     private void onOK() {
         submit.setClientID(Integer.valueOf(getBookingCustomerID().getText()));
@@ -363,7 +363,7 @@ public class DialogBookingSummary extends JDialog {
     }
 
     /**
-     * @description destroy window
+     * destroy window
      */
     private void onCancel() {
         dispose();

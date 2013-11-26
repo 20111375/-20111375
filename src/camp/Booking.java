@@ -9,7 +9,7 @@ package camp;
 import db.connection;
 
 /**
- * @description booking object which extends a generic items list
+ * booking object which extends a generic items list
  */
 public class Booking extends Items {
     private int clientID;
@@ -20,7 +20,7 @@ public class Booking extends Items {
     private Boolean paid;
 
     /**
-     * @description class constructor
+     * class constructor
      */
     public Booking() {
 
@@ -137,7 +137,7 @@ public class Booking extends Items {
     }
 
     /**
-     * @description pass sql statement to insert a new booking into the database
+     * pass sql statement to insert a new booking into the database
      */
     public void insertNewBooking() {
         String SQL = "insert into app.booking (CUSTOMERID,PITCHID, FROMDATE, TODATE, PAID, TOTAL) values\n" +
@@ -146,7 +146,7 @@ public class Booking extends Items {
     }
 
     /**
-     * @description pass sql statement to insert a new payment into the database
+     * pass sql statement to insert a new payment into the database
      */
     public void insertNewPayment() {
         String SQL = "INSERT INTO APP.PAYMENT (CUSTOMERID, AMOUNT, RECEIVED)\n" +

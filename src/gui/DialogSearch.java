@@ -16,7 +16,7 @@ import java.awt.event.*;
 import java.text.ParseException;
 
 /**
- * @description class definition
+ * class definition
  */
 public class DialogSearch extends JDialog {
     private JPanel dialogSearch;
@@ -30,8 +30,7 @@ public class DialogSearch extends JDialog {
     private JButton searchButton;
 
     /**
-     * @param windowAncestor
-     * @description class constructor
+     * @param windowAncestor class constructor
      */
     public DialogSearch(Window windowAncestor) {
         setContentPane(dialogSearch);
@@ -39,7 +38,7 @@ public class DialogSearch extends JDialog {
         getRootPane().setDefaultButton(buttonOK);
 
         /**
-         *@description button listener
+         *button listener
          */
         buttonOK.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -48,7 +47,7 @@ public class DialogSearch extends JDialog {
         });
 
         /**
-         *@description button listener
+         *button listener
          */
         buttonCancel.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -72,7 +71,7 @@ public class DialogSearch extends JDialog {
         }, KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
 
         /**
-         *@description search button listener
+         *search button listener
          * repopulates results list after a selection is made
          */
         searchButton.addActionListener(new ActionListener() {
@@ -114,7 +113,7 @@ public class DialogSearch extends JDialog {
         });
 
         /**
-         *@description check box listener
+         *check box listener
          */
         carRegRadioButton.addActionListener(new ActionListener() {
             /**
@@ -133,7 +132,7 @@ public class DialogSearch extends JDialog {
         });
 
         /**
-         *@description check box listener
+         *check box listener
          */
         customerIDRadioButton.addActionListener(new ActionListener() {
             /**
@@ -178,14 +177,14 @@ public class DialogSearch extends JDialog {
     }
 
     /**
-     * @description destroy window
+     * destroy window
      */
     private void onOK() {
         dispose();
     }
 
     /**
-     * @description destroy window
+     * destroy window
      */
     private void onCancel() {
         dispose();
@@ -202,7 +201,7 @@ public class DialogSearch extends JDialog {
     }
 
     /**
-     * @description initilise customer ui components
+     * initilise customer ui components
      */
     private void createUIComponents() {
         MaskFormatter CustomerIDFormat = null;

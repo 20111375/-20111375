@@ -15,7 +15,7 @@ import javax.swing.*;
 import java.awt.event.*;
 
 /**
- * @description class definition
+ * class definition
  */
 public class Reports extends JDialog {
     private JPanel contentPane;
@@ -28,7 +28,7 @@ public class Reports extends JDialog {
     private JList list2;
 
     /**
-     * @description class constructor
+     * class constructor
      */
     public Reports() {
         setContentPane(contentPane);
@@ -36,7 +36,7 @@ public class Reports extends JDialog {
         getRootPane().setDefaultButton(buttonOK);
 
         /**
-         *@description button listener, on event trigger call method
+         *button listener, on event trigger call method
          */
         buttonOK.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -45,7 +45,7 @@ public class Reports extends JDialog {
         });
 
         /**
-         *@description button listener, on event trigger call method
+         *button listener, on event trigger call method
          */
         buttonCancel.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -70,7 +70,7 @@ public class Reports extends JDialog {
     }
 
     /**
-     * @description remove this window
+     * remove this window
      */
     private void onOK() {
 // add your code here
@@ -78,7 +78,7 @@ public class Reports extends JDialog {
     }
 
     /**
-     * @description remove this window
+     * remove this window
      */
     private void onCancel() {
 // add your code here if necessary
@@ -86,7 +86,7 @@ public class Reports extends JDialog {
     }
 
     /**
-     * @description initialise called in parent winow
+     * initialise called in parent winow
      */
     public void make() {
         Reports dialog = new Reports();
@@ -96,7 +96,7 @@ public class Reports extends JDialog {
     }
 
     /**
-     * @description custom UI component initiliser
+     * custom UI component initiliser
      */
     private void createUIComponents() {
         DefaultListModel CustModel = new DefaultListModel();

@@ -46,42 +46,42 @@ public class Pitch extends Items {
     }
 
     /**
-     * @return
+     * @return gets pitch id of type int
      */
     public int getPitchID() {
         return PitchID;
     }
 
     /**
-     * @param pitchID
+     * @param pitchID sets pitch id of type int
      */
     public void setPitchID(int pitchID) {
         PitchID = pitchID;
     }
 
     /**
-     * @return
+     * @return gets total of type double
      */
     public double getTotal() {
         return total;
     }
 
     /**
-     * @param total
+     * @param total sets total of type double
      */
     public void setTotal(double total) {
         this.total = total;
     }
 
     /**
-     * @return
+     * @return gets pitch type of type integer
      */
     public Integer getPitchType() {
         return pitchType;
     }
 
     /**
-     * @param pitchType
+     * @param pitchType sets pitch type of type integer
      */
     public void setPitchType(Integer pitchType) {
         this.pitchType = pitchType;

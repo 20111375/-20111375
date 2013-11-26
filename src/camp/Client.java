@@ -160,7 +160,7 @@ public class Client extends Items {
     }
 
     /**
-     * @description empty class constructor
+     * empty class constructor
      */
     public Client() {
 

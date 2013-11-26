@@ -11,7 +11,7 @@ import java.awt.*;
 import java.awt.event.*;
 
 /**
- * @description class definition
+ * class definition
  */
 public class DialogEmailForm extends JDialog {
     private JPanel contentPane;
@@ -21,8 +21,7 @@ public class DialogEmailForm extends JDialog {
     private JCheckBox copyToOfficeCheckBox;
 
     /**
-     * @param windowAncestor
-     * @description class constructor
+     * @param windowAncestor class constructor
      */
     public DialogEmailForm(Window windowAncestor) {
         setContentPane(contentPane);
@@ -30,7 +29,7 @@ public class DialogEmailForm extends JDialog {
         getRootPane().setDefaultButton(buttonOK);
 
         /**
-         *@description button listener
+         *button listener
          */
         buttonOK.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -38,7 +37,7 @@ public class DialogEmailForm extends JDialog {
             }
         });
         /**
-         *@description button listener
+         *button listener
          */
         buttonCancel.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -107,14 +106,14 @@ public class DialogEmailForm extends JDialog {
     }
 
     /**
-     * @description destroy window
+     * destroy window
      */
     private void onOK() {
         dispose();
     }
 
     /**
-     * @description destroy window
+     * destroy window
      */
     private void onCancel() {
         dispose();

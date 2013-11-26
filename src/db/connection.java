@@ -9,14 +9,14 @@ package db;
 import java.sql.*;
 
 /**
- * @description class definition
+ * class definition
  */
 public class connection {
     protected ResultSet resultset = null;
     private String PathToDB = "jdbc:derby:../~20111375/database";// set this to the relative path of the project
 
     /**
-     * @descripion class constructor
+     * class constructor
      */
     public connection() {
     }
@@ -31,7 +31,7 @@ public class connection {
     /**
      * @param SQLString accepts string of sql statement (do not include semi colon)
      * @return an sql result set collection
-     * @description returns an execute query collection
+     *         returns an execute query collection
      */
     public ResultSet connect(String SQLString) {
 
@@ -54,7 +54,7 @@ public class connection {
 
     /**
      * @param SQL accepts string of sql statement (do not include semi colon)
-     * @description executes an sql update for customer update
+     *            executes an sql update for customer update
      */
     public void ExecuteCustomerUpdate(String SQL) {
         try {
@@ -75,7 +75,7 @@ public class connection {
 
     /**
      * @param SQL accepts string of sql statement (do not include semi colon)
-     * @description executes an sql update for customer insert
+     *            executes an sql update for customer insert
      */
     public void ExecuteCustomerInsert(String SQL) {
         try {

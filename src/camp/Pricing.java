@@ -10,15 +10,16 @@ import db.connection;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.text.DecimalFormat;
 
 /**
- * @description base class
+ * base class
  */
 public class Pricing {
     final double Fee = 5.00; // hard coded value for flat rate pitch cost per night
 
     /**
-     * @description class constructor
+     * class constructor
      */
     public Pricing() {
 
@@ -38,15 +39,18 @@ public class Pricing {
      * @return a total reservation fee of type double
      */
     public double Total(Double fee, int discount, int days) {
+        DecimalFormat doubleFormat = new DecimalFormat("##.##");
         double result = 0.00;
         double lessDiscount = 0.00;
         lessDiscount = (fee * days) / 100.00;
-        return result = (fee * days) - lessDiscount;
+        result = (fee * days) - lessDiscount;
+        doubleFormat.format(result);
+        return result;
     }
 
     /**
      * @param StartDate accepts string (format yyy-MM-dd) as a reservation start date
-     * @return an int dscount value for a reservation
+     * @return an int discount value for a reservation
      */
     public int Discount(String StartDate) {
         int discount = 0;
