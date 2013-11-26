@@ -12,6 +12,10 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Class constructor
+ * pitch lists hold collections of type booking
+ */
 public class PitchList extends GenericList<Pitch> {
     protected List<Pitch> items;
 

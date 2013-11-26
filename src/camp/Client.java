@@ -6,6 +6,10 @@
  */
 package camp;
 
+/**
+ * class definitions
+ * client extends items and holds collections of customer information
+ */
 public class Client extends Items {
 
     private String firstName;

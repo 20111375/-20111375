@@ -19,6 +19,7 @@ import java.util.Calendar;
 
 /**
  * class definition
+ * gui class for booking summary
  */
 public class DialogBookingSummary extends JDialog {
     public JTextArea BookingForeName;

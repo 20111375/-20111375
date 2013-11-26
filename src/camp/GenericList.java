@@ -9,6 +9,11 @@ package camp;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * class definition
+ *
+ * @param <E> a generic list collection
+ */
 public class GenericList<E> {
     protected List<E> items;
 

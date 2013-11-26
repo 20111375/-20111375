@@ -240,7 +240,7 @@
                   <preferredSize width="400" height="20"/>
                 </properties>
               </component>
-              <component id="ef44e" class="javax.swing.JFormattedTextField" binding="CarReg">
+              <component id="ef44e" class="javax.swing.JFormattedTextField" binding="CarReg" custom-create="true">
                 <constraints>
                   <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
                     <preferred-size width="665" height="20"/>

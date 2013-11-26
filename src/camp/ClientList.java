@@ -13,11 +13,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * class definition extends generic list
  * collection of customers, extending the generic class GenericList
  */
 public class ClientList extends GenericList<Client> {
     protected List<Client> items;
 
+    /**
+     * class constructor
+     *
+     * @return a collection of type items
+     * @throws Exception
+     */
     public List<Client> Items() throws Exception {
         if (items == null) {
             items = new ArrayList<Client>();

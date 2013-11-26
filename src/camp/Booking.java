@@ -9,7 +9,8 @@ package camp;
 import db.connection;
 
 /**
- * booking object which extends a generic items list
+ * class definition
+ * Booking extends items collections hold information about a booking
  */
 public class Booking extends Items {
     private int clientID;
@@ -155,6 +156,9 @@ public class Booking extends Items {
 
     }
 
+    /**
+     *
+     */
     public void deleteBooking() {
         String SQL = "delete from booking\n" +
                 "where customerid = " + this.getClientID() + " and pitchid = " + this.getPitchID() + " and fromdate = '" + this.getFromDate() + "' and todate = '" + this.getToDate() + "'";

@@ -1,5 +1,12 @@
 package gui;
 
+/**
+ * Created with IntelliJ IDEA.
+ * User: 20111375
+ * Date: 23/11/2013
+ * Time: 08:39
+ */
+
 import javax.swing.*;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
@@ -7,10 +14,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created with IntelliJ IDEA.
- * User: 20111375
- * Date: 23/11/2013
- * Time: 08:39
+ * class definition
+ * provides methods for event listening which link
+ * buttons to an index of text field objects
  */
 public class DocListener implements DocumentListener {
     private List<JFormattedTextField> objectList = new ArrayList<JFormattedTextField>();

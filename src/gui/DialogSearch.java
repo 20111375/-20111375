@@ -17,6 +17,7 @@ import java.text.ParseException;
 
 /**
  * class definition
+ * gui class for customer searching
  */
 public class DialogSearch extends JDialog {
     private JPanel dialogSearch;
@@ -193,7 +194,7 @@ public class DialogSearch extends JDialog {
     /**
      * @param D accepts an object of type dialog search
      */
-    public void make(DialogSearch D) {
+    public void run(DialogSearch D) {
         D.pack();
         D.setTitle("Find a Customer");
         D.setResizable(false);

@@ -17,6 +17,7 @@ public class connection {
 
     /**
      * class constructor
+     * connection provides methods for database manipulation
      */
     public connection() {
     }
@@ -96,7 +97,7 @@ public class connection {
 
     /**
      * @param SQLString
-     * @return
+     * @return a result set relating to the sql string
      */
     public ResultSet Discount(String SQLString) {
 

@@ -29,6 +29,7 @@ public class Reports extends JDialog {
 
     /**
      * class constructor
+     * gui class for the reports screen
      */
     public Reports() {
         setContentPane(contentPane);
@@ -88,7 +89,7 @@ public class Reports extends JDialog {
     /**
      * initialise called in parent winow
      */
-    public void make() {
+    public void run() {
         Reports dialog = new Reports();
         dialog.pack();
         dialog.setResizable(false);

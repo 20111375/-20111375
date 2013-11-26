@@ -18,6 +18,10 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.util.Properties;
 
+/**
+ * class definition
+ * communication provides methods for printing and email
+ */
 public class Communication {
 
     /**

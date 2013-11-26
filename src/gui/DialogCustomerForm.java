@@ -12,12 +12,15 @@ import camp.ClientList;
 import javax.swing.*;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
+import javax.swing.text.MaskFormatter;
 import java.awt.event.*;
+import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * class definition
+ * gui class for customer editing and creation
  */
 public class DialogCustomerForm extends JDialog {
     private JPanel contentPane;
@@ -373,6 +376,14 @@ public class DialogCustomerForm extends JDialog {
             }
         }
         CustomerList = new JList(CustModel);
+
+        MaskFormatter RegFormat = null;
+        try {
+            RegFormat = new MaskFormatter("AAAA" + " " + "AAA");
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        CarReg = new JFormattedTextField(RegFormat);
     }
 
     /**

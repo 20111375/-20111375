@@ -12,13 +12,13 @@ import java.awt.event.*;
 
 /**
  * class definition
+ * gui class for emailing
  */
 public class DialogEmailForm extends JDialog {
     private JPanel contentPane;
     private JButton buttonOK;
     private JButton buttonCancel;
     private JTextArea emailAddress;
-    private JCheckBox copyToOfficeCheckBox;
 
     /**
      * @param windowAncestor class constructor
@@ -45,7 +45,7 @@ public class DialogEmailForm extends JDialog {
             }
         });
 
-// call onCancel() when cross is clicked
+        // call onCancel() when cross is clicked
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
         addWindowListener(new WindowAdapter() {
             public void windowClosing(WindowEvent e) {
@@ -53,21 +53,12 @@ public class DialogEmailForm extends JDialog {
             }
         });
 
-// call onCancel() on ESCAPE
+        // call onCancel() on ESCAPE
         contentPane.registerKeyboardAction(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 onCancel();
             }
         }, KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
-        copyToOfficeCheckBox.addActionListener(new ActionListener() {
-            /**
-             * Invoked when an action occurs.
-             */
-            @Override
-            public void actionPerformed(ActionEvent e) {
-
-            }
-        });
     }
 
     /**

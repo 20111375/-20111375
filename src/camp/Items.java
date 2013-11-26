@@ -6,6 +6,10 @@
  */
 package camp;
 
+/**
+ * class definition
+ * items is a generic collections object
+ */
 public class Items {
     /**
      *
@@ -16,7 +20,7 @@ public class Items {
 
     /**
      * @param name
-     * @return
+     * @return null
      */
     public Items Find(Items name) {
 

@@ -25,6 +25,7 @@ import java.util.List;
 
 /**
  * class definition
+ * gui class for booking a pitch
  */
 public class FormBooking extends JDialog {
     private JComboBox PitchType;
@@ -150,7 +151,7 @@ public class FormBooking extends JDialog {
              */
             @Override
             public void actionPerformed(ActionEvent e) {
-                getSearch().make(search);
+                getSearch().run(search);
                 setBookingClient(search.getPickedClient());
                 if (BookingClient != null) {
                     CustomerDetails.setText("");

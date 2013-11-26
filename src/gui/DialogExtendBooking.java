@@ -18,6 +18,7 @@ import java.util.List;
 
 /**
  * class definition
+ * gui class for extending a booking
  */
 public class DialogExtendBooking extends JDialog {
     public Client myBooking = new Client();

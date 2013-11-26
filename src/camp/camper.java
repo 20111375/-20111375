@@ -10,6 +10,10 @@ import gui.MenuCampsite;
 
 import java.awt.*;
 
+/**
+ * class definition
+ * camper is the root on the project with the only main method
+ */
 public class camper {
     /**
      * @param args

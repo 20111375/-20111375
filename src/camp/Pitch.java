@@ -8,7 +8,8 @@
 package camp;
 
 /**
- *
+ * class definition
+ * pitch extends items and holds collections of pitch information
  */
 public class Pitch extends Items {
     private String pitchName;
@@ -18,21 +19,27 @@ public class Pitch extends Items {
     private int PitchID;
     private double total;
 
+    //three over loaded constructors
+
     /**
-     *
+     * class constructor
      */
     public Pitch() {
 
     }
 
     /**
-     * @param pitchName
+     * class constructor
+     *
+     * @param pitchName accepts pitch name of type string
      */
     public Pitch(String pitchName) {
         this.pitchName = pitchName;
     }
 
     /**
+     * class constructor
+     *
      * @param pitchName
      * @param pitchType
      * @param typeID

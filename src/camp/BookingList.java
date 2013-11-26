@@ -12,6 +12,10 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Class constructor
+ * booking lists hold collections of type booking
+ */
 public class BookingList extends GenericList<Booking> {
     protected List<Booking> items;// define a list object to pass items objects into
 

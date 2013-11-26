@@ -12,7 +12,9 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 /**
- * datemaker class
+ * class constructor
+ * date maker provides a method to covert a string
+ * to a calendar date
  */
 public class DateMaker {
     private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");

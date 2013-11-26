@@ -7,6 +7,7 @@
 package gui;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -20,6 +21,7 @@ public class MenuCampsite {
 
     /**
      * class constructor
+     * gui class for the initial menu screen
      */
     public MenuCampsite() {
 
@@ -34,7 +36,15 @@ public class MenuCampsite {
              */
             @Override
             public void actionPerformed(ActionEvent e) {
-                new FormBooking().run();
+                EventQueue.invokeLater(new Runnable() {
+                    public void run() {
+                        try {
+                            new FormBooking().run();
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        }
+                    }
+                });
             }
         });
 
@@ -47,7 +57,15 @@ public class MenuCampsite {
              */
             @Override
             public void actionPerformed(ActionEvent e) {
-                new Reports().make();
+                EventQueue.invokeLater(new Runnable() {
+                    public void run() {
+                        try {
+                            new Reports().run();
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        }
+                    }
+                });
             }
         });
     }

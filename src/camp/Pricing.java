@@ -13,7 +13,8 @@ import java.sql.SQLException;
 import java.text.DecimalFormat;
 
 /**
- * base class
+ * class definition
+ * pricing provides methods for calculating cost
  */
 public class Pricing {
     final double Fee = 5.00; // hard coded value for flat rate pitch cost per night

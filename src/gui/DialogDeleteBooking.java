@@ -20,6 +20,7 @@ import java.util.List;
 
 /**
  * class definition
+ * gui class for deleting a booking
  */
 public class DialogDeleteBooking extends JDialog {
     public Client myBooking = new Client();
