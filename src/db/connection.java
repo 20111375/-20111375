@@ -10,6 +10,7 @@ import java.sql.*;
 
 /**
  * class definition
+ * connection provides methods for database manipulation
  */
 public class connection {
     protected ResultSet resultset = null;
@@ -17,7 +18,6 @@ public class connection {
 
     /**
      * class constructor
-     * connection provides methods for database manipulation
      */
     public connection() {
     }

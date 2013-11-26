@@ -13,6 +13,7 @@ import java.awt.event.ActionListener;
 
 /**
  * class definition
+ * gui class for the initial menu screen
  */
 public class MenuCampsite {
     private JPanel MainPanel;
@@ -21,7 +22,6 @@ public class MenuCampsite {
 
     /**
      * class constructor
-     * gui class for the initial menu screen
      */
     public MenuCampsite() {
 

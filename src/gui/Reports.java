@@ -16,6 +16,7 @@ import java.awt.event.*;
 
 /**
  * class definition
+ * gui class for the reports screen
  */
 public class Reports extends JDialog {
     private JPanel contentPane;
@@ -29,7 +30,6 @@ public class Reports extends JDialog {
 
     /**
      * class constructor
-     * gui class for the reports screen
      */
     public Reports() {
         setContentPane(contentPane);
