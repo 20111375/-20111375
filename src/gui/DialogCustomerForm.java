@@ -16,6 +16,9 @@ import java.awt.event.*;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ *
+ */
 public class DialogCustomerForm extends JDialog {
     private JPanel contentPane;
     private JButton buttonOK;
@@ -43,6 +46,9 @@ public class DialogCustomerForm extends JDialog {
     private List<JFormattedTextField> fieldList = new ArrayList<JFormattedTextField>();
     private DocListener docListener = new DocListener();
 
+    /**
+     *
+     */
     public DialogCustomerForm() {
         setContentPane(contentPane);
         setModal(true);
@@ -58,13 +64,17 @@ public class DialogCustomerForm extends JDialog {
         for (JFormattedTextField F : fieldList) {
             F.getDocument().addDocumentListener(docListener);
         }
-
+        /**
+         *
+         */
         buttonOK.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 onOK();
             }
         });
-
+        /**
+         *
+         */
         buttonCancel.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 onCancel();
@@ -130,6 +140,10 @@ public class DialogCustomerForm extends JDialog {
                 }
             }
         });
+
+        /**
+         *
+         */
         CustomerList.addListSelectionListener(new ListSelectionListener() {
             /**
              * Called whenever the value of the selection changes.
@@ -142,6 +156,9 @@ public class DialogCustomerForm extends JDialog {
             }
         });
 
+        /**
+         *
+         */
         SaveButton.addActionListener(new ActionListener() {
             /**
              * Invoked when an action occurs.
@@ -168,6 +185,9 @@ public class DialogCustomerForm extends JDialog {
             }
         });
 
+        /**
+         *
+         */
         AddNewButton.addActionListener(new ActionListener() {
             /**
              * Invoked when an action occurs.
@@ -196,6 +216,10 @@ public class DialogCustomerForm extends JDialog {
 
             }
         });
+
+        /**
+         *
+         */
         ResetButton.addActionListener(new ActionListener() {
             /**
              * Invoked when an action occurs.
@@ -212,6 +236,9 @@ public class DialogCustomerForm extends JDialog {
         });
     }
 
+    /**
+     *
+     */
     public static void make() {
         DialogCustomerForm dialog = new DialogCustomerForm();
         dialog.setTitle("Customer details");
@@ -221,72 +248,121 @@ public class DialogCustomerForm extends JDialog {
         dialog.setResizable(false);
     }
 
+    /**
+     * @return
+     */
     public JFormattedTextField getPostCode() {
         return PostCode;
     }
 
+    /**
+     * @param postCode
+     */
     public void setPostCode(JFormattedTextField postCode) {
         PostCode = postCode;
     }
 
+    /**
+     * @return
+     */
     public JFormattedTextField getForename() {
         return Forename;
     }
 
+    /**
+     * @param forename
+     */
     public void setForename(JFormattedTextField forename) {
         Forename = forename;
     }
 
+    /**
+     * @return
+     */
     public JFormattedTextField getSurname() {
         return Surname;
     }
 
+    /**
+     * @param surname
+     */
     public void setSurname(JFormattedTextField surname) {
         Surname = surname;
     }
 
+    /**
+     * @return
+     */
     public JFormattedTextField getCustomerID() {
         return CustomerID;
     }
 
+    /**
+     * @param customerID
+     */
     public void setCustomerID(JFormattedTextField customerID) {
         CustomerID = customerID;
     }
 
+    /**
+     * @return
+     */
     public JFormattedTextField getCarReg() {
         return CarReg;
     }
 
+    /**
+     * @param carReg
+     */
     public void setCarReg(JFormattedTextField carReg) {
         CarReg = carReg;
     }
 
+    /**
+     * @return
+     */
     public JFormattedTextField getAddress() {
         return Address;
     }
 
+    /**
+     * @param address
+     */
     public void setAddress(JFormattedTextField address) {
         Address = address;
     }
 
+    /**
+     * @return
+     */
     public JFormattedTextField getCounty() {
         return County;
     }
 
+    /**
+     * @param county
+     */
     public void setCounty(JFormattedTextField county) {
         County = county;
     }
 
+    /**
+     *
+     */
     private void onOK() {
-// add your code here
         dispose();
     }
 
+    /**
+     *
+     */
     private void onCancel() {
-// add your code here if necessary
         dispose();
     }
 
+    /**
+     *
+     */
     private void createUIComponents() {
         DefaultListModel CustModel = new DefaultListModel();
         for (Client M : ClientList.customerList()) {
@@ -299,6 +375,9 @@ public class DialogCustomerForm extends JDialog {
         CustomerList = new JList(CustModel);
     }
 
+    /**
+     *
+     */
     private void ClearText() {
         CustomerID.setText(null);
         Forename.setText(null);
@@ -309,6 +388,9 @@ public class DialogCustomerForm extends JDialog {
         CarReg.setText(null);
     }
 
+    /**
+     *
+     */
     private void textList() {
         DefaultListModel CustModel = new DefaultListModel();
         for (Client M : ClientList.customerList()) {
@@ -321,5 +403,4 @@ public class DialogCustomerForm extends JDialog {
         CustomerList.setModel(CustModel);
         CustomerList.repaint();
     }
-
 }

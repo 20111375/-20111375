@@ -10,41 +10,35 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
+/**
+ * @description class
+ */
 public class DialogEmailForm extends JDialog {
     private JPanel contentPane;
     private JButton buttonOK;
     private JButton buttonCancel;
-
-    public JTextArea getEmailAddress() {
-        return emailAddress;
-    }
-
-    public void setEmailAddress(JTextArea emailAddress) {
-        this.emailAddress = emailAddress;
-    }
-
-    public String getEmail() {
-        if (getEmailAddress().getText().length() != 0) {
-            String address = getEmailAddress().getText();
-            return address;
-        }
-        return null;
-    }
-
     private JTextArea emailAddress;
     private JCheckBox copyToOfficeCheckBox;
 
+    /**
+     * @param windowAncestor
+     */
     public DialogEmailForm(Window windowAncestor) {
         setContentPane(contentPane);
         setModal(true);
         getRootPane().setDefaultButton(buttonOK);
 
+        /**
+         *
+         */
         buttonOK.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 onOK();
             }
         });
-
+        /**
+         *
+         */
         buttonCancel.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 onCancel();
@@ -76,20 +70,52 @@ public class DialogEmailForm extends JDialog {
         });
     }
 
-    private void onOK() {
-// add your code here
-        dispose();
-    }
-
-    private void onCancel() {
-// add your code here if necessary
-        dispose();
-    }
-
+    /**
+     * @param D
+     */
     public static void make(DialogEmailForm D) {
         D.pack();
         D.setTitle("email a receipt to the customer");
         D.setResizable(false);
         D.setVisible(true);
+    }
+
+    /**
+     * @return
+     */
+    public JTextArea getEmailAddress() {
+        return emailAddress;
+    }
+
+    /**
+     * @param emailAddress
+     */
+    public void setEmailAddress(JTextArea emailAddress) {
+        this.emailAddress = emailAddress;
+    }
+
+    /**
+     * @return
+     */
+    public String getEmail() {
+        if (getEmailAddress().getText().length() != 0) {
+            String address = getEmailAddress().getText();
+            return address;
+        }
+        return null;
+    }
+
+    /**
+     *
+     */
+    private void onOK() {
+        dispose();
+    }
+
+    /**
+     *
+     */
+    private void onCancel() {
+        dispose();
     }
 }

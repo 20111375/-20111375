@@ -15,7 +15,9 @@ import java.awt.*;
 import java.awt.event.*;
 import java.text.ParseException;
 
-
+/**
+ * @description class definition
+ */
 public class DialogSearch extends JDialog {
     private JPanel dialogSearch;
     private JButton buttonOK;
@@ -27,35 +29,27 @@ public class DialogSearch extends JDialog {
     private JFormattedTextField CarReg;
     private JButton searchButton;
 
-    public String getPickCustomer() {
-        if (!SearchResultList.isSelectionEmpty()) {
-            return SearchResultList.getSelectedValue().toString();
-        }
-        return null;
-    }
-
-    public Client getPickedClient() {
-        if (!SearchResultList.isSelectionEmpty()) {
-            String[] tmp = SearchResultList.getSelectedValue().toString().split(":");
-            for (Client M : ClientList.customerList()) {
-                if (tmp[0].equals(M.getClientID().toString())) {
-                    return M;
-                }
-            }
-        }
-        return null;
-    }
-
+    /**
+     * @param windowAncestor
+     * @description class constructor
+     */
     public DialogSearch(Window windowAncestor) {
         setContentPane(dialogSearch);
         setModal(true);
         getRootPane().setDefaultButton(buttonOK);
+
+        /**
+         *@description button listener
+         */
         buttonOK.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 onOK();
             }
         });
 
+        /**
+         *@description button listener
+         */
         buttonCancel.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 onCancel();
@@ -77,6 +71,10 @@ public class DialogSearch extends JDialog {
             }
         }, KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
 
+        /**
+         *@description search button listener
+         * repopulates results list after a selection is made
+         */
         searchButton.addActionListener(new ActionListener() {
             /**
              * Invoked when an action occurs.
@@ -115,6 +113,9 @@ public class DialogSearch extends JDialog {
             }
         });
 
+        /**
+         *@description check box listener
+         */
         carRegRadioButton.addActionListener(new ActionListener() {
             /**
              * Invoked when an action occurs.
@@ -131,6 +132,9 @@ public class DialogSearch extends JDialog {
             }
         });
 
+        /**
+         *@description check box listener
+         */
         customerIDRadioButton.addActionListener(new ActionListener() {
             /**
              * Invoked when an action occurs.
@@ -148,14 +152,48 @@ public class DialogSearch extends JDialog {
         });
     }
 
+    /**
+     * @return gets a select customer from a list
+     */
+    public String getPickCustomer() {
+        if (!SearchResultList.isSelectionEmpty()) {
+            return SearchResultList.getSelectedValue().toString();
+        }
+        return null;
+    }
+
+    /**
+     * @return gets a client picked from a list of type client
+     */
+    public Client getPickedClient() {
+        if (!SearchResultList.isSelectionEmpty()) {
+            String[] tmp = SearchResultList.getSelectedValue().toString().split(":");
+            for (Client M : ClientList.customerList()) {
+                if (tmp[0].equals(M.getClientID().toString())) {
+                    return M;
+                }
+            }
+        }
+        return null;
+    }
+
+    /**
+     * @description destroy window
+     */
     private void onOK() {
         dispose();
     }
 
+    /**
+     * @description destroy window
+     */
     private void onCancel() {
         dispose();
     }
 
+    /**
+     * @param D accepts an object of type dialog search
+     */
     public void make(DialogSearch D) {
         D.pack();
         D.setTitle("Find a Customer");
@@ -163,18 +201,23 @@ public class DialogSearch extends JDialog {
         D.setVisible(true);
     }
 
+    /**
+     * @description initilise customer ui components
+     */
     private void createUIComponents() {
         MaskFormatter CustomerIDFormat = null;
         MaskFormatter RegIDFormat = null;
+        //setup formatter's
         try {
             CustomerIDFormat = new MaskFormatter("#######");
             RegIDFormat = new MaskFormatter("AAAA" + " " + "AAA");
         } catch (ParseException e) {
             e.printStackTrace();
         }
+        //attach formatter's
         CustomerID = new JFormattedTextField(CustomerIDFormat);
         CarReg = new JFormattedTextField(RegIDFormat);
-
+        //populate list model
         DefaultListModel CustModel = new DefaultListModel();
         for (Client M : ClientList.customerList()) {
             if (M.getDelete() == true) {
@@ -185,5 +228,4 @@ public class DialogSearch extends JDialog {
         }
         SearchResultList = new JList(CustModel);
     }
-
 }

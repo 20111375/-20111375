@@ -16,6 +16,9 @@ import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @description class definition
+ */
 public class DialogExtendBooking extends JDialog {
     public Client myBooking = new Client();
     public Booking extendThis = new Booking();
@@ -36,11 +39,10 @@ public class DialogExtendBooking extends JDialog {
     private DocListener docListener = new DocListener();
     private List<Pitch> pitches = null;
 
-    private String returnItem(String item, int at) {
-        String[] tmp = item.split(" ");
-        return tmp[at];
-    }
-
+    /**
+     * @param windowAncestor
+     * @description class constructor
+     */
     public DialogExtendBooking(Window windowAncestor) {
         setContentPane(contentPane);
         setModal(true);
@@ -52,9 +54,12 @@ public class DialogExtendBooking extends JDialog {
             F.getDocument().addDocumentListener(docListener);
         }
 
-
+        /**
+         *@description button listener
+         */
         buttonOK.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
+                //
                 extendThis.setClientID(Integer.parseInt(returnItem(CustomerBookingsList.getSelectedValue().toString(), 0)));
                 extendThis.setPitchID(Integer.parseInt(returnItem(CustomerBookingsList.getSelectedValue().toString(), 1)));
                 extendThis.setFromDate(returnItem(CustomerBookingsList.getSelectedValue().toString(), 3));
@@ -63,10 +68,13 @@ public class DialogExtendBooking extends JDialog {
                 double total = price.Total(price.getFee(), price.Discount(extendThis.getFromDate()), extendByDays.getSelectedIndex());
                 extendThis.setTotal(total);
                 extendThis.insertNewBooking();
+
                 onOK();
             }
         });
-
+        /**
+         *@description button listener
+         */
         buttonCancel.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 onCancel();
@@ -88,13 +96,16 @@ public class DialogExtendBooking extends JDialog {
             }
         }, KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
 
+        /**
+         *@description button listener
+         */
         submitButton.addActionListener(new ActionListener() {
             /**
              * Invoked when an action occurs.
              */
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                //constructor a booking list object and populate a list model
                 BookingList check = new BookingList();
                 try {
                     check.Items(Integer.parseInt(Customer.getText()));
@@ -116,7 +127,9 @@ public class DialogExtendBooking extends JDialog {
             }
         });
 
-
+        /**
+         *@description button listener
+         */
         checkAvailabilityButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -142,40 +155,75 @@ public class DialogExtendBooking extends JDialog {
         });
     }
 
+    /**
+     * @param item space delimited string
+     * @param at   index position
+     * @return string array item at index
+     */
+    private String returnItem(String item, int at) {
+        String[] tmp = item.split(" ");
+        return tmp[at];
+    }
+
+    /**
+     * @return gets car reg text area field
+     */
     public JTextArea getCarReg() {
         return CarReg;
     }
 
+    /**
+     * @param carReg sets car reg text area field
+     */
     public void setCarReg(JTextArea carReg) {
         CarReg = carReg;
     }
 
+    /**
+     * @return gets ID text area field
+     */
     public JTextArea getID() {
         return ID;
     }
 
+    /**
+     * @param ID sets ID text area field
+     */
     public void setID(JTextArea ID) {
         this.ID = ID;
     }
 
+    /**
+     * @return gets customer text area field
+     */
     public JTextField getCustomer() {
         return Customer;
     }
 
+    /**
+     * @param customer sets customer text area field
+     */
     public void setCustomer(String customer) {
         Customer.setText(customer);
     }
 
+    /**
+     * @description destroys window
+     */
     private void onOK() {
-// add your code here
         dispose();
     }
 
+    /**
+     * @description destroys window
+     */
     private void onCancel() {
-// add your code here if necessary
         dispose();
     }
 
+    /**
+     * @param D accepts type DialogExtendBooking
+     */
     public void make(DialogExtendBooking D) {
         D.pack();
         D.setTitle("Extend a booking");
@@ -184,6 +232,9 @@ public class DialogExtendBooking extends JDialog {
         D.setLocationRelativeTo(null);
     }
 
+    /**
+     * @description custom ui initiliser
+     */
     private void createUIComponents() {
         MaskFormatter BookingIDFormat = null;
         try {

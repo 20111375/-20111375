@@ -10,24 +10,38 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+/**
+ * @description class definition
+ */
 public class MenuCampsite {
     private JPanel MainPanel;
     private JButton bookingsButton;
-    private JButton reportssButton;
+    private JButton reportsButton;
 
+    /**
+     * @description class constructor
+     */
     public MenuCampsite() {
+
+        /**
+         *@description book event listener
+         */
         bookingsButton.addActionListener(new ActionListener() {
             /**
              * Invoked when an action occurs.
              *
-             * @param e
+             * @param e action event
              */
             @Override
             public void actionPerformed(ActionEvent e) {
                 new FormBooking().run();
             }
         });
-        reportssButton.addActionListener(new ActionListener() {
+
+        /**
+         *@description book event listener
+         */
+        reportsButton.addActionListener(new ActionListener() {
             /**
              * Invoked when an action occurs.
              */
@@ -38,6 +52,9 @@ public class MenuCampsite {
         });
     }
 
+    /**
+     * @description initilise in the parent window
+     */
     public void run() {
         JFrame frame = new JFrame("Campsite System");
         frame.setResizable(false);

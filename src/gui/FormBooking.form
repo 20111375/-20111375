@@ -219,8 +219,8 @@
                       </grid>
                     </constraints>
                     <properties>
-                      <label value="Add new customer"/>
-                      <text value="Add new customer"/>
+                      <label value="Add/Edit customer"/>
+                      <text value="Add/Edit customer"/>
                     </properties>
                   </component>
                 </children>
