@@ -11,7 +11,7 @@ import java.awt.*;
 import java.awt.event.*;
 
 /**
- * @description class
+ * @description class definition
  */
 public class DialogEmailForm extends JDialog {
     private JPanel contentPane;
@@ -22,6 +22,7 @@ public class DialogEmailForm extends JDialog {
 
     /**
      * @param windowAncestor
+     * @description class constructor
      */
     public DialogEmailForm(Window windowAncestor) {
         setContentPane(contentPane);
@@ -29,7 +30,7 @@ public class DialogEmailForm extends JDialog {
         getRootPane().setDefaultButton(buttonOK);
 
         /**
-         *
+         *@description button listener
          */
         buttonOK.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -37,7 +38,7 @@ public class DialogEmailForm extends JDialog {
             }
         });
         /**
-         *
+         *@description button listener
          */
         buttonCancel.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -71,7 +72,7 @@ public class DialogEmailForm extends JDialog {
     }
 
     /**
-     * @param D
+     * @param D initialises a instance of type DialogEmailForm
      */
     public static void make(DialogEmailForm D) {
         D.pack();
@@ -81,21 +82,21 @@ public class DialogEmailForm extends JDialog {
     }
 
     /**
-     * @return
+     * @return gets a text area which represents an email address
      */
     public JTextArea getEmailAddress() {
         return emailAddress;
     }
 
     /**
-     * @param emailAddress
+     * @param emailAddress sets a string value representing an email address
      */
     public void setEmailAddress(JTextArea emailAddress) {
         this.emailAddress = emailAddress;
     }
 
     /**
-     * @return
+     * @return gets a string value representing an email address
      */
     public String getEmail() {
         if (getEmailAddress().getText().length() != 0) {
@@ -106,14 +107,14 @@ public class DialogEmailForm extends JDialog {
     }
 
     /**
-     *
+     * @description destroy window
      */
     private void onOK() {
         dispose();
     }
 
     /**
-     *
+     * @description destroy window
      */
     private void onCancel() {
         dispose();

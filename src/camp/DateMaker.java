@@ -1,9 +1,3 @@
-package camp;
-
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-
 /**
  * Created with IntelliJ IDEA.
  * User: 20111375
@@ -11,6 +5,11 @@ import java.util.Calendar;
  * Time: 09:51
  * Project: OOP Campsite
  */
+package camp;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 
 /**
  * @description datemaker class

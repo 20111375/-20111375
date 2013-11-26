@@ -81,7 +81,7 @@ public class DialogBookingSummary extends JDialog {
             }
         });
 
-// call onCancel() when cross is clicked
+        // call onCancel() when cross is clicked
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
         addWindowListener(new WindowAdapter() {
             public void windowClosing(WindowEvent e) {
@@ -89,7 +89,7 @@ public class DialogBookingSummary extends JDialog {
             }
         });
 
-// call onCancel() on ESCAPE
+        // call onCancel() on ESCAPE
         BookingSummary.registerKeyboardAction(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 onCancel();
@@ -97,7 +97,7 @@ public class DialogBookingSummary extends JDialog {
         }, KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
 
         /**
-         *
+         *@description combo box listener
          */
         PrintIt.addActionListener(new ActionListener() {
             /**
@@ -108,8 +108,9 @@ public class DialogBookingSummary extends JDialog {
             public void actionPerformed(ActionEvent e) {
             }
         });
+
         /**
-         *
+         *@description combo box listener
          */
         email.addActionListener(new ActionListener() {
             /**
@@ -117,16 +118,14 @@ public class DialogBookingSummary extends JDialog {
              * @param e
              */
             public void actionPerformed(ActionEvent e) {
-                /**
-                 *
-                 */
                 if (email.isSelected()) {
                     getEmailConfirm().make(emailConfirm);
                 }
             }
         });
+
         /**
-         *
+         *@description combo box listener
          */
         paidCheckBox.addActionListener(new ActionListener() {
             /**
@@ -142,187 +141,190 @@ public class DialogBookingSummary extends JDialog {
     }
 
     /**
-     * @return
+     * @return gets an email confirmation on type dialog email form
      */
     public DialogEmailForm getEmailConfirm() {
         return emailConfirm;
     }
 
     /**
-     * @return
+     * @return gets a booking forename of type text area
      */
     public JTextArea getBookingForeName() {
         return BookingForeName;
     }
 
     /**
-     * @param bookingForeName
+     * @param bookingForeName sets a booking forename of type text area
      */
     public void setBookingForeName(String bookingForeName) {
         BookingForeName.append(bookingForeName);
     }
 
     /**
-     * @return
+     * @return gets a booking surname of type text area
      */
     public JTextArea getBookingSurname() {
         return BookingSurname;
     }
 
     /**
-     * @param bookingSurname
+     * @param bookingSurname sets a booking surname of type string
      */
     public void setBookingSurname(String bookingSurname) {
         BookingSurname.setText(bookingSurname);
     }
 
     /**
-     * @return
+     * @return gets a booking customer id of type text area
      */
     public JTextArea getBookingCustomerID() {
         return BookingCustomerID;
     }
 
     /**
-     * @param bookingCustomerID
+     * @param bookingCustomerID sets a booking customer id of type int
      */
     public void setBookingCustomerID(Integer bookingCustomerID) {
         BookingCustomerID.setText(bookingCustomerID.toString());
     }
 
     /**
-     * @return
+     * @return gets a booking car reg of type text area
      */
     public JTextArea getBookingCarReg() {
         return BookingCarReg;
     }
 
     /**
-     * @param bookingCarReg
+     * @param bookingCarReg sets a booking car reg of type string
      */
     public void setBookingCarReg(String bookingCarReg) {
         BookingCarReg.setText(bookingCarReg);
     }
 
     /**
-     * @param bookingPitchID
+     * @param bookingPitchID sets a booking pitch id of type int
      */
     private void setBookingPitchID(int bookingPitchID) {
         BookingPitchID = bookingPitchID;
     }
 
     /**
-     * @return
+     * @return gets a booking county of type text area
      */
     public JTextArea getBookingCounty() {
         return BookingCounty;
     }
 
     /**
-     * @param bookingCounty
+     * @param bookingCounty sets a booking county of type text area
      */
     public void setBookingCounty(String bookingCounty) {
         BookingCounty.setText(bookingCounty);
     }
 
     /**
-     * @return
+     * @return gets a booking post code of type text area
      */
     public JTextArea getBookingPostCode() {
         return BookingPostCode;
     }
 
     /**
-     * @param bookingPostCode
+     * @param bookingPostCode sets a booking post code of type text area
      */
     public void setBookingPostCode(String bookingPostCode) {
         BookingPostCode.setText(bookingPostCode);
     }
 
+    /**
+     * @return gets a booking pitch name of type text area
+     */
     public JTextArea getBookingPitchName() {
         return BookingPitchName;
     }
 
     /**
-     * @param bookingPitchName
+     * @param bookingPitchName sets a booking forename of type string
      */
     public void setBookingPitchName(String bookingPitchName) {
         BookingPitchName.setText(bookingPitchName);
     }
 
     /**
-     * @return
+     * @return gets a booking pitch type of type text area
      */
     public JTextArea getBookingPitchType() {
         return BookingPitchType;
     }
 
     /**
-     * @param bookingPitchType
+     * @param bookingPitchType sets a booking pitch type of type integer
      */
     public void setBookingPitchType(Integer bookingPitchType) {
         BookingPitchType.setText(bookingPitchType.toString());
     }
 
     /**
-     * @return
+     * @return gets a booking start date of type text area
      */
     public JTextArea getBookingStartDate() {
         return BookingStartDate;
     }
 
     /**
-     * @param bookingStartDate
+     * @param bookingStartDate sets a booking start date of type string
      */
     public void setBookingStartDate(String bookingStartDate) {
         BookingStartDate.setText(bookingStartDate);
     }
 
     /**
-     * @return
+     * @return gets a booking end date of type text area
      */
     public JTextArea getBookingEndDate() {
         return BookingEndDate;
     }
 
     /**
-     * @param bookingEndDate
+     * @param bookingEndDate sets a booking end date of type string
      */
     public void setBookingEndDate(String bookingEndDate) {
         BookingEndDate.setText(bookingEndDate);
     }
 
     /**
-     * @return
+     * @return gets a booking total of type text area
      */
     public JTextArea getBookingCostTotal() {
         return BookingCostTotal;
     }
 
     /**
-     * @param bookingCostTotal
+     * @param bookingCostTotal sets a booking forename of type double
      */
     public void setBookingCostTotal(Double bookingCostTotal) {
         BookingCostTotal.setText(bookingCostTotal.toString());
     }
 
     /**
-     * @return
+     * @return gets a booking address of type text area
      */
     public JTextArea getBookingAddress() {
         return BookingAddress;
     }
 
     /**
-     * @param bookingAddress
+     * @param bookingAddress sets a booking address of type string
      */
     public void setBookingAddress(String bookingAddress) {
         BookingAddress.setText(bookingAddress);
     }
 
     /**
-     * @param Start
-     * @return
+     * @param Start date as type string (format yy-MM-dd)
+     * @return date as type date format
      */
     public String makeDate(String Start) {
         Calendar calendar = Calendar.getInstance();
@@ -335,7 +337,7 @@ public class DialogBookingSummary extends JDialog {
     }
 
     /**
-     *
+     * @description pass booking details to booking object, insert to db and class this + parent
      */
     private void onOK() {
         submit.setClientID(Integer.valueOf(getBookingCustomerID().getText()));
@@ -347,6 +349,7 @@ public class DialogBookingSummary extends JDialog {
         if (!paidCheckBox.isSelected()) {
             submit.setPaid(false);
         }
+
         submit.insertNewBooking();
         submit.insertNewPayment();
         ClientSummary.setFirstName(getBookingForeName().getText());
@@ -360,17 +363,17 @@ public class DialogBookingSummary extends JDialog {
     }
 
     /**
-     *
+     * @description destroy window
      */
     private void onCancel() {
         dispose();
     }
 
     /**
-     * @param A
-     * @param B
-     * @param start
-     * @param end
+     * @param A     as type client (who is the booking for)
+     * @param B     as type pitch (which pitch is the booking for)
+     * @param start as type string (what is the booking start date)
+     * @param end   as type string (what is the booking end date)
      */
     public void make(Client A, Pitch B, String start, String end) {
         ClientSummary = A;
@@ -380,6 +383,7 @@ public class DialogBookingSummary extends JDialog {
 
         DialogBookingSummary D = new DialogBookingSummary();
         D.pack();
+
         //define the the customer of the booking
         D.setBookingForeName(ClientSummary.getFirstName());
         D.setBookingSurname(ClientSummary.getSecondName());

@@ -17,7 +17,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- *
+ * @description class definition
  */
 public class DialogCustomerForm extends JDialog {
     private JPanel contentPane;
@@ -47,7 +47,7 @@ public class DialogCustomerForm extends JDialog {
     private DocListener docListener = new DocListener();
 
     /**
-     *
+     * @description class constrictor
      */
     public DialogCustomerForm() {
         setContentPane(contentPane);
@@ -65,7 +65,7 @@ public class DialogCustomerForm extends JDialog {
             F.getDocument().addDocumentListener(docListener);
         }
         /**
-         *
+         *@description button listener
          */
         buttonOK.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -73,7 +73,7 @@ public class DialogCustomerForm extends JDialog {
             }
         });
         /**
-         *
+         *@description button listener
          */
         buttonCancel.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -115,7 +115,7 @@ public class DialogCustomerForm extends JDialog {
             }
         });
         /**
-         *
+         *@description button listener
          */
         EditButton.addActionListener(new ActionListener() {
             @Override
@@ -142,7 +142,7 @@ public class DialogCustomerForm extends JDialog {
         });
 
         /**
-         *
+         *@description list listener
          */
         CustomerList.addListSelectionListener(new ListSelectionListener() {
             /**
@@ -157,7 +157,7 @@ public class DialogCustomerForm extends JDialog {
         });
 
         /**
-         *
+         *@description button listener
          */
         SaveButton.addActionListener(new ActionListener() {
             /**
@@ -186,7 +186,7 @@ public class DialogCustomerForm extends JDialog {
         });
 
         /**
-         *
+         *@description button listener
          */
         AddNewButton.addActionListener(new ActionListener() {
             /**
@@ -218,7 +218,7 @@ public class DialogCustomerForm extends JDialog {
         });
 
         /**
-         *
+         *@description button listener
          */
         ResetButton.addActionListener(new ActionListener() {
             /**
@@ -237,7 +237,7 @@ public class DialogCustomerForm extends JDialog {
     }
 
     /**
-     *
+     * @description initilise a window
      */
     public static void make() {
         DialogCustomerForm dialog = new DialogCustomerForm();
@@ -249,119 +249,119 @@ public class DialogCustomerForm extends JDialog {
     }
 
     /**
-     * @return
+     * @return gets a post code formatted text field
      */
     public JFormattedTextField getPostCode() {
         return PostCode;
     }
 
     /**
-     * @param postCode
+     * @param postCode sets a post code formatted text field
      */
     public void setPostCode(JFormattedTextField postCode) {
         PostCode = postCode;
     }
 
     /**
-     * @return
+     * @return gets a forename formatted text field
      */
     public JFormattedTextField getForename() {
         return Forename;
     }
 
     /**
-     * @param forename
+     * @param forename sets a forename formatted text field
      */
     public void setForename(JFormattedTextField forename) {
         Forename = forename;
     }
 
     /**
-     * @return
+     * @return gets a surname formatted text field
      */
     public JFormattedTextField getSurname() {
         return Surname;
     }
 
     /**
-     * @param surname
+     * @param surname sets a surname formatted text field
      */
     public void setSurname(JFormattedTextField surname) {
         Surname = surname;
     }
 
     /**
-     * @return
+     * @return gets a customer ID formatted text field
      */
     public JFormattedTextField getCustomerID() {
         return CustomerID;
     }
 
     /**
-     * @param customerID
+     * @param customerID sets a customer ID formatted text field
      */
     public void setCustomerID(JFormattedTextField customerID) {
         CustomerID = customerID;
     }
 
     /**
-     * @return
+     * @return gets a car registration formatted text field
      */
     public JFormattedTextField getCarReg() {
         return CarReg;
     }
 
     /**
-     * @param carReg
+     * @param carReg sets a car registration formatted text field
      */
     public void setCarReg(JFormattedTextField carReg) {
         CarReg = carReg;
     }
 
     /**
-     * @return
+     * @return gets an address formatted text field
      */
     public JFormattedTextField getAddress() {
         return Address;
     }
 
     /**
-     * @param address
+     * @param address sets an address formatted text field
      */
     public void setAddress(JFormattedTextField address) {
         Address = address;
     }
 
     /**
-     * @return
+     * @return gets an county formatted text field
      */
     public JFormattedTextField getCounty() {
         return County;
     }
 
     /**
-     * @param county
+     * @param county sets a county formatted text field
      */
     public void setCounty(JFormattedTextField county) {
         County = county;
     }
 
     /**
-     *
+     * @description destroys a window
      */
     private void onOK() {
         dispose();
     }
 
     /**
-     *
+     * @description destroys a window
      */
     private void onCancel() {
         dispose();
     }
 
     /**
-     *
+     * @description initilises custom UI components
      */
     private void createUIComponents() {
         DefaultListModel CustModel = new DefaultListModel();
@@ -376,7 +376,7 @@ public class DialogCustomerForm extends JDialog {
     }
 
     /**
-     *
+     * @decription clear all text fields
      */
     private void ClearText() {
         CustomerID.setText(null);
@@ -389,7 +389,7 @@ public class DialogCustomerForm extends JDialog {
     }
 
     /**
-     *
+     * @description produces a customer list model
      */
     private void textList() {
         DefaultListModel CustModel = new DefaultListModel();

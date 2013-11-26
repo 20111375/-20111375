@@ -18,6 +18,9 @@ import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @description class definition
+ */
 public class DialogDeleteBooking extends JDialog {
     public Client myBooking = new Client();
     public Booking deleteThis = new Booking();
@@ -33,11 +36,10 @@ public class DialogDeleteBooking extends JDialog {
     private List<JFormattedTextField> fieldList = new ArrayList<JFormattedTextField>();
     private DocListener docListener = new DocListener();
 
-    private String returnItem(String item, int at) {
-        String[] tmp = item.split(" ");
-        return tmp[at];
-    }
-
+    /**
+     * @param windowAncestor
+     * @description class constructor
+     */
     public DialogDeleteBooking(Window windowAncestor) {
         setContentPane(contentPane);
         setModal(true);
@@ -49,7 +51,9 @@ public class DialogDeleteBooking extends JDialog {
             F.getDocument().addDocumentListener(docListener);
         }
 
-
+        /**
+         *@description button listener
+         */
         buttonOK.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
 
@@ -57,13 +61,16 @@ public class DialogDeleteBooking extends JDialog {
             }
         });
 
+        /**
+         *@description button listener
+         */
         buttonCancel.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 onCancel();
             }
         });
 
-// call onCancel() when cross is clicked
+        // call onCancel() when cross is clicked
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
         addWindowListener(new WindowAdapter() {
             public void windowClosing(WindowEvent e) {
@@ -71,20 +78,22 @@ public class DialogDeleteBooking extends JDialog {
             }
         });
 
-// call onCancel() on ESCAPE
+        // call onCancel() on ESCAPE
         contentPane.registerKeyboardAction(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 onCancel();
             }
         }, KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
 
+        /**
+         *@description button listener
+         */
         submitButton.addActionListener(new ActionListener() {
             /**
              * Invoked when an action occurs.
              */
             @Override
             public void actionPerformed(ActionEvent e) {
-
                 BookingList check = new BookingList();
                 try {
                     check.Items(Integer.parseInt(Customer.getText()));
@@ -105,6 +114,10 @@ public class DialogDeleteBooking extends JDialog {
                 CustomerBookingsList.repaint();
             }
         });
+
+        /**
+         *@description button listener
+         */
         deleteButton.addActionListener(new ActionListener() {
             /**
              * Invoked when an action occurs.
@@ -120,40 +133,77 @@ public class DialogDeleteBooking extends JDialog {
         });
     }
 
+    /**
+     * @param item string type string
+     * @param at   integer index number
+     * @return string array
+     * @description returns a sub string from a string
+     */
+    private String returnItem(String item, int at) {
+        String[] tmp = item.split(" ");
+        return tmp[at];
+    }
+
+    /**
+     * @return gets a car registration text area
+     */
     public JTextArea getCarReg() {
         return CarReg;
     }
 
+    /**
+     * @param carReg sets a car registration text area
+     */
     public void setCarReg(JTextArea carReg) {
         CarReg = carReg;
     }
 
+    /**
+     * @return gets an ID text area
+     */
     public JTextArea getID() {
         return ID;
     }
 
+    /**
+     * @param ID sets an ID text area
+     */
     public void setID(JTextArea ID) {
         this.ID = ID;
     }
 
+    /**
+     * @return gets a customer text field
+     */
     public JTextField getCustomer() {
         return Customer;
     }
 
+    /**
+     * @param customer sets a string value of customer
+     */
     public void setCustomer(String customer) {
         Customer.setText(customer);
     }
 
+    /**
+     * @description destroy the window
+     */
     private void onOK() {
-// add your code here
         dispose();
     }
 
+    /**
+     * @description destroy the window
+     */
     private void onCancel() {
-// add your code here if necessary
         dispose();
     }
 
+    /**
+     * @param D accepts type DialogDeleteBooking
+     * @description initialise an instance of the window
+     */
     public void make(DialogDeleteBooking D) {
         D.pack();
         D.setTitle("Delete a booking");
@@ -162,6 +212,9 @@ public class DialogDeleteBooking extends JDialog {
         D.setLocationRelativeTo(null);
     }
 
+    /**
+     * @description initilise custom ui elements
+     */
     private void createUIComponents() {
         MaskFormatter BookingIDFormat = null;
         try {
