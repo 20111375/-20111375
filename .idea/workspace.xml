@@ -11,14 +11,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51f6022f-23b8-4194-a60c-864ebe07b5ce" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/new.uml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/db.lck" afterPath="$PROJECT_DIR$/database/db.lck" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/derby.log" afterPath="$PROJECT_DIR$/derby.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="camp.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="51f6022f-23b8-4194-a60c-864ebe07b5ce" time="1385549291162" ignored="false" />
+    <file path="/Dummy.txt" changelist="51f6022f-23b8-4194-a60c-864ebe07b5ce" time="1385566408181" ignored="false" />
     <file path="/database" changelist="51f6022f-23b8-4194-a60c-864ebe07b5ce" time="1385379594121" ignored="false" />
     <file path="/a.sql" changelist="51f6022f-23b8-4194-a60c-864ebe07b5ce" time="1385547208843" ignored="false" />
     <file path="/DialogBookingSummary.java" changelist="51f6022f-23b8-4194-a60c-864ebe07b5ce" time="1385545400284" ignored="false" />
@@ -76,7 +73,6 @@
     <sortChildren value="false" />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -113,6 +109,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -260,6 +257,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -280,21 +279,19 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="Project" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="107" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="OverrideImplement.combined" value="true" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="105" />
+    <property name="OverrideImplement.combined" value="true" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="200" />
-    <property name="recentsLimit" value="5" />
-    <property name="MemberChooser.sorted" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="200" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="108" />
@@ -308,21 +305,21 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
-    <property name="MemberChooser.showClasses" value="true" />
     <property name="FullScreen" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
     <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
     <property name="options.lastSelected" value="editor" />
-    <property name="project.structure.side.proportion" value="0.2" />
     <property name="LayoutCode.rearrangeEntriesJava" value="true" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="dynamic.classpath" value="false" />
     <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -554,6 +551,12 @@
       </JSDebuggerConfigurationSettings>
       <method />
     </configuration>
+    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
+      <option name="VM_PARAMETERS" value="" />
+      <option name="USER_CFG_CLASS" />
+      <option name="CONTEXT_PROVIDER" />
+      <method />
+    </configuration>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="ACTIVITY_CLASS" value="" />
@@ -568,12 +571,6 @@
       <option name="NETWORK_SPEED" value="full" />
       <option name="NETWORK_LATENCY" value="none" />
       <option name="CLEAR_LOGCAT" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
-      <option name="VM_PARAMETERS" value="" />
-      <option name="USER_CFG_CLASS" />
-      <option name="CONTEXT_PROVIDER" />
       <method />
     </configuration>
     <list size="1">
@@ -899,7 +896,11 @@
       <created>1385548452182</created>
       <updated>1385548452182</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="fix discount, javadocs and began optimising code">
+      <created>1385550401899</created>
+      <updated>1385550401899</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -948,8 +949,8 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13607258" sideWeight="0.7735849" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2269188" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21474878" sideWeight="0.6782178" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21474878" sideWeight="0.6782178" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Sequence" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32925472" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3259177" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -1066,475 +1067,77 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/camp/Pitch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="64" selection-start="554" selection-end="554" vertical-scroll-proportion="0.38116592">
-          <folding>
-            <element signature="docComment;class#Pitch#0" expanded="false" />
-            <element signature="docComment;method#Pitch#0;class#Pitch#0" expanded="false" />
-            <element signature="method#Pitch#0;class#Pitch#0" expanded="false" />
-            <element signature="docComment;method#Pitch#1;class#Pitch#0" expanded="false" />
-            <element signature="method#Pitch#1;class#Pitch#0" expanded="false" />
-            <element signature="docComment;method#Pitch#2;class#Pitch#0" expanded="false" />
-            <element signature="method#Pitch#2;class#Pitch#0" expanded="false" />
-            <element signature="docComment;method#getPitchID#0;class#Pitch#0" expanded="false" />
-            <element signature="method#getPitchID#0;class#Pitch#0" expanded="false" />
-            <element signature="docComment;method#setPitchID#0;class#Pitch#0" expanded="false" />
-            <element signature="method#setPitchID#0;class#Pitch#0" expanded="false" />
-            <element signature="docComment;method#getTotal#0;class#Pitch#0" expanded="false" />
-            <element signature="method#getTotal#0;class#Pitch#0" expanded="false" />
-            <element signature="docComment;method#setTotal#0;class#Pitch#0" expanded="false" />
-            <element signature="method#setTotal#0;class#Pitch#0" expanded="false" />
-            <element signature="docComment;method#getPitchType#0;class#Pitch#0" expanded="false" />
-            <element signature="method#getPitchType#0;class#Pitch#0" expanded="false" />
-            <element signature="docComment;method#setPitchType#0;class#Pitch#0" expanded="false" />
-            <element signature="method#setPitchType#0;class#Pitch#0" expanded="false" />
-            <element signature="docComment;method#getPitchName#0;class#Pitch#0" expanded="false" />
-            <element signature="method#getPitchName#0;class#Pitch#0" expanded="false" />
-            <element signature="docComment;method#setPitchName#0;class#Pitch#0" expanded="false" />
-            <element signature="method#setPitchName#0;class#Pitch#0" expanded="false" />
-            <element signature="docComment;method#getTypeID#0;class#Pitch#0" expanded="false" />
-            <element signature="method#getTypeID#0;class#Pitch#0" expanded="false" />
-            <element signature="docComment;method#getTypeName#0;class#Pitch#0" expanded="false" />
-            <element signature="method#getTypeName#0;class#Pitch#0" expanded="false" />
-            <element signature="docComment;method#toString#0;class#Pitch#0" expanded="false" />
-            <element signature="method#toString#0;class#Pitch#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="28" column="64" selection-start="554" selection-end="554" vertical-scroll-proportion="0.38116592" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/camp/PitchList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="48" selection-start="497" selection-end="497" vertical-scroll-proportion="0.2541106">
-          <folding>
-            <element signature="docComment;class#PitchList#0" expanded="false" />
-            <element signature="docComment;method#Items#0;class#PitchList#0" expanded="false" />
-            <element signature="method#Items#0;class#PitchList#0" expanded="false" />
-            <element signature="docComment;method#Items#1;class#PitchList#0" expanded="false" />
-            <element signature="method#Items#1;class#PitchList#0" expanded="false" />
-            <element signature="docComment;method#Items#2;class#PitchList#0" expanded="false" />
-            <element signature="method#Items#2;class#PitchList#0" expanded="false" />
-            <element signature="docComment;method#Items#3;class#PitchList#0" expanded="false" />
-            <element signature="method#Items#3;class#PitchList#0" expanded="false" />
-            <element signature="docComment;method#Items#4;class#PitchList#0" expanded="false" />
-            <element signature="method#Items#4;class#PitchList#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="25" column="48" selection-start="497" selection-end="497" vertical-scroll-proportion="0.2541106" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/camp/Pricing.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="64" selection-start="874" selection-end="874" vertical-scroll-proportion="0.406577">
-          <folding>
-            <element signature="docComment;class#Pricing#0" expanded="false" />
-            <element signature="docComment;method#Pricing#0;class#Pricing#0" expanded="false" />
-            <element signature="method#Pricing#0;class#Pricing#0" expanded="false" />
-            <element signature="docComment;method#getFee#0;class#Pricing#0" expanded="false" />
-            <element signature="method#getFee#0;class#Pricing#0" expanded="false" />
-            <element signature="docComment;method#Total#0;class#Pricing#0" expanded="false" />
-            <element signature="method#Total#0;class#Pricing#0" expanded="false" />
-            <element signature="docComment;method#Discount#0;class#Pricing#0" expanded="false" />
-            <element signature="method#Discount#0;class#Pricing#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="41" column="64" selection-start="874" selection-end="874" vertical-scroll-proportion="0.406577" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/db/connection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="4" selection-start="355" selection-end="355" vertical-scroll-proportion="0.30493274">
-          <folding>
-            <element signature="docComment;class#connection#0" expanded="false" />
-            <element signature="docComment;method#connection#0;class#connection#0" expanded="false" />
-            <element signature="method#connection#0;class#connection#0" expanded="false" />
-            <element signature="docComment;method#getPathToDB#0;class#connection#0" expanded="false" />
-            <element signature="method#getPathToDB#0;class#connection#0" expanded="false" />
-            <element signature="docComment;method#connect#0;class#connection#0" expanded="false" />
-            <element signature="method#connect#0;class#connection#0" expanded="false" />
-            <element signature="docComment;method#ExecuteCustomerUpdate#0;class#connection#0" expanded="false" />
-            <element signature="method#ExecuteCustomerUpdate#0;class#connection#0" expanded="false" />
-            <element signature="docComment;method#ExecuteCustomerInsert#0;class#connection#0" expanded="false" />
-            <element signature="method#ExecuteCustomerInsert#0;class#connection#0" expanded="false" />
-            <element signature="docComment;method#Discount#0;class#connection#0" expanded="false" />
-            <element signature="method#Discount#0;class#connection#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="23" column="4" selection-start="355" selection-end="355" vertical-scroll-proportion="0.30493274" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/CalListen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="13" selection-start="263" selection-end="263" vertical-scroll-proportion="0.33034378">
-          <folding />
-        </state>
+        <state line="14" column="13" selection-start="263" selection-end="263" vertical-scroll-proportion="0.33034378" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/DocListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="71" selection-start="700" selection-end="700" vertical-scroll-proportion="0.2884903">
-          <folding>
-            <element signature="docComment;class#DocListener#0" expanded="false" />
-            <element signature="docComment;method#getObjectList#0;class#DocListener#0" expanded="false" />
-            <element signature="method#getObjectList#0;class#DocListener#0" expanded="false" />
-            <element signature="docComment;method#setObjectList#0;class#DocListener#0" expanded="false" />
-            <element signature="method#setObjectList#0;class#DocListener#0" expanded="false" />
-            <element signature="docComment;method#getBtn#0;class#DocListener#0" expanded="false" />
-            <element signature="method#getBtn#0;class#DocListener#0" expanded="false" />
-            <element signature="docComment;method#setBtn#0;class#DocListener#0" expanded="false" />
-            <element signature="method#setBtn#0;class#DocListener#0" expanded="false" />
-            <element signature="docComment;method#changedUpdate#0;class#DocListener#0" expanded="false" />
-            <element signature="method#changedUpdate#0;class#DocListener#0" expanded="false" />
-            <element signature="docComment;method#insertUpdate#0;class#DocListener#0" expanded="false" />
-            <element signature="method#insertUpdate#0;class#DocListener#0" expanded="false" />
-            <element signature="docComment;method#removeUpdate#0;class#DocListener#0" expanded="false" />
-            <element signature="method#removeUpdate#0;class#DocListener#0" expanded="false" />
-            <element signature="docComment;method#checkContent#0;class#DocListener#0" expanded="false" />
-            <element signature="method#checkContent#0;class#DocListener#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="29" column="71" selection-start="700" selection-end="700" vertical-scroll-proportion="0.2884903" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/DialogBookingSummary.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="67" selection-start="852" selection-end="852" vertical-scroll-proportion="0.27952167">
-          <folding>
-            <element signature="docComment;class#DialogBookingSummary#0" expanded="false" />
-            <element signature="docComment;method#DialogBookingSummary#0;class#DialogBookingSummary#0" expanded="false" />
-            <element signature="method#DialogBookingSummary#0;class#DialogBookingSummary#0" expanded="false" />
-            <element signature="class#2532:2656" expanded="false" />
-            <element signature="method#windowClosing#0;class#2532:2656" expanded="false" />
-            <element signature="class#3063:3268" expanded="false" />
-            <element signature="method#actionPerformed#0;class#3063:3268" expanded="false" />
-            <element signature="docComment;method#getEmailConfirm#0;class#DialogBookingSummary#0" expanded="false" />
-            <element signature="method#getEmailConfirm#0;class#DialogBookingSummary#0" expanded="false" />
-            <element signature="docComment;method#getBookingForeName#0;class#DialogBookingSummary#0" expanded="false" />
-            <element signature="method#getBookingForeName#0;class#DialogBookingSummary#0" expanded="false" />
-            <element signature="docComment;method#setBookingForeName#0;class#DialogBookingSummary#0" expanded="false" />
-            <element signature="method#setBookingForeName#0;class#DialogBookingSummary#0" expanded="false" />
-            <element signature="docComment;method#getBookingSurname#0;class#DialogBookingSummary#0" expanded="false" />
-            <element signature="method#getBookingSurname#0;class#DialogBookingSummary#0" expanded="false" />
-            <element signature="docComment;method#setBookingSurname#0;class#DialogBookingSummary#0" expanded="false" />
-            <element signature="method#setBookingSurname#0;class#DialogBookingSummary#0" expanded="false" />
-            <element signature="docComment;method#getBookingCustomerID#0;class#DialogBookingSummary#0" expanded="false" />
-            <element signature="method#getBookingCustomerID#0;class#DialogBookingSummary#0" expanded="false" />
-            <element signature="docComment;method#setBookingCustomerID#0;class#DialogBookingSummary#0" expanded="false" />
-            <element signature="method#setBookingCustomerID#0;class#DialogBookingSummary#0" expanded="false" />
-            <element signature="docComment;method#getBookingCarReg#0;class#DialogBookingSummary#0" expanded="false" />
-            <element signature="method#getBookingCarReg#0;class#DialogBookingSummary#0" expanded="false" />
-            <element signature="docComment;method#setBookingCarReg#0;class#DialogBookingSummary#0" expanded="false" />
-            <element signature="method#setBookingCarReg#0;class#DialogBookingSummary#0" expanded="false" />
-            <element signature="docComment;method#setBookingPitchID#0;class#DialogBookingSummary#0" expanded="false" />
-            <element signature="method#setBookingPitchID#0;class#DialogBookingSummary#0" expanded="false" />
-            <element signature="docComment;method#getBookingCounty#0;class#DialogBookingSummary#0" expanded="false" />
-            <element signature="method#getBookingCounty#0;class#DialogBookingSummary#0" expanded="false" />
-            <element signature="docComment;method#setBookingCounty#0;class#DialogBookingSummary#0" expanded="false" />
-            <element signature="method#setBookingCounty#0;class#DialogBookingSummary#0" expanded="false" />
-            <element signature="docComment;method#getBookingPostCode#0;class#DialogBookingSummary#0" expanded="false" />
-            <element signature="method#getBookingPostCode#0;class#DialogBookingSummary#0" expanded="false" />
-            <element signature="docComment;method#setBookingPostCode#0;class#DialogBookingSummary#0" expanded="false" />
-            <element signature="method#setBookingPostCode#0;class#DialogBookingSummary#0" expanded="false" />
-            <element signature="docComment;method#getBookingPitchName#0;class#DialogBookingSummary#0" expanded="false" />
-            <element signature="method#getBookingPitchName#0;class#DialogBookingSummary#0" expanded="false" />
-            <element signature="docComment;method#setBookingPitchName#0;class#DialogBookingSummary#0" expanded="false" />
-            <element signature="method#setBookingPitchName#0;class#DialogBookingSummary#0" expanded="false" />
-            <element signature="docComment;method#getBookingPitchType#0;class#DialogBookingSummary#0" expanded="false" />
-            <element signature="method#getBookingPitchType#0;class#DialogBookingSummary#0" expanded="false" />
-            <element signature="docComment;method#setBookingPitchType#0;class#DialogBookingSummary#0" expanded="false" />
-            <element signature="method#setBookingPitchType#0;class#DialogBookingSummary#0" expanded="false" />
-            <element signature="docComment;method#getBookingStartDate#0;class#DialogBookingSummary#0" expanded="false" />
-            <element signature="method#getBookingStartDate#0;class#DialogBookingSummary#0" expanded="false" />
-            <element signature="docComment;method#setBookingStartDate#0;class#DialogBookingSummary#0" expanded="false" />
-            <element signature="method#setBookingStartDate#0;class#DialogBookingSummary#0" expanded="false" />
-            <element signature="docComment;method#getBookingEndDate#0;class#DialogBookingSummary#0" expanded="false" />
-            <element signature="method#getBookingEndDate#0;class#DialogBookingSummary#0" expanded="false" />
-            <element signature="docComment;method#setBookingEndDate#0;class#DialogBookingSummary#0" expanded="false" />
-            <element signature="method#setBookingEndDate#0;class#DialogBookingSummary#0" expanded="false" />
-            <element signature="docComment;method#getBookingCostTotal#0;class#DialogBookingSummary#0" expanded="false" />
-            <element signature="method#getBookingCostTotal#0;class#DialogBookingSummary#0" expanded="false" />
-            <element signature="docComment;method#setBookingCostTotal#0;class#DialogBookingSummary#0" expanded="false" />
-            <element signature="method#setBookingCostTotal#0;class#DialogBookingSummary#0" expanded="false" />
-            <element signature="docComment;method#getBookingAddress#0;class#DialogBookingSummary#0" expanded="false" />
-            <element signature="method#getBookingAddress#0;class#DialogBookingSummary#0" expanded="false" />
-            <element signature="docComment;method#setBookingAddress#0;class#DialogBookingSummary#0" expanded="false" />
-            <element signature="method#setBookingAddress#0;class#DialogBookingSummary#0" expanded="false" />
-            <element signature="docComment;method#makeDate#0;class#DialogBookingSummary#0" expanded="false" />
-            <element signature="method#makeDate#0;class#DialogBookingSummary#0" expanded="false" />
-            <element signature="docComment;method#onOK#0;class#DialogBookingSummary#0" expanded="false" />
-            <element signature="method#onOK#0;class#DialogBookingSummary#0" expanded="false" />
-            <element signature="docComment;method#onCancel#0;class#DialogBookingSummary#0" expanded="false" />
-            <element signature="method#onCancel#0;class#DialogBookingSummary#0" expanded="false" />
-            <element signature="docComment;method#make#0;class#DialogBookingSummary#0" expanded="false" />
-            <element signature="method#make#0;class#DialogBookingSummary#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="34" column="67" selection-start="852" selection-end="852" vertical-scroll-proportion="0.27952167" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/DialogCustomerForm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="61" selection-start="743" selection-end="743" vertical-scroll-proportion="0.15246637">
-          <folding>
-            <element signature="docComment;class#DialogCustomerForm#0" expanded="false" />
-            <element signature="docComment;method#DialogCustomerForm#0;class#DialogCustomerForm#0" expanded="false" />
-            <element signature="method#DialogCustomerForm#0;class#DialogCustomerForm#0" expanded="false" />
-            <element signature="class#2636:2760" expanded="false" />
-            <element signature="method#windowClosing#0;class#2636:2760" expanded="false" />
-            <element signature="docComment;method#make#0;class#DialogCustomerForm#0" expanded="false" />
-            <element signature="method#make#0;class#DialogCustomerForm#0" expanded="false" />
-            <element signature="docComment;method#getPostCode#0;class#DialogCustomerForm#0" expanded="false" />
-            <element signature="method#getPostCode#0;class#DialogCustomerForm#0" expanded="false" />
-            <element signature="docComment;method#setPostCode#0;class#DialogCustomerForm#0" expanded="false" />
-            <element signature="method#setPostCode#0;class#DialogCustomerForm#0" expanded="false" />
-            <element signature="docComment;method#getForename#0;class#DialogCustomerForm#0" expanded="false" />
-            <element signature="method#getForename#0;class#DialogCustomerForm#0" expanded="false" />
-            <element signature="docComment;method#setForename#0;class#DialogCustomerForm#0" expanded="false" />
-            <element signature="method#setForename#0;class#DialogCustomerForm#0" expanded="false" />
-            <element signature="docComment;method#getSurname#0;class#DialogCustomerForm#0" expanded="false" />
-            <element signature="method#getSurname#0;class#DialogCustomerForm#0" expanded="false" />
-            <element signature="docComment;method#setSurname#0;class#DialogCustomerForm#0" expanded="false" />
-            <element signature="method#setSurname#0;class#DialogCustomerForm#0" expanded="false" />
-            <element signature="docComment;method#getCustomerID#0;class#DialogCustomerForm#0" expanded="false" />
-            <element signature="method#getCustomerID#0;class#DialogCustomerForm#0" expanded="false" />
-            <element signature="docComment;method#setCustomerID#0;class#DialogCustomerForm#0" expanded="false" />
-            <element signature="method#setCustomerID#0;class#DialogCustomerForm#0" expanded="false" />
-            <element signature="docComment;method#getCarReg#0;class#DialogCustomerForm#0" expanded="false" />
-            <element signature="method#getCarReg#0;class#DialogCustomerForm#0" expanded="false" />
-            <element signature="docComment;method#setCarReg#0;class#DialogCustomerForm#0" expanded="false" />
-            <element signature="method#setCarReg#0;class#DialogCustomerForm#0" expanded="false" />
-            <element signature="docComment;method#getAddress#0;class#DialogCustomerForm#0" expanded="false" />
-            <element signature="method#getAddress#0;class#DialogCustomerForm#0" expanded="false" />
-            <element signature="docComment;method#setAddress#0;class#DialogCustomerForm#0" expanded="false" />
-            <element signature="method#setAddress#0;class#DialogCustomerForm#0" expanded="false" />
-            <element signature="docComment;method#getCounty#0;class#DialogCustomerForm#0" expanded="false" />
-            <element signature="method#getCounty#0;class#DialogCustomerForm#0" expanded="false" />
-            <element signature="docComment;method#setCounty#0;class#DialogCustomerForm#0" expanded="false" />
-            <element signature="method#setCounty#0;class#DialogCustomerForm#0" expanded="false" />
-            <element signature="docComment;method#onOK#0;class#DialogCustomerForm#0" expanded="false" />
-            <element signature="method#onOK#0;class#DialogCustomerForm#0" expanded="false" />
-            <element signature="docComment;method#onCancel#0;class#DialogCustomerForm#0" expanded="false" />
-            <element signature="method#onCancel#0;class#DialogCustomerForm#0" expanded="false" />
-            <element signature="docComment;method#createUIComponents#0;class#DialogCustomerForm#0" expanded="false" />
-            <element signature="method#createUIComponents#0;class#DialogCustomerForm#0" expanded="false" />
-            <element signature="docComment;method#ClearText#0;class#DialogCustomerForm#0" expanded="false" />
-            <element signature="method#ClearText#0;class#DialogCustomerForm#0" expanded="false" />
-            <element signature="docComment;method#textList#0;class#DialogCustomerForm#0" expanded="false" />
-            <element signature="method#textList#0;class#DialogCustomerForm#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="30" column="61" selection-start="743" selection-end="743" vertical-scroll-proportion="0.15246637" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/DialogDeleteBooking.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="72" selection-start="940" selection-end="940" vertical-scroll-proportion="0.38116592">
-          <folding>
-            <element signature="docComment;class#DialogDeleteBooking#0" expanded="false" />
-            <element signature="docComment;method#DialogDeleteBooking#0;class#DialogDeleteBooking#0" expanded="false" />
-            <element signature="method#DialogDeleteBooking#0;class#DialogDeleteBooking#0" expanded="false" />
-            <element signature="class#2046:2170" expanded="false" />
-            <element signature="method#windowClosing#0;class#2046:2170" expanded="false" />
-            <element signature="docComment;method#returnItem#0;class#DialogDeleteBooking#0" expanded="false" />
-            <element signature="method#returnItem#0;class#DialogDeleteBooking#0" expanded="false" />
-            <element signature="docComment;method#getCarReg#0;class#DialogDeleteBooking#0" expanded="false" />
-            <element signature="method#getCarReg#0;class#DialogDeleteBooking#0" expanded="false" />
-            <element signature="docComment;method#setCarReg#0;class#DialogDeleteBooking#0" expanded="false" />
-            <element signature="method#setCarReg#0;class#DialogDeleteBooking#0" expanded="false" />
-            <element signature="docComment;method#getID#0;class#DialogDeleteBooking#0" expanded="false" />
-            <element signature="method#getID#0;class#DialogDeleteBooking#0" expanded="false" />
-            <element signature="docComment;method#setID#0;class#DialogDeleteBooking#0" expanded="false" />
-            <element signature="method#setID#0;class#DialogDeleteBooking#0" expanded="false" />
-            <element signature="docComment;method#getCustomer#0;class#DialogDeleteBooking#0" expanded="false" />
-            <element signature="method#getCustomer#0;class#DialogDeleteBooking#0" expanded="false" />
-            <element signature="docComment;method#setCustomer#0;class#DialogDeleteBooking#0" expanded="false" />
-            <element signature="method#setCustomer#0;class#DialogDeleteBooking#0" expanded="false" />
-            <element signature="docComment;method#onOK#0;class#DialogDeleteBooking#0" expanded="false" />
-            <element signature="method#onOK#0;class#DialogDeleteBooking#0" expanded="false" />
-            <element signature="docComment;method#onCancel#0;class#DialogDeleteBooking#0" expanded="false" />
-            <element signature="method#onCancel#0;class#DialogDeleteBooking#0" expanded="false" />
-            <element signature="docComment;method#make#0;class#DialogDeleteBooking#0" expanded="false" />
-            <element signature="method#make#0;class#DialogDeleteBooking#0" expanded="false" />
-            <element signature="docComment;method#createUIComponents#0;class#DialogDeleteBooking#0" expanded="false" />
-            <element signature="method#createUIComponents#0;class#DialogDeleteBooking#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="38" column="72" selection-start="940" selection-end="940" vertical-scroll-proportion="0.38116592" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/DialogEmailForm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="13" selection-start="240" selection-end="240" vertical-scroll-proportion="0.15246637">
-          <folding>
-            <element signature="docComment;class#DialogEmailForm#0" expanded="false" />
-            <element signature="docComment;method#DialogEmailForm#0;class#DialogEmailForm#0" expanded="false" />
-            <element signature="method#DialogEmailForm#0;class#DialogEmailForm#0" expanded="false" />
-            <element signature="docComment;method#make#0;class#DialogEmailForm#0" expanded="false" />
-            <element signature="method#make#0;class#DialogEmailForm#0" expanded="false" />
-            <element signature="docComment;method#getEmailAddress#0;class#DialogEmailForm#0" expanded="false" />
-            <element signature="method#getEmailAddress#0;class#DialogEmailForm#0" expanded="false" />
-            <element signature="docComment;method#setEmailAddress#0;class#DialogEmailForm#0" expanded="false" />
-            <element signature="method#setEmailAddress#0;class#DialogEmailForm#0" expanded="false" />
-            <element signature="docComment;method#getEmail#0;class#DialogEmailForm#0" expanded="false" />
-            <element signature="method#getEmail#0;class#DialogEmailForm#0" expanded="false" />
-            <element signature="docComment;method#onOK#0;class#DialogEmailForm#0" expanded="false" />
-            <element signature="method#onOK#0;class#DialogEmailForm#0" expanded="false" />
-            <element signature="docComment;method#onCancel#0;class#DialogEmailForm#0" expanded="false" />
-            <element signature="method#onCancel#0;class#DialogEmailForm#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="16" column="13" selection-start="240" selection-end="240" vertical-scroll-proportion="0.15246637" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/DialogExtendBooking.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="78" selection-start="966" selection-end="966" vertical-scroll-proportion="0.35575485">
-          <folding>
-            <element signature="docComment;class#DialogExtendBooking#0" expanded="false" />
-            <element signature="docComment;method#DialogExtendBooking#0;class#DialogExtendBooking#0" expanded="false" />
-            <element signature="method#DialogExtendBooking#0;class#DialogExtendBooking#0" expanded="false" />
-            <element signature="class#2867:2991" expanded="false" />
-            <element signature="method#windowClosing#0;class#2867:2991" expanded="false" />
-            <element signature="docComment;method#returnItem#0;class#DialogExtendBooking#0" expanded="false" />
-            <element signature="method#returnItem#0;class#DialogExtendBooking#0" expanded="false" />
-            <element signature="docComment;method#getCarReg#0;class#DialogExtendBooking#0" expanded="false" />
-            <element signature="method#getCarReg#0;class#DialogExtendBooking#0" expanded="false" />
-            <element signature="docComment;method#setCarReg#0;class#DialogExtendBooking#0" expanded="false" />
-            <element signature="method#setCarReg#0;class#DialogExtendBooking#0" expanded="false" />
-            <element signature="docComment;method#getID#0;class#DialogExtendBooking#0" expanded="false" />
-            <element signature="method#getID#0;class#DialogExtendBooking#0" expanded="false" />
-            <element signature="docComment;method#setID#0;class#DialogExtendBooking#0" expanded="false" />
-            <element signature="method#setID#0;class#DialogExtendBooking#0" expanded="false" />
-            <element signature="docComment;method#getCustomer#0;class#DialogExtendBooking#0" expanded="false" />
-            <element signature="method#getCustomer#0;class#DialogExtendBooking#0" expanded="false" />
-            <element signature="docComment;method#setCustomer#0;class#DialogExtendBooking#0" expanded="false" />
-            <element signature="method#setCustomer#0;class#DialogExtendBooking#0" expanded="false" />
-            <element signature="docComment;method#onOK#0;class#DialogExtendBooking#0" expanded="false" />
-            <element signature="method#onOK#0;class#DialogExtendBooking#0" expanded="false" />
-            <element signature="docComment;method#onCancel#0;class#DialogExtendBooking#0" expanded="false" />
-            <element signature="method#onCancel#0;class#DialogExtendBooking#0" expanded="false" />
-            <element signature="docComment;method#make#0;class#DialogExtendBooking#0" expanded="false" />
-            <element signature="method#make#0;class#DialogExtendBooking#0" expanded="false" />
-            <element signature="docComment;method#createUIComponents#0;class#DialogExtendBooking#0" expanded="false" />
-            <element signature="method#createUIComponents#0;class#DialogExtendBooking#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="36" column="78" selection-start="966" selection-end="966" vertical-scroll-proportion="0.35575485" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/DialogSearch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="47" selection-start="852" selection-end="852" vertical-scroll-proportion="0.4573991">
-          <folding>
-            <element signature="docComment;class#DialogSearch#0" expanded="false" />
-            <element signature="docComment;method#DialogSearch#0;class#DialogSearch#0" expanded="false" />
-            <element signature="method#DialogSearch#0;class#DialogSearch#0" expanded="false" />
-            <element signature="class#1533:1657" expanded="false" />
-            <element signature="method#windowClosing#0;class#1533:1657" expanded="false" />
-            <element signature="docComment;method#getPickCustomer#0;class#DialogSearch#0" expanded="false" />
-            <element signature="method#getPickCustomer#0;class#DialogSearch#0" expanded="false" />
-            <element signature="docComment;method#getPickedClient#0;class#DialogSearch#0" expanded="false" />
-            <element signature="method#getPickedClient#0;class#DialogSearch#0" expanded="false" />
-            <element signature="docComment;method#onOK#0;class#DialogSearch#0" expanded="false" />
-            <element signature="method#onOK#0;class#DialogSearch#0" expanded="false" />
-            <element signature="docComment;method#onCancel#0;class#DialogSearch#0" expanded="false" />
-            <element signature="method#onCancel#0;class#DialogSearch#0" expanded="false" />
-            <element signature="docComment;method#run#0;class#DialogSearch#0" expanded="false" />
-            <element signature="method#run#0;class#DialogSearch#0" expanded="false" />
-            <element signature="docComment;method#createUIComponents#0;class#DialogSearch#0" expanded="false" />
-            <element signature="method#createUIComponents#0;class#DialogSearch#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="35" column="47" selection-start="852" selection-end="852" vertical-scroll-proportion="0.4573991" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/FormBooking.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="51" selection-start="1137" selection-end="1137" vertical-scroll-proportion="0.33034378">
-          <folding>
-            <element signature="docComment;class#FormBooking#0" expanded="false" />
-            <element signature="docComment;method#FormBooking#0;class#FormBooking#0" expanded="false" />
-            <element signature="method#FormBooking#0;class#FormBooking#0" expanded="false" />
-            <element signature="class#2706:2830" expanded="false" />
-            <element signature="method#windowClosing#0;class#2706:2830" expanded="false" />
-            <element signature="class#6876:7166" expanded="false" />
-            <element signature="method#selectionChanged#0;class#6876:7166" expanded="false" />
-            <element signature="docComment;method#run#0;class#FormBooking#0" expanded="false" />
-            <element signature="method#run#0;class#FormBooking#0" expanded="false" />
-            <element signature="docComment;method#getBookingPitch#0;class#FormBooking#0" expanded="false" />
-            <element signature="method#getBookingPitch#0;class#FormBooking#0" expanded="false" />
-            <element signature="docComment;method#setBookingPitch#0;class#FormBooking#0" expanded="false" />
-            <element signature="method#setBookingPitch#0;class#FormBooking#0" expanded="false" />
-            <element signature="docComment;method#getBookingClient#0;class#FormBooking#0" expanded="false" />
-            <element signature="method#getBookingClient#0;class#FormBooking#0" expanded="false" />
-            <element signature="docComment;method#setBookingClient#0;class#FormBooking#0" expanded="false" />
-            <element signature="method#setBookingClient#0;class#FormBooking#0" expanded="false" />
-            <element signature="docComment;method#getSearch#0;class#FormBooking#0" expanded="false" />
-            <element signature="method#getSearch#0;class#FormBooking#0" expanded="false" />
-            <element signature="docComment;method#setSearch#0;class#FormBooking#0" expanded="false" />
-            <element signature="method#setSearch#0;class#FormBooking#0" expanded="false" />
-            <element signature="docComment;method#getPitchSelected#0;class#FormBooking#0" expanded="false" />
-            <element signature="method#getPitchSelected#0;class#FormBooking#0" expanded="false" />
-            <element signature="docComment;method#setPitchSelected#0;class#FormBooking#0" expanded="false" />
-            <element signature="method#setPitchSelected#0;class#FormBooking#0" expanded="false" />
-            <element signature="docComment;method#makeFinishDate#0;class#FormBooking#0" expanded="false" />
-            <element signature="method#makeFinishDate#0;class#FormBooking#0" expanded="false" />
-            <element signature="docComment;method#makeStartDate#0;class#FormBooking#0" expanded="false" />
-            <element signature="method#makeStartDate#0;class#FormBooking#0" expanded="false" />
-            <element signature="docComment;method#getFinishDate#0;class#FormBooking#0" expanded="false" />
-            <element signature="method#getFinishDate#0;class#FormBooking#0" expanded="false" />
-            <element signature="docComment;method#setFinishDate#0;class#FormBooking#0" expanded="false" />
-            <element signature="method#setFinishDate#0;class#FormBooking#0" expanded="false" />
-            <element signature="docComment;method#getStartDate#0;class#FormBooking#0" expanded="false" />
-            <element signature="method#getStartDate#0;class#FormBooking#0" expanded="false" />
-            <element signature="docComment;method#setStartDate#0;class#FormBooking#0" expanded="false" />
-            <element signature="method#setStartDate#0;class#FormBooking#0" expanded="false" />
-            <element signature="docComment;method#getTypeName#0;class#FormBooking#0" expanded="false" />
-            <element signature="method#getTypeName#0;class#FormBooking#0" expanded="false" />
-            <element signature="docComment;method#setTypeName#0;class#FormBooking#0" expanded="false" />
-            <element signature="method#setTypeName#0;class#FormBooking#0" expanded="false" />
-            <element signature="docComment;method#getPitchDetails#0;class#FormBooking#0" expanded="false" />
-            <element signature="method#getPitchDetails#0;class#FormBooking#0" expanded="false" />
-            <element signature="docComment;method#setPitchDetails#0;class#FormBooking#0" expanded="false" />
-            <element signature="method#setPitchDetails#0;class#FormBooking#0" expanded="false" />
-            <element signature="docComment;method#getBookingCheck#0;class#FormBooking#0" expanded="false" />
-            <element signature="method#getBookingCheck#0;class#FormBooking#0" expanded="false" />
-            <element signature="docComment;method#setBookingCheck#0;class#FormBooking#0" expanded="false" />
-            <element signature="method#setBookingCheck#0;class#FormBooking#0" expanded="false" />
-            <element signature="docComment;method#getBookingDelete#0;class#FormBooking#0" expanded="false" />
-            <element signature="method#getBookingDelete#0;class#FormBooking#0" expanded="false" />
-            <element signature="docComment;method#setBookingDelete#0;class#FormBooking#0" expanded="false" />
-            <element signature="method#setBookingDelete#0;class#FormBooking#0" expanded="false" />
-            <element signature="docComment;method#onOK#0;class#FormBooking#0" expanded="false" />
-            <element signature="method#onOK#0;class#FormBooking#0" expanded="false" />
-            <element signature="docComment;method#onCancel#0;class#FormBooking#0" expanded="false" />
-            <element signature="method#onCancel#0;class#FormBooking#0" expanded="false" />
-            <element signature="docComment;method#isEmpty#0;class#FormBooking#0" expanded="false" />
-            <element signature="method#isEmpty#0;class#FormBooking#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="42" column="51" selection-start="1137" selection-end="1137" vertical-scroll-proportion="0.33034378" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/MenuCampsite.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="26" selection-start="487" selection-end="487" vertical-scroll-proportion="0.30493274">
-          <folding>
-            <element signature="docComment;class#MenuCampsite#0" expanded="false" />
-            <element signature="docComment;method#MenuCampsite#0;class#MenuCampsite#0" expanded="false" />
-            <element signature="method#MenuCampsite#0;class#MenuCampsite#0" expanded="false" />
-            <element signature="docComment;method#run#0;class#MenuCampsite#0" expanded="false" />
-            <element signature="method#run#0;class#MenuCampsite#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="25" column="26" selection-start="487" selection-end="487" vertical-scroll-proportion="0.30493274" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/Reports.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="60" selection-start="2072" selection-end="2072" vertical-scroll-proportion="0.6098655">
-          <folding>
-            <element signature="docComment;class#Reports#0" expanded="false" />
-            <element signature="docComment;method#Reports#0;class#Reports#0" expanded="false" />
-            <element signature="method#Reports#0;class#Reports#0" expanded="false" />
-            <element signature="class#1389:1513" expanded="false" />
-            <element signature="method#windowClosing#0;class#1389:1513" expanded="false" />
-            <element signature="docComment;method#onOK#0;class#Reports#0" expanded="false" />
-            <element signature="method#onOK#0;class#Reports#0" expanded="false" />
-            <element signature="docComment;method#onCancel#0;class#Reports#0" expanded="false" />
-            <element signature="method#onCancel#0;class#Reports#0" expanded="false" />
-            <element signature="docComment;method#run#0;class#Reports#0" expanded="false" />
-            <element signature="method#run#0;class#Reports#0" expanded="false" />
-            <element signature="docComment;method#createUIComponents#0;class#Reports#0" expanded="false" />
-            <element signature="method#createUIComponents#0;class#Reports#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="87" column="60" selection-start="2072" selection-end="2072" vertical-scroll-proportion="0.6098655" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/new.uml">
@@ -1553,25 +1156,25 @@
             <node x="" y="">gui.DialogEmailForm</node>
             <node x="" y="">gui.DialogSearch</node>
             <node x="" y="">db.connection</node>
+            <node x="" y="">camp.camper</node>
             <node x="" y="">gui.Reports</node>
             <node x="" y="">camp.ClientList</node>
-            <node x="" y="">camp.camper</node>
             <node x="" y="">camp.Communication</node>
-            <node x="" y="">camp.Client</node>
             <node x="" y="">gui.DialogBookingSummary</node>
-            <node x="" y="">gui.FormBooking</node>
+            <node x="" y="">camp.Client</node>
             <node x="" y="">camp.Items</node>
+            <node x="" y="">gui.FormBooking</node>
             <node x="" y="">camp.scrap</node>
             <node x="" y="">gui.MenuCampsite</node>
-            <node x="" y="">camp.DateMaker</node>
             <node x="" y="">camp.Booking</node>
+            <node x="" y="">camp.DateMaker</node>
             <node x="" y="">camp.PitchList</node>
             <node x="" y="">gui.DialogExtendBooking</node>
             <node x="" y="">gui.DialogCustomerForm</node>
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="0.1492468134414832" x="2558.5" y="2147.5" />
+          <settings layout="Hierarchic Group" zoom="0.1492468134414832" x="2559.0" y="2148.0" />
           <SelectedNodes />
           <Categories>
             <Category>Fields</Category>
