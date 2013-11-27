@@ -341,6 +341,7 @@ public class DialogBookingSummary extends JDialog {
      * pass booking details to booking object, insert to db and class this + parent
      */
     private void onOK() {
+        //set the properties of the object to be submitted
         submit.setClientID(Integer.valueOf(getBookingCustomerID().getText()));
         submit.setPitchID(BookingPitchID);
         submit.setFromDate(getBookingStartDate().getText());
