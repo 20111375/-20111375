@@ -18,8 +18,8 @@ import java.util.List;
  * provides methods for event listening which link
  * buttons to an index of text field objects
  */
-public class DocListener implements DocumentListener {
-    private List<JFormattedTextField> objectList = new ArrayList<JFormattedTextField>();
+class DocListener implements DocumentListener {
+    private List<JFormattedTextField> objectList = new ArrayList<>();
     private JButton btn;
 
     /**

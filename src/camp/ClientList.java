@@ -17,7 +17,7 @@ import java.util.List;
  * collection of customers, extending the generic class GenericList
  */
 public class ClientList extends GenericList<Client> {
-    protected List<Client> items;
+    private List<Client> items;
 
     /**
      * class constructor
@@ -27,7 +27,7 @@ public class ClientList extends GenericList<Client> {
      */
     public List<Client> Items() throws Exception {
         if (items == null) {
-            items = new ArrayList<Client>();
+            items = new ArrayList<>();
             try {
                 String SQL = "SELECT * FROM Customer";
                 ResultSet resultset = new connection().connect(SQL);
@@ -47,7 +47,7 @@ public class ClientList extends GenericList<Client> {
      */
     public List<Client> CarList() throws Exception {
         if (items == null) {
-            items = new ArrayList<Client>();
+            items = new ArrayList<>();
             try {
                 String SQL = "select customer.CARREGISTRATION, customer.customerid \n" +
                         "from customer join booking on booking.CUSTOMERID = customer.CUSTOMERID\n" +
@@ -99,7 +99,7 @@ public class ClientList extends GenericList<Client> {
     /**
      * @return a collection of customers
      */
-    public static final List<Client> customerList() {
+    public static List<Client> customerList() {
         List<Client> customerlist = null;
         try {
             customerlist = new ClientList().Items();

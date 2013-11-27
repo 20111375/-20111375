@@ -74,7 +74,7 @@ public class DialogEmailForm extends JDialog {
     /**
      * @return gets a text area which represents an email address
      */
-    public JTextArea getEmailAddress() {
+    JTextArea getEmailAddress() {
         return emailAddress;
     }
 
@@ -90,7 +90,7 @@ public class DialogEmailForm extends JDialog {
      */
     public String getEmail() {
         if (getEmailAddress().getText().length() != 0) {
-            String address = getEmailAddress().getText();
+            @SuppressWarnings("UnnecessaryLocalVariable") String address = getEmailAddress().getText();
             return address;
         }
         return null;

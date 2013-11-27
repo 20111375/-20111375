@@ -17,7 +17,7 @@ import java.util.Calendar;
  * to a calendar date
  */
 public class DateMaker {
-    private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+    private final SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
 
     /**
      * @param day   accepts an integer of days

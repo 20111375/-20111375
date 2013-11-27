@@ -81,9 +81,9 @@ public class DialogSearch extends JDialog {
              */
             @Override
             public void actionPerformed(ActionEvent e) {
-                if (customerIDRadioButton.isSelected() == true && carRegRadioButton.isSelected() == false) {
+                if (customerIDRadioButton.isSelected() && !carRegRadioButton.isSelected()) {
                     for (Client C : ClientList.customerList()) {
-                        if (customerIDRadioButton.isSelected() == true && C.getClientID() == Integer.parseInt(CustomerID.getText())) {
+                        if (customerIDRadioButton.isSelected() && C.getClientID() == Integer.parseInt(CustomerID.getText())) {
                             DefaultListModel CustModel = new DefaultListModel();
                             for (Client M : ClientList.customerList()) {
                                 if (M.getClientID() == Integer.parseInt(CustomerID.getText())) {
@@ -96,7 +96,7 @@ public class DialogSearch extends JDialog {
                     }
                 }
 
-                if (carRegRadioButton.isSelected() == true) {
+                if (carRegRadioButton.isSelected()) {
                     for (Client C : ClientList.customerList()) {
                         if (C.getCarRegistration().equals(CarReg.getText())) {
                             DefaultListModel CustModel = new DefaultListModel();
@@ -220,7 +220,7 @@ public class DialogSearch extends JDialog {
         //populate list model
         DefaultListModel CustModel = new DefaultListModel();
         for (Client M : ClientList.customerList()) {
-            if (M.getDelete() == true) {
+            if (M.getDelete()) {
                 CustModel.addElement(M.getClientID() + ": " + M.getFirstName() + " | " + M.getSecondName() + " | " + M.getCarRegistration() + " | " + M.getPostcode() + " DELETED " + M.getDelete());
             } else {
                 CustModel.addElement(M.getClientID() + ": " + M.getFirstName() + " | " + M.getSecondName() + " | " + M.getCarRegistration() + " | " + M.getPostcode());

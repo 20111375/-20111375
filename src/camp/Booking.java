@@ -117,7 +117,7 @@ public class Booking extends Items {
     /**
      * @return a boolean value for the paid status of a booking
      */
-    public Boolean getPaid() {
+    Boolean getPaid() {
         return paid;
     }
 

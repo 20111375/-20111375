@@ -43,8 +43,8 @@ public class Client extends Items {
     }
 
     /**
-     * @param clientID
-     * @param carRegistration
+     * @param clientID        int client id
+     * @param carRegistration string car registration
      */
     public Client(int clientID, String carRegistration) {
         this.clientID = clientID;

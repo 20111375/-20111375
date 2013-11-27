@@ -23,11 +23,8 @@ import java.util.Calendar;
  */
 public class DialogBookingSummary extends JDialog {
     public JTextArea BookingForeName;
-    public Client ClientSummary = new Client();
-    public Pitch PitchSummary = new Pitch();
-    public Booking submit = new Booking();
-    public String Start;
-    public String End;
+    private Client ClientSummary = new Client();
+    private final Booking submit = new Booking();
     private JPanel BookingSummary;
     private JButton buttonOK;
     private JButton buttonCancel;
@@ -60,8 +57,8 @@ public class DialogBookingSummary extends JDialog {
     private JLabel StartDate;
     private JLabel Cost;
     private JCheckBox paidCheckBox;
-    private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
-    private DialogEmailForm emailConfirm = new DialogEmailForm(SwingUtilities.getWindowAncestor(this));
+    private final SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+    private final DialogEmailForm emailConfirm = new DialogEmailForm(SwingUtilities.getWindowAncestor(this));
     private int BookingPitchID;
 
     /**
@@ -103,7 +100,7 @@ public class DialogBookingSummary extends JDialog {
         PrintIt.addActionListener(new ActionListener() {
             /**
              *
-             * @param e
+             * @param e event action
              */
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -115,8 +112,7 @@ public class DialogBookingSummary extends JDialog {
          */
         email.addActionListener(new ActionListener() {
             /**
-             *
-             * @param e
+             * @param e action event
              */
             public void actionPerformed(ActionEvent e) {
                 if (email.isSelected()) {
@@ -144,21 +140,21 @@ public class DialogBookingSummary extends JDialog {
     /**
      * @return gets an email confirmation on type dialog email form
      */
-    public DialogEmailForm getEmailConfirm() {
+    DialogEmailForm getEmailConfirm() {
         return emailConfirm;
     }
 
     /**
      * @return gets a booking forename of type text area
      */
-    public JTextArea getBookingForeName() {
+    JTextArea getBookingForeName() {
         return BookingForeName;
     }
 
     /**
      * @param bookingForeName sets a booking forename of type text area
      */
-    public void setBookingForeName(String bookingForeName) {
+    void setBookingForeName(String bookingForeName) {
         BookingForeName.append(bookingForeName);
     }
 
@@ -172,21 +168,21 @@ public class DialogBookingSummary extends JDialog {
     /**
      * @param bookingSurname sets a booking surname of type string
      */
-    public void setBookingSurname(String bookingSurname) {
+    void setBookingSurname(String bookingSurname) {
         BookingSurname.setText(bookingSurname);
     }
 
     /**
      * @return gets a booking customer id of type text area
      */
-    public JTextArea getBookingCustomerID() {
+    JTextArea getBookingCustomerID() {
         return BookingCustomerID;
     }
 
     /**
      * @param bookingCustomerID sets a booking customer id of type int
      */
-    public void setBookingCustomerID(Integer bookingCustomerID) {
+    void setBookingCustomerID(Integer bookingCustomerID) {
         BookingCustomerID.setText(bookingCustomerID.toString());
     }
 
@@ -200,7 +196,7 @@ public class DialogBookingSummary extends JDialog {
     /**
      * @param bookingCarReg sets a booking car reg of type string
      */
-    public void setBookingCarReg(String bookingCarReg) {
+    void setBookingCarReg(String bookingCarReg) {
         BookingCarReg.setText(bookingCarReg);
     }
 
@@ -221,7 +217,7 @@ public class DialogBookingSummary extends JDialog {
     /**
      * @param bookingCounty sets a booking county of type text area
      */
-    public void setBookingCounty(String bookingCounty) {
+    void setBookingCounty(String bookingCounty) {
         BookingCounty.setText(bookingCounty);
     }
 
@@ -235,7 +231,7 @@ public class DialogBookingSummary extends JDialog {
     /**
      * @param bookingPostCode sets a booking post code of type text area
      */
-    public void setBookingPostCode(String bookingPostCode) {
+    void setBookingPostCode(String bookingPostCode) {
         BookingPostCode.setText(bookingPostCode);
     }
 
@@ -249,7 +245,7 @@ public class DialogBookingSummary extends JDialog {
     /**
      * @param bookingPitchName sets a booking forename of type string
      */
-    public void setBookingPitchName(String bookingPitchName) {
+    void setBookingPitchName(String bookingPitchName) {
         BookingPitchName.setText(bookingPitchName);
     }
 
@@ -263,49 +259,49 @@ public class DialogBookingSummary extends JDialog {
     /**
      * @param bookingPitchType sets a booking pitch type of type integer
      */
-    public void setBookingPitchType(Integer bookingPitchType) {
+    void setBookingPitchType(Integer bookingPitchType) {
         BookingPitchType.setText(bookingPitchType.toString());
     }
 
     /**
      * @return gets a booking start date of type text area
      */
-    public JTextArea getBookingStartDate() {
+    JTextArea getBookingStartDate() {
         return BookingStartDate;
     }
 
     /**
      * @param bookingStartDate sets a booking start date of type string
      */
-    public void setBookingStartDate(String bookingStartDate) {
+    void setBookingStartDate(String bookingStartDate) {
         BookingStartDate.setText(bookingStartDate);
     }
 
     /**
      * @return gets a booking end date of type text area
      */
-    public JTextArea getBookingEndDate() {
+    JTextArea getBookingEndDate() {
         return BookingEndDate;
     }
 
     /**
      * @param bookingEndDate sets a booking end date of type string
      */
-    public void setBookingEndDate(String bookingEndDate) {
+    void setBookingEndDate(String bookingEndDate) {
         BookingEndDate.setText(bookingEndDate);
     }
 
     /**
      * @return gets a booking total of type text area
      */
-    public JTextArea getBookingCostTotal() {
+    JTextArea getBookingCostTotal() {
         return BookingCostTotal;
     }
 
     /**
      * @param bookingCostTotal sets a booking forename of type double
      */
-    public void setBookingCostTotal(Double bookingCostTotal) {
+    void setBookingCostTotal(Double bookingCostTotal) {
         BookingCostTotal.setText(bookingCostTotal.toString());
     }
 
@@ -319,7 +315,7 @@ public class DialogBookingSummary extends JDialog {
     /**
      * @param bookingAddress sets a booking address of type string
      */
-    public void setBookingAddress(String bookingAddress) {
+    void setBookingAddress(String bookingAddress) {
         BookingAddress.setText(bookingAddress);
     }
 
@@ -379,9 +375,7 @@ public class DialogBookingSummary extends JDialog {
      */
     public void make(Client A, Pitch B, String start, String end) {
         ClientSummary = A;
-        PitchSummary = B;
-        Start = start;
-        End = end;
+        Pitch pitchSummary = B;
 
         DialogBookingSummary D = new DialogBookingSummary();
         D.pack();
@@ -396,12 +390,12 @@ public class DialogBookingSummary extends JDialog {
         D.setBookingPostCode(ClientSummary.getPostcode());
 
         // define the pitch of the booking
-        D.setBookingPitchName(PitchSummary.getPitchName());
-        D.setBookingPitchType(PitchSummary.getPitchType());
-        D.setBookingPitchID(PitchSummary.getPitchID());
+        D.setBookingPitchName(pitchSummary.getPitchName());
+        D.setBookingPitchType(pitchSummary.getPitchType());
+        D.setBookingPitchID(pitchSummary.getPitchID());
         D.setBookingStartDate(start);
         D.setBookingEndDate(end);
-        D.setBookingCostTotal(PitchSummary.getTotal());
+        D.setBookingCostTotal(pitchSummary.getTotal());
         D.setResizable(false);
         D.setVisible(true);
     }

@@ -77,6 +77,7 @@ public class MenuCampsite {
         JFrame frame = new JFrame("Campsite System");
         frame.setResizable(false);
         frame.setContentPane(new MenuCampsite().MainPanel);
+        //noinspection MagicConstant
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);

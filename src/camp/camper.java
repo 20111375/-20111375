@@ -16,7 +16,7 @@ import java.awt.*;
  */
 public class camper {
     /**
-     * @param args
+     * @param args null
      * @throws Exception main function to execute application
      */
     public static void main(String[] args) throws Exception {

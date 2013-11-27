@@ -46,8 +46,6 @@ public class DialogCustomerForm extends JDialog {
     private JButton SaveButton;
     private JButton AddNewButton;
     private JButton ResetButton;
-    private List<JFormattedTextField> fieldList = new ArrayList<JFormattedTextField>();
-    private DocListener docListener = new DocListener();
 
     /**
      * class constrictor
@@ -56,7 +54,9 @@ public class DialogCustomerForm extends JDialog {
         setContentPane(contentPane);
         setModal(true);
         getRootPane().setDefaultButton(buttonOK);
+        DocListener docListener = new DocListener();
         docListener.setBtn(AddNewButton);
+        List<JFormattedTextField> fieldList = new ArrayList<>();
         docListener.setObjectList(fieldList);
         fieldList.add(Forename);
         fieldList.add(Surname);
@@ -102,7 +102,7 @@ public class DialogCustomerForm extends JDialog {
             @Override
             public void actionPerformed(ActionEvent e) {
                 if (!CustomerList.isSelectionEmpty()) {
-                    String tmpStr = (String) (String) CustomerList.getSelectedValue();
+                    String tmpStr = String.valueOf(CustomerList.getSelectedValue());
                     String[] tmpArray = tmpStr.split(":");
                     System.out.println(tmpArray[0]);
                     for (Client F : ClientList.customerList()) {
@@ -125,7 +125,7 @@ public class DialogCustomerForm extends JDialog {
             public void actionPerformed(ActionEvent e) {
                 if (!CustomerList.isSelectionEmpty()) {
                     SaveButton.setEnabled(true);
-                    String tmpStr = (String) (String) CustomerList.getSelectedValue();
+                    String tmpStr = (String) CustomerList.getSelectedValue();
                     String[] tmpArray = tmpStr.split(":");
                     System.out.println(tmpArray[0]);
                     for (Client F : ClientList.customerList()) {
@@ -166,7 +166,7 @@ public class DialogCustomerForm extends JDialog {
             /**
              * Invoked when an action occurs.
              *
-             * @param e
+             * @param e event action
              */
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -195,7 +195,7 @@ public class DialogCustomerForm extends JDialog {
             /**
              * Invoked when an action occurs.
              *
-             * @param e
+             * @param e event action
              */
             @Override
             //firstname,secondname,address,county,postcode,carregistration
@@ -227,7 +227,7 @@ public class DialogCustomerForm extends JDialog {
             /**
              * Invoked when an action occurs.
              *
-             * @param e
+             * @param e event action
              */
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -254,7 +254,7 @@ public class DialogCustomerForm extends JDialog {
     /**
      * @return gets a post code formatted text field
      */
-    public JFormattedTextField getPostCode() {
+    JFormattedTextField getPostCode() {
         return PostCode;
     }
 
@@ -268,7 +268,7 @@ public class DialogCustomerForm extends JDialog {
     /**
      * @return gets a forename formatted text field
      */
-    public JFormattedTextField getForename() {
+    JFormattedTextField getForename() {
         return Forename;
     }
 
@@ -282,7 +282,7 @@ public class DialogCustomerForm extends JDialog {
     /**
      * @return gets a surname formatted text field
      */
-    public JFormattedTextField getSurname() {
+    JFormattedTextField getSurname() {
         return Surname;
     }
 
@@ -310,7 +310,7 @@ public class DialogCustomerForm extends JDialog {
     /**
      * @return gets a car registration formatted text field
      */
-    public JFormattedTextField getCarReg() {
+    JFormattedTextField getCarReg() {
         return CarReg;
     }
 
@@ -324,7 +324,7 @@ public class DialogCustomerForm extends JDialog {
     /**
      * @return gets an address formatted text field
      */
-    public JFormattedTextField getAddress() {
+    JFormattedTextField getAddress() {
         return Address;
     }
 
@@ -338,7 +338,7 @@ public class DialogCustomerForm extends JDialog {
     /**
      * @return gets an county formatted text field
      */
-    public JFormattedTextField getCounty() {
+    JFormattedTextField getCounty() {
         return County;
     }
 
@@ -369,7 +369,7 @@ public class DialogCustomerForm extends JDialog {
     private void createUIComponents() {
         DefaultListModel CustModel = new DefaultListModel();
         for (Client M : ClientList.customerList()) {
-            if (M.getDelete() == true) {
+            if (M.getDelete()) {
                 CustModel.addElement(M.getClientID() + ": " + M.getFirstName() + " | " + M.getSecondName() + " | " + M.getCarRegistration() + " | " + M.getPostcode() + " DELETED " + M.getDelete());
             } else {
                 CustModel.addElement(M.getClientID() + ": " + M.getFirstName() + " | " + M.getSecondName() + " | " + M.getCarRegistration() + " | " + M.getPostcode());
@@ -405,7 +405,7 @@ public class DialogCustomerForm extends JDialog {
     private void textList() {
         DefaultListModel CustModel = new DefaultListModel();
         for (Client M : ClientList.customerList()) {
-            if (M.getDelete() == true) {
+            if (M.getDelete()) {
                 CustModel.addElement(M.getClientID() + ": " + M.getFirstName() + " | " + M.getSecondName() + " | " + M.getCarRegistration() + " | " + M.getPostcode() + " DELETED " + M.getDelete());
             } else {
                 CustModel.addElement(M.getClientID() + ": " + M.getFirstName() + " | " + M.getSecondName() + " | " + M.getCarRegistration() + " | " + M.getPostcode());

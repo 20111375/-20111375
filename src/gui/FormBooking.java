@@ -47,7 +47,7 @@ public class FormBooking extends JDialog {
     private JPanel FormBooking;
     private JPanel BookForm;
     private String TypeName;
-    private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+    private final SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
     private String StartDate = null;
     private int FinishDate;
     private String PitchSelected;
@@ -123,7 +123,7 @@ public class FormBooking extends JDialog {
             public void actionPerformed(ActionEvent e) {
                 DialogBookingSummary booked = new DialogBookingSummary();
                 Pricing price = new Pricing();
-                double tot = price.Total(price.getFee(), price.Discount(getStartDate()), getFinishDate());
+                double tot = price.Total(price.getFee(), getFinishDate(), getStartDate());
                 BookingPitch.setTotal(tot);
                 booked.make(BookingClient, BookingPitch, getStartDate(), makeFinishDate(getFinishDate(), getStartDate()));
             }
@@ -175,7 +175,7 @@ public class FormBooking extends JDialog {
                 if (StartDate != null && FinishDate != 0 && TypeName != null) {
                     String tempTime = makeFinishDate(getFinishDate(), getStartDate());
                     try {
-                        pitches = new PitchList().Items(getStartDate(), tempTime.toString(), getTypeName());
+                        pitches = new PitchList().Items(getStartDate(), tempTime, getTypeName());
                     } catch (Exception e1) {
                         e1.printStackTrace();
                     }
@@ -238,7 +238,7 @@ public class FormBooking extends JDialog {
              */
             @Override
             public void valueChanged(ListSelectionEvent e) {
-                if (e.getValueIsAdjusting() == true) {
+                if (e.getValueIsAdjusting()) {
                     if (isEmpty()) {
                         PitchDetails.setText(null);
                     }
@@ -254,7 +254,7 @@ public class FormBooking extends JDialog {
                     }
                     PitchDetails.append("\n");
                     PitchDetails.append("Start date: " + getStartDate() + "\n");
-                    PitchDetails.append("Finish date: " + makeFinishDate(getFinishDate(), getStartDate()).toString() + "\n");
+                    PitchDetails.append("Finish date: " + makeFinishDate(getFinishDate(), getStartDate()) + "\n");
                 }
             }
         });
@@ -295,7 +295,7 @@ public class FormBooking extends JDialog {
     /**
      * @param bookingPitch sets a booking pitch of type pitch
      */
-    public void setBookingPitch(Pitch bookingPitch) {
+    void setBookingPitch(Pitch bookingPitch) {
         BookingPitch = bookingPitch;
     }
 
@@ -309,21 +309,21 @@ public class FormBooking extends JDialog {
     /**
      * @param bookingClient sets a booking customer of type client
      */
-    public void setBookingClient(Client bookingClient) {
+    void setBookingClient(Client bookingClient) {
         BookingClient = bookingClient;
     }
 
     /**
      * @return gets a search of type dialog search
      */
-    public DialogSearch getSearch() {
+    DialogSearch getSearch() {
         return search;
     }
 
     /**
      * @param search sets a new DialogSearch object and assigns it to search
      */
-    public void setSearch(DialogSearch search) {
+    void setSearch(DialogSearch search) {
         this.search = new DialogSearch(SwingUtilities.getWindowAncestor(this));
     }
 
@@ -337,7 +337,7 @@ public class FormBooking extends JDialog {
     /**
      * @param pitchSelected sets a string of type pitch selected
      */
-    public void setPitchSelected(String pitchSelected) {
+    void setPitchSelected(String pitchSelected) {
         PitchSelected = pitchSelected;
     }
 
@@ -346,7 +346,7 @@ public class FormBooking extends JDialog {
      * @param Start string date (format yyyy-MM-dd)
      * @return a date of type Date is returned
      */
-    public String makeFinishDate(int day, String Start) {
+    String makeFinishDate(int day, String Start) {
         Calendar calendar = Calendar.getInstance();
         try {
             calendar.setTime(dateFormat.parse(Start));
@@ -374,42 +374,42 @@ public class FormBooking extends JDialog {
     /**
      * @return gets an int of type finish date (e.g. 1)
      */
-    public int getFinishDate() {
+    int getFinishDate() {
         return FinishDate;
     }
 
     /**
      * @param finishDate sets an int of type finish date (e.g. 1 day)
      */
-    public void setFinishDate(int finishDate) {
+    void setFinishDate(int finishDate) {
         FinishDate = finishDate;
     }
 
     /**
      * @return gets a string of type start date (format yyy-MM-dd)
      */
-    public String getStartDate() {
+    String getStartDate() {
         return StartDate;
     }
 
     /**
      * @param startDate sets a string of type start date
      */
-    public void setStartDate(String startDate) {
+    void setStartDate(String startDate) {
         StartDate = startDate;
     }
 
     /**
      * @return gets a string of type name
      */
-    public String getTypeName() {
+    String getTypeName() {
         return TypeName;
     }
 
     /**
      * @param typeName sets a string of type name
      */
-    public void setTypeName(String typeName) {
+    void setTypeName(String typeName) {
         TypeName = typeName;
     }
 
@@ -430,7 +430,7 @@ public class FormBooking extends JDialog {
     /**
      * @return gets the status of a booking extend window
      */
-    public DialogExtendBooking getBookingCheck() {
+    DialogExtendBooking getBookingCheck() {
         return bookingCheck;
     }
 
@@ -444,7 +444,7 @@ public class FormBooking extends JDialog {
     /**
      * @return gets the status of a booking delete window
      */
-    public DialogDeleteBooking getBookingDelete() {
+    DialogDeleteBooking getBookingDelete() {
         return bookingDelete;
     }
 
@@ -476,9 +476,6 @@ public class FormBooking extends JDialog {
      */
     private boolean isEmpty() {
         String tmp = PitchDetails.getText().trim();
-        if ((tmp != null) && (tmp.trim().length() > 0)) {
-            return true;
-        }
-        return false;
+        return (tmp != null) && (tmp.trim().length() > 0);
     }
 }

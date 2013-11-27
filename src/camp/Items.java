@@ -19,7 +19,7 @@ public class Items {
     }
 
     /**
-     * @param name
+     * @param name items name as type items
      * @return null
      */
     public Items Find(Items name) {

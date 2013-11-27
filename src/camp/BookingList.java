@@ -17,7 +17,7 @@ import java.util.List;
  * booking lists hold collections of type booking
  */
 public class BookingList extends GenericList<Booking> {
-    protected List<Booking> items;// define a list object to pass items objects into
+    private List<Booking> items;// define a list object to pass items objects into
 
     /**
      * @return a items list containing item objects (of type list)
@@ -25,7 +25,7 @@ public class BookingList extends GenericList<Booking> {
      */
     public List<Booking> Items() throws Exception {
         if (items == null) {
-            items = new ArrayList<Booking>();
+            items = new ArrayList<>();
             try {
                 String SQL = "SELECT * FROM Booking";
                 ResultSet resultset = new connection().connect(SQL);
@@ -46,7 +46,7 @@ public class BookingList extends GenericList<Booking> {
      */
     public List<Booking> Items(int CustID) throws Exception {
         if (items == null) {
-            items = new ArrayList<Booking>();
+            items = new ArrayList<>();
             try {
                 String SQL = "select  * from booking\n" +
                         "where customerid = " + CustID + " and\n" +
@@ -65,7 +65,7 @@ public class BookingList extends GenericList<Booking> {
     /**
      * @return a booking list collection
      */
-    public static final List<Booking> customerList() {
+    public static List<Booking> customerList() {
         List<Booking> bookinglist = null;
         try {
             bookinglist = new BookingList().Items();
@@ -81,7 +81,7 @@ public class BookingList extends GenericList<Booking> {
      */
     public List<Booking> WhoHasntPaid() throws Exception {
         if (items == null) {
-            items = new ArrayList<Booking>();
+            items = new ArrayList<>();
             try {
                 String SQL = "SELECT * FROM APP.BOOKING\n" +
                         "WHERE\n" +

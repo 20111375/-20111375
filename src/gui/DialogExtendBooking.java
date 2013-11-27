@@ -22,7 +22,7 @@ import java.util.List;
  */
 public class DialogExtendBooking extends JDialog {
     public Client myBooking = new Client();
-    public Booking extendThis = new Booking();
+    private final Booking extendThis = new Booking();
     private JPanel contentPane;
     private JButton buttonOK;
     private JButton buttonCancel;
@@ -36,8 +36,6 @@ public class DialogExtendBooking extends JDialog {
     private JComboBox extendByDays;
     private JList CustomerBookingsList;
     private JLabel Warning;
-    private List<JFormattedTextField> fieldList = new ArrayList<JFormattedTextField>();
-    private DocListener docListener = new DocListener();
     private List<Pitch> pitches = null;
 
     /**
@@ -47,7 +45,9 @@ public class DialogExtendBooking extends JDialog {
         setContentPane(contentPane);
         setModal(true);
         getRootPane().setDefaultButton(buttonOK);
+        DocListener docListener = new DocListener();
         docListener.setBtn(submitButton);
+        List<JFormattedTextField> fieldList = new ArrayList<>();
         docListener.setObjectList(fieldList);
         fieldList.add(Customer);
         for (JFormattedTextField F : fieldList) {
@@ -65,7 +65,7 @@ public class DialogExtendBooking extends JDialog {
                 extendThis.setFromDate(returnItem(CustomerBookingsList.getSelectedValue().toString(), 3));
                 extendThis.setPaid(false);
                 Pricing price = new Pricing();
-                double total = price.Total(price.getFee(), price.Discount(extendThis.getFromDate()), extendByDays.getSelectedIndex());
+                double total = price.Total(price.getFee(), extendByDays.getSelectedIndex(), extendThis.getToDate());
                 extendThis.setTotal(total);
                 extendThis.insertNewBooking();
 
@@ -242,6 +242,7 @@ public class DialogExtendBooking extends JDialog {
         } catch (ParseException e) {
             e.printStackTrace();
         }
+        assert BookingIDFormat != null;
         BookingIDFormat.setValidCharacters("0123456789");
         Customer = new JFormattedTextField(BookingIDFormat);
     }

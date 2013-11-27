@@ -10,14 +10,13 @@ import db.connection;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.text.DecimalFormat;
 
 /**
  * class definition
  * pricing provides methods for calculating cost
  */
 public class Pricing {
-    final double Fee = 5.00; // hard coded value for flat rate pitch cost per night
+    double fee = 5.00;
 
     /**
      * class constructor
@@ -30,22 +29,20 @@ public class Pricing {
      * @return gets fee as a double
      */
     public double getFee() {
-        return Fee;
+        return this.fee;
     }
 
     /**
-     * @param fee      accepts a fee value of type double
-     * @param discount accepts a discount of type int
-     * @param days     accepts a reservation length in days
+     * @param fee       accepts a fee value of type double
+     * @param days      accepts a reservation length in days
+     * @param startDate accepts a string of the reservation start date
      * @return a total reservation fee of type double
      */
-    public double Total(Double fee, int discount, int days) {
-        DecimalFormat doubleFormat = new DecimalFormat("##.##");
-        double result = 0.00;
-        double lessDiscount = 0.00;
-        lessDiscount = (fee * days) / 100.00;
+    public double Total(Double fee, int days, String startDate) {
+        double result;
+        double lessDiscount;
+        lessDiscount = (fee * days) * Discount(startDate);
         result = (fee * days) - lessDiscount;
-        doubleFormat.format(result);
         return result;
     }
 
@@ -53,14 +50,15 @@ public class Pricing {
      * @param StartDate accepts string (format yyy-MM-dd) as a reservation start date
      * @return an int discount value for a reservation
      */
-    public int Discount(String StartDate) {
-        int discount = 0;
+
+    public double Discount(String StartDate) {
+        double discount = 0;
         String SQL = "SELECT app.SEASON.DISCOUNT from app.SEASON\n" +
                 "where '" + StartDate + "' >= app.SEASON.STARTDATE and '" + StartDate + "' < app.season.ENDDATE";
         ResultSet resultset = new connection().Discount(SQL);
         try {
             while (resultset.next()) {
-                discount = resultset.getInt(1);
+                discount = resultset.getDouble("DISCOUNT");
             }
         } catch (SQLException e) {
             e.printStackTrace();

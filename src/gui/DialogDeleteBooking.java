@@ -24,7 +24,7 @@ import java.util.List;
  */
 public class DialogDeleteBooking extends JDialog {
     public Client myBooking = new Client();
-    public Booking deleteThis = new Booking();
+    private final Booking deleteThis = new Booking();
     private JPanel contentPane;
     private JButton buttonOK;
     private JButton buttonCancel;
@@ -34,8 +34,6 @@ public class DialogDeleteBooking extends JDialog {
     private JFormattedTextField Customer;
     private JTextArea CarReg;
     private JList CustomerBookingsList;
-    private List<JFormattedTextField> fieldList = new ArrayList<JFormattedTextField>();
-    private DocListener docListener = new DocListener();
 
     /**
      * @param windowAncestor class constructor
@@ -44,7 +42,9 @@ public class DialogDeleteBooking extends JDialog {
         setContentPane(contentPane);
         setModal(true);
         getRootPane().setDefaultButton(buttonOK);
+        DocListener docListener = new DocListener();
         docListener.setBtn(submitButton);
+        List<JFormattedTextField> fieldList = new ArrayList<>();
         docListener.setObjectList(fieldList);
         fieldList.add(Customer);
         for (JFormattedTextField F : fieldList) {
@@ -223,6 +223,7 @@ public class DialogDeleteBooking extends JDialog {
         } catch (ParseException e) {
             e.printStackTrace();
         }
+        assert BookingIDFormat != null;
         BookingIDFormat.setValidCharacters("0123456789");
         Customer = new JFormattedTextField(BookingIDFormat);
     }

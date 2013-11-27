@@ -70,8 +70,8 @@
     <table name="SEASON" schema="APP" catalog="" type="TABLE">
       <column name="STARTDATE" sqlType="DATE" length="10" precision="0" nullable="false" jdbcType="91"/>
       <column name="ENDDATE" sqlType="DATE" length="10" precision="0" nullable="false" jdbcType="91"/>
-      <column name="DISCOUNT" sqlType="INTEGER" length="10" precision="0" nullable="true" jdbcType="4"/>
       <column name="SEASONNAME" sqlType="VARCHAR" length="25" precision="0" nullable="true" jdbcType="12"/>
+      <column name="DISCOUNT" sqlType="DOUBLE" length="52" precision="0" nullable="true" jdbcType="8"/>
     </table>
   </data-source>
 </component>

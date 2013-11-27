@@ -15,7 +15,7 @@ public class Pitch extends Items {
     private String pitchName;
     private Integer pitchType;
     private int[] TypeID;
-    private String TypeName[] = {"CARAVAN", "MOTORHOME", "TENT"};
+    private final String[] TypeName = {"CARAVAN", "MOTORHOME", "TENT"};
     private int PitchID;
     private double total;
 
@@ -40,10 +40,10 @@ public class Pitch extends Items {
     /**
      * class constructor
      *
-     * @param pitchName
-     * @param pitchType
-     * @param typeID
-     * @param pitchID
+     * @param pitchName string pitch name
+     * @param pitchType int pitch type
+     * @param typeID    int array pitch type
+     * @param pitchID   int pitch id
      */
     public Pitch(String pitchName, int pitchType, int[] typeID, int pitchID) {
         this.pitchName = pitchName;

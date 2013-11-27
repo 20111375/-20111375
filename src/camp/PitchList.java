@@ -17,7 +17,7 @@ import java.util.List;
  * pitch lists hold collections of type booking
  */
 public class PitchList extends GenericList<Pitch> {
-    protected List<Pitch> items;
+    private List<Pitch> items;
 
     /**
      * @return an array list of items
@@ -25,7 +25,7 @@ public class PitchList extends GenericList<Pitch> {
      */
     public List<Pitch> Items() throws Exception {
         if (items == null) {
-            items = new ArrayList<Pitch>();
+            items = new ArrayList<>();
             try {
                 String SQL = "SELECT * FROM PITCH join PITCHTYPE on app.pitch.pitchtypeid  = app.PITCHTYPE.pitchtypeid";
                 ResultSet resultset = new connection().connect(SQL);
@@ -49,7 +49,7 @@ public class PitchList extends GenericList<Pitch> {
      */
     public List<Pitch> Items(String Start, String End, String Name) throws Exception {
         if (items == null) {
-            items = new ArrayList<Pitch>();
+            items = new ArrayList<>();
             try {
                 String SQL = "select app.PITCH.PITCHID, app.PITCH.PITCHNAME, app.pitchtype.PITCHTYPEID, app.PITCHTYPE.TENT,\n" +
                         "app.PITCHTYPE.CARAVAN, app.PITCHTYPE.MOTORHOME from app.PITCH join PITCHTYPE on app.pitch.pitchtypeid  = app.PITCHTYPE.pitchtypeid\n" +
@@ -79,7 +79,7 @@ public class PitchList extends GenericList<Pitch> {
      */
     public List<Pitch> Items(String Start, String End) throws Exception {
         if (items == null) {
-            items = new ArrayList<Pitch>();
+            items = new ArrayList<>();
             try {
                 String SQL = "select app.PITCH.PITCHID, app.PITCH.PITCHNAME, app.pitchtype.PITCHTYPEID, app.PITCHTYPE.TENT,\n" +
                         "app.PITCHTYPE.CARAVAN, app.PITCHTYPE.MOTORHOME from app.PITCH join PITCHTYPE on app.pitch.pitchtypeid  = app.PITCHTYPE.pitchtypeid\n" +
@@ -107,7 +107,7 @@ public class PitchList extends GenericList<Pitch> {
      */
     public List<Pitch> Items(String Name) throws Exception {
         if (items == null) {
-            items = new ArrayList<Pitch>();
+            items = new ArrayList<>();
             try {
                 String SQL = "SELECT * FROM PITCH,PITCHTYPE WHERE PITCHNAME = '" + Name + "'";
                 ResultSet resultset = new connection().connect(SQL);
@@ -131,7 +131,7 @@ public class PitchList extends GenericList<Pitch> {
      */
     public List<Pitch> Items(String Start, String End, int pitch) throws Exception {
         if (items == null) {
-            items = new ArrayList<Pitch>();
+            items = new ArrayList<>();
             try {
                 String SQL = "select app.PITCH.PITCHID, app.PITCH.PITCHNAME, app.pitchtype.PITCHTYPEID, app.PITCHTYPE.TENT,\n" +
                         "app.PITCHTYPE.CARAVAN, app.PITCHTYPE.MOTORHOME from app.PITCH join PITCHTYPE on app.pitch.pitchtypeid  = app.PITCHTYPE.pitchtypeid\n" +

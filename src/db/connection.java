@@ -13,8 +13,7 @@ import java.sql.*;
  * connection provides methods for database manipulation
  */
 public class connection {
-    protected ResultSet resultset = null;
-    private String PathToDB = "jdbc:derby:../~20111375/database";// set this to the relative path of the project
+    private ResultSet resultset = null;
 
     /**
      * class constructor
@@ -25,8 +24,9 @@ public class connection {
     /**
      * @return gets the path to the database as a string
      */
-    public String getPathToDB() {
-        return PathToDB;
+    String getPathToDB() {
+        String pathToDB = "jdbc:derby:../~20111375/database";
+        return pathToDB;
     }
 
     /**
@@ -41,13 +41,7 @@ public class connection {
             Connection connect = DriverManager.getConnection(getPathToDB());
             PreparedStatement statement = connect.prepareStatement(SQLString);
             resultset = statement.executeQuery();
-        } catch (InstantiationException e) {
-            e.printStackTrace();
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        } catch (SQLException e) {
+        } catch (InstantiationException | IllegalAccessException | ClassNotFoundException | SQLException e) {
             e.printStackTrace();
         }
         return resultset;
@@ -63,13 +57,7 @@ public class connection {
             Connection connect = DriverManager.getConnection(getPathToDB());
             PreparedStatement statement = connect.prepareStatement(SQL);
             statement.executeUpdate();
-        } catch (InstantiationException e) {
-            e.printStackTrace();
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        } catch (SQLException e) {
+        } catch (InstantiationException | IllegalAccessException | ClassNotFoundException | SQLException e) {
             e.printStackTrace();
         }
     }
@@ -84,19 +72,13 @@ public class connection {
             Connection connect = DriverManager.getConnection(getPathToDB());
             PreparedStatement statement = connect.prepareStatement(SQL);
             statement.executeUpdate();
-        } catch (InstantiationException e) {
-            e.printStackTrace();
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        } catch (SQLException e) {
+        } catch (InstantiationException | IllegalAccessException | ClassNotFoundException | SQLException e) {
             e.printStackTrace();
         }
     }
 
     /**
-     * @param SQLString
+     * @param SQLString sql statement string
      * @return a result set relating to the sql string
      */
     public ResultSet Discount(String SQLString) {
@@ -106,13 +88,7 @@ public class connection {
             Connection connect = DriverManager.getConnection(getPathToDB());
             PreparedStatement statement = connect.prepareStatement(SQLString);
             resultset = statement.executeQuery();
-        } catch (InstantiationException e) {
-            e.printStackTrace();
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        } catch (SQLException e) {
+        } catch (InstantiationException | IllegalAccessException | ClassNotFoundException | SQLException e) {
             e.printStackTrace();
         }
         return resultset;

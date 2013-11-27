@@ -15,7 +15,7 @@ import java.util.List;
  * @param <E> a generic list collection
  */
 public class GenericList<E> {
-    protected List<E> items;
+    List<E> items;
 
     /**
      * @return a collection of item objects
@@ -23,7 +23,7 @@ public class GenericList<E> {
      */
     public List<E> Items() throws Exception {
         if (items == null) {
-            items = new ArrayList<E>();
+            items = new ArrayList<>();
         }
         return items;
     }
