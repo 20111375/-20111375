@@ -16,7 +16,7 @@ import java.sql.SQLException;
  * pricing provides methods for calculating cost
  */
 public class Pricing {
-    double fee = 5.00;
+    double fee = 7.95;
 
     /**
      * class constructor
@@ -52,7 +52,7 @@ public class Pricing {
      */
 
     public double Discount(String StartDate) {
-        double discount = 0;
+        double discount = 0.0;
         String SQL = "SELECT app.SEASON.DISCOUNT from app.SEASON\n" +
                 "where '" + StartDate + "' >= app.SEASON.STARTDATE and '" + StartDate + "' < app.season.ENDDATE";
         ResultSet resultset = new connection().Discount(SQL);

@@ -125,11 +125,13 @@ public class DialogDeleteBooking extends JDialog {
             @Override
             public void actionPerformed(ActionEvent e) {
                 //set the properties of the object to be deleted
-                deleteThis.setClientID(Integer.parseInt(returnItem(CustomerBookingsList.getSelectedValue().toString(), 0)));
-                deleteThis.setPitchID(Integer.parseInt(returnItem(CustomerBookingsList.getSelectedValue().toString(), 1)));
-                deleteThis.setFromDate(returnItem(CustomerBookingsList.getSelectedValue().toString(), 2));
-                deleteThis.setToDate(returnItem(CustomerBookingsList.getSelectedValue().toString(), 3));
-                deleteThis.deleteBooking();
+                if (!CustomerBookingsList.isSelectionEmpty()) {
+                    deleteThis.setClientID(Integer.parseInt(returnItem(CustomerBookingsList.getSelectedValue().toString(), 0)));
+                    deleteThis.setPitchID(Integer.parseInt(returnItem(CustomerBookingsList.getSelectedValue().toString(), 1)));
+                    deleteThis.setFromDate(returnItem(CustomerBookingsList.getSelectedValue().toString(), 2));
+                    deleteThis.setToDate(returnItem(CustomerBookingsList.getSelectedValue().toString(), 3));
+                    deleteThis.deleteBooking();
+                }
             }
         });
     }
