@@ -32,6 +32,22 @@ public class Communication {
     }
 
     /**
+     * @param E type booking
+     * @return the reservation text
+     */
+    private static String textBody(Booking E) {
+        return
+                " Thank you for picking High farm, your reservation details are: " + "\n" +
+                        "Customer ID: " + E.getClientID() + "\n" +
+                        "Pitch ID: " + E.getPitchID() + "\n" +
+                        "Start Date: " + E.getFromDate() + "\n" +
+                        "Finish Date: " + E.getToDate() + "\n" +
+                        "Pitch number: " + E.getPitchID() + "\n" +
+                        "Total Cost: " + E.getTotal() + "\n" +
+                        "Once again thank you and we hope you have a good stay.";
+    }
+
+    /**
      * @param E booking object
      * @param F client object
      * @param G string value of email address
@@ -58,16 +74,8 @@ public class Communication {
                 message.setFrom(new InternetAddress("campadoodledoo@gmail.com"));
                 message.setRecipients(Message.RecipientType.TO,
                         InternetAddress.parse(G));
-                message.setSubject("Booking reservation");
-                message.setText("Hello" + F.getFirstName() + "\n" +
-                        "Thank you for picking High farm, your reservation details are: " + "\n" +
-                        "Customer ID: " + E.getClientID() + "\n" +
-                        "Pitch ID: " + E.getPitchID() + "\n" +
-                        "Start Date:" + E.getFromDate() + "\n" +
-                        "Finish Date " + E.getToDate() + "\n" +
-                        "Pitch number: " + E.getPitchID() + "\n" +
-                        "Total Cost: " + E.getTotal() + "\n" +
-                        "Once again thank you and we hope you have a good stay.");
+                message.setSubject(" Booking reservation");
+                message.setText(" Hello " + F.getFirstName() + textBody(E));
                 Transport.send(message);
             } catch (MessagingException e) {
                 e.printStackTrace();
@@ -85,22 +93,12 @@ public class Communication {
         Document document = new Document();
         try {
             PdfWriter.getInstance(document, new FileOutputStream(OutPut));
-        } catch (DocumentException e) {
-            e.printStackTrace();
-        } catch (FileNotFoundException e) {
+        } catch (DocumentException | FileNotFoundException e) {
             e.printStackTrace();
         }
         document.open();
         try {
-            document.add(new Paragraph("Hello " + F.getFirstName() + "\n" +
-                    "Thank you for picking High farm, your reservation details are: " + "\n" +
-                    "Customer ID: " + E.getClientID() + "\n" +
-                    "Pitch ID: " + E.getPitchID() + "\n" +
-                    "Start Date:" + E.getFromDate() + "\n" +
-                    "Finish Date " + E.getToDate() + "\n" +
-                    "Pitch number: " + E.getPitchID() + "\n" +
-                    "Total Cost: " + E.getTotal() + "\n" +
-                    "Once again thank you and we hope you have a good stay."));
+            document.add(new Paragraph("Hello " + F.getFirstName() + textBody(E)));
         } catch (DocumentException e) {
             e.printStackTrace();
         }
