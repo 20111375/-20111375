@@ -10,6 +10,7 @@ import db.connection;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.text.DecimalFormat;
 
 /**
  * class definition
@@ -29,7 +30,7 @@ public class Pricing {
      * @return gets fee as a double
      */
     public double getFee() {
-        return this.fee;
+        return decimalFormat(this.fee);
     }
 
     /**
@@ -43,14 +44,13 @@ public class Pricing {
         double lessDiscount;
         lessDiscount = (fee * days) * Discount(startDate);
         result = (fee * days) - lessDiscount;
-        return result;
+        return decimalFormat(result);
     }
 
     /**
      * @param StartDate accepts string (format yyy-MM-dd) as a reservation start date
      * @return an int discount value for a reservation
      */
-
     public double Discount(String StartDate) {
         double discount = 0.0;
         String SQL = "SELECT app.SEASON.DISCOUNT from app.SEASON\n" +
@@ -63,6 +63,15 @@ public class Pricing {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        return discount;
+        return decimalFormat(discount);
+    }
+
+    /**
+     * @param figure of type double
+     * @return a formatted decimal currency number
+     */
+    private double decimalFormat(double figure) {
+        DecimalFormat figureChange = new DecimalFormat("#.##");
+        return Double.parseDouble(figureChange.format(figure));
     }
 }
