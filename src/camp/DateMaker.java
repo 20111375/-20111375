@@ -34,4 +34,18 @@ public class DateMaker {
         }
         return dateFormat.format(calendar.getTime());
     }
+
+    /**
+     * @param Start accepts a string (formatted tp yyyy-MM-dd) representing a start date
+     * @return a string (formatted tp yyyy-MM-dd)
+     */
+    public String DateMaker(String Start) {
+        Calendar calendar = Calendar.getInstance();
+        try {
+            calendar.setTime(dateFormat.parse(Start));
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        return dateFormat.format(calendar.getTime());
+    }
 }

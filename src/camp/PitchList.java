@@ -152,4 +152,25 @@ public class PitchList extends GenericList<Pitch> {
         }
         return items;
     }
+
+    public List<Pitch> ItemsByDate(String Start) throws Exception {
+        if (items == null) {
+            items = new ArrayList<>();
+            try {
+                String SQL = "select app.PITCH.PITCHID, app.PITCH.PITCHNAME, app.PITCH.PITCHTYPEID from app.PITCH\n" +
+                        "where exists(\n" +
+                        "    select * from app.BOOKING\n" +
+                        "    where app.BOOKING.PITCHID = app.PITCH.PITCHID\n" +
+                        "          and '" + Start + "' <= App.booking.FROMDATE and '" + Start + "' <= APP.booking.TODATE\n" +
+                        ")";
+                ResultSet resultset = new connection().connect(SQL);
+                while (resultset.next()) {
+                    items.add(new Pitch(resultset.getString("PITCHNAME"), resultset.getInt("PITCHTYPEID"), resultset.getInt("PITCHID")));
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return items;
+    }
 }

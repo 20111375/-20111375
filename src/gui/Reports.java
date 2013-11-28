@@ -6,13 +6,14 @@
  */
 package gui;
 
-import camp.Booking;
-import camp.BookingList;
-import camp.Client;
-import camp.ClientList;
+import camp.*;
+import com.jcalendar.event.CalendarEvent;
+import com.jcalendar.pane.calendar.CalendarPane;
 
 import javax.swing.*;
 import java.awt.event.*;
+import java.text.SimpleDateFormat;
+import java.util.List;
 
 /**
  * class definition
@@ -27,6 +28,12 @@ public class Reports extends JDialog {
     private JPanel tabs;
     private JList list1;
     private JList list2;
+    private JList list3;
+    private JButton search;
+    private CalendarPane pickDate;
+    private String StartDate = null;
+    private final SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+    private List<Pitch> pitches = null;
 
     /**
      * class constructor
@@ -54,7 +61,7 @@ public class Reports extends JDialog {
             }
         });
 
-// call onCancel() when cross is clicked
+        // call onCancel() when cross is clicked
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
         addWindowListener(new WindowAdapter() {
             public void windowClosing(WindowEvent e) {
@@ -62,12 +69,43 @@ public class Reports extends JDialog {
             }
         });
 
-// call onCancel() on ESCAPE
+        // call onCancel() on ESCAPE
         contentPane.registerKeyboardAction(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 onCancel();
             }
         }, KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
+
+        pickDate.addCalendarSelectionListener(new CalListen() {
+            public void selectionChanged(CalendarEvent arg0) {
+                try {
+                    setStartDate(dateFormat.format(arg0.getDate()));
+                    System.out.println(dateFormat.format(arg0.getDate()));
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+
+        /**
+         *set list model with booked pitches on a specified date
+         */
+        search.addActionListener(new ActionListener() {
+            /**
+             * Invoked when an action occurs.
+             */
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if (StartDate != null) {
+                    try {
+                        pitches = new PitchList().ItemsByDate(getStartDate());
+                    } catch (Exception e1) {
+                        e1.printStackTrace();
+                    }
+                    list3.setListData(pitches.toArray());
+                }
+            }
+        });
     }
 
     /**
@@ -87,7 +125,7 @@ public class Reports extends JDialog {
     }
 
     /**
-     * initialise called in parent winow
+     * initialise called in parent window
      */
     public void run() {
         Reports dialog = new Reports();
@@ -119,5 +157,14 @@ public class Reports extends JDialog {
             e.printStackTrace();
         }
         list2 = new JList(PaidModel);
+        list3 = new JList();
+    }
+
+    public String getStartDate() {
+        return StartDate;
+    }
+
+    public void setStartDate(String startDate) {
+        StartDate = startDate;
     }
 }

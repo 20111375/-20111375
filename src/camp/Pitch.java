@@ -53,6 +53,17 @@ public class Pitch extends Items {
     }
 
     /**
+     * @param pitchName string pitch name
+     * @param pitchType int pitch type
+     * @param pitchID   int pitch id
+     */
+    public Pitch(String pitchName, int pitchType, int pitchID) {
+        this.pitchName = pitchName;
+        this.pitchType = pitchType;
+        this.PitchID = pitchID;
+    }
+
+    /**
      * @return gets pitch id of type int
      */
     public int getPitchID() {
