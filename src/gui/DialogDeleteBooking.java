@@ -23,8 +23,8 @@ import java.util.List;
  * gui class for deleting a booking
  */
 public class DialogDeleteBooking extends JDialog {
-    public Client myBooking = new Client();
     private final Booking deleteThis = new Booking();
+    public Client myBooking = new Client();
     private JPanel contentPane;
     private JButton buttonOK;
     private JButton buttonCancel;
@@ -56,7 +56,8 @@ public class DialogDeleteBooking extends JDialog {
          */
         buttonOK.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-
+                //clean up the list on exit
+                clearFields();
                 onOK();
             }
         });
@@ -69,7 +70,8 @@ public class DialogDeleteBooking extends JDialog {
                 onCancel();
             }
         });
-
+        //clean up the list on exit
+        clearFields();
         // call onCancel() when cross is clicked
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
         addWindowListener(new WindowAdapter() {
@@ -131,6 +133,7 @@ public class DialogDeleteBooking extends JDialog {
                     deleteThis.setFromDate(returnItem(CustomerBookingsList.getSelectedValue().toString(), 2));
                     deleteThis.setToDate(returnItem(CustomerBookingsList.getSelectedValue().toString(), 3));
                     deleteThis.deleteBooking();
+                    clearFields();
                 }
             }
         });
@@ -228,5 +231,14 @@ public class DialogDeleteBooking extends JDialog {
         assert BookingIDFormat != null;
         BookingIDFormat.setValidCharacters("0123456789");
         Customer = new JFormattedTextField(BookingIDFormat);
+    }
+
+    /**
+     * clear list and textfield
+     */
+    private void clearFields() {
+        DefaultListModel DeleteModel = new DefaultListModel();
+        CustomerBookingsList.setModel(DeleteModel);
+        Customer.setText("");
     }
 }
