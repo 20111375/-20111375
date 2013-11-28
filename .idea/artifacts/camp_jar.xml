@@ -3,8 +3,10 @@
     <output-path>$PROJECT_DIR$/out/artifacts/camp_jar</output-path>
     <root id="archive" name="camp.jar">
       <element id="module-output" name="camp" />
-      <element id="extracted-dir" path="$PROJECT_DIR$/Lib/jcalendar_0.0.4_beta.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/Lib/javax.mail.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/Lib/itextpdf-5.4.4.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/Lib/derby.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/Lib/jcalendar_0.0.4_beta.jar" path-in-jar="/" />
     </root>
   </artifact>
 </component>

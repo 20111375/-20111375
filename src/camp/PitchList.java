@@ -153,6 +153,11 @@ public class PitchList extends GenericList<Pitch> {
         return items;
     }
 
+    /**
+     * @param Start date
+     * @return a list of pitches booked on a specific date
+     * @throws Exception
+     */
     public List<Pitch> ItemsByDate(String Start) throws Exception {
         if (items == null) {
             items = new ArrayList<>();
@@ -161,7 +166,7 @@ public class PitchList extends GenericList<Pitch> {
                         "where exists(\n" +
                         "    select * from app.BOOKING\n" +
                         "    where app.BOOKING.PITCHID = app.PITCH.PITCHID\n" +
-                        "          and '" + Start + "' <= App.booking.FROMDATE and '" + Start + "' <= APP.booking.TODATE\n" +
+                        "          and '" + Start + "' BETWEEN App.booking.FROMDATE and APP.booking.TODATE\n" +
                         ")";
                 ResultSet resultset = new connection().connect(SQL);
                 while (resultset.next()) {

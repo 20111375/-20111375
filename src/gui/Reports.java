@@ -96,13 +96,17 @@ public class Reports extends JDialog {
              */
             @Override
             public void actionPerformed(ActionEvent e) {
+                DefaultListModel BookedModel = new DefaultListModel();
+                list3.setModel(BookedModel);
                 if (StartDate != null) {
                     try {
                         pitches = new PitchList().ItemsByDate(getStartDate());
                     } catch (Exception e1) {
                         e1.printStackTrace();
                     }
-                    list3.setListData(pitches.toArray());
+                    if (!pitches.isEmpty()) {
+                        list3.setListData(pitches.toArray());
+                    }
                 }
             }
         });

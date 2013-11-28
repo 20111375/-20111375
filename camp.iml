@@ -10,7 +10,6 @@
     <orderEntry type="library" exported="" name="jcalendar_0.0.4_beta" level="project" />
     <orderEntry type="library" exported="" name="derby" level="project" />
     <orderEntry type="library" exported="" name="javax.mail" level="project" />
-    <orderEntry type="library" exported="" name="pdfbox-app-1.8.2" level="project" />
     <orderEntry type="library" name="itextpdf-5.4.4" level="project" />
   </component>
 </module>
