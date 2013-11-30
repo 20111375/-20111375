@@ -57,7 +57,7 @@ public class DialogExtendBooking extends JDialog {// example of inheritance as D
         buttonOK.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 //create te new booking and insert it into the database
-                if (Customer != null && extendByDays != null && !CustomerBookingsList.isSelectionEmpty() && isAvailable() == true) {
+                if (Customer != null && extendByDays != null && !CustomerBookingsList.isSelectionEmpty() && isAvailable()) {
                     extendThis.setClientID(Integer.parseInt(returnItem(CustomerBookingsList.getSelectedValue().toString(), 0)));
                     extendThis.setPitchID(Integer.parseInt(returnItem(CustomerBookingsList.getSelectedValue().toString(), 1)));
                     extendThis.setFromDate(returnItem(CustomerBookingsList.getSelectedValue().toString(), 3));
@@ -68,10 +68,7 @@ public class DialogExtendBooking extends JDialog {// example of inheritance as D
                     extendThis.insertNewBooking();
                 }
                 //clean up the UI
-                DefaultListModel ClearModel = new DefaultListModel();
-                CustomerBookingsList.setModel(ClearModel);
-                CustomerBookingsList.repaint();
-                Customer.setText("");
+                CleanUp();
                 onOK();
             }
         });
@@ -88,6 +85,7 @@ public class DialogExtendBooking extends JDialog {// example of inheritance as D
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
         addWindowListener(new WindowAdapter() {
             public void windowClosing(WindowEvent e) {
+                CleanUp();
                 onCancel();
             }
         });
@@ -222,6 +220,18 @@ public class DialogExtendBooking extends JDialog {// example of inheritance as D
         D.setResizable(false);
         D.setVisible(true);
         D.setLocationRelativeTo(null);
+    }
+
+    /**
+     * cleanup all the elements of the UI
+     */
+    private void CleanUp() {
+        DefaultListModel ClearModel = new DefaultListModel();
+        CustomerBookingsList.setModel(ClearModel);
+        CustomerBookingsList.repaint();
+        Customer.setText("");
+        extendByDays.setSelectedIndex(0);
+        myBooking = null;
     }
 
     /**
