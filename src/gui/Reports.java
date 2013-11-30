@@ -19,7 +19,7 @@ import java.util.List;
  * class definition
  * gui class for the reports screen
  */
-public class Reports extends JDialog {
+public class Reports extends JDialog { //example of inheritance as report extends JDialog
     private JPanel contentPane;
     private JButton buttonOK;
     private JButton buttonCancel;

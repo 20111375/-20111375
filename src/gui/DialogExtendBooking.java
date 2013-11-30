@@ -20,7 +20,7 @@ import java.util.List;
  * class definition
  * gui class for extending a booking
  */
-public class DialogExtendBooking extends JDialog {
+public class DialogExtendBooking extends JDialog {// example of inheritance as DialogExtendBooking extends JDialog
     public Client myBooking = new Client();
     private final Booking extendThis = new Booking();
     private JPanel contentPane;
@@ -28,15 +28,12 @@ public class DialogExtendBooking extends JDialog {
     private JButton buttonCancel;
     private JButton submitButton;
     private JButton checkAvailabilityButton;
-    private JRadioButton customerIDRadioButton;
-    private JRadioButton carRegRadioButton;
-    private JTextArea ID;
     private JFormattedTextField Customer;
-    private JTextArea CarReg;
     private JComboBox extendByDays;
     private JList CustomerBookingsList;
     private JLabel Warning;
     private List<Pitch> pitches = null;
+    private boolean Available = false;
 
     /**
      * @param windowAncestor class constructor
@@ -59,16 +56,22 @@ public class DialogExtendBooking extends JDialog {
          */
         buttonOK.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                //
-                extendThis.setClientID(Integer.parseInt(returnItem(CustomerBookingsList.getSelectedValue().toString(), 0)));
-                extendThis.setPitchID(Integer.parseInt(returnItem(CustomerBookingsList.getSelectedValue().toString(), 1)));
-                extendThis.setFromDate(returnItem(CustomerBookingsList.getSelectedValue().toString(), 3));
-                extendThis.setPaid(false);
-                Pricing price = new Pricing();
-                double total = price.Total(price.getFee(), extendByDays.getSelectedIndex(), extendThis.getToDate());
-                extendThis.setTotal(total);
-                extendThis.insertNewBooking();
-
+                //create te new booking and insert it into the database
+                if (Customer != null && extendByDays != null && !CustomerBookingsList.isSelectionEmpty() && isAvailable() == true) {
+                    extendThis.setClientID(Integer.parseInt(returnItem(CustomerBookingsList.getSelectedValue().toString(), 0)));
+                    extendThis.setPitchID(Integer.parseInt(returnItem(CustomerBookingsList.getSelectedValue().toString(), 1)));
+                    extendThis.setFromDate(returnItem(CustomerBookingsList.getSelectedValue().toString(), 3));
+                    extendThis.setPaid(false);
+                    Pricing price = new Pricing();
+                    double total = price.Total(price.getFee(), extendByDays.getSelectedIndex(), extendThis.getToDate());
+                    extendThis.setTotal(total);
+                    extendThis.insertNewBooking();
+                }
+                //clean up the UI
+                DefaultListModel ClearModel = new DefaultListModel();
+                CustomerBookingsList.setModel(ClearModel);
+                CustomerBookingsList.repaint();
+                Customer.setText("");
                 onOK();
             }
         });
@@ -140,8 +143,10 @@ public class DialogExtendBooking extends JDialog {
                         if (pitches.isEmpty()) {
                             System.out.println("nothing was returned");
                             Warning.setText("nothing was returned");
+                            setAvailable(false);
                         } else {
                             for (Pitch B : pitches) {
+                                setAvailable(true);
                                 extendThis.setToDate(tmpDate);
                                 Warning.setText("Press the OK button to extend the booking");
                                 System.out.println(B.getPitchID() + " " + B.getPitchName());
@@ -163,34 +168,6 @@ public class DialogExtendBooking extends JDialog {
     private String returnItem(String item, int at) {
         String[] tmp = item.split(" ");
         return tmp[at];
-    }
-
-    /**
-     * @return gets car reg text area field
-     */
-    public JTextArea getCarReg() {
-        return CarReg;
-    }
-
-    /**
-     * @param carReg sets car reg text area field
-     */
-    public void setCarReg(JTextArea carReg) {
-        CarReg = carReg;
-    }
-
-    /**
-     * @return gets ID text area field
-     */
-    public JTextArea getID() {
-        return ID;
-    }
-
-    /**
-     * @param ID sets ID text area field
-     */
-    public void setID(JTextArea ID) {
-        this.ID = ID;
     }
 
     /**
@@ -222,6 +199,21 @@ public class DialogExtendBooking extends JDialog {
     }
 
     /**
+     * @return boolean value for availability of booking extension
+     */
+    public boolean isAvailable() {
+        return Available;
+    }
+
+    /**
+     * @param available boolean value
+     */
+    public void setAvailable(boolean available) {
+        Available = available;
+    }
+
+
+    /**
      * @param D accepts type DialogExtendBooking
      */
     public void make(DialogExtendBooking D) {
@@ -233,7 +225,8 @@ public class DialogExtendBooking extends JDialog {
     }
 
     /**
-     * custom ui initiliser
+     * custom ui initialises
+     * format the text input of the Customer text field
      */
     private void createUIComponents() {
         MaskFormatter BookingIDFormat = null;

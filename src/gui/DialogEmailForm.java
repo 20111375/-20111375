@@ -14,7 +14,7 @@ import java.awt.event.*;
  * class definition
  * gui class for emailing
  */
-public class DialogEmailForm extends JDialog {
+public class DialogEmailForm extends JDialog { //inheritance example
     private JPanel contentPane;
     private JButton buttonOK;
     private JButton buttonCancel;
@@ -90,7 +90,7 @@ public class DialogEmailForm extends JDialog {
      */
     public String getEmail() {
         if (getEmailAddress().getText().length() != 0) {
-            @SuppressWarnings("UnnecessaryLocalVariable") String address = getEmailAddress().getText();
+            String address = getEmailAddress().getText();
             return address;
         }
         return null;

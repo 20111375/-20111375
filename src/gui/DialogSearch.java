@@ -19,7 +19,7 @@ import java.text.ParseException;
  * class definition
  * gui class for customer searching
  */
-public class DialogSearch extends JDialog {
+public class DialogSearch extends JDialog {// example of inheritance as DialogSearch extends JDialog
     private JPanel dialogSearch;
     private JButton buttonOK;
     private JButton buttonCancel;
@@ -202,7 +202,7 @@ public class DialogSearch extends JDialog {
     }
 
     /**
-     * initilise customer ui components
+     * initialise customer ui components
      */
     private void createUIComponents() {
         MaskFormatter CustomerIDFormat = null;

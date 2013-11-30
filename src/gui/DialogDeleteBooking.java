@@ -219,7 +219,7 @@ public class DialogDeleteBooking extends JDialog {
     }
 
     /**
-     * initilise custom ui elements
+     * initialise custom ui elements
      */
     private void createUIComponents() {
         MaskFormatter BookingIDFormat = null;

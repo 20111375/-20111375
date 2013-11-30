@@ -27,7 +27,7 @@ import java.util.List;
  * class definition
  * gui class for booking a pitch
  */
-public class FormBooking extends JDialog {
+public class FormBooking extends JDialog {// example if inheritance as FormBooking extends JDialog
     private JComboBox PitchType;
     private JList SearchResultList;
     private JButton SearchButton;
@@ -108,7 +108,8 @@ public class FormBooking extends JDialog {
              */
             @Override
             public void actionPerformed(ActionEvent e) {
-                getBookingCheck().make(bookingCheck);
+                getBookingCheck().make(bookingCheck);// get the new object
+                setBookingCheck(bookingCheck);// load a new window object
             }
         });
 
@@ -151,7 +152,6 @@ public class FormBooking extends JDialog {
              */
             @Override
             public void actionPerformed(ActionEvent e) {
-                setSearch(search);// if a new customer is inserted the DialogSearch object needs to be refreshed
                 getSearch().run(search);// loads the  DialogSearch object
                 setBookingClient(search.getPickedClient());
                 if (BookingClient != null) {
@@ -160,6 +160,7 @@ public class FormBooking extends JDialog {
                     CustomerDetails.append("Customer name: " + BookingClient.getFirstName() + " " + BookingClient.getSecondName() + "\n");
                     CustomerDetails.append("Customer car Reg: " + BookingClient.getCarRegistration() + "\n");
                 }
+                setSearch(search);// if a new customer is inserted the DialogSearch object needs to be refreshed
             }
         });
 
@@ -274,7 +275,7 @@ public class FormBooking extends JDialog {
     }
 
     /**
-     * intilise in the parent window
+     * initialise in the parent window
      */
     public static void run() {
         FormBooking dialog = new FormBooking();

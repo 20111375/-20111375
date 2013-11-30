@@ -71,7 +71,7 @@ public class MenuCampsite {
     }
 
     /**
-     * initilise in the parent window
+     * initialise in the parent window
      */
     public void run() {
         JFrame frame = new JFrame("Campsite System");
