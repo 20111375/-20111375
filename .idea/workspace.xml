@@ -6,64 +6,12 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51f6022f-23b8-4194-a60c-864ebe07b5ce" name="Default" comment="final alts">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/camp/Search.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/camp/scrap.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c4c0.dat" afterPath="$PROJECT_DIR$/database/seg0/c4c0.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seg0/c4d1.dat" afterPath="$PROJECT_DIR$/database/seg0/c4d1.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/camp/Booking.html" afterPath="$PROJECT_DIR$/Docs/camp/Booking.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/camp/BookingList.html" afterPath="$PROJECT_DIR$/Docs/camp/BookingList.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/gui/CalListen.html" afterPath="$PROJECT_DIR$/Docs/gui/CalListen.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/camp/Client.html" afterPath="$PROJECT_DIR$/Docs/camp/Client.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/camp/ClientList.html" afterPath="$PROJECT_DIR$/Docs/camp/ClientList.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/DialogBookingSummary.java" afterPath="$PROJECT_DIR$/src/gui/DialogBookingSummary.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/DialogCustomerForm.java" afterPath="$PROJECT_DIR$/src/gui/DialogCustomerForm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/DialogDeleteBooking.java" afterPath="$PROJECT_DIR$/src/gui/DialogDeleteBooking.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/DialogExtendBooking.java" afterPath="$PROJECT_DIR$/src/gui/DialogExtendBooking.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/FormBooking.java" afterPath="$PROJECT_DIR$/src/gui/FormBooking.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/camp/GenericList.html" afterPath="$PROJECT_DIR$/Docs/camp/GenericList.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/camp/Items.html" afterPath="$PROJECT_DIR$/Docs/camp/Items.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/camp/Pitch.html" afterPath="$PROJECT_DIR$/Docs/camp/Pitch.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/camp/PitchList.html" afterPath="$PROJECT_DIR$/Docs/camp/PitchList.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/allclasses-frame.html" afterPath="$PROJECT_DIR$/Docs/allclasses-frame.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/allclasses-noframe.html" afterPath="$PROJECT_DIR$/Docs/allclasses-noframe.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/camp/camper.html" afterPath="$PROJECT_DIR$/Docs/camp/camper.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/db/connection.html" afterPath="$PROJECT_DIR$/Docs/db/connection.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/constant-values.html" afterPath="$PROJECT_DIR$/Docs/constant-values.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/db.lck" afterPath="$PROJECT_DIR$/database/db.lck" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/deprecated-list.html" afterPath="$PROJECT_DIR$/Docs/deprecated-list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/derby.log" afterPath="$PROJECT_DIR$/derby.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/help-doc.html" afterPath="$PROJECT_DIR$/Docs/help-doc.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/index-files/index-1.html" afterPath="$PROJECT_DIR$/Docs/index-files/index-1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/index-files/index-10.html" afterPath="$PROJECT_DIR$/Docs/index-files/index-10.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/index-files/index-11.html" afterPath="$PROJECT_DIR$/Docs/index-files/index-11.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/index-files/index-2.html" afterPath="$PROJECT_DIR$/Docs/index-files/index-2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/index-files/index-3.html" afterPath="$PROJECT_DIR$/Docs/index-files/index-3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/index-files/index-4.html" afterPath="$PROJECT_DIR$/Docs/index-files/index-4.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/index-files/index-5.html" afterPath="$PROJECT_DIR$/Docs/index-files/index-5.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/index-files/index-6.html" afterPath="$PROJECT_DIR$/Docs/index-files/index-6.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/index-files/index-7.html" afterPath="$PROJECT_DIR$/Docs/index-files/index-7.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/index-files/index-8.html" afterPath="$PROJECT_DIR$/Docs/index-files/index-8.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/index-files/index-9.html" afterPath="$PROJECT_DIR$/Docs/index-files/index-9.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/index.html" afterPath="$PROJECT_DIR$/Docs/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/overview-frame.html" afterPath="$PROJECT_DIR$/Docs/overview-frame.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/overview-summary.html" afterPath="$PROJECT_DIR$/Docs/overview-summary.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/overview-tree.html" afterPath="$PROJECT_DIR$/Docs/overview-tree.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/camp/package-frame.html" afterPath="$PROJECT_DIR$/Docs/camp/package-frame.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/db/package-frame.html" afterPath="$PROJECT_DIR$/Docs/db/package-frame.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/gui/package-frame.html" afterPath="$PROJECT_DIR$/Docs/gui/package-frame.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/camp/package-summary.html" afterPath="$PROJECT_DIR$/Docs/camp/package-summary.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/db/package-summary.html" afterPath="$PROJECT_DIR$/Docs/db/package-summary.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/gui/package-summary.html" afterPath="$PROJECT_DIR$/Docs/gui/package-summary.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/camp/package-tree.html" afterPath="$PROJECT_DIR$/Docs/camp/package-tree.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/db/package-tree.html" afterPath="$PROJECT_DIR$/Docs/db/package-tree.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/gui/package-tree.html" afterPath="$PROJECT_DIR$/Docs/gui/package-tree.html" />
+    <list default="true" id="51f6022f-23b8-4194-a60c-864ebe07b5ce" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="camp.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="51f6022f-23b8-4194-a60c-864ebe07b5ce" time="1385892265239" ignored="false" />
+    <file path="/Dummy.txt" changelist="51f6022f-23b8-4194-a60c-864ebe07b5ce" time="1385894189139" ignored="false" />
     <file path="/database" changelist="51f6022f-23b8-4194-a60c-864ebe07b5ce" time="1385290140824" ignored="false" />
     <file path="/a.sql" changelist="51f6022f-23b8-4194-a60c-864ebe07b5ce" time="1385034761622" ignored="false" />
     <file path="/DialogBookingSummary.java" changelist="51f6022f-23b8-4194-a60c-864ebe07b5ce" time="1385893845788" ignored="false" />
@@ -291,6 +239,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -312,20 +261,19 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="Modules" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="107" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="105" />
-    <property name="OverrideImplement.combined" value="true" />
     <property name="project.structure.proportion" value="0.15" />
+    <property name="OverrideImplement.combined" value="true" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="105" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
-    <property name="MemberChooser.sorted" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="200" />
+    <property name="recentsLimit" value="5" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="108" />
@@ -343,17 +291,17 @@
     <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
     <property name="options.lastSelected" value="fileTemplates" />
-    <property name="LayoutCode.rearrangeEntriesJava" value="true" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="LayoutCode.rearrangeEntriesJava" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -875,7 +823,11 @@
       <created>1385800435963</created>
       <updated>1385800435963</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="final alts">
+      <created>1385894027003</created>
+      <updated>1385894027003</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -908,9 +860,8 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20712401" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.7975528" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.116693676" sideWeight="0.78132385" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32608697" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959481" sideWeight="0.75247526" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17341977" sideWeight="0.7834395" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17341977" sideWeight="0.7828863" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2455243" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30854607" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -923,10 +874,10 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901135" sideWeight="0.76567656" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22690438" sideWeight="0.7834395" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21656051" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22690438" sideWeight="0.7828863" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21656051" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21474878" sideWeight="0.78132385" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Sequence" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32925472" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32608697" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -934,6 +885,7 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1928651" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32608697" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26241136" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39853302" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1086,52 +1038,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Class Diagram.uml">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement />
-          <nodes>
-            <node x="" y="">camp.GenericList</node>
-            <node x="" y="">camp.Pitch</node>
-            <node x="" y="">camp.Pricing</node>
-            <node x="" y="">camp.Search</node>
-            <node x="" y="">gui.DialogEmailForm</node>
-            <node x="" y="">camp.ClientList</node>
-            <node x="" y="">camp.camper</node>
-            <node x="" y="">camp.Communication</node>
-            <node x="" y="">gui.DialogBookingSummary</node>
-            <node x="" y="">camp.scrap</node>
-            <node x="" y="">camp.DateMaker</node>
-            <node x="" y="">camp.Booking</node>
-            <node x="" y="">gui.DocListener</node>
-            <node x="" y="">gui.DialogDeleteBooking</node>
-            <node x="" y="">camp.BookingList</node>
-            <node x="" y="">gui.DialogSearch</node>
-            <node x="" y="">db.connection</node>
-            <node x="" y="">gui.Reports</node>
-            <node x="" y="">camp.Client</node>
-            <node x="" y="">camp.Items</node>
-            <node x="" y="">gui.FormBooking</node>
-            <node x="" y="">gui.MenuCampsite</node>
-            <node x="" y="">camp.PitchList</node>
-            <node x="" y="">gui.DialogExtendBooking</node>
-            <node x="" y="">gui.DialogCustomerForm</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.5333333333333333" x="1870.0" y="4225.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Fields</Category>
-            <Category>Methods</Category>
-            <Category>Inner Classes</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/camp/ClientList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="86" column="16" selection-start="3026" selection-end="3026" vertical-scroll-proportion="0.43975905" />
@@ -1193,6 +1099,50 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="56" column="124" selection-start="1802" selection-end="1802" vertical-scroll-proportion="0.9407666">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Class Diagram.uml">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement />
+          <nodes>
+            <node x="" y="">camp.GenericList</node>
+            <node x="" y="">camp.Pitch</node>
+            <node x="" y="">camp.Pricing</node>
+            <node x="" y="">gui.DialogEmailForm</node>
+            <node x="" y="">camp.camper</node>
+            <node x="" y="">camp.ClientList</node>
+            <node x="" y="">camp.Communication</node>
+            <node x="" y="">gui.DialogBookingSummary</node>
+            <node x="" y="">camp.DateMaker</node>
+            <node x="" y="">camp.Booking</node>
+            <node x="" y="">gui.DocListener</node>
+            <node x="" y="">gui.DialogDeleteBooking</node>
+            <node x="" y="">camp.BookingList</node>
+            <node x="" y="">gui.DialogSearch</node>
+            <node x="" y="">db.connection</node>
+            <node x="" y="">gui.Reports</node>
+            <node x="" y="">camp.Client</node>
+            <node x="" y="">gui.FormBooking</node>
+            <node x="" y="">camp.Items</node>
+            <node x="" y="">gui.MenuCampsite</node>
+            <node x="" y="">camp.PitchList</node>
+            <node x="" y="">gui.DialogExtendBooking</node>
+            <node x="" y="">gui.DialogCustomerForm</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.13083451202263083" x="2818.0" y="2282.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Methods</Category>
+            <Category>Inner Classes</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
     </entry>
