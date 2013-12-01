@@ -54,7 +54,7 @@ public class FormBooking extends JDialog {// example if inheritance as FormBooki
     private List<Pitch> pitches = null;
     private Client BookingClient;
     private Pitch BookingPitch;
-    private DialogSearch search = new DialogSearch(SwingUtilities.getWindowAncestor(this));
+    private DialogSearch search = new DialogSearch(SwingUtilities.getWindowAncestor(this)); // example of the use of objects
     private DialogExtendBooking bookingCheck = new DialogExtendBooking(SwingUtilities.getWindowAncestor(this));
     private DialogDeleteBooking bookingDelete = new DialogDeleteBooking(SwingUtilities.getWindowAncestor(this));
 

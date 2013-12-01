@@ -22,7 +22,7 @@ import java.util.List;
  * class definition
  * gui class for customer editing and creation
  */
-public class DialogCustomerForm extends JDialog {
+public class DialogCustomerForm extends JDialog {//example of the use of class inheritance
     private JPanel contentPane;
     private JButton buttonOK;
     private JButton buttonCancel;

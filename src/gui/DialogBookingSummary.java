@@ -21,9 +21,9 @@ import java.util.Calendar;
  * class definition
  * gui class for booking summary
  */
-public class DialogBookingSummary extends JDialog {
+public class DialogBookingSummary extends JDialog { // example of the use of class inheritance
     public JTextArea BookingForeName;
-    private Client ClientSummary = new Client();
+    private Client ClientSummary = new Client();// example of the use of objects
     private final Booking submit = new Booking();
     private JPanel BookingSummary;
     private JButton buttonOK;

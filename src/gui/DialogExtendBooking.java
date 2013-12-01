@@ -21,7 +21,7 @@ import java.util.List;
  * gui class for extending a booking
  */
 public class DialogExtendBooking extends JDialog {// example of inheritance as DialogExtendBooking extends JDialog
-    public Client myBooking = new Client();
+    public Client myBooking = new Client();//example of the use of objects
     private final Booking extendThis = new Booking();
     private JPanel contentPane;
     private JButton buttonOK;

@@ -22,8 +22,8 @@ import java.util.List;
  * class definition
  * gui class for deleting a booking
  */
-public class DialogDeleteBooking extends JDialog {
-    private final Booking deleteThis = new Booking();
+public class DialogDeleteBooking extends JDialog {//example of the use of class inheritance
+    private final Booking deleteThis = new Booking();// example of the use of objects
     public Client myBooking = new Client();
     private JPanel contentPane;
     private JButton buttonOK;
